@@ -9,6 +9,7 @@ CARENCIA/
 ├── Docs/
 │   ├── GDD/                ← copia del GDD (ver Docs/GDD/LEEME.md)
 │   ├── ESTRUCTURA.md       ← este archivo
+│   ├── MEDIDAS.md          ← escala y mapa por celdas de la casa
 │   └── PLAN.md             ← plan de trabajo por fases
 ├── CONTRIBUTING.md         ← gitflow, commits y nomenclatura
 ├── README.md

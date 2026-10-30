@@ -25,6 +25,7 @@ Proyecto integrador III · Ingeniería en Desarrollo y Gestión de Software · U
 
 - [CONTRIBUTING.md](CONTRIBUTING.md): gitflow, nombres de ramas, mensajes de commit y nomenclatura de archivos.
 - [Docs/ESTRUCTURA.md](Docs/ESTRUCTURA.md): carpetas del proyecto y arquitectura por escenas.
+- [Docs/MEDIDAS.md](Docs/MEDIDAS.md): escala y mapa por celdas de la casa.
 - [Docs/PLAN.md](Docs/PLAN.md): plan de trabajo por fases y por integrante.
 - [Docs/GDD/](Docs/GDD/00%20-%20%C3%8Dndice.md): documento de diseño del juego.
 
