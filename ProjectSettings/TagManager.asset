@@ -13,9 +13,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Jugador
+  - Obstaculos
+  - Interactuables
   - 
   - 
   - 
@@ -40,4 +40,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Fondo
+    uniqueID: 1845145995
+    locked: 0
+  - name: Suelo
+    uniqueID: 584866852
+    locked: 0
+  - name: Mundo
+    uniqueID: 3449296189
+    locked: 0
+  - name: Efectos
+    uniqueID: 2665895332
+    locked: 0
+  - name: UI
+    uniqueID: 1767808078
     locked: 0
