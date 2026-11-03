@@ -25,7 +25,7 @@ Con *Cell Size* `(1, 0.5, 1)`, un tile de suelo mide 2:1 en píxeles. El tamaño
 | Baño | 6 × 4 | 3 × 2 | Sí (exploración, gabinete, espejo) |
 | Pasillo | 3 × 19 | 1.5 × 9.5 | Sí (une todo) |
 | Sala, comedor y cocina | 17 × 9 | 8.5 × 4.5 | Sí (cinemática del desayuno) |
-| Habitación de Margarita | 6 × 6 | 3 × 3 | No: su puerta no se ve en el mundo normal |
+| Habitación de Margarita | 6 × 6 | 3 × 3 | No: un armario tapa su puerta |
 | Habitación de los padres | 6 × 6 | 3 × 3 | No: puerta cerrada |
 | Cuarto de servicio | 6 × 3 | 3 × 1.5 | No: puerta cerrada |
 | Escaleras y entrada principal | 6 × 7 | 3 × 3.5 | No: puerta cerrada |
@@ -39,16 +39,16 @@ La fila 0 es el fondo del pasillo, donde está la ventana; la fila 29 es la pare
            0123456789012345678
 fila  0    ########VVV########
       1    #xxxxxx#...+xxxxxx#   ← padres (puerta cerrada)
-      2    #xxxxxx#...+xxxxxx#
-      3    #xxxxxx#...#xxxxxx#   Margarita (puerta oculta en el mundo normal)
+      2    #xxxxxx#A..+xxxxxx#
+      3    #xxxxxx#A..#xxxxxx#   Margarita (el armario tapa su puerta)
       4    #xxxxxx#...#xxxxxx#
       5    #xxxxxx#..P#xxxxxx#
       6    #xxxxxx#..P#xxxxxx#
       7    ########...########
-      8    #BBBB.WD...+xxxxxx#   ← baño · servicio (cerrado)
-      9    #BBBB..D...+xxxxxx#
-     10    #.....L#...#xxxxxx#
-     11    #......#...########
+      8    #BBB...D...+xxxxxx#   ← baño · servicio (cerrado)
+      9    #BBB...D...+xxxxxx#
+     10    #.....W#...#xxxxxx#
+     11    #.....L#...########
      12    ########...#xxxxxx#   escaleras (cerradas)
      13    #CC....D...#xxxxxx#   ← habitación de Elaki
      14    #CC....D...#xxxxxx#
@@ -77,6 +77,7 @@ fila  0    ########VVV########
 | `+` | Puerta cerrada |
 | `V` | Ventana |
 | `x` | Cuarto cerrado, sin suelo |
+| `A` | Armario que tapa la puerta de Margarita |
 | `B` | Bañera |
 | `W` | Escusado |
 | `L` | Lavabo (el espejo y el gabinete van en la pared de encima) |
@@ -88,7 +89,7 @@ fila  0    ########VVV########
 | `T` | Escritorio con la computadora |
 
 **De mapa a Tilemap:** la celda del mapa (columna, fila) es la celda de Tilemap **(columna, 29 − fila)**.
-Así la fila 29 queda en `y = 0` y el fondo del pasillo aparece arriba a la derecha de la pantalla.
+Así la fila 29 queda en `y = 0` y el fondo del pasillo aparece arriba a la izquierda de la pantalla.
 
 ## Escenas
 
