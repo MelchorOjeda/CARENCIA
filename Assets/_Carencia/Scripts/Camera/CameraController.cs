@@ -1,19 +1,24 @@
 using System.Collections;
 using UnityEngine;
+using UnityEngine.Rendering.Universal;
 
-// Cámara isométrica ortográfica. En exploración mantiene un encuadre fijo de la habitación;
-// si la habitación no cabe en pantalla (por ejemplo el pasillo) sigue a Elaki dentro de los límites.
+// Cámara isométrica ortográfica. En exploración va cerca de Elaki y la sigue, sin salirse de los límites;
+// así en el pasillo solo se ve la puerta de donde salió y un poco más.
 // Las secuencias narrativas usan Enfocar y VolverAlEncuadre para acercarse y alejarse con suavidad.
 [RequireComponent(typeof(Camera))]
 public class CameraController : MonoBehaviour
 {
     [Header("Encuadre habitual")]
-    [SerializeField] private float tamanoHabitual = 5f;
+    [Tooltip("1.875 equivale a una vista de 320 x 180 px con 48 PPU")]
+    [SerializeField] private float tamanoHabitual = 1.875f;
 
     [Tooltip("Desactivado: la cámara se queda donde está colocada en la escena")]
-    [SerializeField] private bool seguirObjetivo;
+    [SerializeField] private bool seguirObjetivo = true;
 
     [SerializeField] private Transform objetivo;
+
+    [Tooltip("Unidades por encima de los pies del objetivo, para que quepa la pared de atrás")]
+    [SerializeField] private float alturaSobreObjetivo = 1.25f;
 
     [Tooltip("Collider que marca el área visible de la habitación; la cámara no muestra nada fuera de él")]
     [SerializeField] private Collider2D limites;
@@ -22,6 +27,7 @@ public class CameraController : MonoBehaviour
     [SerializeField] private float suavizado = 0.15f;
 
     private Camera camara;
+    private PixelPerfectCamera pixelPerfect;
     private Vector3 posicionFija;
     private Vector3 velocidad;
     private Coroutine transicion;
@@ -31,9 +37,16 @@ public class CameraController : MonoBehaviour
     private void Awake()
     {
         camara = GetComponent<Camera>();
+        pixelPerfect = GetComponent<PixelPerfectCamera>();
         camara.orthographic = true;
         camara.orthographicSize = tamanoHabitual;
         posicionFija = transform.position;
+    }
+
+    private void Start()
+    {
+        // Al cargar la escena empieza ya sobre Elaki, sin recorrer la habitación
+        transform.position = PosicionHabitual();
     }
 
     private void LateUpdate()
@@ -68,6 +81,10 @@ public class CameraController : MonoBehaviour
     {
         EnSecuencia = true;
 
+        // El Pixel Perfect Camera fija el tamaño y anularía el acercamiento
+        if (pixelPerfect != null)
+            pixelPerfect.enabled = false;
+
         var posicionInicial = transform.position;
         var tamanoInicial = camara.orthographicSize;
 
@@ -84,6 +101,9 @@ public class CameraController : MonoBehaviour
         velocidad = Vector3.zero;
         transicion = null;
         EnSecuencia = quedarseEnSecuencia;
+
+        if (pixelPerfect != null && !quedarseEnSecuencia)
+            pixelPerfect.enabled = true;
     }
 
     private Vector3 PosicionHabitual()
@@ -91,7 +111,7 @@ public class CameraController : MonoBehaviour
         if (!seguirObjetivo || objetivo == null)
             return posicionFija;
 
-        return ConProfundidad(LimitarALaHabitacion(objetivo.position));
+        return ConProfundidad(LimitarALaHabitacion(objetivo.position + Vector3.up * alturaSobreObjetivo));
     }
 
     private Vector3 LimitarALaHabitacion(Vector3 posicion)
