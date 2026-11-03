@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private float velocidad = 3f;
+    [SerializeField] private float velocidad = 1.5f;
 
     // Las cinemáticas, transiciones y vistas de inspección lo activan para detener al jugador
     [SerializeField] private bool movimientoBloqueado;
