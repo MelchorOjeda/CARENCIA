@@ -24,6 +24,9 @@ public class RecortePuerta : MonoBehaviour
     // A esta distancia ya cruzó por completo y se ve la vista del cuarto
     private const float FinDespuesDelPlano = 1f;
 
+    // El marco ocupa este tramo de la puerta: el corte nunca llega más allá
+    private const float AnchoMarco = 0.17f;
+
     private const float LadoMascara = 8f;
 
     public void Configurar(Grid nuevoGrid, SpriteMask nuevaMascara, Puerta[] nuevasPuertas)
@@ -44,16 +47,17 @@ public class RecortePuerta : MonoBehaviour
             if (pies.x <= puerta.planoX - InicioAntesDelPlano || pies.x >= puerta.planoX + FinDespuesDelPlano)
                 continue;
 
-            ColocarMascara(puerta.planoX, pies.y);
+            ColocarMascara(puerta, pies.y);
             return;
         }
 
         mascara.enabled = false;
     }
 
-    private void ColocarMascara(float planoX, float piesY)
+    private void ColocarMascara(Puerta puerta, float piesY)
     {
-        var corte = grid.LocalToWorld(grid.CellToLocalInterpolated(new Vector3(planoX, piesY, 0f)));
+        var corteEnY = Mathf.Max(piesY, puerta.desdeY + AnchoMarco);
+        var corte = grid.LocalToWorld(grid.CellToLocalInterpolated(new Vector3(puerta.planoX, corteEnY, 0f)));
 
         mascara.enabled = true;
         mascara.transform.position = new Vector3(corte.x + LadoMascara / 2f, transform.position.y, transform.position.z);
