@@ -26,6 +26,8 @@ public class CameraController : MonoBehaviour
     [Tooltip("Segundos que tarda en alcanzar a Elaki; 0 la mueve sin retraso")]
     [SerializeField] private float suavizado = 0.15f;
 
+    private const float DistanciaDeSalto = 2f;
+
     private Camera camara;
     private PixelPerfectCamera pixelPerfect;
     private Vector3 posicionFija;
@@ -54,7 +56,17 @@ public class CameraController : MonoBehaviour
         if (EnSecuencia || !seguirObjetivo)
             return;
 
-        transform.position = Vector3.SmoothDamp(transform.position, PosicionHabitual(), ref velocidad, suavizado);
+        var destino = PosicionHabitual();
+
+        // Si Elaki cambió de espacio, la cámara salta en lugar de recorrer la distancia
+        if ((destino - transform.position).sqrMagnitude > DistanciaDeSalto * DistanciaDeSalto)
+        {
+            transform.position = destino;
+            velocidad = Vector3.zero;
+            return;
+        }
+
+        transform.position = Vector3.SmoothDamp(transform.position, destino, ref velocidad, suavizado);
     }
 
     // Acerca la cámara a un punto, por ejemplo el monitor, hasta el tamaño indicado.
