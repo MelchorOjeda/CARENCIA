@@ -87,6 +87,16 @@ salir al pasillo se ven los detalles de la pared a unos 2 m hacia cada lado, no 
 **Referencia del baño:** bañera en toda la pared de atrás a la izquierda; escusado y lavabo en la pared de atrás a la derecha,
 a continuación de la bañera; y la puerta en el borde de abajo a la izquierda, junto a la esquina inferior.
 
+## Vista de cada espacio
+
+Cada espacio se dibuja por su cuenta, como será con una escena por habitación:
+
+- **Baño:** un solo sprite de 264 × 250 px con el cuarto completo. Su bañera, escusado, lavabo y puerta coinciden con el mapa.
+- **Pasillo:** un solo sprite de 640 × 256 px, visto casi de frente, con la ventana a la derecha y el comedor a la izquierda.
+- **Sala, comedor y cocina:** girados igual que el pasillo: la abertura queda arriba a la derecha, la sala atrás y la cocina adelante.
+
+Las puertas de la habitación y del baño se cruzan con E. Pasillo y comedor se unen caminando por la abertura.
+
 ## Espacios
 
 | Espacio | Interior (celdas) | Metros | En el prólogo |
