@@ -78,9 +78,11 @@ salir al pasillo se ven los detalles de la pared a unos 2 m hacia cada lado, no 
 - **Desde el pasillo** se ve la pared de arriba a la derecha, con las puertas en orden: Elaki (NO PASAR con estampas y
   stickers), baño y Margarita, tapada por el armario. Calendario, fotos y mesa van en esa misma pared.
 - **Dentro de cada cuarto** se dibujan altas las dos paredes de atrás. Su puerta queda en el borde de abajo a la izquierda,
-  como un hueco.
+  como un hueco en el borde.
 - **Las paredes de frente** de cada espacio son solo un borde de 4 px, para no tapar a Elaki. Las puertas de padres y
   servicio quedan en ese borde desde el pasillo.
+
+**Puertas:** están cerradas y no se atraviesan caminando. Al acercarse aparece el indicador, y con E Elaki pasa al otro lado.
 
 **Referencia del baño:** bañera en toda la pared de atrás a la izquierda; escusado y lavabo en la pared de atrás a la derecha,
 a continuación de la bañera; y la puerta en el borde de abajo a la izquierda, junto a la esquina inferior.
@@ -142,7 +144,7 @@ fila  0    ########VVV########
 |---|---|
 | `#` | Pared |
 | `.` | Suelo |
-| `D` | Puerta abierta |
+| `D` | Puerta que se cruza con E |
 | `+` | Puerta cerrada |
 | `V` | Ventana |
 | `x` | Cuarto cerrado, sin suelo |

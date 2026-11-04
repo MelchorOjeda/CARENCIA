@@ -2,7 +2,7 @@ using System;
 using UnityEngine;
 
 // Solo para el blockout: muestra los muros del espacio donde está Elaki, como lo hará cada escena real.
-// En las puertas no pertenece a ningún espacio y se conservan los muros anteriores.
+// Si Elaki no está en ningún espacio, se conservan los muros anteriores.
 public class BlockoutZonas : MonoBehaviour
 {
     [Serializable]

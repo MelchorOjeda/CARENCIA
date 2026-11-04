@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     private InputAction accionMover;
     private Vector2 direccion;
 
+    public Vector2 Direccion => direccion;
+    public bool EstaCaminando => direccion != Vector2.zero;
+
     public bool MovimientoBloqueado
     {
         get => movimientoBloqueado;
