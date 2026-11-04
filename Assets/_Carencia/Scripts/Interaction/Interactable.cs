@@ -19,6 +19,7 @@ public class Interactable : MonoBehaviour
 
     [SerializeField] private UnityEvent alInteractuar;
 
+    public UnityEvent AlInteractuar => alInteractuar;
     public string Accion => accion;
     public bool Completado { get; private set; }
 
