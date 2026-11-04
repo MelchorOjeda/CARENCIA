@@ -119,12 +119,12 @@ fila  0    ########VVV########
      11    #L.....D...#xxxxxx#
      12    #......D...########
      13    ########...#xxxxxx#   escaleras (cerradas)
-     14    #CCEE..D...#xxxxxx#   ← habitación de Elaki
+     14    #CC....D...#xxxxxx#   ← habitación de Elaki
      15    #CC....D...#xxxxxx#
      16    #CC....#...#xxxxxx#
      17    #CC....#...#xxxxxx#
-     18    #......#...#xxxxxx#
-     19    #......#...#xxxxxx#
+     18    #E.....#...#xxxxxx#
+     19    #E.S...#...#xxxxxx#
      20    ########...###+++##   ← entrada principal (cerrada)
      21    #................K#
      22    #................K#
@@ -152,6 +152,7 @@ fila  0    ########VVV########
 | `L` | Lavabo (el espejo y el gabinete van en la pared de encima) |
 | `C` | Cama |
 | `E` | Escritorio |
+| `S` | Silla del escritorio |
 | `M` | Mesa del comedor |
 | `P` | Mesa del pasillo con florero |
 | `K` | Cocina y barra |
