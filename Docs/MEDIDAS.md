@@ -93,11 +93,11 @@ Cada espacio se dibuja por su cuenta, como será con una escena por habitación:
 
 - **Baño:** un solo sprite de 264 × 250 px con el cuarto completo. Su bañera, escusado, lavabo y puerta coinciden con el mapa.
 - **Pasillo:** piezas sueltas en la rejilla, a 96 PPU: paredes, losas, puertas, cuadros, calendario, ventana, mesa y armario. Continúa en línea recta desde la abertura del comedor.
-- **Sala, comedor y cocina:** girados igual que el pasillo: la abertura queda arriba a la derecha, la sala atrás y la cocina adelante.
+- **Sala, comedor y cocina:** piezas sueltas en la rejilla, a 96 PPU, giradas igual que el pasillo: la abertura queda arriba a la derecha, la sala y el escritorio atrás, y la cocina adelante. La televisión va en la pared y la estufa mira hacia dentro de la cocina.
 
 Las puertas de la habitación y del baño se cruzan con E. Pasillo y comedor se unen caminando por la abertura.
 
-**Doble resolución:** el pasillo se dibuja a 96 PPU, con la vista en 640 × 360 px y el mismo *Orthographic Size*. En esa resolución, una celda mide 96 × 48 px y 1 m de altura son 108 px. Elaki, el baño, el comedor y el escritorio siguen a 48 PPU, con píxeles el doble de grandes, hasta rehacerlos.
+**Doble resolución:** el pasillo y la sala, comedor y cocina se dibujan a 96 PPU, con la vista en 640 × 360 px y el mismo *Orthographic Size*. En esa resolución, una celda mide 96 × 48 px y 1 m de altura son 108 px. Elaki, el baño, la habitación y su escritorio siguen a 48 PPU, con píxeles el doble de grandes, hasta rehacerlos.
 
 ## Espacios
 
@@ -140,15 +140,15 @@ fila  0    ########VVV########
      18    #E.....#...#xxxxxx#
      19    #E.S...#...#xxxxxx#
      20    ########...###+++##   ← entrada principal (cerrada)
-     21    #................K#
-     22    #................K#
-     23    #................K#
-     24    #.......MMM......K#   sala · comedor · cocina
-     25    #.......MMM......K#
-     26    #T...............K#
-     27    #T................#
-     28    #T................#
-     29    #.................#
+     21    #TT...............#
+     22    #TT...............#
+     23    #TTS..............#
+     24    #TT...HH..hMMh...K#   sala · comedor · cocina
+     25    #...NNHH..hMMh...F#
+     26    #.........hMMh...F#
+     27    #................K#
+     28    #.OOOOO.RR.......K#
+     29    #.OOOOO.RRKKKKKKKK#
      30    ###################
 ```
 
@@ -166,15 +166,23 @@ fila  0    ########VVV########
 | `L` | Lavabo (el espejo y el gabinete van en la pared de encima) |
 | `C` | Cama |
 | `E` | Escritorio |
-| `S` | Silla del escritorio |
+| `S` | Silla de cada escritorio |
 | `M` | Mesa del comedor |
 | `P` | Mesa del pasillo con florero |
-| `K` | Cocina y barra |
+| `h` | Silla del comedor |
+| `K` | Barra de la cocina |
+| `F` | Estufa, dentro de la barra |
+| `R` | Refrigerador |
+| `O` | Sofá |
+| `H` | Sillón |
+| `N` | Mesa de centro |
 | `T` | Escritorio con la computadora |
 
 **De mapa a Tilemap:** la celda del mapa (columna, fila) es la celda de Tilemap **(18 − columna, 30 − fila)**.
 Así la fila 30 queda en `y = 0`, el fondo del pasillo aparece arriba a la izquierda de la pantalla y los cuartos quedan
 arriba a la derecha del pasillo.
+
+La sala, el comedor, la cocina y el pasillo están girados: su celda de mapa (columna, fila) es la celda de Tilemap **(70 − fila, 20 − columna)**.
 
 ## Escenas
 
