@@ -51,7 +51,7 @@ Las estaturas son propuestas; el GDD solo indica que Elaki tiene 17 años.
 | Pieza | Medida real | Lienzo en píxeles |
 |---|---|---|
 | Pared de atrás, por cada celda de largo | 2.40 m de alto | 24 × 142 |
-| Borde de frente, por cada celda de largo | 4 px de alto | 24 × 16 |
+| Muro bajo de frente, por cada celda de largo | 16 px de alto, a 96 PPU | 96 × 66 |
 | Puerta | 1 × 2 m | 48 × 132 |
 | Armario | 1 × 2 celdas, 2 m de alto | 72 × 144 |
 | Mesa del pasillo | 1 × 2 celdas, 0.75 m de alto | 72 × 77 |
@@ -77,10 +77,11 @@ salir al pasillo se ven los detalles de la pared a unos 2 m hacia cada lado, no 
 
 - **Desde el pasillo** se ve la pared de arriba a la derecha, con las puertas en orden: Elaki (NO PASAR con estampas y
   stickers), baño y Margarita, tapada por el armario. Calendario, fotos y mesa van en esa misma pared.
-- **Dentro de cada cuarto** se dibujan altas las dos paredes de atrás. Su puerta queda en el borde de abajo a la izquierda,
-  como un hueco en el borde.
-- **Las paredes de frente** de cada espacio son solo un borde de 4 px, para no tapar a Elaki. Las puertas de padres y
-  servicio quedan en ese borde desde el pasillo.
+- **Dentro de cada cuarto** se dibujan altas las dos paredes de atrás. Su puerta queda en el borde de abajo a la izquierda:
+  un hueco en el muro bajo con umbral de madera, dos jambas bajas y luz que entra al cuarto.
+- **Las paredes de frente** de cada espacio son un muro bajo con tapa crema, para no tapar a Elaki. Las puertas de padres y
+  servicio quedan en ese muro desde el pasillo, con umbral y jambas, sin luz.
+- **Alrededor de cada cuarto** se ve el fondo de la cámara, café oscuro (`#4E322E`), como una maqueta recortada.
 
 **Puertas:** están cerradas y no se atraviesan caminando. Al acercarse aparece el indicador, y con E Elaki pasa al otro lado.
 
