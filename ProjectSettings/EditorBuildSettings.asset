@@ -10,21 +10,21 @@ EditorBuildSettings:
     guid: f621ed031d19b574c98993d0dda1395a
   - enabled: 1
     path: Assets/_Carencia/Scenes/Prologo/PRO_Casa.unity
-    guid: 51d962a70ff6585499921018003e1e39
+    guid: 51cf63082e0c6eb4b894198552bb7391
   - enabled: 1
     path: Assets/_Carencia/Scenes/Nivel01/N1_Bano.unity
-    guid: 79277e8678acd1b448a8c91b81c51f62
+    guid: 1dcd6d2d82e0a5b4c8e8d32fb5fc75a9
   - enabled: 1
     path: Assets/_Carencia/Scenes/Nivel01/N1_Pasillo.unity
-    guid: 70fbdc05543e35f4cab9c3431a9be1ec
+    guid: da32b9815af2b0445b4a82872cc9e0fe
   - enabled: 1
     path: Assets/_Carencia/Scenes/Nivel02/N2_Casa.unity
-    guid: 1bd707b20cf30354290aa61c33056bed
+    guid: 4f0c494a5d12bc94f82ad2f7e6bfb1c9
   - enabled: 1
     path: Assets/_Carencia/Scenes/Nivel02/R2_Casa.unity
-    guid: cd7149802bf3fa04ab9d9879c74d111c
+    guid: 6126881f966f48e46a8fa036852b9880
   - enabled: 1
     path: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
-    guid: 54caee05ac7f36f4db2151f0dfbf031e
+    guid: dffac92b1912cbf469a4b329f660bf13
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}

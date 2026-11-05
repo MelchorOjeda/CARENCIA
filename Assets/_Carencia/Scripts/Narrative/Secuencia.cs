@@ -156,7 +156,14 @@ public class Secuencia : MonoBehaviour
                 pantalla.SetPenumbra(paso.valor);
                 break;
             case Tipo.Video:
-                yield return ReproducirVideo(paso.valor);
+                // Con una PantallaMonitor como referencia, el video se ve en el monitor del escenario
+                var rutina = paso.referencia is PantallaMonitor monitor
+                    ? VideoEnMonitor(monitor, paso.valor)
+                    : ReproducirVideo(paso.valor);
+                if (paso.texto == "sinEspera")
+                    StartCoroutine(rutina);
+                else
+                    yield return rutina;
                 break;
             case Tipo.CuadroEnBlanco:
                 yield return CuadroEnBlanco();
@@ -194,6 +201,21 @@ public class Secuencia : MonoBehaviour
         }
 
         pantalla.MostrarVideo(false);
+    }
+
+    private IEnumerator VideoEnMonitor(PantallaMonitor monitor, float duracion)
+    {
+        monitor.gameObject.SetActive(true);
+
+        for (var t = 0f; t < duracion; t += Time.deltaTime)
+        {
+            monitor.SetAvance(t / duracion);
+            yield return null;
+        }
+
+        monitor.SetAvance(1f);
+        yield return new WaitForSeconds(0.3f);
+        monitor.gameObject.SetActive(false);
     }
 
     // Queda abierto hasta pulsar E: el equipo de diálogos pondrá aquí sus textos

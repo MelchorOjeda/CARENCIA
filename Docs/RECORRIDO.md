@@ -22,7 +22,7 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 | `N1_Bano` | El mismo baño en blanco y frío, para la sensación de valle inquietante, con la cajonera en el mismo tono | E en la puerta |
 | `N1_Pasillo` | Pasillo blanco de 30 tramos (240 celdas) con solo 3 puertas muy separadas (tramos 8, 19 y 30); lo demás es pared con cuadros en blanco. Al final, puerta bloqueada y ventana cubierta | Clic en el portal, que aparece cerca del final |
 | `N2_Casa` | Fotos, ventana, platos y televisión. La computadora inicia el video y la persecución de la criatura; termina en el pasillo. Al fondo, Margarita se transforma y persigue a Elaki | Llegar a la marca junto a la puerta de la entrada |
-| `R2_Casa` | Segundo despertar y desayuno. Periódico (obligatorio), altar y armario. Cortina en estado 2 | Clic en la cortina, después de leer el periódico |
+| `R2_Casa` | Segundo despertar y desayuno. Periódico (obligatorio), altar del perro sobre la mesa junto al armario, y armario. Cortina en estado 2 | Clic en la cortina, después de leer el periódico |
 | `N3_Casa` | Casa orgánica: televisión, agua, ojos, calendario, figura en la ventana y puerta del corazón | Acercarse a Margarita en la bañera; vuelve al menú |
 
 ## Reglas
@@ -47,7 +47,7 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 
 ## Pendiente
 
-- **Contenido de otras áreas:** textos en los cuadros en blanco, sonidos, voz femenina y video real del monitor (hoy es una pantalla con su barra).
+- **Contenido de otras áreas:** textos en los cuadros en blanco, sonidos, voz femenina y video real del monitor. Hoy la cámara se acerca al monitor y su pantalla se ve gris con una barra de avance; a la mitad se aleja y aparece la criatura.
 - **Arte:** Elaki a 96 PPU, habitación, enemigos, padres, tazas verde y de carne, y dibujos de los cuadros del pasillo.
 - **Desenlace:** carteles, noticiero y fin del demo.
 - **Sin sentarse:** Elaki se coloca frente al monitor, pero aún no tiene animación de sentarse.
