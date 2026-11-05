@@ -47,7 +47,7 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 
 ## Pendiente
 
-- **Contenido de otras áreas:** textos en los cuadros en blanco, sonidos, voz femenina y video real del monitor (hoy es una pantalla con su barra).
+- **Contenido de otras áreas:** textos en los cuadros en blanco, sonidos, voz femenina y video real del monitor. Hoy la cámara se acerca al monitor y su pantalla se ve gris con una barra de avance; a la mitad se aleja y aparece la criatura.
 - **Arte:** Elaki a 96 PPU, habitación, enemigos, padres, tazas verde y de carne, y dibujos de los cuadros del pasillo.
 - **Desenlace:** carteles, noticiero y fin del demo.
 - **Sin sentarse:** Elaki se coloca frente al monitor, pero aún no tiene animación de sentarse.
