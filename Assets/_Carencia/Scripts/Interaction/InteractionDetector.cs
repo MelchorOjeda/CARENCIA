@@ -59,7 +59,7 @@ public class InteractionDetector : MonoBehaviour
         foreach (var colision in Physics2D.OverlapPointAll(punto))
         {
             var interactable = colision.GetComponentInParent<Interactable>();
-            if (interactable == null || !interactable.Disponible)
+            if (interactable == null || !interactable.Disponible || !interactable.AceptaClicEn(punto))
                 continue;
 
             if (cercanos.Contains(interactable))
@@ -104,7 +104,7 @@ public class InteractionDetector : MonoBehaviour
 
             foreach (var interactable in cercanos)
             {
-                if (!interactable.Disponible)
+                if (!interactable.Disponible || interactable.SoloConClic)
                     continue;
 
                 var distancia = ((Vector2)interactable.transform.position - (Vector2)transform.position).sqrMagnitude;

@@ -17,9 +17,16 @@ public class Interactable : MonoBehaviour
 
     [SerializeField] private bool bloqueado;
 
+    [Tooltip("Solo se usa con clic: E no lo activa y no muestra indicador")]
+    [SerializeField] private bool soloConClic;
+
+    [Tooltip("Parte del dibujo donde se puede hacer clic. Si está vacío, sirve cualquiera de sus áreas")]
+    [SerializeField] private Collider2D zonaClic;
+
     [SerializeField] private UnityEvent alInteractuar;
 
     public UnityEvent AlInteractuar => alInteractuar;
+    public bool SoloConClic => soloConClic;
     public string Accion => accion;
     public bool Completado { get; private set; }
 
@@ -44,6 +51,11 @@ public class Interactable : MonoBehaviour
     private void Reset()
     {
         GetComponent<Collider2D>().isTrigger = true;
+    }
+
+    public bool AceptaClicEn(Vector2 punto)
+    {
+        return zonaClic == null || zonaClic.OverlapPoint(punto);
     }
 
     public void MostrarIndicador(bool visible)

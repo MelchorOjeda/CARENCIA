@@ -92,13 +92,13 @@ a continuación de la bañera; y la puerta en el borde de abajo a la izquierda, 
 
 Cada espacio se dibuja por su cuenta, como será con una escena por habitación:
 
-- **Baño:** un solo sprite de 264 × 250 px con el cuarto completo. Su bañera, escusado, lavabo y puerta coinciden con el mapa.
+- **Baño:** piezas sueltas en la rejilla, a 96 PPU, con paredes de azulejo y damero. La bañera, la taza, el lavabo y la puerta coinciden con el mapa. El espejo, la taza y el lavabo se iluminan con el mouse, y con clic en el espejo, estando cerca, se abre la vista de la cajonera.
 - **Pasillo:** piezas sueltas en la rejilla, a 96 PPU: paredes, losas, puertas, cuadros, calendario, ventana, mesa y armario. Continúa en línea recta desde la abertura del comedor.
 - **Sala, comedor y cocina:** piezas sueltas en la rejilla, a 96 PPU, giradas igual que el pasillo: la abertura queda arriba a la derecha, la sala y el escritorio atrás, y la cocina adelante. La televisión va en la pared y la estufa mira hacia dentro de la cocina.
 
 Las puertas de la habitación y del baño se cruzan con E. Pasillo y comedor se unen caminando por la abertura.
 
-**Doble resolución:** el pasillo y la sala, comedor y cocina se dibujan a 96 PPU, con la vista en 640 × 360 px y el mismo *Orthographic Size*. En esa resolución, una celda mide 96 × 48 px y 1 m de altura son 108 px. Elaki, el baño, la habitación y su escritorio siguen a 48 PPU, con píxeles el doble de grandes, hasta rehacerlos.
+**Doble resolución:** el baño, el pasillo y la sala, comedor y cocina se dibujan a 96 PPU, con la vista en 640 × 360 px y el mismo *Orthographic Size*. En esa resolución, una celda mide 96 × 48 px y 1 m de altura son 108 px. Elaki, la habitación y su escritorio siguen a 48 PPU, con píxeles el doble de grandes, hasta rehacerlos.
 
 ## Espacios
 
