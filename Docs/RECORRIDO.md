@@ -19,8 +19,8 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 |---|---|---|
 | `MEN_Principal` | Nueva partida, Continuar y Salir | Nueva partida |
 | `PRO_Casa` | Despertar, desayuno, mareo y baño real. Clic en el espejo abre la cajonera; al cerrarla aparece la silueta y luego el portal | Clic de nuevo en el espejo |
-| `N1_Bano` | Baño alterado: taza amarillenta, toallas de otro color, cortina en estado 1 y cajonera distorsionada | E en la puerta |
-| `N1_Pasillo` | Pasillo blanco de 30 tramos (240 celdas), con puerta bloqueada y ventana cubierta al final | Clic en el portal, que aparece cerca del final |
+| `N1_Bano` | El mismo baño en blanco y frío, para la sensación de valle inquietante, con la cajonera en el mismo tono | E en la puerta |
+| `N1_Pasillo` | Pasillo blanco de 30 tramos (240 celdas) con solo 3 puertas muy separadas (tramos 8, 19 y 30); lo demás es pared con cuadros en blanco. Al final, puerta bloqueada y ventana cubierta | Clic en el portal, que aparece cerca del final |
 | `N2_Casa` | Fotos, ventana, platos y televisión. La computadora inicia el video y la persecución de la criatura; termina en el pasillo. Al fondo, Margarita se transforma y persigue a Elaki | Llegar a la marca junto a la puerta de la entrada |
 | `R2_Casa` | Segundo despertar y desayuno. Periódico (obligatorio), altar y armario. Cortina en estado 2 | Clic en la cortina, después de leer el periódico |
 | `N3_Casa` | Casa orgánica: televisión, agua, ojos, calendario, figura en la ventana y puerta del corazón | Acercarse a Margarita en la bañera; vuelve al menú |
