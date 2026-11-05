@@ -32,6 +32,13 @@ public class VistaGabinete : MonoBehaviour
         cuadroDialogo.gameObject.SetActive(false);
     }
 
+    // Cambia el color de toda la vista, para las versiones alteradas de la cajonera
+    public void SetTinte(Color tinte)
+    {
+        foreach (var imagen in panel.GetComponentsInChildren<UnityEngine.UI.Image>(true))
+            imagen.color = tinte;
+    }
+
     private void Update()
     {
         // La misma pulsación que abre la vista no debe cerrarla

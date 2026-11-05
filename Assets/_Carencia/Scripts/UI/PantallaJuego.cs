@@ -1,0 +1,299 @@
+using System.Collections;
+using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+
+// Capa de pantalla común a todas las escenas: fundidos, manchas de daño, penumbra, cuadro en blanco y barra de video.
+// También carga escenas y coloca a Elaki en su punto de entrada. Se crea sola la primera vez que se pide.
+public class PantallaJuego : MonoBehaviour
+{
+    private static PantallaJuego instancia;
+    private static string entradaPendiente;
+
+    private Image fundido;
+    private Image manchas;
+    private Image penumbra;
+    private GameObject cuadro;
+    private GameObject video;
+    private Image barraVideo;
+    private Image imagenVideo;
+    private Coroutine rutinaFundido;
+    private bool cargando;
+
+    public static PantallaJuego Instancia
+    {
+        get
+        {
+            if (instancia == null)
+                Crear();
+
+            return instancia;
+        }
+    }
+
+    public bool CuadroVisible => cuadro.activeSelf;
+
+    [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+    private static void Reiniciar()
+    {
+        instancia = null;
+        entradaPendiente = null;
+    }
+
+    private static void Crear()
+    {
+        var objeto = new GameObject("PantallaJuego");
+        DontDestroyOnLoad(objeto);
+        instancia = objeto.AddComponent<PantallaJuego>();
+        instancia.Construir();
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += AlCargarEscena;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= AlCargarEscena;
+    }
+
+    private void Construir()
+    {
+        var canvas = gameObject.AddComponent<Canvas>();
+        canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+        canvas.sortingOrder = 100;
+        var escala = gameObject.AddComponent<CanvasScaler>();
+        escala.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
+        escala.referenceResolution = new Vector2(640f, 360f);
+        escala.matchWidthOrHeight = 0.5f;
+
+        penumbra = Capa("Penumbra", Vineta(new Color(0.02f, 0.01f, 0.03f), 0.25f));
+        SetAlfa(penumbra, 0f);
+        manchas = Capa("Manchas", Manchas());
+        SetAlfa(manchas, 0f);
+
+        cuadro = new GameObject("CuadroDialogo", typeof(RectTransform));
+        cuadro.transform.SetParent(transform, false);
+        var rectCuadro = (RectTransform)cuadro.transform;
+        rectCuadro.anchorMin = rectCuadro.anchorMax = new Vector2(0.5f, 0f);
+        rectCuadro.pivot = new Vector2(0.5f, 0f);
+        rectCuadro.sizeDelta = new Vector2(600f, 72f);
+        rectCuadro.anchoredPosition = new Vector2(0f, 8f);
+        cuadro.AddComponent<Image>().color = new Color32(44, 26, 22, 255);
+        var papel = new GameObject("Papel", typeof(RectTransform));
+        papel.transform.SetParent(cuadro.transform, false);
+        var rectPapel = (RectTransform)papel.transform;
+        rectPapel.anchorMin = Vector2.zero;
+        rectPapel.anchorMax = Vector2.one;
+        rectPapel.offsetMin = new Vector2(6f, 6f);
+        rectPapel.offsetMax = new Vector2(-6f, -6f);
+        papel.AddComponent<Image>().color = new Color32(244, 232, 208, 255);
+        cuadro.SetActive(false);
+
+        video = new GameObject("Video", typeof(RectTransform));
+        video.transform.SetParent(transform, false);
+        var rectVideo = (RectTransform)video.transform;
+        rectVideo.anchorMin = rectVideo.anchorMax = new Vector2(0.5f, 0.5f);
+        rectVideo.sizeDelta = new Vector2(300f, 170f);
+        rectVideo.anchoredPosition = new Vector2(0f, 20f);
+        imagenVideo = video.AddComponent<Image>();
+        imagenVideo.color = new Color32(20, 28, 32, 255);
+
+        var fondoBarra = new GameObject("FondoBarra", typeof(RectTransform));
+        fondoBarra.transform.SetParent(video.transform, false);
+        var rectFondo = (RectTransform)fondoBarra.transform;
+        rectFondo.anchorMin = new Vector2(0f, 0f);
+        rectFondo.anchorMax = new Vector2(1f, 0f);
+        rectFondo.pivot = new Vector2(0.5f, 0f);
+        rectFondo.sizeDelta = new Vector2(-20f, 6f);
+        rectFondo.anchoredPosition = new Vector2(0f, 8f);
+        fondoBarra.AddComponent<Image>().color = new Color32(70, 70, 76, 255);
+
+        var barra = new GameObject("Barra", typeof(RectTransform));
+        barra.transform.SetParent(fondoBarra.transform, false);
+        var rectBarra = (RectTransform)barra.transform;
+        rectBarra.anchorMin = Vector2.zero;
+        rectBarra.anchorMax = Vector2.one;
+        rectBarra.offsetMin = rectBarra.offsetMax = Vector2.zero;
+        barraVideo = barra.AddComponent<Image>();
+        barraVideo.color = new Color32(214, 60, 52, 255);
+        barraVideo.sprite = Sprite.Create(Texture2D.whiteTexture, new Rect(0, 0, 4, 4), Vector2.zero);
+        barraVideo.type = Image.Type.Filled;
+        barraVideo.fillMethod = Image.FillMethod.Horizontal;
+        video.SetActive(false);
+
+        fundido = Capa("Fundido", null);
+        fundido.color = new Color(0f, 0f, 0f, 0f);
+    }
+
+    private Image Capa(string nombre, Sprite sprite)
+    {
+        var objeto = new GameObject(nombre, typeof(RectTransform));
+        objeto.transform.SetParent(transform, false);
+        var rect = (RectTransform)objeto.transform;
+        rect.anchorMin = Vector2.zero;
+        rect.anchorMax = Vector2.one;
+        rect.offsetMin = rect.offsetMax = Vector2.zero;
+        var imagen = objeto.AddComponent<Image>();
+        imagen.sprite = sprite;
+        imagen.raycastTarget = false;
+        return imagen;
+    }
+
+    private static void SetAlfa(Image imagen, float alfa)
+    {
+        var color = imagen.color;
+        color.a = alfa;
+        imagen.color = color;
+    }
+
+    // Oscurece hacia los bordes sin dibujar un círculo marcado
+    private static Sprite Vineta(Color color, float centro)
+    {
+        const int ancho = 128;
+        const int alto = 72;
+        var textura = new Texture2D(ancho, alto, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp };
+        for (var y = 0; y < alto; y++)
+        {
+            for (var x = 0; x < ancho; x++)
+            {
+                var dx = (x + 0.5f) / ancho * 2f - 1f;
+                var dy = (y + 0.5f) / alto * 2f - 1f;
+                var distancia = Mathf.Sqrt(dx * dx + dy * dy) / 1.414f;
+                var alfa = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(centro, 1f, distancia));
+                textura.SetPixel(x, y, new Color(color.r, color.g, color.b, alfa));
+            }
+        }
+
+        textura.Apply();
+        return Sprite.Create(textura, new Rect(0, 0, ancho, alto), new Vector2(0.5f, 0.5f));
+    }
+
+    // Manchas rojas irregulares que entran desde los bordes
+    private static Sprite Manchas()
+    {
+        const int ancho = 160;
+        const int alto = 90;
+        var textura = new Texture2D(ancho, alto, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp };
+        for (var y = 0; y < alto; y++)
+        {
+            for (var x = 0; x < ancho; x++)
+            {
+                var dx = (x + 0.5f) / ancho * 2f - 1f;
+                var dy = (y + 0.5f) / alto * 2f - 1f;
+                var borde = Mathf.Max(Mathf.Abs(dx), Mathf.Abs(dy));
+                var ruido = Mathf.PerlinNoise(x * 0.09f + 3.1f, y * 0.11f + 7.7f);
+                var valor = borde * 0.75f + ruido * 0.45f;
+                var alfa = Mathf.InverseLerp(0.62f, 0.95f, valor);
+                alfa = Mathf.Round(alfa * 4f) / 4f;
+                textura.SetPixel(x, y, new Color(0.45f, 0.02f, 0.03f, alfa * 0.92f));
+            }
+        }
+
+        textura.filterMode = FilterMode.Point;
+        textura.Apply();
+        return Sprite.Create(textura, new Rect(0, 0, ancho, alto), new Vector2(0.5f, 0.5f));
+    }
+
+    public void SetManchas(float intensidad)
+    {
+        SetAlfa(manchas, Mathf.Clamp01(intensidad));
+    }
+
+    public void SetPenumbra(float intensidad)
+    {
+        SetAlfa(penumbra, Mathf.Clamp01(intensidad));
+    }
+
+    public void MostrarCuadro(bool visible)
+    {
+        cuadro.SetActive(visible);
+    }
+
+    public void MostrarVideo(bool visible)
+    {
+        video.SetActive(visible);
+        barraVideo.fillAmount = 0f;
+    }
+
+    public void SetAvanceVideo(float avance)
+    {
+        barraVideo.fillAmount = Mathf.Clamp01(avance);
+
+        // Interferencia provisional mientras llega el video definitivo
+        var ruido = Mathf.PerlinNoise(Time.time * 9f, 0.3f);
+        imagenVideo.color = Color.Lerp(new Color32(20, 28, 32, 255), new Color32(92, 40, 46, 255), ruido * avance);
+    }
+
+    public Coroutine Fundir(float alfa, float duracion)
+    {
+        if (rutinaFundido != null)
+            StopCoroutine(rutinaFundido);
+
+        rutinaFundido = StartCoroutine(RutinaFundido(alfa, duracion));
+        return rutinaFundido;
+    }
+
+    private IEnumerator RutinaFundido(float destino, float duracion)
+    {
+        var inicio = fundido.color.a;
+        for (var t = 0f; t < duracion; t += Time.unscaledDeltaTime)
+        {
+            SetAlfa(fundido, Mathf.Lerp(inicio, destino, t / duracion));
+            yield return null;
+        }
+
+        SetAlfa(fundido, destino);
+        rutinaFundido = null;
+    }
+
+    public void CargarEscena(string escena, string entrada)
+    {
+        if (!cargando)
+            StartCoroutine(RutinaCarga(escena, entrada, false));
+    }
+
+    public void ReiniciarDesdeControl()
+    {
+        if (!cargando)
+            StartCoroutine(RutinaCarga(EstadoJuego.EscenaControl, EstadoJuego.EntradaControl, true));
+    }
+
+    private IEnumerator RutinaCarga(string escena, string entrada, bool restaurar)
+    {
+        cargando = true;
+        yield return Fundir(1f, 0.6f);
+
+        if (restaurar)
+        {
+            EstadoJuego.RestaurarPunto();
+            SetManchas(0f);
+        }
+
+        // Sin punto de control todavía: repite la escena actual
+        if (string.IsNullOrEmpty(escena))
+            escena = SceneManager.GetActiveScene().name;
+
+        entradaPendiente = entrada;
+        MostrarCuadro(false);
+        MostrarVideo(false);
+        SceneManager.LoadScene(escena);
+        yield return null;
+        cargando = false;
+        Fundir(0f, 0.6f);
+    }
+
+    private static void AlCargarEscena(Scene escena, LoadSceneMode modo)
+    {
+        if (string.IsNullOrEmpty(entradaPendiente))
+            return;
+
+        var punto = PuntoEntrada.Buscar(entradaPendiente);
+        var jugador = FindAnyObjectByType<PlayerController>();
+        entradaPendiente = null;
+
+        if (punto != null && jugador != null)
+            jugador.Colocar(punto.transform.position);
+    }
+}

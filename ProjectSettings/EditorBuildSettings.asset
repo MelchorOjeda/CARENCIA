@@ -4,6 +4,27 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Menu/MEN_Principal.unity
+    guid: f621ed031d19b574c98993d0dda1395a
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Prologo/PRO_Casa.unity
+    guid: 51d962a70ff6585499921018003e1e39
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Nivel01/N1_Bano.unity
+    guid: 79277e8678acd1b448a8c91b81c51f62
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Nivel01/N1_Pasillo.unity
+    guid: 70fbdc05543e35f4cab9c3431a9be1ec
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Nivel02/N2_Casa.unity
+    guid: 1bd707b20cf30354290aa61c33056bed
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Nivel02/R2_Casa.unity
+    guid: cd7149802bf3fa04ab9d9879c74d111c
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
+    guid: 54caee05ac7f36f4db2151f0dfbf031e
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
