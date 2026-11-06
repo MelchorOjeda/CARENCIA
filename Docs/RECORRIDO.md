@@ -12,17 +12,18 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 | Correr | Shift |
 | Cruzar puertas y cerrar vistas o cuadros | E |
 | Usar objetos que se iluminan | Clic, con Elaki cerca |
+| Ver el interior del refrigerador | E junto al refrigerador, en la casa real; E otra vez para cerrar |
 
 ## Escenas
 
 | Escena | Contenido | Cómo se sale |
 |---|---|---|
 | `MEN_Principal` | Nueva partida, Continuar y Salir | Nueva partida |
-| `PRO_Casa` | Despertar, desayuno, mareo y baño real. Clic en el espejo abre la cajonera; al cerrarla aparece la silueta y luego el portal | Clic de nuevo en el espejo |
+| `PRO_Casa` | Elaki despierta en su habitación y explora la casa libremente. Al acercarse a la silla del comedor aparece la E, y con ella empieza el desayuno con los papás, seguido del mareo, y aparece en el baño. Desde entonces, clic en el espejo abre la cajonera; al cerrarla aparece la silueta y luego el portal | Clic de nuevo en el espejo |
 | `N1_Bano` | El mismo baño en blanco y frío, para la sensación de valle inquietante, con la cajonera en el mismo tono | E en la puerta |
 | `N1_Pasillo` | Pasillo blanco de 30 tramos (240 celdas) con solo 3 puertas muy separadas (tramos 8, 19 y 30); lo demás es pared con cuadros en blanco. Al final, puerta bloqueada y ventana cubierta | Clic en el portal, que aparece cerca del final |
 | `N2_Casa` | Fotos, ventana, platos y televisión. La computadora inicia el video y la persecución de la criatura; termina en el pasillo. Al fondo, Margarita se transforma y persigue a Elaki | Llegar a la marca junto a la puerta de la entrada |
-| `R2_Casa` | Segundo despertar y desayuno. Periódico (obligatorio), altar del perro sobre la mesa junto al armario, y armario. Cortina en estado 2 | Clic en la cortina, después de leer el periódico |
+| `R2_Casa` | Segundo despertar y desayuno. Periódico (obligatorio), altar del perro sobre la mesa junto al armario, y armario. Cortina en estado 2 | Acercarse a la bañera, después de leer el periódico |
 | `N3_Casa` | Casa orgánica: televisión, agua, ojos, calendario, figura en la ventana y puerta del corazón | Acercarse a Margarita en la bañera; vuelve al menú |
 
 ## Reglas

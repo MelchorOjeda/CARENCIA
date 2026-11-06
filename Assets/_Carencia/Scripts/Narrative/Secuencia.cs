@@ -30,6 +30,7 @@ public class Secuencia : MonoBehaviour
         CuadroEnBlanco,
         CargarEscena,
         AbrirGabinete,
+        VerImagen,
     }
 
     [Serializable]
@@ -173,6 +174,9 @@ public class Secuencia : MonoBehaviour
                 var partes = paso.texto.Split('|');
                 pantalla.CargarEscena(partes[0], partes.Length > 1 ? partes[1] : null);
                 break;
+            case Tipo.VerImagen:
+                yield return VerImagen((Sprite)paso.referencia);
+                break;
             case Tipo.AbrirGabinete:
                 ((VistaGabinete)paso.referencia).Abrir();
                 break;
@@ -216,6 +220,22 @@ public class Secuencia : MonoBehaviour
         monitor.SetAvance(1f);
         yield return new WaitForSeconds(0.3f);
         monitor.gameObject.SetActive(false);
+    }
+
+    // Vista fija de un objeto; se cierra con E
+    private IEnumerator VerImagen(Sprite sprite)
+    {
+        var pantalla = PantallaJuego.Instancia;
+        Bloquear(true);
+        pantalla.MostrarImagen(sprite);
+        yield return null;
+
+        while (!accionInteractuar.WasPressedThisFrame())
+            yield return null;
+
+        pantalla.MostrarImagen(null);
+        yield return null;
+        Bloquear(false);
     }
 
     // Queda abierto hasta pulsar E: el equipo de diálogos pondrá aquí sus textos
