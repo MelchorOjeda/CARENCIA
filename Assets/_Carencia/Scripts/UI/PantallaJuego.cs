@@ -14,6 +14,8 @@ public class PantallaJuego : MonoBehaviour
     private Image manchas;
     private Image penumbra;
     private GameObject cuadro;
+    private GameObject vistaImagen;
+    private Image imagenVista;
     private GameObject video;
     private Image barraVideo;
     private Image imagenVideo;
@@ -90,6 +92,20 @@ public class PantallaJuego : MonoBehaviour
         rectPapel.offsetMax = new Vector2(-6f, -6f);
         papel.AddComponent<Image>().color = new Color32(244, 232, 208, 255);
         cuadro.SetActive(false);
+
+        // Vista fija de un objeto, por ejemplo el interior del refrigerador
+        vistaImagen = new GameObject("VistaImagen", typeof(RectTransform));
+        vistaImagen.transform.SetParent(transform, false);
+        var rectVista = (RectTransform)vistaImagen.transform;
+        rectVista.anchorMin = Vector2.zero;
+        rectVista.anchorMax = Vector2.one;
+        rectVista.offsetMin = rectVista.offsetMax = Vector2.zero;
+        vistaImagen.AddComponent<Image>().color = new Color(0.05f, 0.04f, 0.05f, 0.92f);
+        var objetoImagen = new GameObject("Imagen", typeof(RectTransform));
+        objetoImagen.transform.SetParent(vistaImagen.transform, false);
+        imagenVista = objetoImagen.AddComponent<Image>();
+        imagenVista.raycastTarget = false;
+        vistaImagen.SetActive(false);
 
         video = new GameObject("Video", typeof(RectTransform));
         video.transform.SetParent(transform, false);
@@ -206,6 +222,19 @@ public class PantallaJuego : MonoBehaviour
         SetAlfa(penumbra, Mathf.Clamp01(intensidad));
     }
 
+    public void MostrarImagen(Sprite sprite)
+    {
+        vistaImagen.SetActive(sprite != null);
+        if (sprite == null)
+            return;
+
+        imagenVista.sprite = sprite;
+        var rect = (RectTransform)imagenVista.transform;
+        rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0.5f);
+        rect.sizeDelta = new Vector2(sprite.rect.width, sprite.rect.height);
+        rect.anchoredPosition = Vector2.zero;
+    }
+
     public void MostrarCuadro(bool visible)
     {
         cuadro.SetActive(visible);
@@ -278,6 +307,7 @@ public class PantallaJuego : MonoBehaviour
         entradaPendiente = entrada;
         MostrarCuadro(false);
         MostrarVideo(false);
+        MostrarImagen(null);
         SceneManager.LoadScene(escena);
         yield return null;
         cargando = false;
