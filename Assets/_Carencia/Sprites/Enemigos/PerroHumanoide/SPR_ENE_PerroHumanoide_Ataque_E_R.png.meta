@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: cfb7d4eed3848d644884c763a3214530
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3060111235415438894
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_0
+  - first:
+      213: 7018003707309804290
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_1
+  - first:
+      213: 7798431608480124711
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_2
+  - first:
+      213: 5990447226034318079
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_3
+  - first:
+      213: 8749795997617402988
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_4
+  - first:
+      213: -9013965560607768635
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_5
+  - first:
+      213: 7303826915609777351
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_6
+  - first:
+      213: 124483131660807660
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_7
+  - first:
+      213: 4201139234443245337
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_8
+  - first:
+      213: 5898844165854965099
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_9
+  - first:
+      213: 2076169092672506671
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_10
+  - first:
+      213: -7954146809078801867
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_11
+  - first:
+      213: -7319753522047150708
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_12
+  - first:
+      213: 4948754682485892222
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_13
+  - first:
+      213: 8736025452838533263
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_14
+  - first:
+      213: -1000007859299836069
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_15
+  - first:
+      213: -321231711471610487
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_16
+  - first:
+      213: -6869615510029879351
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_17
+  - first:
+      213: -6516602095075389638
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_18
+  - first:
+      213: 8129855324318679770
+    second: SPR_ENE_PerroHumanoide_Ataque_E_R_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da59f81a6754f344a8a826229da495cb
+      internalID: -967948868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_01
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2d9f4e058218f541b5d2cf44e361852
+      internalID: 2036318250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_02
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5277c7e2c681244a51ade340eb562e
+      internalID: 255330595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_03
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72ae4c217ecfa64a9bf2495cada9bbb
+      internalID: 1172782150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_04
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc0ce3947dd9874fabb3af8348bea18
+      internalID: 1472758732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_05
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ecab31c776620c4a8ee507369b4dc51
+      internalID: -1920960175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_06
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6192389b07a8e644ca0bb46cb5347004
+      internalID: 1485992873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_07
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad0da04c05f44494890b11d64c48d4ec
+      internalID: -1848329442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_08
+      rect:
+        serializedVersion: 2
+        x: 2944
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27062275e1ab17e4e8e540d618603c5f
+      internalID: -217182141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_09
+      rect:
+        serializedVersion: 2
+        x: 3312
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 837fd53222b6ea54a8af9dd0c6deb8de
+      internalID: -259906380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_10
+      rect:
+        serializedVersion: 2
+        x: 3680
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ef65ffde1afba04caa6e53e28998c11
+      internalID: 2076169092672506671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_11
+      rect:
+        serializedVersion: 2
+        x: 4048
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2a2702eaa4f1b4fbd38f8f652c92e2
+      internalID: -7954146809078801867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_12
+      rect:
+        serializedVersion: 2
+        x: 4416
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c84d45a762306c4e919132c758668f6
+      internalID: -7319753522047150708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_13
+      rect:
+        serializedVersion: 2
+        x: 4784
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e657787f58a044642a1d78b697ae4b28
+      internalID: 4948754682485892222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_14
+      rect:
+        serializedVersion: 2
+        x: 5152
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae52fc239b74f6b4b8bcb7e74bc5fed8
+      internalID: 8736025452838533263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_15
+      rect:
+        serializedVersion: 2
+        x: 5520
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9461562de066244c9d6bd8007883e9a
+      internalID: -1000007859299836069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_16
+      rect:
+        serializedVersion: 2
+        x: 5888
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a529be234297d48a73afced23decfa
+      internalID: -321231711471610487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_17
+      rect:
+        serializedVersion: 2
+        x: 6256
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde8c248345690045be80e3104fcbe5f
+      internalID: -6869615510029879351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_18
+      rect:
+        serializedVersion: 2
+        x: 6624
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ccf411592b43bb4fb9e529a20856b9a
+      internalID: -6516602095075389638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Ataque_E_R_19
+      rect:
+        serializedVersion: 2
+        x: 6992
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15a37bd52e22c844599cecd41e937876
+      internalID: 8129855324318679770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: df46a7ba14cf65d43bcd34741575eab2
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_ENE_PerroHumanoide_Ataque_E_R_00: -967948868
+      SPR_ENE_PerroHumanoide_Ataque_E_R_01: 2036318250
+      SPR_ENE_PerroHumanoide_Ataque_E_R_02: 255330595
+      SPR_ENE_PerroHumanoide_Ataque_E_R_03: 1172782150
+      SPR_ENE_PerroHumanoide_Ataque_E_R_04: 1472758732
+      SPR_ENE_PerroHumanoide_Ataque_E_R_05: -1920960175
+      SPR_ENE_PerroHumanoide_Ataque_E_R_06: 1485992873
+      SPR_ENE_PerroHumanoide_Ataque_E_R_07: -1848329442
+      SPR_ENE_PerroHumanoide_Ataque_E_R_08: -217182141
+      SPR_ENE_PerroHumanoide_Ataque_E_R_09: -259906380
+      SPR_ENE_PerroHumanoide_Ataque_E_R_10: 2076169092672506671
+      SPR_ENE_PerroHumanoide_Ataque_E_R_11: -7954146809078801867
+      SPR_ENE_PerroHumanoide_Ataque_E_R_12: -7319753522047150708
+      SPR_ENE_PerroHumanoide_Ataque_E_R_13: 4948754682485892222
+      SPR_ENE_PerroHumanoide_Ataque_E_R_14: 8736025452838533263
+      SPR_ENE_PerroHumanoide_Ataque_E_R_15: -1000007859299836069
+      SPR_ENE_PerroHumanoide_Ataque_E_R_16: -321231711471610487
+      SPR_ENE_PerroHumanoide_Ataque_E_R_17: -6869615510029879351
+      SPR_ENE_PerroHumanoide_Ataque_E_R_18: -6516602095075389638
+      SPR_ENE_PerroHumanoide_Ataque_E_R_19: 8129855324318679770
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
