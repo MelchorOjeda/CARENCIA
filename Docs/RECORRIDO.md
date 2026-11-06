@@ -12,6 +12,7 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 | Correr | Shift |
 | Cruzar puertas y cerrar vistas o cuadros | E |
 | Usar objetos que se iluminan | Clic, con Elaki cerca |
+| Ver el interior del refrigerador | E junto al refrigerador, en la casa real; E otra vez para cerrar |
 
 ## Escenas
 
