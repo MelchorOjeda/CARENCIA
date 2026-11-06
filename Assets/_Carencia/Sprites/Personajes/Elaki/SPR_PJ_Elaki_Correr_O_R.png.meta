@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: b8946db022ff4b346b59fbf975a7f5f7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6760621024915161143
+    second: SPR_PJ_Elaki_Correr_O_R_0
+  - first:
+      213: 1584035348195183913
+    second: SPR_PJ_Elaki_Correr_O_R_1
+  - first:
+      213: -7007178547638942512
+    second: SPR_PJ_Elaki_Correr_O_R_2
+  - first:
+      213: 3922759294554075732
+    second: SPR_PJ_Elaki_Correr_O_R_3
+  - first:
+      213: -5338992451515638566
+    second: SPR_PJ_Elaki_Correr_O_R_4
+  - first:
+      213: -1088567031508779126
+    second: SPR_PJ_Elaki_Correr_O_R_5
+  - first:
+      213: 8697388503192055502
+    second: SPR_PJ_Elaki_Correr_O_R_6
+  - first:
+      213: -2650313501706346939
+    second: SPR_PJ_Elaki_Correr_O_R_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eb9e9dcc12cd264eb39c7237bca8d36
+      internalID: -2098571801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_01
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b00d82b87dc5b34fb875d702655f38d
+      internalID: 291848206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_02
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1660ca623dc23924dbe95581d310678f
+      internalID: 1937029346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_03
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6c25e28b4506ed439923aa258204f64
+      internalID: -1728955189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_04
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ba08f7617d73334f8bb840dab2c3f89
+      internalID: -898684214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_05
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c295555a9ce2e8949b360d2fc388150b
+      internalID: -1452291948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_06
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d2e55bca717ab4e9dfcb1fa88a5bed
+      internalID: -1663315447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Correr_O_R_07
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4b66e9c05566c3488f13e7aee856e4a
+      internalID: -1164324246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 686b52d97fbd435478edf12f4b59735c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_PJ_Elaki_Correr_O_R_00: -2098571801
+      SPR_PJ_Elaki_Correr_O_R_01: 291848206
+      SPR_PJ_Elaki_Correr_O_R_02: 1937029346
+      SPR_PJ_Elaki_Correr_O_R_03: -1728955189
+      SPR_PJ_Elaki_Correr_O_R_04: -898684214
+      SPR_PJ_Elaki_Correr_O_R_05: -1452291948
+      SPR_PJ_Elaki_Correr_O_R_06: -1663315447
+      SPR_PJ_Elaki_Correr_O_R_07: -1164324246
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

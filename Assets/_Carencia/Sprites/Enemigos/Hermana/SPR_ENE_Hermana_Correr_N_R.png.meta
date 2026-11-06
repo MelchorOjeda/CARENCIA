@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: 6d5888f4ff4d0224ea95ed62ce6f3a25
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8432045301782990646
+    second: SPR_ENE_Hermana_Correr_N_R_0
+  - first:
+      213: -7562664107023053669
+    second: SPR_ENE_Hermana_Correr_N_R_1
+  - first:
+      213: -2204264907401890362
+    second: SPR_ENE_Hermana_Correr_N_R_2
+  - first:
+      213: 4275770993148657185
+    second: SPR_ENE_Hermana_Correr_N_R_3
+  - first:
+      213: -3055151785513541005
+    second: SPR_ENE_Hermana_Correr_N_R_4
+  - first:
+      213: -4206660294880898360
+    second: SPR_ENE_Hermana_Correr_N_R_5
+  - first:
+      213: 998793298934605410
+    second: SPR_ENE_Hermana_Correr_N_R_6
+  - first:
+      213: -5400853074410180849
+    second: SPR_ENE_Hermana_Correr_N_R_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4084d210dfa9fcb4190cd2d3a4bae35f
+      internalID: -1000751714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_01
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24685acbd61cda94ab05f5ed0d34ce57
+      internalID: 117624941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_02
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59e625234edf3a24b8474ad8841d4b62
+      internalID: 16732538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_03
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7097ce9f7c6cb9449e6dfb987bdf861
+      internalID: 1520644156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_04
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e3c7e2057948434b96e21f76c9229c7
+      internalID: -455556401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_05
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5f6bcd0e84155478029bbd6f1eb256
+      internalID: 1384407568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_06
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85a2d95870f9c84db1f9f6791635436
+      internalID: -1524841415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_Hermana_Correr_N_R_07
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ed0cc2edc9c22f45b6906f20447eb38
+      internalID: -1232251317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: eb895977b6ed9594295cc6a3944e505f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_ENE_Hermana_Correr_N_R_00: -1000751714
+      SPR_ENE_Hermana_Correr_N_R_01: 117624941
+      SPR_ENE_Hermana_Correr_N_R_02: 16732538
+      SPR_ENE_Hermana_Correr_N_R_03: 1520644156
+      SPR_ENE_Hermana_Correr_N_R_04: -455556401
+      SPR_ENE_Hermana_Correr_N_R_05: 1384407568
+      SPR_ENE_Hermana_Correr_N_R_06: -1524841415
+      SPR_ENE_Hermana_Correr_N_R_07: -1232251317
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

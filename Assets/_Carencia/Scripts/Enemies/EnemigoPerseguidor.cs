@@ -20,7 +20,12 @@ public class EnemigoPerseguidor : MonoBehaviour
     [SerializeField] private float esperaTrasGolpe = 1.1f;
     [SerializeField] private float cadaCuantoBusca = 0.25f;
 
+    private static readonly int DirX = Animator.StringToHash("DirX");
+    private static readonly int DirY = Animator.StringToHash("DirY");
+    private static readonly int Ataque = Animator.StringToHash("Ataque");
+
     private readonly List<Vector3> ruta = new List<Vector3>();
+    private Animator animator;
     private Transform objetivo;
     private SaludJugador salud;
     private bool persiguiendo;
@@ -36,6 +41,7 @@ public class EnemigoPerseguidor : MonoBehaviour
 
     public void Iniciar()
     {
+        animator = GetComponentInChildren<Animator>();
         var jugador = FindAnyObjectByType<PlayerController>();
         objetivo = jugador.transform;
         salud = jugador.GetComponent<SaludJugador>();
@@ -67,6 +73,10 @@ public class EnemigoPerseguidor : MonoBehaviour
         if (distancia <= alcance && Time.time >= proximoGolpe)
         {
             proximoGolpe = Time.time + esperaTrasGolpe;
+            Mirar(objetivo.position - transform.position);
+            if (animator != null)
+                animator.SetTrigger(Ataque);
+
             salud.Golpear();
         }
     }
@@ -79,10 +89,23 @@ public class EnemigoPerseguidor : MonoBehaviour
 
         var destino = ruta.Count > 0 ? ruta[0] : objetivo.position;
         destino.z = transform.position.z;
+        var antes = transform.position;
         transform.position = Vector3.MoveTowards(transform.position, destino, velocidad * Time.deltaTime);
+        Mirar(transform.position - antes);
 
         if (ruta.Count > 0 && (transform.position - destino).sqrMagnitude < 0.0025f)
             ruta.RemoveAt(0);
+    }
+
+    // La animación mira hacia donde se mueve, en las 8 direcciones de la pantalla
+    private void Mirar(Vector3 movimiento)
+    {
+        if (animator == null || movimiento.sqrMagnitude < 0.000001f)
+            return;
+
+        var direccion = ((Vector2)movimiento).normalized;
+        animator.SetFloat(DirX, direccion.x);
+        animator.SetFloat(DirY, direccion.y);
     }
 
     // Búsqueda por anchura sobre la rejilla: respeta paredes y muebles

@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: d82df57f6f3da6744879bbd3dc2b50cb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2417350235605361018
+    second: SPR_PJ_Elaki_Caminar_SE_R_0
+  - first:
+      213: -602084937674729539
+    second: SPR_PJ_Elaki_Caminar_SE_R_1
+  - first:
+      213: -6122721747787122956
+    second: SPR_PJ_Elaki_Caminar_SE_R_2
+  - first:
+      213: 596520593997175485
+    second: SPR_PJ_Elaki_Caminar_SE_R_3
+  - first:
+      213: 6857456533278536384
+    second: SPR_PJ_Elaki_Caminar_SE_R_4
+  - first:
+      213: -4833339324966860904
+    second: SPR_PJ_Elaki_Caminar_SE_R_5
+  - first:
+      213: 8674818458968154861
+    second: SPR_PJ_Elaki_Caminar_SE_R_6
+  - first:
+      213: -9088554913497944937
+    second: SPR_PJ_Elaki_Caminar_SE_R_7
+  - first:
+      213: 4383141108079206472
+    second: SPR_PJ_Elaki_Caminar_SE_R_8
+  - first:
+      213: -3882019933497766645
+    second: SPR_PJ_Elaki_Caminar_SE_R_9
+  - first:
+      213: -4113693334698877391
+    second: SPR_PJ_Elaki_Caminar_SE_R_10
+  - first:
+      213: 6225495906985144784
+    second: SPR_PJ_Elaki_Caminar_SE_R_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0176b75d7844d334b99f13a0c60890da
+      internalID: 800708060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_01
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4b34196caf90bc4f9fb7a9357141052
+      internalID: -1964559303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_02
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: accec3c628556c144bed26042aab5af9
+      internalID: -1399675834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_03
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d80c52c6806383438da1b6c488fe29c
+      internalID: -252180571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_04
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b82e98d43fffb4695ec8477286d143
+      internalID: 1904315070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_05
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1647eb17849be0d4fb9a4131141fcee8
+      internalID: 600947719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_06
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a0c03ad43f1e047bfa7d8a7ca85cec
+      internalID: -12208201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_07
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a02d534d59f084bb17d88c78773afe
+      internalID: -1988820953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_08
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ef8444e854a3894f88efd66fcf3a137
+      internalID: 497720547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_09
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286a7cb77a29aff41b230d160386538d
+      internalID: 1412828984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_10
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abad2c2bfd0a6fd43b5d21082c243f8e
+      internalID: -4113693334698877391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Caminar_SE_R_11
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d30ad61d3f24a9489b2aa7e8024d023
+      internalID: 6225495906985144784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5067aed94c7b98b428a7eb58cd19d42d
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_PJ_Elaki_Caminar_SE_R_00: 800708060
+      SPR_PJ_Elaki_Caminar_SE_R_01: -1964559303
+      SPR_PJ_Elaki_Caminar_SE_R_02: -1399675834
+      SPR_PJ_Elaki_Caminar_SE_R_03: -252180571
+      SPR_PJ_Elaki_Caminar_SE_R_04: 1904315070
+      SPR_PJ_Elaki_Caminar_SE_R_05: 600947719
+      SPR_PJ_Elaki_Caminar_SE_R_06: -12208201
+      SPR_PJ_Elaki_Caminar_SE_R_07: -1988820953
+      SPR_PJ_Elaki_Caminar_SE_R_08: 497720547
+      SPR_PJ_Elaki_Caminar_SE_R_09: 1412828984
+      SPR_PJ_Elaki_Caminar_SE_R_10: -4113693334698877391
+      SPR_PJ_Elaki_Caminar_SE_R_11: 6225495906985144784
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

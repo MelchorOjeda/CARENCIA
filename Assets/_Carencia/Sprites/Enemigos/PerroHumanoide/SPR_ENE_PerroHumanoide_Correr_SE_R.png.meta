@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: f4f738e54e721164983ddd3a3c5e5419
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2885226562271192820
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_0
+  - first:
+      213: 5667487329663248934
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_1
+  - first:
+      213: -5288571867050031339
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_2
+  - first:
+      213: -5894127450609641941
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_3
+  - first:
+      213: 1305577336901196319
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_4
+  - first:
+      213: -6920142516017708038
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_5
+  - first:
+      213: -8478999347646006085
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_6
+  - first:
+      213: -2741025345485414481
+    second: SPR_ENE_PerroHumanoide_Correr_SE_R_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88c0fbf58126eb145b89b39f5aa7a71e
+      internalID: -1736127260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_01
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38cbab550e496c04f89135d9cad18aed
+      internalID: 619553960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_02
+      rect:
+        serializedVersion: 2
+        x: 736
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3685e927a1606940bd6909f44d0f5cd
+      internalID: 1515743703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_03
+      rect:
+        serializedVersion: 2
+        x: 1104
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551877c8e6614284cb92499a7359f9f9
+      internalID: 1052911092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_04
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99366cc4bacd63e46a33a34856c5bd68
+      internalID: -286519659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_05
+      rect:
+        serializedVersion: 2
+        x: 1840
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02ef9a58e7e0a84fa93593c212286e8
+      internalID: 474533522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_06
+      rect:
+        serializedVersion: 2
+        x: 2208
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a424d93b623b3054fb8f2395f8ac2588
+      internalID: 1066939424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_ENE_PerroHumanoide_Correr_SE_R_07
+      rect:
+        serializedVersion: 2
+        x: 2576
+        y: 0
+        width: 368
+        height: 368
+      alignment: 9
+      pivot: {x: 0.5, y: 0.16}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81c62d8c44426b341a6ae2532ff8779c
+      internalID: 816833915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b1de9a5e25dd5ff48b461935c18c5fbc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_ENE_PerroHumanoide_Correr_SE_R_00: -1736127260
+      SPR_ENE_PerroHumanoide_Correr_SE_R_01: 619553960
+      SPR_ENE_PerroHumanoide_Correr_SE_R_02: 1515743703
+      SPR_ENE_PerroHumanoide_Correr_SE_R_03: 1052911092
+      SPR_ENE_PerroHumanoide_Correr_SE_R_04: -286519659
+      SPR_ENE_PerroHumanoide_Correr_SE_R_05: 474533522
+      SPR_ENE_PerroHumanoide_Correr_SE_R_06: 1066939424
+      SPR_ENE_PerroHumanoide_Correr_SE_R_07: 816833915
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

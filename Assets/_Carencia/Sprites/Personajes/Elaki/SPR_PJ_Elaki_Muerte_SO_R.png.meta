@@ -1,0 +1,652 @@
+fileFormatVersion: 2
+guid: f1791affdf6545042ab435b8a5130618
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3542021895099342251
+    second: SPR_PJ_Elaki_Muerte_SO_R_0
+  - first:
+      213: 7980867183301011054
+    second: SPR_PJ_Elaki_Muerte_SO_R_1
+  - first:
+      213: -7587850178537323872
+    second: SPR_PJ_Elaki_Muerte_SO_R_2
+  - first:
+      213: 4388828380442674019
+    second: SPR_PJ_Elaki_Muerte_SO_R_3
+  - first:
+      213: -4991392805393548962
+    second: SPR_PJ_Elaki_Muerte_SO_R_4
+  - first:
+      213: -1652331500084756027
+    second: SPR_PJ_Elaki_Muerte_SO_R_5
+  - first:
+      213: -5274977423785751801
+    second: SPR_PJ_Elaki_Muerte_SO_R_6
+  - first:
+      213: -8806343047488831943
+    second: SPR_PJ_Elaki_Muerte_SO_R_7
+  - first:
+      213: -5475325651445890331
+    second: SPR_PJ_Elaki_Muerte_SO_R_8
+  - first:
+      213: 8934184770109004549
+    second: SPR_PJ_Elaki_Muerte_SO_R_9
+  - first:
+      213: 3997586018715626443
+    second: SPR_PJ_Elaki_Muerte_SO_R_10
+  - first:
+      213: 8409794376649176101
+    second: SPR_PJ_Elaki_Muerte_SO_R_11
+  - first:
+      213: -6457097535664011452
+    second: SPR_PJ_Elaki_Muerte_SO_R_12
+  - first:
+      213: 3589147029509257706
+    second: SPR_PJ_Elaki_Muerte_SO_R_13
+  - first:
+      213: 6075935806938269271
+    second: SPR_PJ_Elaki_Muerte_SO_R_14
+  - first:
+      213: -7509832883120179949
+    second: SPR_PJ_Elaki_Muerte_SO_R_15
+  - first:
+      213: 9096421792036417672
+    second: SPR_PJ_Elaki_Muerte_SO_R_16
+  - first:
+      213: -3308450056555418275
+    second: SPR_PJ_Elaki_Muerte_SO_R_17
+  - first:
+      213: -7345757840925430040
+    second: SPR_PJ_Elaki_Muerte_SO_R_18
+  - first:
+      213: 247767804334092026
+    second: SPR_PJ_Elaki_Muerte_SO_R_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_00
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dad05d9f4528054458bc5a4a47a49a25
+      internalID: -385841608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_01
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad1cbf93f72b3442a6a5e065dc9c4d8
+      internalID: 1904891977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_02
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3224f8aca98f3f2489cd3dc928aa20a9
+      internalID: -1440536657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_03
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec8de10d07a0834481d9b849e0cb0c1
+      internalID: 1890033654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_04
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd2d8817dc2722c49b3e6ca09ef53f3c
+      internalID: -2070754864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_05
+      rect:
+        serializedVersion: 2
+        x: 1575
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8da32994a3af6ac40a45572041200d59
+      internalID: -1021117146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_06
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7451e8b16ddb71545a22e1737229b6cd
+      internalID: 1381020923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_07
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b035609381fc04948abcefce8ceeebfe
+      internalID: -901325969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_08
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 991808e2dc75ff247b5413feb74add2e
+      internalID: 188415272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_09
+      rect:
+        serializedVersion: 2
+        x: 2835
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 787cb3ed1f1b7354881302127e6f64a5
+      internalID: -612562747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_10
+      rect:
+        serializedVersion: 2
+        x: 3150
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bd35e27d09c76c44af7cbab2238f2f1
+      internalID: 3997586018715626443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_11
+      rect:
+        serializedVersion: 2
+        x: 3465
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c9dc7c87d53f954ebe3e43c8e465989
+      internalID: 8409794376649176101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_12
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cd95cd5bf6a94d4fb9f5a4a8803be88
+      internalID: -6457097535664011452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_13
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b15eb46943e3f447b1b1529eae8d033
+      internalID: 3589147029509257706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_14
+      rect:
+        serializedVersion: 2
+        x: 4410
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8f44bef69ea5a0478a4430ec53059c4
+      internalID: 6075935806938269271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_15
+      rect:
+        serializedVersion: 2
+        x: 4725
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e172af6e765ef70479749acdf0da02a9
+      internalID: -7509832883120179949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_16
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd459ffe6b245cf48a708796d4d34193
+      internalID: 9096421792036417672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_17
+      rect:
+        serializedVersion: 2
+        x: 5355
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c103f64b8171a9489a5a1ccce7b0474
+      internalID: -3308450056555418275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_18
+      rect:
+        serializedVersion: 2
+        x: 5670
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8e4fb0d232a1524daaa7d9675df8f96
+      internalID: -7345757840925430040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SPR_PJ_Elaki_Muerte_SO_R_19
+      rect:
+        serializedVersion: 2
+        x: 5985
+        y: 0
+        width: 315
+        height: 315
+      alignment: 9
+      pivot: {x: 0.5, y: 0.0984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7daaebf17a25f34498e20172cab79ac8
+      internalID: 247767804334092026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 36eff1c25e72c1446b074b708974d10c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SPR_PJ_Elaki_Muerte_SO_R_00: -385841608
+      SPR_PJ_Elaki_Muerte_SO_R_01: 1904891977
+      SPR_PJ_Elaki_Muerte_SO_R_02: -1440536657
+      SPR_PJ_Elaki_Muerte_SO_R_03: 1890033654
+      SPR_PJ_Elaki_Muerte_SO_R_04: -2070754864
+      SPR_PJ_Elaki_Muerte_SO_R_05: -1021117146
+      SPR_PJ_Elaki_Muerte_SO_R_06: 1381020923
+      SPR_PJ_Elaki_Muerte_SO_R_07: -901325969
+      SPR_PJ_Elaki_Muerte_SO_R_08: 188415272
+      SPR_PJ_Elaki_Muerte_SO_R_09: -612562747
+      SPR_PJ_Elaki_Muerte_SO_R_10: 3997586018715626443
+      SPR_PJ_Elaki_Muerte_SO_R_11: 8409794376649176101
+      SPR_PJ_Elaki_Muerte_SO_R_12: -6457097535664011452
+      SPR_PJ_Elaki_Muerte_SO_R_13: 3589147029509257706
+      SPR_PJ_Elaki_Muerte_SO_R_14: 6075935806938269271
+      SPR_PJ_Elaki_Muerte_SO_R_15: -7509832883120179949
+      SPR_PJ_Elaki_Muerte_SO_R_16: 9096421792036417672
+      SPR_PJ_Elaki_Muerte_SO_R_17: -3308450056555418275
+      SPR_PJ_Elaki_Muerte_SO_R_18: -7345757840925430040
+      SPR_PJ_Elaki_Muerte_SO_R_19: 247767804334092026
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
