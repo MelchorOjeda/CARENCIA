@@ -16,6 +16,8 @@ public class PantallaJuego : MonoBehaviour
     private GameObject cuadro;
     private GameObject vistaImagen;
     private Image imagenVista;
+    private Image paredVista;
+    private Image pisoVista;
     private GameObject video;
     private Image barraVideo;
     private Image imagenVideo;
@@ -100,7 +102,16 @@ public class PantallaJuego : MonoBehaviour
         rectVista.anchorMin = Vector2.zero;
         rectVista.anchorMax = Vector2.one;
         rectVista.offsetMin = rectVista.offsetMax = Vector2.zero;
-        vistaImagen.AddComponent<Image>().color = new Color(0.05f, 0.04f, 0.05f, 0.92f);
+        // La pared y el piso continúan la imagen hasta los bordes, como si Elaki estuviera frente al objeto
+        paredVista = vistaImagen.AddComponent<Image>();
+        var objetoPiso = new GameObject("Piso", typeof(RectTransform));
+        objetoPiso.transform.SetParent(vistaImagen.transform, false);
+        var rectPiso = (RectTransform)objetoPiso.transform;
+        rectPiso.anchorMin = Vector2.zero;
+        rectPiso.anchorMax = new Vector2(1f, 0.5f);
+        rectPiso.offsetMin = Vector2.zero;
+        pisoVista = objetoPiso.AddComponent<Image>();
+        pisoVista.raycastTarget = false;
         var objetoImagen = new GameObject("Imagen", typeof(RectTransform));
         objetoImagen.transform.SetParent(vistaImagen.transform, false);
         imagenVista = objetoImagen.AddComponent<Image>();
@@ -233,6 +244,41 @@ public class PantallaJuego : MonoBehaviour
         rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0.5f);
         rect.sizeDelta = new Vector2(sprite.rect.width, sprite.rect.height);
         rect.anchoredPosition = Vector2.zero;
+        ContinuarFondo(sprite);
+    }
+
+    // Toma el color de la pared (arriba) y del piso (abajo) en el borde izquierdo de la imagen
+    private void ContinuarFondo(Sprite sprite)
+    {
+        var textura = sprite.texture;
+        var area = sprite.rect;
+        var rectPiso = (RectTransform)pisoVista.transform;
+
+        if (!textura.isReadable)
+        {
+            paredVista.color = new Color32(46, 40, 44, 255);
+            pisoVista.color = new Color32(34, 30, 32, 255);
+            rectPiso.offsetMax = new Vector2(0f, -area.height / 2f);
+            return;
+        }
+
+        var x = (int)area.x + 1;
+        var pared = textura.GetPixel(x, (int)(area.y + area.height) - 2);
+        var piso = textura.GetPixel(x, (int)area.y + 1);
+
+        // El piso termina donde el borde deja de tener su color
+        var alturaPiso = 1;
+        while (alturaPiso < area.height / 2f && Parecido(textura.GetPixel(x, (int)area.y + alturaPiso), piso))
+            alturaPiso++;
+
+        paredVista.color = new Color(pared.r, pared.g, pared.b, 1f);
+        pisoVista.color = new Color(piso.r, piso.g, piso.b, 1f);
+        rectPiso.offsetMax = new Vector2(0f, -area.height / 2f + alturaPiso);
+    }
+
+    private static bool Parecido(Color a, Color b)
+    {
+        return Mathf.Abs(a.r - b.r) + Mathf.Abs(a.g - b.g) + Mathf.Abs(a.b - b.b) < 0.12f;
     }
 
     public void MostrarCuadro(bool visible)
