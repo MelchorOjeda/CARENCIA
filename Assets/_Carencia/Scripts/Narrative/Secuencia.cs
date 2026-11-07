@@ -61,6 +61,7 @@ public class Secuencia : MonoBehaviour
     private InteractionDetector detector;
     private CameraController camara;
     private InputAction accionInteractuar;
+    private InputAction accionCancelar;
 
     private string Bandera => "sec_" + id;
 
@@ -94,6 +95,7 @@ public class Secuencia : MonoBehaviour
         detector = jugador != null ? jugador.GetComponentInChildren<InteractionDetector>() : null;
         camara = Camera.main != null ? Camera.main.GetComponent<CameraController>() : null;
         accionInteractuar = InputSystem.actions.FindAction("Player/Interact", true);
+        accionCancelar = InputSystem.actions.FindAction("UI/Cancel", true);
 
         foreach (var paso in pasos)
             yield return EjecutarPaso(paso);
@@ -222,7 +224,13 @@ public class Secuencia : MonoBehaviour
         monitor.gameObject.SetActive(false);
     }
 
-    // Vista fija de un objeto; se cierra con E
+    // Las vistas de inspección se cierran con E o con Esc
+    private bool Salir()
+    {
+        return accionInteractuar.WasPressedThisFrame() || accionCancelar.WasPressedThisFrame();
+    }
+
+    // Vista fija de un objeto; se cierra con E o Esc
     private IEnumerator VerImagen(Sprite sprite)
     {
         var pantalla = PantallaJuego.Instancia;
@@ -230,7 +238,7 @@ public class Secuencia : MonoBehaviour
         pantalla.MostrarImagen(sprite);
         yield return null;
 
-        while (!accionInteractuar.WasPressedThisFrame())
+        while (!Salir())
             yield return null;
 
         pantalla.MostrarImagen(null);
@@ -246,7 +254,7 @@ public class Secuencia : MonoBehaviour
         pantalla.MostrarCuadro(true);
         yield return null;
 
-        while (!accionInteractuar.WasPressedThisFrame())
+        while (!Salir())
             yield return null;
 
         pantalla.MostrarCuadro(false);

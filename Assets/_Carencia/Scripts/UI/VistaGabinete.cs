@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-// Vista fija de la cajonera del baño. Se abre desde un Interactable y se cierra con E.
+// Vista fija de la cajonera del baño. Se abre desde un Interactable y se cierra con E o Esc.
 // Mientras está abierta, Elaki no se mueve y el escenario no responde.
 public class VistaGabinete : MonoBehaviour
 {
@@ -19,6 +19,7 @@ public class VistaGabinete : MonoBehaviour
     [SerializeField] private UnityEvent alCerrar;
 
     private InputAction accionInteractuar;
+    private InputAction accionCancelar;
     private ObjetoGabinete seleccionado;
     private int fotogramaApertura;
 
@@ -28,6 +29,7 @@ public class VistaGabinete : MonoBehaviour
     private void Awake()
     {
         accionInteractuar = InputSystem.actions.FindAction("Player/Interact", true);
+        accionCancelar = InputSystem.actions.FindAction("UI/Cancel", true);
         panel.SetActive(false);
         cuadroDialogo.gameObject.SetActive(false);
     }
@@ -42,7 +44,7 @@ public class VistaGabinete : MonoBehaviour
     private void Update()
     {
         // La misma pulsación que abre la vista no debe cerrarla
-        if (Abierta && Time.frameCount > fotogramaApertura && accionInteractuar.WasPressedThisFrame())
+        if (Abierta && Time.frameCount > fotogramaApertura && (accionInteractuar.WasPressedThisFrame() || accionCancelar.WasPressedThisFrame()))
             Cerrar();
     }
 
