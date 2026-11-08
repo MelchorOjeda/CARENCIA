@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 67d655d8a1010a041bb8ce7b3dca02da
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9119166681300593472
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_0
+  - first:
+      213: 8823495054049770437
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_1
+  - first:
+      213: 8299212424225468110
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_2
+  - first:
+      213: -6719218610450908480
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_3
+  - first:
+      213: -8187300869832187291
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_4
+  - first:
+      213: -5926923388461034098
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_5
+  - first:
+      213: -3966110542038729234
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_6
+  - first:
+      213: 6710483505056160888
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_7
+  - first:
+      213: 837809294893417810
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_8
+  - first:
+      213: -7298356356373295314
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_9
+  - first:
+      213: 8747974347054829818
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_10
+  - first:
+      213: 8733104093510285976
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_11
+  - first:
+      213: -7175100688597866579
+    second: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04bef7ef7c9cd8e70800000000000000
+      internalID: 9119166681300593472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5cb7d06b00a537a70800000000000000
+      internalID: 8823495054049770437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ecea77d8ab9bc2370800000000000000
+      internalID: 8299212424225468110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 1459
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca31e3164a80c2a0800000000000000
+      internalID: -6719218610450908480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 1919
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 562e760bc3dd06e80800000000000000
+      internalID: -8187300869832187291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8553d394965fbda0800000000000000
+      internalID: -5926923388461034098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 2839
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eed79d1b97b85f8c0800000000000000
+      internalID: -3966110542038729234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 3299
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87c9df5b13d602d50800000000000000
+      internalID: 6710483505056160888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 3759
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25584a36d1f70ab00800000000000000
+      internalID: 837809294893417810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 4219
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2fc72eef8707ba90800000000000000
+      internalID: -7298356356373295314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 4679
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0de64e15c076970800000000000000
+      internalID: 8747974347054829818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 5139
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89ab03037e7323970800000000000000
+      internalID: 8733104093510285976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 5599
+        y: 11
+        width: 302
+        height: 444
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da7a67460fbec6c90800000000000000
+      internalID: -7175100688597866579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_0: 9119166681300593472
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_1: 8823495054049770437
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_10: 8747974347054829818
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_11: 8733104093510285976
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_12: -7175100688597866579
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_2: 8299212424225468110
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_3: -6719218610450908480
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_4: -8187300869832187291
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_5: -5926923388461034098
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_6: -3966110542038729234
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_7: 6710483505056160888
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_8: 837809294893417810
+      banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_9: -7298356356373295314
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
