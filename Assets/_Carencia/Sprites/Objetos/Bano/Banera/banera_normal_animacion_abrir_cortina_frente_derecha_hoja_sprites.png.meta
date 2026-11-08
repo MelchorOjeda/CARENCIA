@@ -82,11 +82,11 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 7
-  spritePivot: {x: 0.5, y: 0.5}
+  spritePivot: {x: 0.5, y: 0}
   spritePixelsToUnits: 96
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
@@ -154,19 +154,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_0
       rect:
         serializedVersion: 2
-        x: 79
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 0
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 04bef7ef7c9cd8e70800000000000000
+      spriteID: ede93e8721da86349947e1571e0cf334
       internalID: 9119166681300593472
       vertices: []
       indices: 
@@ -176,19 +176,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_1
       rect:
         serializedVersion: 2
-        x: 539
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 460
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 5cb7d06b00a537a70800000000000000
+      spriteID: fcc68f6d3fa41254e8d0681c4d62d6ad
       internalID: 8823495054049770437
       vertices: []
       indices: 
@@ -198,19 +198,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_2
       rect:
         serializedVersion: 2
-        x: 999
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 920
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ecea77d8ab9bc2370800000000000000
+      spriteID: 8e85c4f6b32d7474c8a64d9a233b44cc
       internalID: 8299212424225468110
       vertices: []
       indices: 
@@ -220,19 +220,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_3
       rect:
         serializedVersion: 2
-        x: 1459
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1380
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0ca31e3164a80c2a0800000000000000
+      spriteID: 25a0c305250a8ed4787b415d6fc14616
       internalID: -6719218610450908480
       vertices: []
       indices: 
@@ -242,19 +242,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_4
       rect:
         serializedVersion: 2
-        x: 1919
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1840
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 562e760bc3dd06e80800000000000000
+      spriteID: aa412b0e84e31b74481cd083afd56407
       internalID: -8187300869832187291
       vertices: []
       indices: 
@@ -264,19 +264,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_5
       rect:
         serializedVersion: 2
-        x: 2379
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2300
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e8553d394965fbda0800000000000000
+      spriteID: dc85378742655d64c938a7e32c81d6cd
       internalID: -5926923388461034098
       vertices: []
       indices: 
@@ -286,19 +286,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_6
       rect:
         serializedVersion: 2
-        x: 2839
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 2760
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: eed79d1b97b85f8c0800000000000000
+      spriteID: 3e742f7318706e74b9c33436732a7d0e
       internalID: -3966110542038729234
       vertices: []
       indices: 
@@ -308,19 +308,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_7
       rect:
         serializedVersion: 2
-        x: 3299
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3220
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 87c9df5b13d602d50800000000000000
+      spriteID: 531fd98874417ff49a7266d6517b87c9
       internalID: 6710483505056160888
       vertices: []
       indices: 
@@ -330,19 +330,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_8
       rect:
         serializedVersion: 2
-        x: 3759
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 3680
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 25584a36d1f70ab00800000000000000
+      spriteID: 2562210de5732ae4384c15b5efdb4865
       internalID: 837809294893417810
       vertices: []
       indices: 
@@ -352,19 +352,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_9
       rect:
         serializedVersion: 2
-        x: 4219
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4140
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e2fc72eef8707ba90800000000000000
+      spriteID: 78c7a7de42700fe4aaf5b15d6ef6a6e8
       internalID: -7298356356373295314
       vertices: []
       indices: 
@@ -374,19 +374,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_10
       rect:
         serializedVersion: 2
-        x: 4679
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 4600
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: af0de64e15c076970800000000000000
+      spriteID: 4e4720d09c59a6b4d8be02408d4aa9c0
       internalID: 8747974347054829818
       vertices: []
       indices: 
@@ -396,19 +396,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_11
       rect:
         serializedVersion: 2
-        x: 5139
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5060
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 89ab03037e7323970800000000000000
+      spriteID: 87ae33042ebe394468d37c5f540a7080
       internalID: 8733104093510285976
       vertices: []
       indices: 
@@ -418,19 +418,19 @@ TextureImporter:
       name: banera_normal_animacion_abrir_cortina_frente_derecha_hoja_sprites_12
       rect:
         serializedVersion: 2
-        x: 5599
-        y: 11
-        width: 302
-        height: 444
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 5520
+        y: 0
+        width: 460
+        height: 460
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: da7a67460fbec6c90800000000000000
+      spriteID: 8944c88a4db05fa45b21396f13676df7
       internalID: -7175100688597866579
       vertices: []
       indices: 
