@@ -19,6 +19,8 @@ public class PantallaOpciones : MonoBehaviour
     [SerializeField] private GameObject ayudaRestablecer;
     [SerializeField] private GameObject avisoReasignacion;
     [SerializeField] private NotaConfirmacion nota;
+    [Tooltip("Ruta arriba del título, por ejemplo \"Pausa › Opciones\"; vacía desde el menú principal")]
+    [SerializeField] private TMP_Text ruta;
 
     private Ajustes enEdicion;
     private IReadOnlyList<Resolucion> resoluciones;
@@ -42,9 +44,11 @@ public class PantallaOpciones : MonoBehaviour
         }
     }
 
-    public void Abrir(Action siCierra)
+    public void Abrir(Action siCierra, string textoRuta = null)
     {
         alCerrar = siCierra;
+        ruta.text = textoRuta ?? "";
+        ruta.gameObject.SetActive(!string.IsNullOrEmpty(textoRuta));
         enEdicion = AjustesJuego.Guardados.Copia();
         AjustesJuego.CompletarVideo(enEdicion);
         resoluciones = AjustesJuego.ResolucionesDisponibles();
