@@ -27,6 +27,18 @@ public class FlujoMenuTests
     }
 
     [Test]
+    public void LaPausaSeAbreSoloCuandoElJugadorPuedeMoverse()
+    {
+        var libre = new SituacionJuego { hayJugador = true };
+        Assert.IsTrue(FlujoMenu.PuedePausar(libre));
+
+        Assert.IsFalse(FlujoMenu.PuedePausar(new SituacionJuego()), "Sin jugador, como en el menú principal");
+        Assert.IsFalse(FlujoMenu.PuedePausar(new SituacionJuego { hayJugador = true, jugadorBloqueado = true }), "Secuencia, gabinete o muerte");
+        Assert.IsFalse(FlujoMenu.PuedePausar(new SituacionJuego { hayJugador = true, hayDialogo = true }), "Esc ya cierra el diálogo");
+        Assert.IsFalse(FlujoMenu.PuedePausar(new SituacionJuego { hayJugador = true, cargandoEscena = true }), "Durante el fundido de carga");
+    }
+
+    [Test]
     public void UnSegundoEnterNoRepiteLaAccion()
     {
         var accion = new AccionUnica();
