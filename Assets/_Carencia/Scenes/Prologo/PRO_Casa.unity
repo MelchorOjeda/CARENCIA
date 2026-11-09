@@ -13464,7 +13464,7 @@ MonoBehaviour:
   - tipo: 17
     valor: 1
     valor2: 0
-    texto: N1_Bano|inicio
+    texto: N1_Laberinto|inicio
     referencia: {fileID: 0}
 --- !u!1 &1393945300
 GameObject:
