@@ -19,7 +19,6 @@ public class MenuPrincipal : MonoBehaviour
     [SerializeField] private ListaOpciones lista;
     [SerializeField] private OpcionMenu opcionContinuar;
     [SerializeField] private TMP_Text detalleCartel;
-    [SerializeField] private TMP_Text version;
     [SerializeField] private PantallaOpciones pantallaOpciones;
     [SerializeField] private NotaConfirmacion nota;
     [SerializeField] private Image vineta;
@@ -40,7 +39,6 @@ public class MenuPrincipal : MonoBehaviour
         PantallaJuego.Instancia.SetPenumbra(0f);
         PantallaJuego.Instancia.SetManchas(0f);
 
-        version.text = $"demo v{Application.version}";
         LeerPartida();
         pantallaOpciones.gameObject.SetActive(false);
         nota.gameObject.SetActive(false);
