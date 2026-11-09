@@ -72,11 +72,8 @@ public static class EstadoJuego
 
     public static bool CargarPartida()
     {
-        if (!HayPartida)
-            return false;
-
-        var datos = JsonUtility.FromJson<Datos>(File.ReadAllText(Ruta));
-        if (datos == null || string.IsNullOrEmpty(datos.escena))
+        var datos = LeerDatos();
+        if (datos == null)
             return false;
 
         EscenaControl = datos.escena;
@@ -84,5 +81,32 @@ public static class EstadoJuego
         banderasDelControl = datos.banderas ?? new List<string>();
         RestaurarPunto();
         return true;
+    }
+
+    // Lo que el menú muestra de la partida guardada; null si no hay o si el archivo está dañado.
+    public static (string escena, DateTime fecha)? LeerPartidaGuardada()
+    {
+        var datos = LeerDatos();
+        if (datos == null)
+            return null;
+
+        return (datos.escena, File.GetLastWriteTime(Ruta));
+    }
+
+    // Un archivo dañado o a medio escribir cuenta como si no hubiera partida, en vez de romper Continuar.
+    private static Datos LeerDatos()
+    {
+        if (!HayPartida)
+            return null;
+
+        try
+        {
+            var datos = JsonUtility.FromJson<Datos>(File.ReadAllText(Ruta));
+            return datos == null || string.IsNullOrEmpty(datos.escena) ? null : datos;
+        }
+        catch (Exception error) when (error is ArgumentException || error is IOException)
+        {
+            return null;
+        }
     }
 }
