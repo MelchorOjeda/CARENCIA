@@ -77,6 +77,7 @@ Assets/_Carencia/
 │   ├── Escenarios/           Realidad/, Dimension1/, Dimension2/, Dimension3/
 │   ├── Objetos/             
 │   └── Efectos/             
+├── Resources/                PF_MenuPausa: la pausa se carga sola en cualquier escena
 ├── Tests/
 │   └── EditMode/             pruebas del Test Framework (Window > General > Test Runner)
 ├── Tilemaps/
@@ -103,6 +104,7 @@ Por qué cada adición:
 | `Settings/`               | El archivo de Input Actions (WASD, E, Esc, clic)                                                                                                 |
 | `UI/Fuentes/`             | Las fuentes y sus Font Assets de TextMeshPro ocupan varios archivos                                                                              |
 | `Scripts/UI/Menu/Logica/` | Las reglas del menú (valores de Opciones, navegación, cuándo preguntar) no dependen de escenas; su propio asmdef permite probarlas en EditMode    |
+| `Resources/`              | Unity solo puede cargar por nombre lo que está aquí; la pausa se crea sola sin tocar las escenas de juego. Todo lo de esta carpeta entra al build |
 | `Tests/EditMode/`         | Pruebas automáticas que se corren en el Test Runner sin dar Play; su asmdef solo existe en el Editor y no entra al build                          |
 | Subcarpetas de `Sprites/` | El GDD tiene cuatro versiones de la casa; separar por dimensión evita carpetas con cientos de archivos                                           |
 

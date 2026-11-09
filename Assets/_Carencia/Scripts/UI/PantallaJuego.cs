@@ -37,6 +37,9 @@ public class PantallaJuego : MonoBehaviour
 
     public bool CuadroVisible => cuadro.activeSelf;
 
+    // Durante el fundido de una carga no se puede pausar
+    public bool Cargando => cargando;
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void Reiniciar()
     {

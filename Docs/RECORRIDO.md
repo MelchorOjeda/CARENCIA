@@ -13,6 +13,11 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 | Cruzar puertas y cerrar vistas o cuadros | E |
 | Usar objetos que se iluminan | Clic, con Elaki cerca |
 | Ver el interior del refrigerador | E junto al refrigerador, en la casa real; E otra vez para cerrar |
+| Pausa (Reanudar, Opciones, Volver al menú principal) | Esc; Esc otra vez para reanudar |
+
+La pausa solo se abre cuando Elaki puede moverse: durante una secuencia, una vista, un diálogo o un fundido de carga,
+Esc conserva su uso de siempre. Con la pausa abierta el tiempo se detiene y la E no interactúa con nada. Volver al menú
+pregunta antes, porque se pierde lo jugado desde el último punto de control.
 
 ### Menú y Opciones
 
