@@ -65,6 +65,8 @@ Assets/_Carencia/
 │   ├── Dialogue/             lógica de diálogos (la caja visual va en UI)
 │   ├── Audio/
 │   ├── UI/
+│   │   └── Menu/             menú principal, Opciones, notas de confirmación y teclas de los menús
+│   │       └── Logica/       reglas del menú sin Unity (asmdef Carencia.Menu.Logica), probadas en Tests/
 │   ├── Effects/              fundidos, manchas de daño, espiral, parpadeo
 │   ├── Progress/            guardado JSON y puntos de control
 │   └── Editor/               herramientas de editor; Unity exige este nombre para que no entren al build
@@ -75,6 +77,8 @@ Assets/_Carencia/
 │   ├── Escenarios/           Realidad/, Dimension1/, Dimension2/, Dimension3/
 │   ├── Objetos/             
 │   └── Efectos/             
+├── Tests/
+│   └── EditMode/             pruebas del Test Framework (Window > General > Test Runner)
 ├── Tilemaps/
 │   ├── Palettes/             paletas de tiles para pintar
 │   └── Tiles/                assets de tile
@@ -98,6 +102,8 @@ Por qué cada adición:
 | `Audio/Mixer/`            | Permite los volúmenes por categoría que pide el GDD (Opciones → Audio)                                                                           |
 | `Settings/`               | El archivo de Input Actions (WASD, E, Esc, clic)                                                                                                 |
 | `UI/Fuentes/`             | Las fuentes y sus Font Assets de TextMeshPro ocupan varios archivos                                                                              |
+| `Scripts/UI/Menu/Logica/` | Las reglas del menú (valores de Opciones, navegación, cuándo preguntar) no dependen de escenas; su propio asmdef permite probarlas en EditMode    |
+| `Tests/EditMode/`         | Pruebas automáticas que se corren en el Test Runner sin dar Play; su asmdef solo existe en el Editor y no entra al build                          |
 | Subcarpetas de `Sprites/` | El GDD tiene cuatro versiones de la casa; separar por dimensión evita carpetas con cientos de archivos                                           |
 
 Cada carpeta vacía lleva un archivo `.gitkeep` para que Git la suba. Se puede borrar cuando la carpeta tenga contenido.
