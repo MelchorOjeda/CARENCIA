@@ -13,6 +13,7 @@ public class VisibilidadZonas : MonoBehaviour
         public string nombre;
         public RectInt[] areas;
         public Tilemap[] capas;
+        public SpriteRenderer[] figuras = new SpriteRenderer[0];
         public int[] vecinas;
         // Un paso corto deja ver lo que hay al otro lado
         public bool paso;
@@ -80,6 +81,17 @@ public class VisibilidadZonas : MonoBehaviour
                 color.a = alfa[i];
                 capa.color = color;
                 capa.GetComponent<TilemapRenderer>().enabled = alfa[i] > 0.01f;
+            }
+
+            foreach (var figura in zonas[i].figuras)
+            {
+                if (figura == null)
+                    continue;
+
+                var color = figura.color;
+                color.a = alfa[i];
+                figura.color = color;
+                figura.enabled = alfa[i] > 0.01f;
             }
         }
     }
