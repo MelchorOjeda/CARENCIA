@@ -41,6 +41,8 @@ public class NotaConfirmacion : MonoBehaviour
         alCancelar = siCancela;
 
         OcultarLoDeAbajo();
+        // En uGUI se dibuja encima lo que va al final de la jerarquía: la nota y su oscurecido siempre al frente
+        transform.SetAsLastSibling();
         gameObject.SetActive(true);
         Enfocar(No);
         ControlesMenu.Bloquear();
