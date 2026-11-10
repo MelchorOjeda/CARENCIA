@@ -824,7 +824,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <alpha=#38>Opciones
+  m_text: <alpha=#38>Ajustes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 72417e4556d3f8242966b29e18f1ada3, type: 2}
   m_sharedMaterial: {fileID: 1869026504692578402, guid: 72417e4556d3f8242966b29e18f1ada3, type: 2}
@@ -4118,7 +4118,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: <alpha=#8C>Opciones
+  m_text: <alpha=#8C>Ajustes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 72417e4556d3f8242966b29e18f1ada3, type: 2}
   m_sharedMaterial: {fileID: 1869026504692578402, guid: 72417e4556d3f8242966b29e18f1ada3, type: 2}
@@ -5057,7 +5057,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Pausa  \u203A  Opciones"
+  m_text: "Pausa  \u203A  Ajustes"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a7f2db7fa2beff24ca8b5b4eca4fcf6d, type: 2}
   m_sharedMaterial: {fileID: -7764481368895039086, guid: a7f2db7fa2beff24ca8b5b4eca4fcf6d, type: 2}
@@ -11830,7 +11830,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Opciones
+  m_text: Ajustes
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 72417e4556d3f8242966b29e18f1ada3, type: 2}
   m_sharedMaterial: {fileID: 1869026504692578402, guid: 72417e4556d3f8242966b29e18f1ada3, type: 2}
