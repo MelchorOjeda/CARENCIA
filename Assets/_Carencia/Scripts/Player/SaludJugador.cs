@@ -11,6 +11,15 @@ public class SaludJugador : MonoBehaviour
 
     private bool muerto;
 
+    // Escena a la que lleva la muerte (formato escena|entrada). Vacío: se reinicia el punto de control
+    private string destinoAlMorir;
+
+    // La muerte frente a "ella" no es una derrota: es la transición al siguiente despertar
+    public void LlevarAlMorir(string destino)
+    {
+        destinoAlMorir = destino;
+    }
+
     private void Start()
     {
         PantallaJuego.Instancia.SetManchas(Intensidad());
@@ -41,7 +50,17 @@ public class SaludJugador : MonoBehaviour
             yield return new WaitForSeconds(duracionMuerte);
         }
 
-        PantallaJuego.Instancia.ReiniciarDesdeControl();
+        if (string.IsNullOrEmpty(destinoAlMorir))
+        {
+            PantallaJuego.Instancia.ReiniciarDesdeControl();
+            yield break;
+        }
+
+        yield return PantallaJuego.Instancia.Espiral(2.4f);
+        EstadoJuego.Golpes = 0;
+        PantallaJuego.Instancia.SetManchas(0f);
+        var partes = destinoAlMorir.Split('|');
+        PantallaJuego.Instancia.CargarEscena(partes[0], partes.Length > 1 ? partes[1] : null);
     }
 
     private float Intensidad()
