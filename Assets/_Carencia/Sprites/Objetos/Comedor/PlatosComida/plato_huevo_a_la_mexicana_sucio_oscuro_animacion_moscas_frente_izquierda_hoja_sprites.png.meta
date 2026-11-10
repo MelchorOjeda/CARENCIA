@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 4aa981eeb55544e7a27a8280892ec001
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6028249490635924916
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+  - first:
+      213: 1732301594903011518
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+  - first:
+      213: 7582036595717915716
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+  - first:
+      213: -1263120227053326655
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+  - first:
+      213: 1031358539993923708
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+  - first:
+      213: -3181042548578206144
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+  - first:
+      213: 171217138204999393
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+  - first:
+      213: -6801962212150725792
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+  - first:
+      213: 5546429673098891771
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+  - first:
+      213: 2597782037826494314
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+  - first:
+      213: -6057961857497632193
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+  - first:
+      213: -4223890891943270708
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+  - first:
+      213: 7653368433224636659
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+  - first:
+      213: -8974455648891267763
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+  - first:
+      213: 1516258492784960157
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+  - first:
+      213: 8304689501974329654
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+  - first:
+      213: 5486059646361998477
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+  - first:
+      213: 1872159599114565031
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+  - first:
+      213: -6811942458054872925
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+  - first:
+      213: 1863668087084678154
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+  - first:
+      213: -1203239610712451630
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+  - first:
+      213: 6604693772100403808
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+  - first:
+      213: 7312049642235748610
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+  - first:
+      213: 4258157316577035447
+    second: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.0}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 602450cd49a14ed4a099ba7a85d16744
+      internalID: -6028249490635924916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e36c2ad3a04d4ddeb665669030b1d33b
+      internalID: 1732301594903011518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a090cfa2a24279a60500e74db9a0ea
+      internalID: 7582036595717915716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1465079a8a14448b0754d908ff4082c
+      internalID: -1263120227053326655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00fba4cdb6874742bb94f2a2d86a0385
+      internalID: 1031358539993923708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12ea4624a4254e4bb595c56431261f21
+      internalID: -3181042548578206144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebcea9b7dfea463b8ea3b54ab82a5066
+      internalID: 171217138204999393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ccd1f104b14f09b98b34c13e5ea603
+      internalID: -6801962212150725792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41041b8a9ba4e70a963340678e5f8c3
+      internalID: 5546429673098891771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8c6e1654b66462c88f6ccc5e5d808d3
+      internalID: 2597782037826494314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305a8acd424f4691b17ee65a291ba267
+      internalID: -6057961857497632193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85df952d5646447aa77345e678727931
+      internalID: -4223890891943270708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e9a8bddfdb4056a3e87982a5ab6bca
+      internalID: 7653368433224636659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f8f516b14d7499895ab5fd429470dd7
+      internalID: -8974455648891267763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2091c2ee1feb420db8f417fd99db6b8e
+      internalID: 1516258492784960157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ed0c96c9bde4c3f86206712a1cfc93f
+      internalID: 8304689501974329654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54bdbb062b04307ae5b69d3f2e329b9
+      internalID: 5486059646361998477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cc9db99fe7441dcaa7eb7d2aac6a39d
+      internalID: 1872159599114565031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad13e80951aa439b9ccfdfcafd05c284
+      internalID: -6811942458054872925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ab33c7dc9e4a788ccc4ca67bd8d6af
+      internalID: 1863668087084678154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 193ddad7068e4382bf3010745f4ff8be
+      internalID: -1203239610712451630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c606452ccf2f4337b8083c3492bc7f85
+      internalID: 6604693772100403808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7f7d29ad0594a8893408d07bcf14975
+      internalID: 7312049642235748610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43097b35e5dc4336a31264daf921f995
+      internalID: 4258157316577035447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0: -6028249490635924916
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1: 1732301594903011518
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2: 7582036595717915716
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3: -1263120227053326655
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4: 1031358539993923708
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5: -3181042548578206144
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6: 171217138204999393
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7: -6801962212150725792
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8: 5546429673098891771
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9: 2597782037826494314
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10: -6057961857497632193
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11: -4223890891943270708
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12: 7653368433224636659
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13: -8974455648891267763
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14: 1516258492784960157
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15: 8304689501974329654
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16: 5486059646361998477
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17: 1872159599114565031
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18: -6811942458054872925
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19: 1863668087084678154
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20: -1203239610712451630
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21: 6604693772100403808
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22: 7312049642235748610
+      plato_huevo_a_la_mexicana_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23: 4258157316577035447
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
