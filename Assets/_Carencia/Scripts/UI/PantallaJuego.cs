@@ -14,6 +14,10 @@ public class PantallaJuego : MonoBehaviour
     private Image manchas;
     private Image penumbra;
     private GameObject cuadro;
+    private Text claveCuadro;
+    private GameObject marcador;
+    private Text textoMarcador;
+    private Image espiral;
     private GameObject vistaImagen;
     private Image imagenVista;
     private Image paredVista;
@@ -96,7 +100,20 @@ public class PantallaJuego : MonoBehaviour
         rectPapel.offsetMin = new Vector2(6f, 6f);
         rectPapel.offsetMax = new Vector2(-6f, -6f);
         papel.AddComponent<Image>().color = new Color32(244, 232, 208, 255);
+        // Clave de la línea del guion: el equipo de diálogos reemplaza el cuadro en blanco por su texto
+        claveCuadro = Texto(papel.transform, 9, TextAnchor.LowerRight, new Color32(150, 132, 112, 255));
         cuadro.SetActive(false);
+
+        // Marcador de una imagen o video que aún no tiene arte: fondo oscuro con una descripción
+        marcador = new GameObject("Marcador", typeof(RectTransform));
+        marcador.transform.SetParent(transform, false);
+        var rectMarcador = (RectTransform)marcador.transform;
+        rectMarcador.anchorMin = Vector2.zero;
+        rectMarcador.anchorMax = Vector2.one;
+        rectMarcador.offsetMin = rectMarcador.offsetMax = Vector2.zero;
+        marcador.AddComponent<Image>().color = new Color32(12, 10, 12, 255);
+        textoMarcador = Texto(marcador.transform, 14, TextAnchor.MiddleCenter, new Color32(226, 220, 210, 255));
+        marcador.SetActive(false);
 
         // Vista fija de un objeto, por ejemplo el interior del refrigerador
         vistaImagen = new GameObject("VistaImagen", typeof(RectTransform));
@@ -153,6 +170,9 @@ public class PantallaJuego : MonoBehaviour
         barraVideo.fillMethod = Image.FillMethod.Horizontal;
         video.SetActive(false);
 
+        espiral = Capa("Espiral", Espiral());
+        SetAlfa(espiral, 0f);
+
         fundido = Capa("Fundido", null);
         fundido.color = new Color(0f, 0f, 0f, 0f);
     }
@@ -169,6 +189,48 @@ public class PantallaJuego : MonoBehaviour
         imagen.sprite = sprite;
         imagen.raycastTarget = false;
         return imagen;
+    }
+
+    private static Text Texto(Transform padre, int tamano, TextAnchor ancla, Color color)
+    {
+        var objeto = new GameObject("Texto", typeof(RectTransform));
+        objeto.transform.SetParent(padre, false);
+        var rect = (RectTransform)objeto.transform;
+        rect.anchorMin = Vector2.zero;
+        rect.anchorMax = Vector2.one;
+        rect.offsetMin = new Vector2(12f, 6f);
+        rect.offsetMax = new Vector2(-12f, -6f);
+        var texto = objeto.AddComponent<Text>();
+        texto.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+        texto.fontSize = tamano;
+        texto.alignment = ancla;
+        texto.color = color;
+        texto.raycastTarget = false;
+        return texto;
+    }
+
+    // Espiral oscura que gira hacia el centro; se usa en los portales, el mareo y la muerte frente a "ella"
+    private static Sprite Espiral()
+    {
+        const int lado = 160;
+        var textura = new Texture2D(lado, lado, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp };
+        for (var y = 0; y < lado; y++)
+        {
+            for (var x = 0; x < lado; x++)
+            {
+                var dx = (x + 0.5f) / lado * 2f - 1f;
+                var dy = (y + 0.5f) / lado * 2f - 1f;
+                var radio = Mathf.Sqrt(dx * dx + dy * dy);
+                var angulo = Mathf.Atan2(dy, dx);
+                var brazo = Mathf.Sin(angulo * 3f + radio * 16f) * 0.5f + 0.5f;
+                var alfa = Mathf.Clamp01(radio * 1.4f) * Mathf.SmoothStep(0.25f, 0.75f, brazo);
+                textura.SetPixel(x, y, new Color(0.03f, 0.01f, 0.04f, Mathf.Max(alfa, Mathf.InverseLerp(0.9f, 1.3f, radio))));
+            }
+        }
+
+        textura.filterMode = FilterMode.Point;
+        textura.Apply();
+        return Sprite.Create(textura, new Rect(0, 0, lado, lado), new Vector2(0.5f, 0.5f));
     }
 
     private static void SetAlfa(Image imagen, float alfa)
@@ -231,6 +293,8 @@ public class PantallaJuego : MonoBehaviour
         SetAlfa(manchas, Mathf.Clamp01(intensidad));
     }
 
+    public float Penumbra => penumbra.color.a;
+
     public void SetPenumbra(float intensidad)
     {
         SetAlfa(penumbra, Mathf.Clamp01(intensidad));
@@ -284,9 +348,41 @@ public class PantallaJuego : MonoBehaviour
         return Mathf.Abs(a.r - b.r) + Mathf.Abs(a.g - b.g) + Mathf.Abs(a.b - b.b) < 0.12f;
     }
 
-    public void MostrarCuadro(bool visible)
+    public void MostrarCuadro(bool visible, string clave = null)
     {
         cuadro.SetActive(visible);
+        claveCuadro.text = clave ?? "";
+    }
+
+    public void MostrarMarcador(string texto)
+    {
+        marcador.SetActive(!string.IsNullOrEmpty(texto));
+        textoMarcador.text = texto ?? "";
+    }
+
+    // La espiral cubre la pantalla girando y termina en negro
+    public Coroutine Espiral(float duracion)
+    {
+        return StartCoroutine(RutinaEspiral(duracion));
+    }
+
+    private IEnumerator RutinaEspiral(float duracion)
+    {
+        var rect = (RectTransform)espiral.transform;
+        rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0.5f);
+        for (var t = 0f; t < duracion; t += Time.unscaledDeltaTime)
+        {
+            var avance = t / duracion;
+            var lado = Mathf.Lerp(1400f, 520f, avance);
+            rect.sizeDelta = new Vector2(lado, lado);
+            rect.localRotation = Quaternion.Euler(0f, 0f, -avance * 540f);
+            SetAlfa(espiral, Mathf.Clamp01(avance * 2.5f));
+            SetAlfa(fundido, Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(0.55f, 1f, avance)));
+            yield return null;
+        }
+
+        SetAlfa(fundido, 1f);
+        SetAlfa(espiral, 0f);
     }
 
     public void MostrarVideo(bool visible)
@@ -357,6 +453,7 @@ public class PantallaJuego : MonoBehaviour
         MostrarCuadro(false);
         MostrarVideo(false);
         MostrarImagen(null);
+        MostrarMarcador(null);
         SceneManager.LoadScene(escena);
         yield return null;
         cargando = false;

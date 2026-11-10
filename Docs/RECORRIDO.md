@@ -1,6 +1,6 @@
 # Recorrido jugable
 
-Versión de prueba del juego, del menú hasta la bañera del Nivel 3. Los escenarios reutilizan la casa de `PRB_Melchor_Casa` con colores por nivel, y lo que aún no tiene arte es blockout con etiqueta. No lleva sonido, textos ni desenlace.
+Versión de prueba del juego completo, del menú al desenlace, en el orden del guion unificado v1 (prólogo, Nivel 1, segundo despertar, Nivel 2, tercer despertar, Nivel 3 y desenlace). Los escenarios reutilizan la casa de `PRB_Melchor_Casa` con colores por nivel; los objetos de la colección de arte se usan en su estado `normal`, `sucio_oscuro` o `agobiante` según el nivel, y lo que aún no tiene arte es blockout con etiqueta. No lleva sonido. Las líneas del guion aparecen como cuadros en blanco con su clave: ver [DIALOGOS.md](DIALOGOS.md).
 
 ## Cómo jugarlo
 
@@ -49,17 +49,19 @@ Reglas del menú:
 | Escena | Contenido | Cómo se sale |
 |---|---|---|
 | `MEN_Principal` | Pantalla de inicio, menú (Jugar, Continuar, Opciones y Salir) y Opciones, según el Figma del menú | Jugar o Continuar |
-| `PRO_Casa` | Elaki despierta en su habitación y explora la casa libremente. Al acercarse a la silla del comedor aparece la E, y con ella empieza el desayuno con los papás, seguido del mareo, y aparece en el baño. Desde entonces, clic en el espejo abre la cajonera; al cerrarla aparece la silueta y luego el portal | Clic de nuevo en el espejo |
-| `N1_Bano` | El mismo baño en blanco y frío, para la sensación de valle inquietante, con la cajonera en el mismo tono | E en la puerta |
-| `N1_Pasillo` | Pasillo blanco de 30 tramos (240 celdas) con solo 3 puertas muy separadas (tramos 8, 19 y 30); lo demás es pared con cuadros en blanco. Al final, puerta bloqueada y ventana cubierta | Clic en el portal, que aparece cerca del final |
-| `N2_Casa` | Fotos, ventana, platos y televisión. La computadora inicia el video y la persecución de la criatura; termina en el pasillo. Al fondo, Margarita se transforma y persigue a Elaki | Llegar a la marca junto a la puerta de la entrada |
-| `R2_Casa` | Segundo despertar y desayuno. Periódico (obligatorio), altar del perro sobre la mesa junto al armario, y armario. Cortina en estado 2 | Acercarse a la bañera, después de leer el periódico |
-| `N3_Casa` | Casa orgánica: televisión, agua, ojos, calendario, figura en la ventana y puerta del corazón | Acercarse a Margarita en la bañera; vuelve al menú |
+| `PRO_Casa` | P1 despertar y llamado de mamá. Al acercarse al comedor empieza el desayuno: sentado, se revisan el periódico (opcional) y el lugar vacío, que dispara la plática y el mareo. En el baño real (cortina cerrada, cuatro toallas) se revisan lavabo, toallas y cortina; clic en el espejo abre el gabinete, o se abre solo si Elaki se queda quieta 10 s frente a él. Al cerrarlo se abre el portal y la silueta lo cruza | Clic en el espejo: espiral |
+| `N1_Laberinto` | Baño del otro lado en blanco: toallas, gabinete con símbolos, puerta que no abre. La cortina se abre con clic y deja ver el pasaje con el calendario del 31. Cuarto liminal con cama y cuadros; luego sala (sillón pegado a la pared), cocina, comedor (cuatro sillas sin mesa), pared de frente y cuarto de lavado (aviso en la tercera vuelta). Techos en las zonas donde no está Elaki | Salida pasando el cuarto de lavado |
+| `N1_Pasillo` | Pasillo blanco largo; la salida queda cerrada detrás. Al entrar se oye la voz y la visión se oscurece más con cada paso hacia la puerta del fondo | Llegar a la puerta: "Ayuda." y corte a negro |
+| `R1_Casa` | Segundo despertar, segundo desayuno (periódico opcional) y decisión de volver al baño. Baño real: cortina en estado 1, tres toallas, gabinete con E y el portal ya abierto | Clic en el espejo |
+| `N2_Casa` | Llega al baño abandonado (bañera, toallas y calendario sucios). Pasillo con la foto de los cuatro y la ventana a la barda, que luego queda tapiada. Sala y cocina en penumbra con cuatro platos, TV con estática y refrigerador podrido. Al sentarse en la computadora se guarda; el video dura 50 s mientras la penumbra cede y el perro se acerca, y luego persigue. Si alcanza a Elaki, vuelve casi al final del video. En el pasillo, "ella" está al fondo: el perro revienta, ella gira y siempre alcanza a Elaki | Tercer golpe de "ella": espiral, sin pantalla de derrota |
+| `R2_Casa` | Tercer despertar y desayuno con la madre gris: se levanta al revisar los cuatro obligatorios (lugar vacío, madre, comida y periódico). Altar del perro con sollozo, alacena, y aviso si intenta ir a la cocina. Baño real: cortina en estado 2, cuatro toallas, gabinete sin parches y portal abierto | Clic en el espejo |
+| `N3_Casa` | Baño de carne (bañera, toallas y calendario agobiantes), pasillo con ojos y agua, platos con órganos, refrigerador y ventana con el hombre armado (opcional). Al sentarse en el sillón de piel pasa el anuncio, la TV se apaga y los ojos giran hacia el baño. En el baño, la cortina está abierta por completo y Margarita aparece en el agua | Clic en la tina: espiral |
+| `DES_Final` | Glitch alternado, carteles, noticiero, pantalla de texto y edificio en Navidad, como marcadores hasta que llegue el arte | Vuelve al menú |
 
 ## Reglas
 
-- **Daño:** 3 golpes reinician desde el último punto de control. Las manchas rojas crecen con cada golpe y se borran al terminar la persecución.
-- **Velocidades:** Elaki camina a 1.5 y corre a 2.6. La criatura va a 2.0 y Margarita a 2.2, así que hay que correr para escapar.
+- **Daño:** solo se puede morir con el perro y con "ella". Con el perro, 3 golpes reinician desde la computadora; con "ella", el tercer golpe lleva al tercer despertar. Las manchas rojas crecen con cada golpe.
+- **Velocidades:** Elaki camina a 1.5 y corre a 2.6. El perro va a 2.0, así que se le puede escapar; "ella" va a 2.75 y siempre alcanza a Elaki.
 - **Puntos de control:** al entrar a cada nivel, antes y después de cada persecución. Se guardan en un archivo y los usa Continuar.
 
 ## Sistemas
@@ -72,14 +74,18 @@ Reglas del menú:
 | `Narrative/Secuencia` | Pasos en orden: bloquear, cámara, activar, banderas, enemigos y escenas |
 | `Narrative/ZonaEvento` | Dispara una secuencia al pisar un área |
 | `Narrative/Parpadeo` | Interferencia de la televisión |
+| `Narrative/OscurecerAlAcercarse` | La visión se oscurece al acercarse a un punto (desmayo del Nivel 1) |
+| `Narrative/EsperaQuieto` | Ejecuta una secuencia si Elaki se queda quieta en un área (gabinete que se abre solo) |
+| `Narrative/ContarEntradas` | Ejecuta una secuencia a la n-ésima entrada a un área (tercera vuelta al lavado) |
 | `Enemies/EnemigoPerseguidor` | Busca a Elaki por las celdas libres y la golpea por contacto |
 | `Player/SaludJugador` | Recibe golpes y dispara la muerte |
 | `UI/MenuPrincipal` | Menú inicial |
 
 ## Pendiente
 
-- **Contenido de otras áreas:** textos en los cuadros en blanco, sonidos, voz femenina y video real del monitor. Hoy la cámara se acerca al monitor y su pantalla se ve gris con una barra de avance; a la mitad se aleja y aparece la criatura.
+- **Contenido de otras áreas:** textos de las claves de [DIALOGOS.md](DIALOGOS.md), sonidos, voz femenina, video del monitor y anuncio de la TV.
 - **Arte:** Elaki a 96 PPU, habitación, enemigos, padres, tazas verde y de carne, y dibujos de los cuadros del pasillo.
-- **Desenlace:** carteles, noticiero y fin del demo.
+- **Arte del guion que aún es marcador:** vista de la barda (mujeres y hombre armado), carteles, noticiero, edificio, objetos de carne del Nivel 3, agua de la tina y el reflejo de Margarita.
+- **Aviso de contenido:** va antes del menú, que es del equipo de UI.
 - **Sin sentarse:** Elaki se coloca frente al monitor, pero aún no tiene animación de sentarse.
 - **Sin aviso de bloqueo:** un objeto o portal que aún no se puede usar no da señal al jugador.
