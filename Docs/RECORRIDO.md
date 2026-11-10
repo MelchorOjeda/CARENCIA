@@ -13,12 +13,42 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 | Cruzar puertas y cerrar vistas o cuadros | E |
 | Usar objetos que se iluminan | Clic, con Elaki cerca |
 | Ver el interior del refrigerador | E junto al refrigerador, en la casa real; E otra vez para cerrar |
+| Pausa (Reanudar, Opciones, Volver al menú principal) | Esc; Esc otra vez para reanudar |
+
+La pausa solo se abre cuando Elaki puede moverse: durante una secuencia, una vista, un diálogo o un fundido de carga,
+Esc conserva su uso de siempre. Con la pausa abierta el tiempo se detiene y la E no interactúa con nada. Volver al menú
+pregunta antes, porque se pierde lo jugado desde el último punto de control.
+
+### Menú y Opciones
+
+| Acción | Control |
+|---|---|
+| Pasar de la pantalla de inicio al menú | Cualquier tecla o clic |
+| Elegir una opción | ↑ ↓ o W S; el mouse enfoca al pasar por encima |
+| Confirmar | Enter o clic |
+| Volver, cancelar una nota o salir del juego desde el menú | Esc |
+| Ajustar una opción | ← → o A D; clic a la izquierda o a la derecha de la marca |
+| Cambiar de pestaña en Opciones | Q y E, o clic en la pestaña |
+| Guardar las opciones | G |
+| Restablecer la pestaña actual | R |
+
+Reglas del menú:
+
+- **Continuar** aparece tachado y no se puede elegir si no hay partida guardada o si `partida.json` está dañado.
+- **Jugar** con una partida guardada pregunta antes de borrarla; sin partida, empieza directo.
+- Las notas de confirmación empiezan en **No**, y Esc equivale a No.
+- En **Opciones**, audio, brillo y accesibilidad se ven al momento; resolución, modo de pantalla y calidad se aplican al
+  guardar. Con cambios sin guardar aparece el sello **Sin guardar**, y Esc pregunta antes de descartarlos.
+- Los ajustes se guardan en `ajustes.json`, junto a `partida.json` (`Application.persistentDataPath`). Restablecer no
+  toca la partida.
+- **Subtítulos** e **Indicadores de sonido** se guardan, pero aún no hacen nada: el juego todavía no tiene voces ni
+  sonidos. Los volúmenes de Música, Efectos y Voces se aplican a cada `AudioSource` que lleve `VolumenPorCategoria`.
 
 ## Escenas
 
 | Escena | Contenido | Cómo se sale |
 |---|---|---|
-| `MEN_Principal` | Nueva partida, Continuar y Salir | Nueva partida |
+| `MEN_Principal` | Pantalla de inicio, menú (Jugar, Continuar, Opciones y Salir) y Opciones, según el Figma del menú | Jugar o Continuar |
 | `PRO_Casa` | Elaki despierta en su habitación y explora la casa libremente. Al acercarse a la silla del comedor aparece la E, y con ella empieza el desayuno con los papás, seguido del mareo, y aparece en el baño. Desde entonces, clic en el espejo abre la cajonera; al cerrarla aparece la silueta y luego el portal | Clic de nuevo en el espejo |
 | `N1_Bano` | El mismo baño en blanco y frío, para la sensación de valle inquietante, con la cajonera en el mismo tono | E en la puerta |
 | `N1_Pasillo` | Pasillo blanco de 30 tramos (240 celdas) con solo 3 puertas muy separadas (tramos 8, 19 y 30); lo demás es pared con cuadros en blanco. Al final, puerta bloqueada y ventana cubierta | Clic en el portal, que aparece cerca del final |
