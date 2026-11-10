@@ -14,7 +14,8 @@ public class OpcionMenu : MonoBehaviour, IPointerEnterHandler, IPointerClickHand
     [SerializeField] private Image rasguno;
     [Tooltip("Copias roja y azul detrás del texto enfocado; pueden quedar vacías")]
     [SerializeField] private GameObject sombras;
-    [SerializeField] private bool subrayarAlEnfocar;
+    [Tooltip("Franja oscura detrás de la opción enfocada (notas sobre papel); puede quedar vacía")]
+    [SerializeField] private Image fondoEnfoque;
     [SerializeField] private Color colorEnfocada = new Color32(0xEC, 0xE6, 0xD8, 0xFF);
     [SerializeField] private Color colorNormal = new Color(0.541f, 0.608f, 0.659f, 0.8f);
 
@@ -45,14 +46,14 @@ public class OpcionMenu : MonoBehaviour, IPointerEnterHandler, IPointerClickHand
         rasguno.enabled = enfocada;
         if (sombras != null)
             sombras.SetActive(enfocada);
+        if (fondoEnfoque != null)
+            fondoEnfoque.enabled = enfocada;
 
         var color = enfocada ? colorEnfocada : colorNormal;
         if (!Habilitada)
             color.a *= AlfaDeshabilitada;
 
         etiqueta.color = color;
-        if (subrayarAlEnfocar)
-            etiqueta.fontStyle = enfocada ? FontStyles.Underline : FontStyles.Normal;
     }
 
     public void OnPointerEnter(PointerEventData evento)
