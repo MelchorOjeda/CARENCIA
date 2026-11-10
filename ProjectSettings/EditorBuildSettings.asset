@@ -18,6 +18,9 @@ EditorBuildSettings:
     path: Assets/_Carencia/Scenes/Nivel01/N1_Pasillo.unity
     guid: da32b9815af2b0445b4a82872cc9e0fe
   - enabled: 1
+    path: Assets/_Carencia/Scenes/Nivel01/R1_Casa.unity
+    guid: 9f2e6ed52cd20a0478b476839a12ce07
+  - enabled: 1
     path: Assets/_Carencia/Scenes/Nivel02/N2_Casa.unity
     guid: 4f0c494a5d12bc94f82ad2f7e6bfb1c9
   - enabled: 1
@@ -26,5 +29,8 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
     guid: dffac92b1912cbf469a4b329f660bf13
+  - enabled: 1
+    path: Assets/_Carencia/Scenes/Desenlace/DES_Final.unity
+    guid: 9085f19605dc4ad4c965a320cfd3b683
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
