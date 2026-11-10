@@ -61,6 +61,7 @@ Reglas del menú:
 - **Daño:** 3 golpes reinician desde el último punto de control. Las manchas rojas crecen con cada golpe y se borran al terminar la persecución.
 - **Velocidades:** Elaki camina a 1.5 y corre a 2.6. La criatura va a 2.0 y Margarita a 2.2, así que hay que correr para escapar.
 - **Puntos de control:** al entrar a cada nivel, antes y después de cada persecución. Se guardan en un archivo y los usa Continuar.
+- **Perro de la familia:** en la casa normal del prólogo (`PRO_Casa`) acompaña a Elaki unos pasos detrás, por el mismo camino que ella recorrió, así que no atraviesa paredes ni muebles. Si Elaki aparece lejos (al entrar a la escena, al cruzar una puerta o en una secuencia), el perro reaparece junto a ella. No choca ni se puede usar. Se coloca arrastrando `Prefabs/Personajes/PF_PerroAcompanante` a la escena.
 
 ## Sistemas
 
@@ -74,6 +75,7 @@ Reglas del menú:
 | `Narrative/Parpadeo` | Interferencia de la televisión |
 | `Enemies/EnemigoPerseguidor` | Busca a Elaki por las celdas libres y la golpea por contacto |
 | `Player/SaludJugador` | Recibe golpes y dispara la muerte |
+| `Player/PerroAcompanante` | El perro sigue el camino de Elaki y reaparece junto a ella si queda lejos |
 | `UI/MenuPrincipal` | Menú inicial |
 
 ## Pendiente
