@@ -2,7 +2,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-// Pausa del juego con Esc: Reanudar, Opciones y Volver al menú principal.
+// Pausa del juego con Esc: Reanudar, Ajustes y Volver al menú principal.
 // Se crea sola al arrancar y vive entre escenas, así ninguna escena de juego tiene que incluirla.
 // Detiene el tiempo y desactiva al jugador (movimiento y la E) hasta reanudar.
 public class MenuPausa : MonoBehaviour
@@ -131,7 +131,7 @@ public class MenuPausa : MonoBehaviour
     private void AbrirOpciones()
     {
         pantallaPausa.SetActive(false);
-        pantallaOpciones.Abrir(() => MostrarPausa(Opciones), "Pausa  ›  Opciones");
+        pantallaOpciones.Abrir(() => MostrarPausa(Opciones), "Pausa  ›  Ajustes");
     }
 
     private void PreguntarVolver()

@@ -1,0 +1,340 @@
+fileFormatVersion: 2
+guid: 2d65621deedb4f17a0617b846708ee03
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5187687757115983511
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_0
+  - first:
+      213: 7649777774670232045
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_1
+  - first:
+      213: -5204639823720601981
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_2
+  - first:
+      213: -3890932818210193265
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_3
+  - first:
+      213: 1279470478203749121
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_4
+  - first:
+      213: -5156463430548920050
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_5
+  - first:
+      213: 5115669003692673523
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_6
+  - first:
+      213: -1376131282852395183
+    second: ventilador_techo_agobiante_animacion_girar_hoja_sprites_7
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 2
+  spritePivot: {x: 0.5, y: 1.0}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e56aa732d6d48a69cbe38678ca14fbd
+      internalID: -5187687757115983511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc150e7f89c84019a45046037d62b891
+      internalID: 7649777774670232045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5f6405a098a43faa3857cb84fad06a2
+      internalID: -5204639823720601981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 579d0def78dd4f788e3190aa6016576c
+      internalID: -3890932818210193265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d54bb8fbeed54331aa15f279a77efc2d
+      internalID: 1279470478203749121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e44505a493fe4d69987e1fb8c6826a70
+      internalID: -5156463430548920050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b96e9aa7cf9c4a2f9e0611185a9d7f9a
+      internalID: 5115669003692673523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ventilador_techo_agobiante_animacion_girar_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 2100
+        y: 0
+        width: 300
+        height: 300
+      alignment: 2
+      pivot: {x: 0.5, y: 1.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9829c56b5d8f499fb88d9b58c0346410
+      internalID: -1376131282852395183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_0: -5187687757115983511
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_1: 7649777774670232045
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_2: -5204639823720601981
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_3: -3890932818210193265
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_4: 1279470478203749121
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_5: -5156463430548920050
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_6: 5115669003692673523
+      ventilador_techo_agobiante_animacion_girar_hoja_sprites_7: -1376131282852395183
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

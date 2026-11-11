@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: f572de6da362492c841d7e2f59cde96d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -635813930210564231
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_0
+  - first:
+      213: -6318334112744867360
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_1
+  - first:
+      213: -5513585247037908053
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_2
+  - first:
+      213: -249271545399243917
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_3
+  - first:
+      213: -4416405955123570257
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_4
+  - first:
+      213: 1798299873180909121
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_5
+  - first:
+      213: -380549586960704538
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_6
+  - first:
+      213: 2246336975231439072
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_7
+  - first:
+      213: 5040250460075462183
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_8
+  - first:
+      213: -514760364972283010
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_9
+  - first:
+      213: 8429252443645530755
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_10
+  - first:
+      213: -7369696984533344585
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_11
+  - first:
+      213: -8433757372949545995
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_12
+  - first:
+      213: -3782285365330282424
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_13
+  - first:
+      213: 4818727761551540969
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_14
+  - first:
+      213: -7426920519380563670
+    second: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5f898ae26d42f4b5b77c3ebd71afa9
+      internalID: -635813930210564231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673ae76f586848618997a194ab8f04a3
+      internalID: -6318334112744867360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8130cea579024d82b4ec96fcd272d1f4
+      internalID: -5513585247037908053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9d733673e349079c1453b369795a07
+      internalID: -249271545399243917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f41565348544b3a860e85dde6f3e2e
+      internalID: -4416405955123570257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b80b893f16b47e4b6807526d72586fe
+      internalID: 1798299873180909121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe603e4e2234ce5ba3cb7b746354cae
+      internalID: -380549586960704538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb3911e12214bc49007a78eae4ed5fb
+      internalID: 2246336975231439072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bd2815cc0794683a5958537af85ae4b
+      internalID: 5040250460075462183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65de37734c1942049c8b44e2afdc1aca
+      internalID: -514760364972283010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9c29c0c23f1465890204d679ade6222
+      internalID: 8429252443645530755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b012be30ccf2430cac4402acf3d57fb5
+      internalID: -7369696984533344585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bef65340c3415687323801fe61881e
+      internalID: -8433757372949545995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daba40d0ed1a4a6a99c40435ecb6ba26
+      internalID: -3782285365330282424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c1e1bad5c046939f72db78095bdea9
+      internalID: 4818727761551540969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1b70ed278a4dd8a461d6130ddef316
+      internalID: -7426920519380563670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_0: -635813930210564231
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_1: -6318334112744867360
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_2: -5513585247037908053
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_3: -249271545399243917
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_4: -4416405955123570257
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_5: 1798299873180909121
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_6: -380549586960704538
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_7: 2246336975231439072
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_8: 5040250460075462183
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_9: -514760364972283010
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_10: 8429252443645530755
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_11: -7369696984533344585
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_12: -8433757372949545995
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_13: -3782285365330282424
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_14: 4818727761551540969
+      mosca_sucio_oscuro_animacion_vuelo_circular_hoja_sprites_15: -7426920519380563670
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 52d9f3d1e9a94806891c87af115a3ba3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5604869741096004323
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+  - first:
+      213: 1259188222761195546
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+  - first:
+      213: 8581736587627048236
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+  - first:
+      213: -3637732614903151488
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+  - first:
+      213: -2949058344419246751
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+  - first:
+      213: -2400789068214532604
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+  - first:
+      213: 8304675553837098708
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+  - first:
+      213: 3298065988774575734
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+  - first:
+      213: 8561286232151786376
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+  - first:
+      213: 3970641501441634903
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+  - first:
+      213: 9087774420619175977
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+  - first:
+      213: -2085057800800535754
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+  - first:
+      213: 743828362502907175
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+  - first:
+      213: -1929915289707953586
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+  - first:
+      213: -3315024388926287729
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+  - first:
+      213: -1692959265465719331
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+  - first:
+      213: -6988557356028407926
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+  - first:
+      213: -8622418393724515474
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+  - first:
+      213: -8197327769255790498
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+  - first:
+      213: -1590854032216434098
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+  - first:
+      213: -6082909472250216909
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+  - first:
+      213: -1839562899159166851
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+  - first:
+      213: 6978806125579223364
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+  - first:
+      213: -4239409423536799190
+    second: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.0}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a735f7510ec4beda27368d66f52ead6
+      internalID: 5604869741096004323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6bc17725e4e457dae68f345a3de43c1
+      internalID: 1259188222761195546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d07daabf2032421c8b3998c6d6b70312
+      internalID: 8581736587627048236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f44e9065d0f4effac59692e84824339
+      internalID: -3637732614903151488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc6c5e56cf9c4e69be632e36aa4491f8
+      internalID: -2949058344419246751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b9b7c517f14d5281dd9a0daaef02e8
+      internalID: -2400789068214532604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baeac60bff1742639e6490efb3b34772
+      internalID: 8304675553837098708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6f3365355fa4236a7482a02daab75a4
+      internalID: 3298065988774575734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7449913c8ec4a808b339f462af29c3d
+      internalID: 8561286232151786376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f1839e89744b019c295f22d27fb71e
+      internalID: 3970641501441634903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea18494eef9b48c599a4c0b7727ad7ba
+      internalID: 9087774420619175977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8991a56a6e449879ce34685d8f84811
+      internalID: -2085057800800535754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a35eeb5799e48b3bbff8a1e5ab39eef
+      internalID: 743828362502907175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af907033c0cf481b95bba1ef04714d6f
+      internalID: -1929915289707953586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffaf39aceb7a493089bb87e80b20eb27
+      internalID: -3315024388926287729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7bc994b6044be7a8dd431c69ceadb7
+      internalID: -1692959265465719331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ac0de8de8fa4341a3f0015219c844fd
+      internalID: -6988557356028407926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff5edaadc7b490db1651425785fe966
+      internalID: -8622418393724515474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e80e72a79e154c96a8c79d2ec158db10
+      internalID: -8197327769255790498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8fc428a7fbf4b4099ba8764bb74226e
+      internalID: -1590854032216434098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d48005f4b7e547d6bf61b9311ab2a6cd
+      internalID: -6082909472250216909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f054649e8bd442493b4a06c2eb5381e
+      internalID: -1839562899159166851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30bc430ecdfb42b29adb711161a07f61
+      internalID: 6978806125579223364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b12cf229c424244af57049f7d53bf9c
+      internalID: -4239409423536799190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0: 5604869741096004323
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1: 1259188222761195546
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2: 8581736587627048236
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3: -3637732614903151488
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4: -2949058344419246751
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5: -2400789068214532604
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6: 8304675553837098708
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7: 3298065988774575734
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8: 8561286232151786376
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9: 3970641501441634903
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10: 9087774420619175977
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11: -2085057800800535754
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12: 743828362502907175
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13: -1929915289707953586
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14: -3315024388926287729
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15: -1692959265465719331
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16: -6988557356028407926
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17: -8622418393724515474
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18: -8197327769255790498
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19: -1590854032216434098
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20: -6082909472250216909
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21: -1839562899159166851
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22: 6978806125579223364
+      plato_tacos_pastor_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23: -4239409423536799190
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

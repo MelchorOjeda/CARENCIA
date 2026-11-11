@@ -32,7 +32,6 @@ public class FilaOpcion : MonoBehaviour, IPointerEnterHandler, IPointerClickHand
     {
         rasguno.enabled = enfocada;
         fondoEnfoque.enabled = enfocada;
-        etiqueta.fontStyle = enfocada ? FontStyles.Underline : FontStyles.Normal;
     }
 
     public void OnPointerEnter(PointerEventData evento)

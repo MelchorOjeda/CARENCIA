@@ -65,7 +65,7 @@ Assets/_Carencia/
 │   ├── Dialogue/             lógica de diálogos (la caja visual va en UI)
 │   ├── Audio/
 │   ├── UI/
-│   │   └── Menu/             menú principal, Opciones, notas de confirmación y teclas de los menús
+│   │   └── Menu/             menú principal, Ajustes, notas de confirmación y teclas de los menús
 │   │       └── Logica/       reglas del menú sin Unity (asmdef Carencia.Menu.Logica), probadas en Tests/
 │   ├── Effects/              fundidos, manchas de daño, espiral, parpadeo
 │   ├── Progress/            guardado JSON y puntos de control
@@ -103,7 +103,7 @@ Por qué cada adición:
 | `Audio/Mixer/`            | Permite los volúmenes por categoría que pide el GDD (Opciones → Audio)                                                                           |
 | `Settings/`               | El archivo de Input Actions (WASD, E, Esc, clic)                                                                                                 |
 | `UI/Fuentes/`             | Las fuentes y sus Font Assets de TextMeshPro ocupan varios archivos                                                                              |
-| `Scripts/UI/Menu/Logica/` | Las reglas del menú (valores de Opciones, navegación, cuándo preguntar) no dependen de escenas; su propio asmdef permite probarlas en EditMode    |
+| `Scripts/UI/Menu/Logica/` | Las reglas del menú (valores de Ajustes, navegación, cuándo preguntar) no dependen de escenas; su propio asmdef permite probarlas en EditMode    |
 | `Resources/`              | Unity solo puede cargar por nombre lo que está aquí; la pausa se crea sola sin tocar las escenas de juego. Todo lo de esta carpeta entra al build |
 | `Tests/EditMode/`         | Pruebas automáticas que se corren en el Test Runner sin dar Play; su asmdef solo existe en el Editor y no entra al build                          |
 | Subcarpetas de `Sprites/` | El GDD tiene cuatro versiones de la casa; separar por dimensión evita carpetas con cientos de archivos                                           |
