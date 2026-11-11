@@ -175,6 +175,9 @@ public class PantallaJuego : MonoBehaviour
 
         fundido = Capa("Fundido", null);
         fundido.color = new Color(0f, 0f, 0f, 0f);
+
+        // El cuadro de diálogo queda sobre el fundido: lo que se dice a oscuras se sigue leyendo
+        cuadro.transform.SetAsLastSibling();
     }
 
     private Image Capa(string nombre, Sprite sprite)
@@ -224,7 +227,7 @@ public class PantallaJuego : MonoBehaviour
                 var angulo = Mathf.Atan2(dy, dx);
                 var brazo = Mathf.Sin(angulo * 3f + radio * 16f) * 0.5f + 0.5f;
                 var alfa = Mathf.Clamp01(radio * 1.4f) * Mathf.SmoothStep(0.25f, 0.75f, brazo);
-                textura.SetPixel(x, y, new Color(0.03f, 0.01f, 0.04f, Mathf.Max(alfa, Mathf.InverseLerp(0.9f, 1.3f, radio))));
+                textura.SetPixel(x, y, new Color(1f, 1f, 1f, Mathf.Max(alfa, Mathf.InverseLerp(0.9f, 1.3f, radio))));
             }
         }
 
@@ -361,8 +364,13 @@ public class PantallaJuego : MonoBehaviour
     }
 
     // La espiral cubre la pantalla girando y termina en negro
-    public Coroutine Espiral(float duracion)
+    // Negra en el mareo y la muerte; morada al cruzar de una dimensión a otra
+    private static readonly Color EspiralNegra = new Color(0.03f, 0.01f, 0.04f, 0f);
+    private static readonly Color EspiralMorada = new Color(0.4f, 0.14f, 0.55f, 0f);
+
+    public Coroutine Espiral(float duracion, bool morada = false)
     {
+        espiral.color = morada ? EspiralMorada : EspiralNegra;
         return StartCoroutine(RutinaEspiral(duracion));
     }
 
@@ -398,6 +406,16 @@ public class PantallaJuego : MonoBehaviour
         // Interferencia provisional mientras llega el video definitivo
         var ruido = Mathf.PerlinNoise(Time.time * 9f, 0.3f);
         imagenVideo.color = Color.Lerp(new Color32(20, 28, 32, 255), new Color32(92, 40, 46, 255), ruido * avance);
+    }
+
+    // Fija el negro de pantalla al instante (para oscurecer poco a poco desde otro componente).
+    // Si hay un fundido en curso no lo toca: una secuencia puede estar esperando a que termine
+    public void SetFundido(float alfa)
+    {
+        if (rutinaFundido != null)
+            return;
+
+        SetAlfa(fundido, Mathf.Clamp01(alfa));
     }
 
     public Coroutine Fundir(float alfa, float duracion)
