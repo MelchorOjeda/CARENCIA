@@ -14,7 +14,7 @@ public class CajaDialogo : MonoBehaviour
     private const float Ancho = 560f;
     // Cabe una página de tres renglones con Tamaño de texto Grande
     private const float Alto = 112f;
-    private const float MargenInferior = 10f;
+    private const float MargenBorde = 10f;
     private const float Relleno = 14f;
     private const float AltoNombre = 20f;
     private const float TamanoNombre = 13f;
@@ -52,10 +52,11 @@ public class CajaDialogo : MonoBehaviour
         return guion.LineaDe(clave);
     }
 
-    // Corre dentro de la corrutina de una secuencia y termina cuando el jugador cierra la última página
-    public IEnumerator Mostrar(LineaDialogo datos)
+    // Corre dentro de una corrutina y termina cuando el jugador cierra la última página.
+    // Arriba sirve en vistas fijas como el gabinete, para no tapar el objeto que se está viendo
+    public IEnumerator Mostrar(LineaDialogo datos, bool arriba = false)
     {
-        Abrir(datos);
+        Abrir(datos, arriba);
 
         // La pulsación que abrió la línea (E sobre un objeto) no debe completarla
         yield return null;
@@ -117,11 +118,7 @@ public class CajaDialogo : MonoBehaviour
 
     private void ConstruirFondo()
     {
-        var rect = (RectTransform)transform;
-        rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0f);
-        rect.pivot = new Vector2(0.5f, 0f);
-        rect.sizeDelta = new Vector2(Ancho, Alto);
-        rect.anchoredPosition = new Vector2(0f, MargenInferior);
+        ((RectTransform)transform).sizeDelta = new Vector2(Ancho, Alto);
 
         var fondo = gameObject.AddComponent<Image>();
         fondo.color = ColorFondo;
@@ -168,12 +165,13 @@ public class CajaDialogo : MonoBehaviour
         return fuente;
     }
 
-    private void Abrir(LineaDialogo datos)
+    private void Abrir(LineaDialogo datos, bool arriba)
     {
         linea = new LineaEnPantalla(datos, guion.LetrasPorSegundo);
         nombre.text = Encabezado(linea);
         nombre.gameObject.SetActive(nombre.text.Length > 0);
         texto.fontStyle = linea.EsPensamiento ? FontStyles.Italic : FontStyles.Normal;
+        ColocarEnPantalla(arriba);
         gameObject.SetActive(true);
         Refrescar();
     }
@@ -186,6 +184,16 @@ public class CajaDialogo : MonoBehaviour
 
         var etiqueta = $"<color={ColorEtiquetaPensamiento}><i>pensamiento</i></color>";
         return linea.Quien.Length > 0 ? $"{linea.Quien}  ·  {etiqueta}" : etiqueta;
+    }
+
+    // Centrada, pegada al borde de abajo o al de arriba con el mismo margen
+    private void ColocarEnPantalla(bool arriba)
+    {
+        var borde = arriba ? 1f : 0f;
+        var rect = (RectTransform)transform;
+        rect.anchorMin = rect.anchorMax = new Vector2(0.5f, borde);
+        rect.pivot = new Vector2(0.5f, borde);
+        rect.anchoredPosition = new Vector2(0f, arriba ? -MargenBorde : MargenBorde);
     }
 
     private bool SePulsoAvanzar()
