@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-// Capa de pantalla común a todas las escenas: fundidos, manchas de daño, penumbra, cuadro en blanco y barra de video.
+// Capa de pantalla común a todas las escenas: fundidos, manchas de daño, penumbra, caja de diálogo y barra de video.
 // También carga escenas y coloca a Elaki en su punto de entrada. Se crea sola la primera vez que se pide.
 public class PantallaJuego : MonoBehaviour
 {
@@ -13,8 +13,7 @@ public class PantallaJuego : MonoBehaviour
     private Image fundido;
     private Image manchas;
     private Image penumbra;
-    private GameObject cuadro;
-    private Text claveCuadro;
+    private CajaDialogo caja;
     private GameObject marcador;
     private Text textoMarcador;
     private Image espiral;
@@ -39,7 +38,9 @@ public class PantallaJuego : MonoBehaviour
         }
     }
 
-    public bool CuadroVisible => cuadro.activeSelf;
+    public CajaDialogo Dialogo => caja;
+
+    public bool CuadroVisible => caja.Visible;
 
     // Durante el fundido de una carga no se puede pausar
     public bool Cargando => cargando;
@@ -83,26 +84,6 @@ public class PantallaJuego : MonoBehaviour
         SetAlfa(penumbra, 0f);
         manchas = Capa("Manchas", Manchas());
         SetAlfa(manchas, 0f);
-
-        cuadro = new GameObject("CuadroDialogo", typeof(RectTransform));
-        cuadro.transform.SetParent(transform, false);
-        var rectCuadro = (RectTransform)cuadro.transform;
-        rectCuadro.anchorMin = rectCuadro.anchorMax = new Vector2(0.5f, 0f);
-        rectCuadro.pivot = new Vector2(0.5f, 0f);
-        rectCuadro.sizeDelta = new Vector2(600f, 72f);
-        rectCuadro.anchoredPosition = new Vector2(0f, 8f);
-        cuadro.AddComponent<Image>().color = new Color32(44, 26, 22, 255);
-        var papel = new GameObject("Papel", typeof(RectTransform));
-        papel.transform.SetParent(cuadro.transform, false);
-        var rectPapel = (RectTransform)papel.transform;
-        rectPapel.anchorMin = Vector2.zero;
-        rectPapel.anchorMax = Vector2.one;
-        rectPapel.offsetMin = new Vector2(6f, 6f);
-        rectPapel.offsetMax = new Vector2(-6f, -6f);
-        papel.AddComponent<Image>().color = new Color32(244, 232, 208, 255);
-        // Clave de la línea del guion: el equipo de diálogos reemplaza el cuadro en blanco por su texto
-        claveCuadro = Texto(papel.transform, 9, TextAnchor.LowerRight, new Color32(150, 132, 112, 255));
-        cuadro.SetActive(false);
 
         // Marcador de una imagen o video que aún no tiene arte: fondo oscuro con una descripción
         marcador = new GameObject("Marcador", typeof(RectTransform));
@@ -170,14 +151,17 @@ public class PantallaJuego : MonoBehaviour
         barraVideo.fillMethod = Image.FillMethod.Horizontal;
         video.SetActive(false);
 
+        // Encima de marcadores, vistas y video, para que una línea se lea sobre ellos
+        caja = CajaDialogo.Crear(transform);
+
         espiral = Capa("Espiral", Espiral());
         SetAlfa(espiral, 0f);
 
         fundido = Capa("Fundido", null);
         fundido.color = new Color(0f, 0f, 0f, 0f);
 
-        // El cuadro de diálogo queda sobre el fundido: lo que se dice a oscuras se sigue leyendo
-        cuadro.transform.SetAsLastSibling();
+        // La caja de diálogo sube sobre espiral y fundido: lo que se dice a oscuras (el "Ayuda." del desmayo) se sigue leyendo
+        caja.transform.SetAsLastSibling();
     }
 
     private Image Capa(string nombre, Sprite sprite)
@@ -351,12 +335,6 @@ public class PantallaJuego : MonoBehaviour
         return Mathf.Abs(a.r - b.r) + Mathf.Abs(a.g - b.g) + Mathf.Abs(a.b - b.b) < 0.12f;
     }
 
-    public void MostrarCuadro(bool visible, string clave = null)
-    {
-        cuadro.SetActive(visible);
-        claveCuadro.text = clave ?? "";
-    }
-
     public void MostrarMarcador(string texto)
     {
         marcador.SetActive(!string.IsNullOrEmpty(texto));
@@ -468,7 +446,7 @@ public class PantallaJuego : MonoBehaviour
             escena = SceneManager.GetActiveScene().name;
 
         entradaPendiente = entrada;
-        MostrarCuadro(false);
+        caja.Ocultar();
         MostrarVideo(false);
         MostrarImagen(null);
         MostrarMarcador(null);
@@ -480,6 +458,11 @@ public class PantallaJuego : MonoBehaviour
 
     private static void AlCargarEscena(Scene escena, LoadSceneMode modo)
     {
+        // Una línea que abrió la escena anterior justo antes de irse se queda sin quien la cierre:
+        // se oculta aquí, antes del Start de la escena nueva, para que sus diálogos no esperen turno para siempre
+        if (instancia != null && instancia.caja != null && instancia.caja.Visible)
+            instancia.caja.Ocultar();
+
         if (string.IsNullOrEmpty(entradaPendiente))
             return;
 

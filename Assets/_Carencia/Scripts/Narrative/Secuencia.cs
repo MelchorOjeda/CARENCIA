@@ -32,7 +32,7 @@ public class Secuencia : MonoBehaviour
         CargarEscena,
         AbrirGabinete,
         VerImagen,
-        // Línea del guion: cuadro en blanco con su clave, para que el equipo de diálogos ponga el texto
+        // Línea del guion: muestra en la caja de diálogo el texto de la clave guardado en SO_Dialogo_Guion
         Dialogo,
         // Espiral que cierra la vista y termina en negro (valor: duración; valor2 = 1: morada, al cambiar de dimensión)
         Espiral,
@@ -288,14 +288,23 @@ public class Secuencia : MonoBehaviour
         monitor.gameObject.SetActive(false);
     }
 
-    // Las vistas de inspección y los diálogos avanzan con E, Esc o clic
+    // Las vistas de inspección y los marcadores se cierran con E, Esc o clic
     private bool Salir()
     {
         return accionInteractuar.WasPressedThisFrame() || accionCancelar.WasPressedThisFrame() || accionClic.WasPressedThisFrame();
     }
 
-    // Al terminar deja a Elaki como estaba: si estaba sentada en la mesa, sigue sentada
     private IEnumerator Dialogo(string clave)
+    {
+        var linea = PantallaJuego.Instancia.Dialogo.LineaDe(clave);
+
+        // "Sin texto" en el guion: ni se abre la caja ni se detiene a Elaki
+        if (linea.TieneTexto)
+            yield return MostrarEnCaja(linea);
+    }
+
+    // Al terminar deja a Elaki como estaba: si estaba sentada en la mesa, sigue sentada
+    private IEnumerator MostrarEnCaja(LineaDialogo linea)
     {
         var pantalla = PantallaJuego.Instancia;
         // Si ya hay otra línea en pantalla, esta espera su turno
@@ -305,13 +314,9 @@ public class Secuencia : MonoBehaviour
         var movimiento = jugador != null && jugador.MovimientoBloqueado;
         var interaccion = detector != null && detector.InteraccionBloqueada;
         Bloquear(true);
-        pantalla.MostrarCuadro(true, clave);
-        yield return null;
+        yield return pantalla.Dialogo.Mostrar(linea);
 
-        while (!Salir())
-            yield return null;
-
-        pantalla.MostrarCuadro(false);
+        // La pulsación que cierra la línea no debe activar el objeto que está enfrente
         yield return null;
         if (jugador != null)
             jugador.MovimientoBloqueado = movimiento;
@@ -385,19 +390,9 @@ public class Secuencia : MonoBehaviour
         Bloquear(false);
     }
 
-    // Queda abierto hasta pulsar E: el equipo de diálogos pondrá aquí sus textos
+    // La caja vacía queda abierta hasta que el jugador la cierra
     private IEnumerator CuadroEnBlanco()
     {
-        var pantalla = PantallaJuego.Instancia;
-        Bloquear(true);
-        pantalla.MostrarCuadro(true);
-        yield return null;
-
-        while (!Salir())
-            yield return null;
-
-        pantalla.MostrarCuadro(false);
-        yield return null;
-        Bloquear(false);
+        return MostrarEnCaja(new LineaDialogo());
     }
 }

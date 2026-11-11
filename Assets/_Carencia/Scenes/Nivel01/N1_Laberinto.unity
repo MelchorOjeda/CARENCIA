@@ -135110,6 +135110,7 @@ MonoBehaviour:
   jugador: {fileID: 561880987}
   detector: {fileID: 561880994}
   alturaCuadro: 136
+  mostrarTextos: 0
   alCerrar:
     m_PersistentCalls:
       m_Calls: []

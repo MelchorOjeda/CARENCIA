@@ -1,11 +1,40 @@
 # Claves de diálogo
 
-Cada línea del guion unificado v1 (Kris, 9 de noviembre) ya está en su lugar dentro del juego, pero sin texto: se ve un cuadro en blanco con su **clave** en la esquina inferior derecha. El equipo de diálogos solo tiene que asignar el texto a cada clave.
+Cada línea del guion unificado v1 (Kris, 9 de noviembre) ya está en su lugar dentro del juego con su **clave**. El texto de cada clave vive en `Assets/_Carencia/Resources/SO_Dialogo_Guion.asset`; una clave que todavía no tiene texto se ve entre corchetes, por ejemplo `[P1_mama]`, y avisa en la consola.
 
 ## Cómo funciona
 
-- En las secuencias, cada línea es un paso `Dialogo` cuyo campo `texto` es la clave. Avanza con E, Esc o clic.
+- En las secuencias, cada línea es un paso `Dialogo` cuyo campo `texto` es la clave.
+- La caja es un rectángulo negro translúcido al pie de la pantalla, con el nombre de quien habla arriba (en dorado) y el texto en Special Elite. El tamaño sigue a Opciones → Accesibilidad → Tamaño de texto.
+- El texto se escribe letra por letra con el sonido `Audio/Efectos/SFX_Dialogo_Escritura`, que suena en loop solo mientras se escribe y sigue el volumen de Efectos.
+- Enter, clic o E (también Esc): la primera pulsación completa la página; la siguiente pasa a la siguiente página o cierra la línea.
 - Al terminar la línea, Elaki queda como estaba: si estaba sentada en la mesa, sigue sentada.
+
+## Cómo editar un texto
+
+Selecciona `SO_Dialogo_Guion` en el Project y, en el Inspector, busca la clave en la lista **Lineas**:
+
+| Campo | Para qué |
+|---|---|
+| Clave | La misma del paso `Dialogo`. Si no coincide letra por letra, se verá `[clave]` |
+| Quien | Nombre que aparece arriba del texto (Elaki, Mamá, Papá…). Vacío para textos sin voz, como el periódico |
+| Texto | Lo que se escribe. Una **línea en blanco** separa páginas: úsala en textos de más de dos renglones. Vacío si el guion dice "Sin texto": el juego se salta la línea |
+| Pensamiento | Marcado para lo que Elaki piensa y no dice: se ve en cursiva y con la etiqueta *pensamiento* junto al nombre |
+
+Arriba de la lista están la fuente, el sonido y la velocidad (letras por segundo; 0 muestra cada página completa de golpe).
+
+La prueba `ClavesDelGuionTests` (Test Runner → EditMode) falla si una clave de las escenas no tiene línea, si una clave se repite o si una página pasa de 120 letras.
+
+## Decisiones al pasar el guion v1
+
+Las 71 claves ya tienen el texto del guion unificado v1, incluidas las propuestas [P]. Cambios para revisar:
+
+- Los nombres son **Mamá** y **Papá** (el guion alterna "Madre" y "Mamá"); la voz del pasillo es **Voz**; el anuncio, **Televisión**; el D3, **Noticiero**. El periódico, D4 y D5 van sin nombre.
+- Todo lo que el guion marca como "Pensamiento" o comentario de Elaki al revisar un objeto va en cursiva.
+- Ortografía: "¿Debería ir?" (N1.1), "Qué extraño… no se abre." (N1.1), "Cuautitlán Izcalli" e "Izcalli" (D3 y D4).
+- N2.11 · Lugar vacío: se quitó la acotación "(Suspira.)"; el suspiro queda para el audio.
+- `P4_lavabo_2` está vacío ("Sin texto, solo agua"): el juego se salta la línea.
+- Los textos largos (periódicos, anuncio, noticiero, D4) están divididos en páginas.
 - Los objetos que se revisan más de una vez usan dos claves: `_1` para la primera vez y `_2` para las siguientes. Si el guion dice "Se repite", se usa una sola clave sin número.
 - Los objetos marcados como **obligatorio** avanzan la historia cuando se revisan todos.
 
@@ -26,7 +55,20 @@ Cada línea del guion unificado v1 (Kris, 9 de noviembre) ya está en su lugar d
 | `P4_cortina` | P4 · Cortina (se repite) | Pensamiento |
 | `P6_pensamiento_1` / `P6_pensamiento_2` | P6 · Portal en el espejo | Pensamiento |
 
-Los textos de cada frasco del gabinete (P5) siguen en la vista del gabinete, como antes.
+### Gabinete (P5)
+
+Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, arriba o abajo para no tapar el objeto. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosGabineteTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
+
+| Clave | Objeto | Guion P5 |
+|---|---|---|
+| `P5_SertralinaCajas` | Cajas de sertralina | Depresión |
+| `P5_SertralinaFrasco` | Frasco de sertralina | Ansiedad |
+| `P5_ClorpromazinaBote` | Bote chico de clorpromazina | Para dormir |
+| `P5_ClorpromazinaFrasco` | Frasco grande de clorpromazina | Esquizofrenia |
+| `P5_Risperidona` | Risperidona | Esquizofrenia |
+| `P5_Blister` | Blíster de naproxeno y paracetamol | Naproxeno y paracetamol |
+| `P5_Pads` | Parches juveniles | Parches juveniles |
+| `P5_Rastrillo` | Rastrillo | Sin texto |
 
 ## Nivel 1 (`N1_Laberinto`, `N1_Pasillo`)
 

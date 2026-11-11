@@ -17,6 +17,17 @@ public class VolumenPorCategoria : MonoBehaviour
     private AudioSource fuente;
     private float volumenOriginal;
 
+    // Para las fuentes que se crean por código y no tienen Inspector, como la de la caja de diálogo
+    public CategoriaSonido Categoria
+    {
+        get => categoria;
+        set
+        {
+            categoria = value;
+            Aplicar(AjustesJuego.EnPantalla);
+        }
+    }
+
     private void Awake()
     {
         fuente = GetComponent<AudioSource>();
