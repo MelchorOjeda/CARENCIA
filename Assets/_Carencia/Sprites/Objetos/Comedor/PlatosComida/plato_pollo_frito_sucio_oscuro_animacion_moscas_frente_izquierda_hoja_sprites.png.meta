@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: becd8c760fcf4e778231102204766be6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -542415705909374272
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+  - first:
+      213: -7637849146346399172
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+  - first:
+      213: 123203590202974928
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+  - first:
+      213: -258719305174481408
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+  - first:
+      213: -4017427861438725033
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+  - first:
+      213: 558877346527635555
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+  - first:
+      213: -289649903518509508
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+  - first:
+      213: -2349238964086364645
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+  - first:
+      213: 1842197436651404906
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+  - first:
+      213: -8201399623588833943
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+  - first:
+      213: 2678283903188846633
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+  - first:
+      213: 9155580010403006300
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+  - first:
+      213: 8660293633686014846
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+  - first:
+      213: 6968061122778331013
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+  - first:
+      213: 7528810734191395587
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+  - first:
+      213: -4294694212104852442
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+  - first:
+      213: 1943482760990136177
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+  - first:
+      213: 2341371078020881592
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+  - first:
+      213: 4972249667497553265
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+  - first:
+      213: 3755730199909300733
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+  - first:
+      213: 8185653611705845072
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+  - first:
+      213: 8989820516647597628
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+  - first:
+      213: -4342690511550173387
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+  - first:
+      213: -7355313088625158665
+    second: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.0}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e267cb9e11b2412f99b2378f44f340e2
+      internalID: -542415705909374272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d194886612947b8bfc0c11fff2da5fc
+      internalID: -7637849146346399172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8599297338874cac8bc43fca8a4dc9a2
+      internalID: 123203590202974928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f75338f3ec40a0ac7f5df1bebe59fd
+      internalID: -258719305174481408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc248f69fa44cbaa115ff2db2efe90e
+      internalID: -4017427861438725033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb765d44ea724fef939dd144f90b6e50
+      internalID: 558877346527635555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a2ab999d5dc4dda81bfaafbb3fbac6e
+      internalID: -289649903518509508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80d6be6c041d4f298b79d85dea98fb08
+      internalID: -2349238964086364645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 352fd774efe54ac08c7c82d0fad86e31
+      internalID: 1842197436651404906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d7ceaf2a284e0c8a488871d16b5186
+      internalID: -8201399623588833943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32595b0d48244ff28dae0b8d7684c32e
+      internalID: 2678283903188846633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfed125d8a5f45019b3c69a0a08aeb1d
+      internalID: 9155580010403006300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3e84c7659d4b519e52c8e512906655
+      internalID: 8660293633686014846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8de453486c1b40a68a9c56572791aaff
+      internalID: 6968061122778331013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8026d4677524ec093678b960d27bfa3
+      internalID: 7528810734191395587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c97416ca045a49ba991a4cd0f88ce241
+      internalID: -4294694212104852442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88237704b33442688337ed822f304ce9
+      internalID: 1943482760990136177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f57b78629a44cfac2cd83533baafa5
+      internalID: 2341371078020881592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83973ed1bf3b46139e890f2973894a32
+      internalID: 4972249667497553265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a75759194bfa47d7bf50095250ff783a
+      internalID: 3755730199909300733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0daba7472f406aad2acb15f155e24b
+      internalID: 8185653611705845072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b68ad8d4a2af4eb1bdffdba45c1f00b1
+      internalID: 8989820516647597628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe2256b0eeab4f4e831b3b468c18949c
+      internalID: -4342690511550173387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7345ab8cfb4037be1b5c12b69253f9
+      internalID: -7355313088625158665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0: -542415705909374272
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1: -7637849146346399172
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2: 123203590202974928
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3: -258719305174481408
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4: -4017427861438725033
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5: 558877346527635555
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6: -289649903518509508
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7: -2349238964086364645
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8: 1842197436651404906
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9: -8201399623588833943
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10: 2678283903188846633
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11: 9155580010403006300
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12: 8660293633686014846
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13: 6968061122778331013
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14: 7528810734191395587
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15: -4294694212104852442
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16: 1943482760990136177
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17: 2341371078020881592
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18: 4972249667497553265
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19: 3755730199909300733
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20: 8185653611705845072
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21: 8989820516647597628
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22: -4342690511550173387
+      plato_pollo_frito_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23: -7355313088625158665
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

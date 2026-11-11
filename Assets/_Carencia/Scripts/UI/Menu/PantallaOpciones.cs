@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-// Hoja de Opciones con cuatro pestañas. Los cambios se prueban al momento y se guardan con G;
+// Hoja de Ajustes con cuatro pestañas. Los cambios se prueban al momento y se guardan con G;
 // Esc con cambios sin guardar pregunta antes de descartarlos, y R restablece solo la pestaña actual.
 public class PantallaOpciones : MonoBehaviour
 {
@@ -19,7 +19,7 @@ public class PantallaOpciones : MonoBehaviour
     [SerializeField] private GameObject ayudaRestablecer;
     [SerializeField] private GameObject avisoReasignacion;
     [SerializeField] private NotaConfirmacion nota;
-    [Tooltip("Ruta arriba del título, por ejemplo \"Pausa › Opciones\"; vacía desde el menú principal")]
+    [Tooltip("Ruta arriba del título, por ejemplo \"Pausa › Ajustes\"; vacía desde el menú principal")]
     [SerializeField] private TMP_Text ruta;
 
     private Ajustes enEdicion;
@@ -228,7 +228,7 @@ public class PantallaOpciones : MonoBehaviour
                     SoloLectura("Correr", "Shift", "Mantenlo pulsado mientras te mueves para escapar de las persecuciones."),
                     SoloLectura("Interactuar", "E", "Abre puertas, usa objetos y avanza los diálogos."),
                     SoloLectura("Inspeccionar", "Clic izquierdo", "Haz clic en un objeto que se ilumina, estando cerca, para examinarlo."),
-                    SoloLectura("Pausa", "Esc", "Detiene el juego. Desde ahí puedes cambiar las opciones o volver al menú."),
+                    SoloLectura("Pausa", "Esc", "Detiene el juego. Desde ahí puedes cambiar los ajustes o volver al menú."),
                 };
             default:
                 return new[]

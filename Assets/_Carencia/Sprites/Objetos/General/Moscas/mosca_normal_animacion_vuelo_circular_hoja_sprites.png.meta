@@ -1,0 +1,548 @@
+fileFormatVersion: 2
+guid: 74c04d1c299f4cf7adcc729117b7fff7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2221980041515164636
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_0
+  - first:
+      213: -4363993792085884430
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_1
+  - first:
+      213: -552320972847213706
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_2
+  - first:
+      213: 6685821699007843635
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_3
+  - first:
+      213: -8265200357058974446
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_4
+  - first:
+      213: 6892903118233394165
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_5
+  - first:
+      213: -5564566706259109133
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_6
+  - first:
+      213: 7367050690820195332
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_7
+  - first:
+      213: 1544452982547602303
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_8
+  - first:
+      213: -9212264393630265905
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_9
+  - first:
+      213: -2906314191116191698
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_10
+  - first:
+      213: -6330613299897622632
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_11
+  - first:
+      213: -5926523459953897403
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_12
+  - first:
+      213: 5510269278070680653
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_13
+  - first:
+      213: 707861753761833856
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_14
+  - first:
+      213: -5606727209285786180
+    second: mosca_normal_animacion_vuelo_circular_hoja_sprites_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8163ed771a624b7c94332b72c2e3ec28
+      internalID: -2221980041515164636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0678d08b3d4db49ee247fcf0e82235
+      internalID: -4363993792085884430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 856921baf96c4d95b577790f1e147938
+      internalID: -552320972847213706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be219134f75a48ec8bb9d3b422eca5d2
+      internalID: 6685821699007843635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d10c4e241946dcbda1efade83e19b6
+      internalID: -8265200357058974446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d51e7f77cdc4875a4f2360573e63bc2
+      internalID: 6892903118233394165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b036d4ef26f47d3825e5c1de78fa40a
+      internalID: -5564566706259109133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e36d6125e2640d1b0c6edae24f9f860
+      internalID: 7367050690820195332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05dca2bd3c764e3696312d97cd06f9d4
+      internalID: 1544452982547602303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1008
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6af52d2e7312458f894899f0a07cd015
+      internalID: -9212264393630265905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b86f3df690453ebd3f1cb88df808b1
+      internalID: -2906314191116191698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2c3f492e57343819e12d874b62e86c3
+      internalID: -6330613299897622632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9dbf953a7384e0c930b563422e735bc
+      internalID: -5926523459953897403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f124208627343d3aecd98ce287c777a
+      internalID: 5510269278070680653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 1568
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2753439c40454d8398d90a502cec0613
+      internalID: 707861753761833856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mosca_normal_animacion_vuelo_circular_hoja_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 1680
+        y: 0
+        width: 112
+        height: 112
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fb3ccf65c49413d95dbffeb424fb4cd
+      internalID: -5606727209285786180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_0: -2221980041515164636
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_1: -4363993792085884430
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_2: -552320972847213706
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_3: 6685821699007843635
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_4: -8265200357058974446
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_5: 6892903118233394165
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_6: -5564566706259109133
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_7: 7367050690820195332
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_8: 1544452982547602303
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_9: -9212264393630265905
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_10: -2906314191116191698
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_11: -6330613299897622632
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_12: -5926523459953897403
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_13: 5510269278070680653
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_14: 707861753761833856
+      mosca_normal_animacion_vuelo_circular_hoja_sprites_15: -5606727209285786180
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

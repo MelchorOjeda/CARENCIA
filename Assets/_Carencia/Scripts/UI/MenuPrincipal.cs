@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Menú inicial: "pulsa cualquier tecla", luego Jugar, Continuar, Opciones y Salir.
+// Menú inicial: "pulsa cualquier tecla", luego Jugar, Continuar, Ajustes y Salir.
 // Continuar aparece tachado si no hay partida guardada (o si el archivo está dañado).
 // Lo que borra la partida o cierra el juego pregunta antes; una vez elegido, el menú deja de responder.
 public class MenuPrincipal : MonoBehaviour

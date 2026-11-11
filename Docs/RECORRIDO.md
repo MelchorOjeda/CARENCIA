@@ -13,13 +13,13 @@ Abre `Scenes/Menu/MEN_Principal` y dale Play. También puede abrirse cualquier e
 | Cruzar puertas y cerrar vistas o cuadros | E |
 | Usar objetos que se iluminan | Clic, con Elaki cerca |
 | Ver el interior del refrigerador | E junto al refrigerador, en la casa real; E otra vez para cerrar |
-| Pausa (Reanudar, Opciones, Volver al menú principal) | Esc; Esc otra vez para reanudar |
+| Pausa (Reanudar, Ajustes, Volver al menú principal) | Esc; Esc otra vez para reanudar |
 
 La pausa solo se abre cuando Elaki puede moverse: durante una secuencia, una vista, un diálogo o un fundido de carga,
 Esc conserva su uso de siempre. Con la pausa abierta el tiempo se detiene y la E no interactúa con nada. Volver al menú
 pregunta antes, porque se pierde lo jugado desde el último punto de control.
 
-### Menú y Opciones
+### Menú y Ajustes
 
 | Acción | Control |
 |---|---|
@@ -28,7 +28,7 @@ pregunta antes, porque se pierde lo jugado desde el último punto de control.
 | Confirmar | Enter o clic |
 | Volver, cancelar una nota o salir del juego desde el menú | Esc |
 | Ajustar una opción | ← → o A D; clic a la izquierda o a la derecha de la marca |
-| Cambiar de pestaña en Opciones | Q y E, o clic en la pestaña |
+| Cambiar de pestaña en Ajustes | Q y E, o clic en la pestaña |
 | Guardar las opciones | G |
 | Restablecer la pestaña actual | R |
 
@@ -37,7 +37,7 @@ Reglas del menú:
 - **Continuar** aparece tachado y no se puede elegir si no hay partida guardada o si `partida.json` está dañado.
 - **Jugar** con una partida guardada pregunta antes de borrarla; sin partida, empieza directo.
 - Las notas de confirmación empiezan en **No**, y Esc equivale a No.
-- En **Opciones**, audio, brillo y accesibilidad se ven al momento; resolución, modo de pantalla y calidad se aplican al
+- En **Ajustes**, audio, brillo y accesibilidad se ven al momento; resolución, modo de pantalla y calidad se aplican al
   guardar. Con cambios sin guardar aparece el sello **Sin guardar**, y Esc pregunta antes de descartarlos.
 - Los ajustes se guardan en `ajustes.json`, junto a `partida.json` (`Application.persistentDataPath`). Restablecer no
   toca la partida.
@@ -48,13 +48,13 @@ Reglas del menú:
 
 | Escena | Contenido | Cómo se sale |
 |---|---|---|
-| `MEN_Principal` | Pantalla de inicio, menú (Jugar, Continuar, Opciones y Salir) y Opciones, según el Figma del menú | Jugar o Continuar |
-| `PRO_Casa` | P1 despertar y llamado de mamá. Al acercarse al comedor empieza el desayuno: sentado, se revisan el periódico (opcional) y el lugar vacío, que dispara la plática y el mareo. En el baño real (cortina cerrada, cuatro toallas) se revisan lavabo, toallas y cortina; clic en el espejo abre el gabinete, o se abre solo si Elaki se queda quieta 10 s frente a él. Al cerrarlo se abre el portal y la silueta lo cruza | Clic en el espejo: espiral |
+| `MEN_Principal` | Pantalla de inicio, menú (Jugar, Continuar, Ajustes y Salir) y Ajustes, según el Figma del menú | Jugar o Continuar |
+| `PRO_Casa` | P1 despertar y llamado de mamá. Al acercarse al comedor empieza el desayuno: sentado, se revisan el periódico (opcional) y el lugar vacío, que dispara la plática y el mareo. Los padres ya están sentados (el padre siempre detrás del periódico). En el baño real (cortina cerrada, cuatro toallas) se revisan con E lavabo, toallas y cortina; E en el espejo abre el gabinete, o se abre solo si Elaki se queda quieta 10 s frente a él. Al cerrarlo se abre el portal y la silueta lo cruza | E en el espejo: espiral |
 | `N1_Laberinto` | Baño del otro lado en blanco: toallas, gabinete con símbolos, puerta que no abre. La cortina se abre con clic y deja ver el pasaje con el calendario del 31. Cuarto liminal con cama y cuadros; luego sala (sillón pegado a la pared), cocina, comedor (cuatro sillas sin mesa), pared de frente y cuarto de lavado (aviso en la tercera vuelta). Techos en las zonas donde no está Elaki | Salida pasando el cuarto de lavado |
 | `N1_Pasillo` | Pasillo blanco largo; la salida queda cerrada detrás. Al entrar se oye la voz y la visión se oscurece más con cada paso hacia la puerta del fondo | Llegar a la puerta: "Ayuda." y corte a negro |
-| `R1_Casa` | Segundo despertar, segundo desayuno (periódico opcional) y decisión de volver al baño. Baño real: cortina en estado 1, tres toallas, gabinete con E y el portal ya abierto | Clic en el espejo |
+| `R1_Casa` | Segundo despertar, segundo desayuno (periódico opcional) y decisión de volver al baño. Baño real: cortina en estado 1, tres toallas, gabinete con E y el portal ya abierto | E en el espejo |
 | `N2_Casa` | Llega al baño abandonado (bañera, toallas y calendario sucios). Pasillo con la foto de los cuatro y la ventana a la barda, que luego queda tapiada. Sala y cocina en penumbra con cuatro platos, TV con estática y refrigerador podrido. Al sentarse en la computadora se guarda; el video dura 50 s mientras la penumbra cede y el perro se acerca, y luego persigue. Si alcanza a Elaki, vuelve casi al final del video. En el pasillo, "ella" está al fondo: el perro revienta, ella gira y siempre alcanza a Elaki | Tercer golpe de "ella": espiral, sin pantalla de derrota |
-| `R2_Casa` | Tercer despertar y desayuno con la madre gris: se levanta al revisar los cuatro obligatorios (lugar vacío, madre, comida y periódico). Altar del perro con sollozo, alacena, y aviso si intenta ir a la cocina. Baño real: cortina en estado 2, cuatro toallas, gabinete sin parches y portal abierto | Clic en el espejo |
+| `R2_Casa` | Tercer despertar y desayuno con la madre gris: se levanta al revisar los cuatro obligatorios (lugar vacío, madre, comida y periódico). Altar del perro con sollozo, alacena, y aviso si intenta ir a la cocina. Baño real: cortina en estado 2, cuatro toallas, gabinete sin parches y portal abierto | E en el espejo |
 | `N3_Casa` | Baño de carne (bañera, toallas y calendario agobiantes), pasillo con ojos y agua, platos con órganos, refrigerador y ventana con el hombre armado (opcional). Al sentarse en el sillón de piel pasa el anuncio, la TV se apaga y los ojos giran hacia el baño. En el baño, la cortina está abierta por completo y Margarita aparece en el agua | Clic en la tina: espiral |
 | `DES_Final` | Glitch alternado, carteles, noticiero, pantalla de texto y edificio en Navidad, como marcadores hasta que llegue el arte | Vuelve al menú |
 

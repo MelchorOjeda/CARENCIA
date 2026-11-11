@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: da8e0054b73542b286381fb9a8827411
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -852944976977732293
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+  - first:
+      213: -7090025530450969256
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+  - first:
+      213: 90352661726278427
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+  - first:
+      213: 7172556190013529405
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+  - first:
+      213: -1530709982683688219
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+  - first:
+      213: -4987848959979310866
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+  - first:
+      213: 3583804930188915288
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+  - first:
+      213: -1078432091608117491
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+  - first:
+      213: -7286514218776944858
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+  - first:
+      213: -2584721601821903793
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+  - first:
+      213: 7767449994787410652
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+  - first:
+      213: 6651506814692623142
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+  - first:
+      213: -4217032083989768619
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+  - first:
+      213: 6761975386743847246
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+  - first:
+      213: -8279774187158688743
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+  - first:
+      213: -4850876361640466617
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+  - first:
+      213: -7549534101362813541
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+  - first:
+      213: 3703979315585569777
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+  - first:
+      213: 243770050986628978
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+  - first:
+      213: -1308930908971037347
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+  - first:
+      213: -9019225179445283124
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+  - first:
+      213: -6452026594889805421
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+  - first:
+      213: -470884586566105808
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+  - first:
+      213: -2057158848393320808
+    second: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.0}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fef6cc1efe645d98d79cb5ffcf43d27
+      internalID: -852944976977732293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df21e08320bb4151831c450b1214c61e
+      internalID: -7090025530450969256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c18fcac1d2e451b91c9ddabc10e3d63
+      internalID: 90352661726278427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b9cc174c8544b3ba1c0a5fac5bc88f
+      internalID: 7172556190013529405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be67e9880edc454d9dd13b4f55892bdd
+      internalID: -1530709982683688219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b37299b45764b5a8948e00500b0c89f
+      internalID: -4987848959979310866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d16e0d484b674ba5a43396b36ce25d60
+      internalID: 3583804930188915288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9bbf45430ac40e49990123fa0eecc14
+      internalID: -1078432091608117491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f880f1c2facf450db127a2ebd26e5aa1
+      internalID: -7286514218776944858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83ff487abfe34ab4923fa1a5a6bd8d70
+      internalID: -2584721601821903793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e56d0ba9b234c8093a805bdbc0fa58b
+      internalID: 7767449994787410652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b13565788c434a8cfb4dcdb952550d
+      internalID: 6651506814692623142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf3aa6eb8d854bcc9e64fc5dfb3c716d
+      internalID: -4217032083989768619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b2c106a0d845d6972a33c2e6c6487d
+      internalID: 6761975386743847246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f11d7d908f52411d8c24fcf946f72b78
+      internalID: -8279774187158688743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56655a1757ec45e18c82a655088e6323
+      internalID: -4850876361640466617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f78633dc285466caefb12c7ab26fb5d
+      internalID: -7549534101362813541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6e4ce3d85fb4cd7b3ee02f62d979ea5
+      internalID: 3703979315585569777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb301a83c2746d5b8dd22b1e0b5e355
+      internalID: 243770050986628978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16a15e83a6ee4276a52c367b6278bc46
+      internalID: -1308930908971037347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf260e1c5924d0d93d0fdba9b12819c
+      internalID: -9019225179445283124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae1680b04844627be4d68ba76d59cd0
+      internalID: -6452026594889805421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926a16ce708d4b57a0c98bfece8850df
+      internalID: -470884586566105808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b731a9b62dc4440a81fd5af500830f44
+      internalID: -2057158848393320808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0: -852944976977732293
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1: -7090025530450969256
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2: 90352661726278427
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3: 7172556190013529405
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4: -1530709982683688219
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5: -4987848959979310866
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6: 3583804930188915288
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7: -1078432091608117491
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8: -7286514218776944858
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9: -2584721601821903793
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10: 7767449994787410652
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11: 6651506814692623142
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12: -4217032083989768619
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13: 6761975386743847246
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14: -8279774187158688743
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15: -4850876361640466617
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16: -7549534101362813541
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17: 3703979315585569777
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18: 243770050986628978
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19: -1308930908971037347
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20: -9019225179445283124
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21: -6452026594889805421
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22: -470884586566105808
+      plato_sopa_fideo_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23: -2057158848393320808
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

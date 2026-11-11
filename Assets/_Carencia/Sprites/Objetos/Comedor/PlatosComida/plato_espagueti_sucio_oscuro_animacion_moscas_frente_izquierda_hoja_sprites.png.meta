@@ -1,0 +1,756 @@
+fileFormatVersion: 2
+guid: 67d14f489cef421eae9fee6ebb43f04e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2749130648416055049
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+  - first:
+      213: -9034202414029699630
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+  - first:
+      213: -7647003237712977527
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+  - first:
+      213: -8873981276317271232
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+  - first:
+      213: 9060099982810550616
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+  - first:
+      213: -4926672289813593977
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+  - first:
+      213: 5845465176071033927
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+  - first:
+      213: -7740297510981925109
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+  - first:
+      213: 1014963079566192882
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+  - first:
+      213: 2347486386093406090
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+  - first:
+      213: -7772956722955415569
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+  - first:
+      213: 5212407117756572176
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+  - first:
+      213: 602626062751052421
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+  - first:
+      213: 7371721031367468944
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+  - first:
+      213: -8134152890693849285
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+  - first:
+      213: 7240169737150774
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+  - first:
+      213: -7835331144582950099
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+  - first:
+      213: 1589458067064603034
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+  - first:
+      213: 5149784226491034248
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+  - first:
+      213: -5127307435965434561
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+  - first:
+      213: -8187534072200888323
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+  - first:
+      213: 5640173295419886188
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+  - first:
+      213: 3107554135352810977
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+  - first:
+      213: -3506366824582790311
+    second: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.0}
+  spritePixelsToUnits: 96
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8007a907087e4c6aa0db6f50bdb25892
+      internalID: -2749130648416055049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff018bf2420849caae41ea6d6720f23c
+      internalID: -9034202414029699630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9b25d4a1a947629413097d424cb847
+      internalID: -7647003237712977527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6450e8d155c44a2bb8a3409d1b3b0f68
+      internalID: -8873981276317271232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 213932779f114ecd85b522b66a643116
+      internalID: 9060099982810550616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59b5fb664c534f2a83a5b1102a4c9375
+      internalID: -4926672289813593977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55f80e0b05504f128a4f71e1a132ca82
+      internalID: 5845465176071033927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 1400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9d9f10cd45e45a9a380fdb59e8189ee
+      internalID: -7740297510981925109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4f54dc4f6a648a1addec0747f2c14ec
+      internalID: 1014963079566192882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccff44aafdc14550b7eac566183279c7
+      internalID: 2347486386093406090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 2000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4c92b8c39ee41bc8a54d3bb1dc04637
+      internalID: -7772956722955415569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11
+      rect:
+        serializedVersion: 2
+        x: 2200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1e6056b2464b6f9b6cd284cae3ca06
+      internalID: 5212407117756572176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c4bd4324064d3aa3669f90381d9f15
+      internalID: 602626062751052421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d195535b01f45ac873136d65687918d
+      internalID: 7371721031367468944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a76dd709e164c3d8c07b6f08be330db
+      internalID: -8134152890693849285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 3000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06cc4f0d5c5b4c4581be58a90d98a14d
+      internalID: 7240169737150774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ede0750134fe4e8fb4fac7e9fdb4411f
+      internalID: -7835331144582950099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 3400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a25f38ee4ab44391890d73f4eae89bcf
+      internalID: 1589458067064603034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 3600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c02daf18eba480d8def08d343237f9b
+      internalID: 5149784226491034248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 3800
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88134f9442b040beb8f013d6f36e8cd0
+      internalID: -5127307435965434561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 4000
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9da7631d1e641938249a7863871e797
+      internalID: -8187534072200888323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 4200
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e733505d4d44cc49f9959ca490f3ab6
+      internalID: 5640173295419886188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 4400
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa2bad0f954a49b093471527ade8558b
+      internalID: 3107554135352810977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 4600
+        y: 0
+        width: 200
+        height: 200
+      alignment: 7
+      pivot: {x: 0.5, y: 0.0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1921b0eea6884ae8a42f04699079ae05
+      internalID: -3506366824582790311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_0: -2749130648416055049
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_1: -9034202414029699630
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_2: -7647003237712977527
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_3: -8873981276317271232
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_4: 9060099982810550616
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_5: -4926672289813593977
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_6: 5845465176071033927
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_7: -7740297510981925109
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_8: 1014963079566192882
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_9: 2347486386093406090
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_10: -7772956722955415569
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_11: 5212407117756572176
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_12: 602626062751052421
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_13: 7371721031367468944
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_14: -8134152890693849285
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_15: 7240169737150774
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_16: -7835331144582950099
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_17: 1589458067064603034
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_18: 5149784226491034248
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_19: -5127307435965434561
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_20: -8187534072200888323
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_21: 5640173295419886188
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_22: 3107554135352810977
+      plato_espagueti_sucio_oscuro_animacion_moscas_frente_izquierda_hoja_sprites_23: -3506366824582790311
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
