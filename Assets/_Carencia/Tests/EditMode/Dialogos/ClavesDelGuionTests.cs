@@ -11,8 +11,8 @@ public class ClavesDelGuionTests
     private const string RutaGuion = "Assets/_Carencia/Resources/SO_Dialogo_Guion.asset";
     private const string CarpetaEscenas = "Assets/_Carencia/Scenes";
 
-    // Con Tamaño de texto Grande caben tres renglones de unas 50 letras
-    private const int LetrasPorPaginaMaximas = 150;
+    // Con Tamaño de texto Grande caben tres renglones de unas 48 letras; el ajuste por palabras pierde algunas
+    private const int LetrasPorPaginaMaximas = 120;
 
     // Secuencia.Tipo.Dialogo se guarda en la escena como el número 20
     private static readonly Regex PasoDialogo =

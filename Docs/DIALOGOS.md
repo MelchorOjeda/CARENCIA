@@ -23,7 +23,7 @@ Selecciona `SO_Dialogo_Guion` en el Project y, en el Inspector, busca la clave e
 
 Arriba de la lista están la fuente, el sonido y la velocidad (letras por segundo; 0 muestra cada página completa de golpe).
 
-La prueba `ClavesDelGuionTests` (Test Runner → EditMode) falla si una clave de las escenas no tiene línea, si una clave se repite o si una página pasa de 150 letras.
+La prueba `ClavesDelGuionTests` (Test Runner → EditMode) falla si una clave de las escenas no tiene línea, si una clave se repite o si una página pasa de 120 letras.
 
 ## Decisiones al pasar el guion v1
 
