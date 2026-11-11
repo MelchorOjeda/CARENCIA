@@ -34,7 +34,7 @@ public class Secuencia : MonoBehaviour
         VerImagen,
         // Línea del guion: cuadro en blanco con su clave, para que el equipo de diálogos ponga el texto
         Dialogo,
-        // Espiral que cierra la vista y termina en negro
+        // Espiral que cierra la vista y termina en negro (valor: duración; valor2 = 1: morada, al cambiar de dimensión)
         Espiral,
         // Pantalla provisional para una imagen o video sin arte; con valor > 0 avanza sola
         Marcador,
@@ -212,7 +212,7 @@ public class Secuencia : MonoBehaviour
                 yield return Dialogo(paso.texto);
                 break;
             case Tipo.Espiral:
-                yield return pantalla.Espiral(paso.valor);
+                yield return pantalla.Espiral(paso.valor, paso.valor2 > 0.5f);
                 break;
             case Tipo.Marcador:
                 yield return Marcador(paso.texto, paso.valor);
