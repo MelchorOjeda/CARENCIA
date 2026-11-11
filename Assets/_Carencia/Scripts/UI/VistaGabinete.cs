@@ -113,9 +113,7 @@ public class VistaGabinete : MonoBehaviour
         if (!linea.TieneTexto)
             return;
 
-        // La caja va en la mitad contraria para no tapar el objeto
-        var arriba = objeto.transform.localPosition.y < 0f;
-        textoSeleccionado = StartCoroutine(caja.Mostrar(linea, arriba));
+        textoSeleccionado = StartCoroutine(caja.Mostrar(linea));
     }
 
     // La pulsación que cierra la vista no debe volver a abrirla

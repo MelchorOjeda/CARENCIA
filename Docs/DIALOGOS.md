@@ -57,7 +57,7 @@ Las 71 claves ya tienen el texto del guion unificado v1, incluidas las propuesta
 
 ### Gabinete (P5)
 
-Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, arriba o abajo para no tapar el objeto. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosGabineteTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
+Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, siempre abajo y centrada como en el resto del juego. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosGabineteTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
 
 | Clave | Objeto | Guion P5 |
 |---|---|---|
