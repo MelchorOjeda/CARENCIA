@@ -35,6 +35,9 @@ Las 71 claves ya tienen el texto del guion unificado v1, incluidas las propuesta
 - N2.11 · Lugar vacío: se quitó la acotación "(Suspira.)"; el suspiro queda para el audio.
 - `P4_lavabo_2` está vacío ("Sin texto, solo agua"): el juego se salta la línea.
 - Los textos largos (periódicos, anuncio, noticiero, D4) están divididos en páginas.
+- `R_puerta_cerrada` (puerta cerrada de la casa real en PRO_Casa, R1_Casa y R2_Casa, secuencia `Sec_puerta_cerrada`): no viene en el guion v1. Por ahora es el pensamiento "Está cerrada.", una propuesta para revisar con el equipo.
+
+Al agregar un paso `Dialogo` con una clave nueva en una escena, agrega también su línea en `SO_Dialogo_Guion` y corre `ClavesDelGuionTests`: si falta, el juego muestra `[clave]`.
 - Los objetos que se revisan más de una vez usan dos claves: `_1` para la primera vez y `_2` para las siguientes. Si el guion dice "Se repite", se usa una sola clave sin número.
 - Los objetos marcados como **obligatorio** avanzan la historia cuando se revisan todos.
 
