@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
@@ -31,6 +32,24 @@ public class Secuencia : MonoBehaviour
         CargarEscena,
         AbrirGabinete,
         VerImagen,
+        // Línea del guion: cuadro en blanco con su clave, para que el equipo de diálogos ponga el texto
+        Dialogo,
+        // Espiral que cierra la vista y termina en negro
+        Espiral,
+        // Pantalla provisional para una imagen o video sin arte; con valor > 0 avanza sola
+        Marcador,
+        // Ejecuta la secuencia de referencia si ya existen todas las banderas del texto (separadas por coma)
+        EjecutarSiBanderas,
+        // Suma una visita con la clave del texto; al llegar al valor ejecuta la secuencia de referencia
+        Contar,
+        // La siguiente muerte de Elaki lleva a esta escena (escena|entrada) en lugar de reiniciar
+        MuerteLleva,
+        // Lleva la referencia hacia Elaki durante valor segundos, hasta quedar a valor2 de distancia
+        Acercar,
+        // Cambia la penumbra hasta valor en valor2 segundos
+        PenumbraGradual,
+        // Con valor 1 Elaki queda sentada: no camina, pero puede revisar lo que tiene cerca. Con 0 se levanta
+        Sentar,
     }
 
     [Serializable]
@@ -62,6 +81,7 @@ public class Secuencia : MonoBehaviour
     private CameraController camara;
     private InputAction accionInteractuar;
     private InputAction accionCancelar;
+    private InputAction accionClic;
 
     private string Bandera => "sec_" + id;
 
@@ -96,6 +116,7 @@ public class Secuencia : MonoBehaviour
         camara = Camera.main != null ? Camera.main.GetComponent<CameraController>() : null;
         accionInteractuar = InputSystem.actions.FindAction("Player/Interact", true);
         accionCancelar = InputSystem.actions.FindAction("UI/Cancel", true);
+        accionClic = InputSystem.actions.FindAction("UI/Click", true);
 
         foreach (var paso in pasos)
             yield return EjecutarPaso(paso);
@@ -180,7 +201,50 @@ public class Secuencia : MonoBehaviour
                 yield return VerImagen((Sprite)paso.referencia);
                 break;
             case Tipo.AbrirGabinete:
-                ((VistaGabinete)paso.referencia).Abrir();
+                // Espera a que se cierre, para que lo que sigue (por ejemplo un pensamiento) vaya después
+                var vista = (VistaGabinete)paso.referencia;
+                vista.Abrir();
+                yield return null;
+                while (vista.Abierta)
+                    yield return null;
+                break;
+            case Tipo.Dialogo:
+                yield return Dialogo(paso.texto);
+                break;
+            case Tipo.Espiral:
+                yield return pantalla.Espiral(paso.valor);
+                break;
+            case Tipo.Marcador:
+                yield return Marcador(paso.texto, paso.valor);
+                break;
+            case Tipo.EjecutarSiBanderas:
+                if (paso.texto.Split(',').All(b => EstadoJuego.Tiene(b.Trim())))
+                    ((Secuencia)paso.referencia).Ejecutar();
+                break;
+            case Tipo.Contar:
+                var visitas = 1;
+                while (EstadoJuego.Tiene(paso.texto + "_" + visitas))
+                    visitas++;
+                EstadoJuego.Poner(paso.texto + "_" + visitas);
+                if (visitas == Mathf.RoundToInt(paso.valor))
+                    ((Secuencia)paso.referencia).Ejecutar();
+                break;
+            case Tipo.MuerteLleva:
+                var salud = FindAnyObjectByType<SaludJugador>();
+                if (salud != null)
+                    salud.LlevarAlMorir(paso.texto);
+                break;
+            case Tipo.Acercar:
+                StartCoroutine(Acercar((Transform)paso.referencia, paso.valor, paso.valor2));
+                break;
+            case Tipo.PenumbraGradual:
+                StartCoroutine(PenumbraGradual(paso.valor, paso.valor2));
+                break;
+            case Tipo.Sentar:
+                if (jugador != null)
+                    jugador.MovimientoBloqueado = paso.valor > 0.5f;
+                if (detector != null)
+                    detector.InteraccionBloqueada = false;
                 break;
         }
     }
@@ -224,10 +288,85 @@ public class Secuencia : MonoBehaviour
         monitor.gameObject.SetActive(false);
     }
 
-    // Las vistas de inspección se cierran con E o con Esc
+    // Las vistas de inspección y los diálogos avanzan con E, Esc o clic
     private bool Salir()
     {
-        return accionInteractuar.WasPressedThisFrame() || accionCancelar.WasPressedThisFrame();
+        return accionInteractuar.WasPressedThisFrame() || accionCancelar.WasPressedThisFrame() || accionClic.WasPressedThisFrame();
+    }
+
+    // Al terminar deja a Elaki como estaba: si estaba sentada en la mesa, sigue sentada
+    private IEnumerator Dialogo(string clave)
+    {
+        var pantalla = PantallaJuego.Instancia;
+        // Si ya hay otra línea en pantalla, esta espera su turno
+        while (pantalla.CuadroVisible)
+            yield return null;
+
+        var movimiento = jugador != null && jugador.MovimientoBloqueado;
+        var interaccion = detector != null && detector.InteraccionBloqueada;
+        Bloquear(true);
+        pantalla.MostrarCuadro(true, clave);
+        yield return null;
+
+        while (!Salir())
+            yield return null;
+
+        pantalla.MostrarCuadro(false);
+        yield return null;
+        if (jugador != null)
+            jugador.MovimientoBloqueado = movimiento;
+        if (detector != null)
+            detector.InteraccionBloqueada = interaccion;
+    }
+
+    private IEnumerator Marcador(string texto, float duracion)
+    {
+        var pantalla = PantallaJuego.Instancia;
+        pantalla.MostrarMarcador(texto);
+        yield return null;
+
+        if (duracion > 0f)
+            yield return new WaitForSeconds(duracion);
+        else
+            while (!Salir())
+                yield return null;
+
+        pantalla.MostrarMarcador(null);
+    }
+
+    private IEnumerator Acercar(Transform objeto, float duracion, float distanciaFinal)
+    {
+        var destino = jugador.transform.position;
+        var inicio = objeto.position;
+        var direccion = (destino - inicio).normalized;
+        var final = destino - direccion * distanciaFinal;
+        var animador = objeto.GetComponent<Animator>();
+        for (var t = 0f; t < duracion; t += Time.deltaTime)
+        {
+            objeto.position = Vector3.Lerp(inicio, final, t / duracion);
+            if (animador != null)
+            {
+                animador.SetFloat("DirX", direccion.x);
+                animador.SetFloat("DirY", direccion.y);
+            }
+
+            yield return null;
+        }
+
+        objeto.position = final;
+    }
+
+    private IEnumerator PenumbraGradual(float destino, float duracion)
+    {
+        var pantalla = PantallaJuego.Instancia;
+        var inicio = pantalla.Penumbra;
+        for (var t = 0f; t < duracion; t += Time.deltaTime)
+        {
+            pantalla.SetPenumbra(Mathf.Lerp(inicio, destino, t / duracion));
+            yield return null;
+        }
+
+        pantalla.SetPenumbra(destino);
     }
 
     // Vista fija de un objeto; se cierra con E o Esc

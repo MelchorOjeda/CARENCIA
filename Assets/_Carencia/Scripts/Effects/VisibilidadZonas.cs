@@ -4,7 +4,7 @@ using UnityEngine.Tilemaps;
 
 // Tapa con un techo todas las zonas del laberinto menos la del jugador.
 // Así los cuartos vecinos se leen como bloques cerrados y no se ve lo que hay dentro.
-// Si un bloque queda delante del jugador y lo tapa, se vuelve semitransparente para no perderlo de vista.
+// Los techos nunca se transparentan: si un bloque tapa al jugador, se dibuja solo su silueta encima.
 public class VisibilidadZonas : MonoBehaviour
 {
     [Serializable]
@@ -16,7 +16,7 @@ public class VisibilidadZonas : MonoBehaviour
         public Tilemap[] techo = new Tilemap[0];
         // Muros bajos de enfrente: se ocultan mientras la zona tiene techo, porque la fachada los reemplaza
         public Tilemap[] murosBajos = new Tilemap[0];
-        // Paredes altas: se transparentan junto con el techo cuando tapan al jugador
+        // Paredes altas de la zona; se usan para saber qué bloques pueden tapar al jugador
         public Tilemap[] paredes = new Tilemap[0];
     }
 
@@ -26,13 +26,15 @@ public class VisibilidadZonas : MonoBehaviour
 
     [SerializeField] private Zona[] zonas = new Zona[0];
     [SerializeField] private float duracionFundido = 0.3f;
-    [SerializeField, Range(0f, 1f)] private float alfaTapando = 0.35f;
+    [SerializeField] private Color colorSilueta = new Color(0.12f, 0.12f, 0.18f, 0.55f);
 
     private Grid grid;
     private Transform jugador;
     private float[] alfaTecho;
-    private float[] alfaParedes;
+    private bool[] tapando;
     private int actual = -1;
+    private SpriteRenderer figura;
+    private SpriteRenderer silueta;
 
     public void Configurar(Zona[] nuevas)
     {
@@ -48,8 +50,10 @@ public class VisibilidadZonas : MonoBehaviour
     public bool EstaTapando(string nombre)
     {
         var i = Array.FindIndex(zonas, z => z.nombre == nombre);
-        return i >= 0 && alfaParedes != null && alfaParedes[i] < 0.99f;
+        return i >= 0 && tapando != null && tapando[i];
     }
+
+    public bool SiluetaVisible => silueta != null && silueta.enabled;
 
     private void Start()
     {
@@ -57,7 +61,8 @@ public class VisibilidadZonas : MonoBehaviour
         var controlador = FindAnyObjectByType<PlayerController>();
         jugador = controlador != null ? controlador.transform : null;
         alfaTecho = new float[zonas.Length];
-        alfaParedes = new float[zonas.Length];
+        tapando = new bool[zonas.Length];
+        CrearSilueta();
         Actualizar(true);
     }
 
@@ -78,23 +83,62 @@ public class VisibilidadZonas : MonoBehaviour
             actual = zona;
 
         var paso = inmediato || duracionFundido <= 0f ? 1f : Time.deltaTime / duracionFundido;
+        var alguno = false;
         for (var i = 0; i < zonas.Length; i++)
         {
-            var tapa = i != actual && Tapa(zonas[i], posicion);
-            var metaParedes = tapa ? alfaTapando : 1f;
-            var metaTecho = i == actual ? 0f : metaParedes;
-            if (!inmediato && Mathf.Approximately(alfaTecho[i], metaTecho) && Mathf.Approximately(alfaParedes[i], metaParedes))
+            tapando[i] = i != actual && Tapa(zonas[i], posicion);
+            alguno |= tapando[i];
+            var metaTecho = i == actual ? 0f : 1f;
+            if (!inmediato && Mathf.Approximately(alfaTecho[i], metaTecho))
                 continue;
 
             alfaTecho[i] = Mathf.MoveTowards(alfaTecho[i], metaTecho, paso);
-            alfaParedes[i] = Mathf.MoveTowards(alfaParedes[i], metaParedes, paso);
             foreach (var capa in zonas[i].techo)
                 Fundir(capa, alfaTecho[i]);
-            foreach (var capa in zonas[i].paredes)
-                Fundir(capa, alfaParedes[i]);
             foreach (var capa in zonas[i].murosBajos)
                 Fundir(capa, i == actual ? 1f - alfaTecho[i] : 0f);
         }
+
+        if (silueta != null)
+            silueta.enabled = alguno;
+    }
+
+    // Copia oscura y translúcida de Elaki, dibujada por encima de los techos.
+    // Va fuera de Elaki: si fuera su hija, se ordenaría con ella y quedaría debajo del techo.
+    private void CrearSilueta()
+    {
+        if (jugador == null)
+            return;
+
+        // El dibujo de Elaki es el más grande de sus SpriteRenderer
+        foreach (var sr in jugador.GetComponentsInChildren<SpriteRenderer>(true))
+        {
+            if (sr.sprite != null && (figura == null || sr.sprite.rect.height > figura.sprite.rect.height))
+                figura = sr;
+        }
+
+        if (figura == null)
+            return;
+
+        var objeto = new GameObject("SiluetaJugador");
+        objeto.transform.SetParent(transform, false);
+        silueta = objeto.AddComponent<SpriteRenderer>();
+        silueta.sharedMaterial = figura.sharedMaterial;
+        silueta.color = colorSilueta;
+        silueta.sortingLayerName = "Mundo";
+        silueta.sortingOrder = 200;
+        silueta.enabled = false;
+    }
+
+    private void LateUpdate()
+    {
+        if (silueta == null || !silueta.enabled)
+            return;
+
+        silueta.sprite = figura.sprite;
+        silueta.flipX = figura.flipX;
+        silueta.transform.SetPositionAndRotation(figura.transform.position, figura.transform.rotation);
+        silueta.transform.localScale = figura.transform.lossyScale;
     }
 
     // Una celda de la zona tapa al jugador si está delante de él y su bloque alcanza a cubrir su figura en pantalla
