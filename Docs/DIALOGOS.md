@@ -22,6 +22,19 @@ Selecciona `SO_Dialogo_Guion` en el Project y, en el Inspector, busca la clave e
 | Pensamiento | Marcado para lo que Elaki piensa y no dice: se ve en cursiva y con la etiqueta *pensamiento* junto al nombre |
 
 Arriba de la lista están la fuente, el sonido y la velocidad (letras por segundo; 0 muestra cada página completa de golpe).
+
+La prueba `ClavesDelGuionTests` (Test Runner → EditMode) falla si una clave de las escenas no tiene línea, si una clave se repite o si una página pasa de 120 letras.
+
+## Decisiones al pasar el guion v1
+
+Las 71 claves ya tienen el texto del guion unificado v1, incluidas las propuestas [P]. Cambios para revisar:
+
+- Los nombres son **Mamá** y **Papá** (el guion alterna "Madre" y "Mamá"); la voz del pasillo es **Voz**; el anuncio, **Televisión**; el D3, **Noticiero**. El periódico, D4 y D5 van sin nombre.
+- Todo lo que el guion marca como "Pensamiento" o comentario de Elaki al revisar un objeto va en cursiva.
+- Ortografía: "¿Debería ir?" (N1.1), "Qué extraño… no se abre." (N1.1), "Cuautitlán Izcalli" e "Izcalli" (D3 y D4).
+- N2.11 · Lugar vacío: se quitó la acotación "(Suspira.)"; el suspiro queda para el audio.
+- `P4_lavabo_2` está vacío ("Sin texto, solo agua"): el juego se salta la línea.
+- Los textos largos (periódicos, anuncio, noticiero, D4) están divididos en páginas.
 - Los objetos que se revisan más de una vez usan dos claves: `_1` para la primera vez y `_2` para las siguientes. Si el guion dice "Se repite", se usa una sola clave sin número.
 - Los objetos marcados como **obligatorio** avanzan la historia cuando se revisan todos.
 
