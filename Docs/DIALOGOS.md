@@ -55,7 +55,20 @@ Las 71 claves ya tienen el texto del guion unificado v1, incluidas las propuesta
 | `P4_cortina` | P4 · Cortina (se repite) | Pensamiento |
 | `P6_pensamiento_1` / `P6_pensamiento_2` | P6 · Portal en el espejo | Pensamiento |
 
-Los textos de cada frasco del gabinete (P5) siguen en la vista del gabinete, como antes.
+### Gabinete (P5)
+
+Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, arriba o abajo para no tapar el objeto. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosGabineteTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
+
+| Clave | Objeto | Guion P5 |
+|---|---|---|
+| `P5_SertralinaCajas` | Cajas de sertralina | Depresión |
+| `P5_SertralinaFrasco` | Frasco de sertralina | Ansiedad |
+| `P5_ClorpromazinaBote` | Bote chico de clorpromazina | Para dormir |
+| `P5_ClorpromazinaFrasco` | Frasco grande de clorpromazina | Esquizofrenia |
+| `P5_Risperidona` | Risperidona | Esquizofrenia |
+| `P5_Blister` | Blíster de naproxeno y paracetamol | Naproxeno y paracetamol |
+| `P5_Pads` | Parches juveniles | Parches juveniles |
+| `P5_Rastrillo` | Rastrillo | Sin texto |
 
 ## Nivel 1 (`N1_Laberinto`, `N1_Pasillo`)
 

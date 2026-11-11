@@ -5,15 +5,19 @@ using UnityEngine.InputSystem;
 
 // Vista fija de la cajonera del baño. Se abre desde un Interactable y se cierra con E o Esc.
 // Mientras está abierta, Elaki no se mueve y el escenario no responde.
+// Al seleccionar un objeto, su pensamiento sale en la caja de diálogo (clave P5_ + nombre del objeto).
 public class VistaGabinete : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
+
+    [Tooltip("Cuadro anterior de la vista: queda oculto porque el texto ahora sale en la caja de diálogo")]
     [SerializeField] private RectTransform cuadroDialogo;
+
     [SerializeField] private PlayerController jugador;
     [SerializeField] private InteractionDetector detector;
 
-    [Tooltip("Distancia vertical del cuadro al centro de la pantalla, en píxeles de la vista")]
-    [SerializeField] private float alturaCuadro = 136f;
+    [Tooltip("Apagado en el Nivel 1: las etiquetas tienen símbolos que Elaki no puede leer")]
+    [SerializeField] private bool mostrarTextos = true;
 
     [Tooltip("Se lanza al cerrar la vista, por ejemplo para habilitar el espejo")]
     [SerializeField] private UnityEvent alCerrar;
@@ -21,6 +25,7 @@ public class VistaGabinete : MonoBehaviour
     private InputAction accionInteractuar;
     private InputAction accionCancelar;
     private ObjetoGabinete seleccionado;
+    private Coroutine textoSeleccionado;
     private int fotogramaApertura;
 
     public bool Abierta { get; private set; }
@@ -79,16 +84,38 @@ public class VistaGabinete : MonoBehaviour
             seleccionado.Seleccionado = false;
 
         seleccionado = objeto;
-        cuadroDialogo.gameObject.SetActive(objeto != null);
+        OcultarTexto();
 
         if (objeto == null)
             return;
 
         objeto.Seleccionado = true;
+        MostrarTexto(objeto);
+    }
 
-        // El cuadro se coloca en la mitad contraria para no tapar el objeto
-        var abajo = objeto.transform.localPosition.y >= 0f;
-        cuadroDialogo.anchoredPosition = new Vector2(0f, abajo ? -alturaCuadro : alturaCuadro);
+    private void OcultarTexto()
+    {
+        if (textoSeleccionado == null)
+            return;
+
+        StopCoroutine(textoSeleccionado);
+        textoSeleccionado = null;
+        PantallaJuego.Instancia.Dialogo.Ocultar();
+    }
+
+    private void MostrarTexto(ObjetoGabinete objeto)
+    {
+        if (!mostrarTextos)
+            return;
+
+        var caja = PantallaJuego.Instancia.Dialogo;
+        var linea = caja.LineaDe(GuionDialogos.ClaveDeGabinete(objeto.name));
+        if (!linea.TieneTexto)
+            return;
+
+        // La caja va en la mitad contraria para no tapar el objeto
+        var arriba = objeto.transform.localPosition.y < 0f;
+        textoSeleccionado = StartCoroutine(caja.Mostrar(linea, arriba));
     }
 
     // La pulsación que cierra la vista no debe volver a abrirla

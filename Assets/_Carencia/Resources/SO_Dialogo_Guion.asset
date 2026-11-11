@@ -68,6 +68,38 @@ MonoBehaviour:
     quien: "Elaki"
     texto: "Est\xE1 cerrada. Mejor as\xED."
     pensamiento: 1
+  - clave: P5_SertralinaCajas
+    quien: "Elaki"
+    texto: "El medicamento de mam\xE1."
+    pensamiento: 1
+  - clave: P5_SertralinaFrasco
+    quien: "Elaki"
+    texto: "\xBFPor qu\xE9 estoy tan nervioso?"
+    pensamiento: 1
+  - clave: P5_ClorpromazinaBote
+    quien: "Elaki"
+    texto: "No siempre funcionan."
+    pensamiento: 1
+  - clave: P5_ClorpromazinaFrasco
+    quien: "Elaki"
+    texto: "Las tomo todas las noches\u2026 creo."
+    pensamiento: 1
+  - clave: P5_Risperidona
+    quien: "Elaki"
+    texto: "Las tomo todas las noches\u2026 creo."
+    pensamiento: 1
+  - clave: P5_Blister
+    quien: "Elaki"
+    texto: "Estas saben muy amargas."
+    pensamiento: 1
+  - clave: P5_Pads
+    quien: "Elaki"
+    texto: "\xBFQui\xE9n compr\xF3 estos?"
+    pensamiento: 1
+  - clave: P5_Rastrillo
+    quien: "Elaki"
+    texto: ""
+    pensamiento: 1
   - clave: P6_pensamiento_1
     quien: "Elaki"
     texto: "\xBFElla\u2026 se fue por ah\xED?"
