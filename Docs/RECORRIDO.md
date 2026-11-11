@@ -63,6 +63,7 @@ Reglas del menú:
 - **Daño:** solo se puede morir con el perro y con "ella". Con el perro, 3 golpes reinician desde la computadora; con "ella", el tercer golpe lleva al tercer despertar. Las manchas rojas crecen con cada golpe.
 - **Velocidades:** Elaki camina a 1.5 y corre a 2.6. El perro va a 2.0, así que se le puede escapar; "ella" va a 2.75 y siempre alcanza a Elaki.
 - **Puntos de control:** al entrar a cada nivel, antes y después de cada persecución. Se guardan en un archivo y los usa Continuar.
+- **Perro de la familia:** en la casa normal del prólogo (`PRO_Casa`) acompaña a Elaki unos pasos detrás, por el mismo camino que ella recorrió, así que no atraviesa paredes ni muebles. Si Elaki aparece lejos (al entrar a la escena, al cruzar una puerta o en una secuencia), el perro reaparece junto a ella. No choca ni se puede usar. Se coloca arrastrando `Prefabs/Personajes/PF_PerroAcompanante` a la escena.
 
 ## Sistemas
 
@@ -79,6 +80,7 @@ Reglas del menú:
 | `Narrative/ContarEntradas` | Ejecuta una secuencia a la n-ésima entrada a un área (tercera vuelta al lavado) |
 | `Enemies/EnemigoPerseguidor` | Busca a Elaki por las celdas libres y la golpea por contacto |
 | `Player/SaludJugador` | Recibe golpes y dispara la muerte |
+| `Player/PerroAcompanante` | El perro sigue el camino de Elaki y reaparece junto a ella si queda lejos |
 | `UI/MenuPrincipal` | Menú inicial |
 
 ## Pendiente
