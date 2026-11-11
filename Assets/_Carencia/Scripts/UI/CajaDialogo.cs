@@ -13,19 +13,20 @@ public class CajaDialogo : MonoBehaviour
     // Medidas en la resolución de referencia de PantallaJuego (640 × 360)
     private const float Ancho = 560f;
     // Cabe una página de tres renglones con Tamaño de texto Grande
-    private const float Alto = 104f;
+    private const float Alto = 112f;
     private const float MargenInferior = 10f;
     private const float Relleno = 14f;
-    private const float AltoNombre = 18f;
-    private const float TamanoNombre = 12f;
-    private const float TamanoTexto = 15f;
+    private const float AltoNombre = 20f;
+    private const float TamanoNombre = 13f;
+    private const float TamanoTexto = 16f;
 
     // Un tirón (por ejemplo al cargar escena) no debe escribir media línea de golpe
     private const float MaximoSegundosPorFotograma = 0.1f;
 
-    private static readonly Color ColorFondo = new Color(0f, 0f, 0f, 0.72f);
-    private static readonly Color ColorNombre = new Color32(0xC9, 0xB8, 0x8F, 0xFF);
-    private static readonly Color ColorTexto = new Color32(0xEC, 0xE6, 0xD8, 0xFF);
+    private static readonly Color ColorFondo = new Color(0f, 0f, 0f, 0.88f);
+    private static readonly Color ColorNombre = new Color32(0xE8, 0xC6, 0x6A, 0xFF);
+    private static readonly Color ColorTexto = new Color32(0xFA, 0xF6, 0xEE, 0xFF);
+    private static readonly string ColorEtiquetaPensamiento = "#A39C8C";
 
     private GuionDialogos guion;
     private TextMeshProUGUI nombre;
@@ -94,6 +95,9 @@ public class CajaDialogo : MonoBehaviour
 
         ConstruirFondo();
         nombre = CrearTexto("Nombre", TamanoNombre, ColorNombre);
+        nombre.fontStyle = FontStyles.Bold;
+        // Solo el nombre usa etiquetas, para pintar la de pensamiento más tenue
+        nombre.richText = true;
         Colocar(nombre.rectTransform, new Vector2(Relleno, Alto - Relleno * 0.6f - AltoNombre), new Vector2(-Relleno, -Relleno * 0.6f));
         texto = CrearTexto("Texto", TamanoTexto, ColorTexto);
         Colocar(texto.rectTransform, new Vector2(Relleno, Relleno * 0.6f), new Vector2(-Relleno, -Relleno * 0.6f - AltoNombre));
@@ -167,11 +171,21 @@ public class CajaDialogo : MonoBehaviour
     private void Abrir(LineaDialogo datos)
     {
         linea = new LineaEnPantalla(datos, guion.LetrasPorSegundo);
-        nombre.text = linea.Quien;
-        nombre.gameObject.SetActive(linea.Quien.Length > 0);
+        nombre.text = Encabezado(linea);
+        nombre.gameObject.SetActive(nombre.text.Length > 0);
         texto.fontStyle = linea.EsPensamiento ? FontStyles.Italic : FontStyles.Normal;
         gameObject.SetActive(true);
         Refrescar();
+    }
+
+    // Los pensamientos llevan la etiqueta junto al nombre para distinguirlos de lo que se dice en voz alta
+    private static string Encabezado(LineaEnPantalla linea)
+    {
+        if (!linea.EsPensamiento)
+            return linea.Quien;
+
+        var etiqueta = $"<color={ColorEtiquetaPensamiento}><i>pensamiento</i></color>";
+        return linea.Quien.Length > 0 ? $"{linea.Quien}  ·  {etiqueta}" : etiqueta;
     }
 
     private bool SePulsoAvanzar()
