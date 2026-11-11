@@ -1,11 +1,27 @@
 # Claves de diálogo
 
-Cada línea del guion unificado v1 (Kris, 9 de noviembre) ya está en su lugar dentro del juego, pero sin texto: se ve un cuadro en blanco con su **clave** en la esquina inferior derecha. El equipo de diálogos solo tiene que asignar el texto a cada clave.
+Cada línea del guion unificado v1 (Kris, 9 de noviembre) ya está en su lugar dentro del juego con su **clave**. El texto de cada clave vive en `Assets/_Carencia/Resources/SO_Dialogo_Guion.asset`; una clave que todavía no tiene texto se ve entre corchetes, por ejemplo `[P1_mama]`, y avisa en la consola.
 
 ## Cómo funciona
 
-- En las secuencias, cada línea es un paso `Dialogo` cuyo campo `texto` es la clave. Avanza con E, Esc o clic.
+- En las secuencias, cada línea es un paso `Dialogo` cuyo campo `texto` es la clave.
+- La caja es un rectángulo negro translúcido al pie de la pantalla, con el nombre de quien habla arriba (en dorado) y el texto en Special Elite. El tamaño sigue a Opciones → Accesibilidad → Tamaño de texto.
+- El texto se escribe letra por letra con el sonido `Audio/Efectos/SFX_Dialogo_Escritura`, que suena en loop solo mientras se escribe y sigue el volumen de Efectos.
+- Enter, clic o E (también Esc): la primera pulsación completa la página; la siguiente pasa a la siguiente página o cierra la línea.
 - Al terminar la línea, Elaki queda como estaba: si estaba sentada en la mesa, sigue sentada.
+
+## Cómo editar un texto
+
+Selecciona `SO_Dialogo_Guion` en el Project y, en el Inspector, busca la clave en la lista **Lineas**:
+
+| Campo | Para qué |
+|---|---|
+| Clave | La misma del paso `Dialogo`. Si no coincide letra por letra, se verá `[clave]` |
+| Quien | Nombre que aparece arriba del texto (Elaki, Mamá, Papá…). Vacío para textos sin voz, como el periódico |
+| Texto | Lo que se escribe. Una **línea en blanco** separa páginas: úsala en textos de más de dos renglones. Vacío si el guion dice "Sin texto": el juego se salta la línea |
+| Pensamiento | Marcado para lo que Elaki piensa y no dice: se ve en cursiva y con la etiqueta *pensamiento* junto al nombre |
+
+Arriba de la lista están la fuente, el sonido y la velocidad (letras por segundo; 0 muestra cada página completa de golpe).
 - Los objetos que se revisan más de una vez usan dos claves: `_1` para la primera vez y `_2` para las siguientes. Si el guion dice "Se repite", se usa una sola clave sin número.
 - Los objetos marcados como **obligatorio** avanzan la historia cuando se revisan todos.
 
