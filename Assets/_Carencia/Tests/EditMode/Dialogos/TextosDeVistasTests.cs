@@ -34,6 +34,17 @@ public class TextosDeVistasTests
     }
 
     [Test]
+    public void ElRefrigeradorTieneLosSieteObjetosAprobados()
+    {
+        var aprobadas = new[] { "Frijoles", "AguaJamaica", "Arroz", "Huevos", "Pay", "Jitomates", "Refresco" }
+            .Select(nombre => "REF_" + nombre);
+
+        var delRefrigerador = ClavesDeTodasLasVistas().Where(clave => clave.StartsWith("REF_"));
+
+        CollectionAssert.AreEquivalent(aprobadas, delRefrigerador);
+    }
+
+    [Test]
     public void CadaObjetoDeUnaVistaTieneSuLineaEnElGuion()
     {
         var guion = AssetDatabase.LoadAssetAtPath<GuionDialogos>(RutaGuion);
