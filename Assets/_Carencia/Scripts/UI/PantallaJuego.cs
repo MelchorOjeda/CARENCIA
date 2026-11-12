@@ -70,8 +70,47 @@ public class PantallaJuego : MonoBehaviour
         SceneManager.sceneLoaded -= AlCargarEscena;
     }
 
+    // Efectos de las secuencias (una vez) y música de fondo (en bucle); la música se corta al cambiar de escena
+    private AudioSource fuenteEfectos;
+    private AudioSource fuenteMusica;
+
+    public void ReproducirEfecto(AudioClip clip, float volumen = 1f)
+    {
+        if (clip != null)
+            fuenteEfectos.PlayOneShot(clip, volumen);
+    }
+
+    public void ReproducirMusica(AudioClip clip)
+    {
+        if (clip == null)
+        {
+            fuenteMusica.Stop();
+            fuenteMusica.clip = null;
+            return;
+        }
+
+        if (fuenteMusica.clip == clip && fuenteMusica.isPlaying)
+            return;
+
+        fuenteMusica.clip = clip;
+        fuenteMusica.Play();
+    }
+
+    private AudioSource FuenteDeAudio(string nombre, CategoriaSonido categoria, bool enBucle)
+    {
+        var objeto = new GameObject(nombre);
+        objeto.transform.SetParent(transform, false);
+        var fuente = objeto.AddComponent<AudioSource>();
+        fuente.playOnAwake = false;
+        fuente.loop = enBucle;
+        objeto.AddComponent<VolumenPorCategoria>().Categoria = categoria;
+        return fuente;
+    }
+
     private void Construir()
     {
+        fuenteEfectos = FuenteDeAudio("Efectos", CategoriaSonido.Efectos, false);
+        fuenteMusica = FuenteDeAudio("Musica", CategoriaSonido.Musica, true);
         var canvas = gameObject.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
         canvas.sortingOrder = 100;
@@ -462,6 +501,9 @@ public class PantallaJuego : MonoBehaviour
         // se oculta aquí, antes del Start de la escena nueva, para que sus diálogos no esperen turno para siempre
         if (instancia != null && instancia.caja != null && instancia.caja.Visible)
             instancia.caja.Ocultar();
+        // La música de una persecución no sigue en la escena siguiente
+        if (instancia != null && instancia.fuenteMusica != null)
+            instancia.ReproducirMusica(null);
 
         if (string.IsNullOrEmpty(entradaPendiente))
             return;

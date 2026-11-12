@@ -51,6 +51,10 @@ public class Secuencia : MonoBehaviour
         PenumbraGradual,
         // Con valor 1 Elaki queda sentada: no camina, pero puede revisar lo que tiene cerca. Con 0 se levanta
         Sentar,
+        // Efecto de sonido de la referencia (AudioClip), una vez; valor es su volumen
+        Sonido,
+        // Música de fondo en bucle (AudioClip); sin referencia la detiene
+        Musica,
     }
 
     [Serializable]
@@ -246,6 +250,12 @@ public class Secuencia : MonoBehaviour
                     jugador.MovimientoBloqueado = paso.valor > 0.5f;
                 if (detector != null)
                     detector.InteraccionBloqueada = false;
+                break;
+            case Tipo.Sonido:
+                pantalla.ReproducirEfecto(paso.referencia as AudioClip, paso.valor);
+                break;
+            case Tipo.Musica:
+                pantalla.ReproducirMusica(paso.referencia as AudioClip);
                 break;
         }
     }
