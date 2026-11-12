@@ -104,6 +104,34 @@ MonoBehaviour:
     quien: "Elaki"
     texto: ""
     pensamiento: 1
+  - clave: REF_Frijoles
+    quien: "Elaki"
+    texto: "La olla con frijoles de hace dos semanas. Mejor ni la destapo."
+    pensamiento: 1
+  - clave: REF_AguaJamaica
+    quien: "Elaki"
+    texto: "Agua de jamaica. Ya ni sabe a nada."
+    pensamiento: 1
+  - clave: REF_Arroz
+    quien: "Elaki"
+    texto: "Arroz de\u2026 no s\xE9 de cu\xE1ndo."
+    pensamiento: 1
+  - clave: REF_Huevos
+    quien: "Elaki"
+    texto: "Huevos. Tendr\xEDa que cocinar. Mmm, no."
+    pensamiento: 1
+  - clave: REF_Pay
+    quien: "Elaki"
+    texto: "Un pedazo de pay. No tengo ganas."
+    pensamiento: 1
+  - clave: REF_Jitomates
+    quien: "Elaki"
+    texto: "Esto mmm\u2026 no me gusta tanto."
+    pensamiento: 1
+  - clave: REF_Refresco
+    quien: "Elaki"
+    texto: "Refresco sin gas. Como todo."
+    pensamiento: 1
   - clave: P6_pensamiento_1
     quien: "Elaki"
     texto: "\xBFElla\u2026 se fue por ah\xED?"
