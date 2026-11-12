@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Player
   layers:
   - Default
   - TransparentFX
@@ -52,6 +53,30 @@ TagManager:
     locked: 0
   - name: Efectos
     uniqueID: 2665895332
+    locked: 0
+  - name: Background
+    uniqueID: 1747531907
+    locked: 0
+  - name: Floor
+    uniqueID: 708387641
+    locked: 0
+  - name: GroundDetails
+    uniqueID: 1621044749
+    locked: 0
+  - name: ObjectsBehind
+    uniqueID: 193549285
+    locked: 0
+  - name: Characters
+    uniqueID: 295121443
+    locked: 0
+  - name: ObjectsFront
+    uniqueID: 575769995
+    locked: 0
+  - name: Walls
+    uniqueID: 608200487
+    locked: 0
+  - name: Effects
+    uniqueID: 2141246765
     locked: 0
   - name: UI
     uniqueID: 1767808078

@@ -20,6 +20,16 @@ public class EnemigoPerseguidor : MonoBehaviour
     [SerializeField] private float esperaTrasGolpe = 1.1f;
     [SerializeField] private float cadaCuantoBusca = 0.25f;
 
+    [Header("Persecución que se intensifica (opcional)")]
+    [Tooltip("Cuánto sube la velocidad por segundo mientras persigue; 0 = siempre la misma")]
+    [SerializeField] private float aceleracion;
+
+    [Tooltip("Velocidad máxima a la que llega acelerando")]
+    [SerializeField] private float velocidadMaxima = 5f;
+
+    [Tooltip("Su primer golpe ya es el último: Elaki no puede escapar de ella")]
+    [SerializeField] private bool golpeFinal;
+
     private static readonly int DirX = Animator.StringToHash("DirX");
     private static readonly int DirY = Animator.StringToHash("DirY");
     private static readonly int Ataque = Animator.StringToHash("Ataque");
@@ -31,12 +41,40 @@ public class EnemigoPerseguidor : MonoBehaviour
     private bool persiguiendo;
     private float proximaBusqueda;
     private float proximoGolpe;
+    private float velocidadActual;
+
+    public bool Persiguiendo => persiguiendo;
+    public float VelocidadActual => velocidadActual;
+
+    // Deja de perseguir un momento sin desaparecer ni perder la velocidad que llevaba (al cruzar a otro cuarto)
+    public void Pausar()
+    {
+        persiguiendo = false;
+    }
+
+    public void Reanudar()
+    {
+        if (objetivo == null)
+            return;
+
+        persiguiendo = true;
+        ruta.Clear();
+        proximoGolpe = Mathf.Max(proximoGolpe, Time.time + esperaTrasGolpe * 0.5f);
+    }
 
     public void Configurar(Grid nuevoGrid, Tilemap nuevasParedes, float nuevaVelocidad)
     {
         grid = nuevoGrid;
         paredes = nuevasParedes;
         velocidad = nuevaVelocidad;
+    }
+
+    // Cambia la rejilla por la que busca camino, por ejemplo al seguir a Elaki a otro cuarto
+    public void CambiarRejilla(Grid nuevoGrid, Tilemap nuevasParedes)
+    {
+        grid = nuevoGrid;
+        paredes = nuevasParedes;
+        ruta.Clear();
     }
 
     public void Iniciar()
@@ -47,6 +85,7 @@ public class EnemigoPerseguidor : MonoBehaviour
         salud = jugador.GetComponent<SaludJugador>();
         gameObject.SetActive(true);
         persiguiendo = true;
+        velocidadActual = velocidad;
         proximoGolpe = Time.time + esperaTrasGolpe;
     }
 
@@ -60,6 +99,9 @@ public class EnemigoPerseguidor : MonoBehaviour
     {
         if (!persiguiendo)
             return;
+
+        if (aceleracion > 0f)
+            velocidadActual = Mathf.Min(velocidadMaxima, velocidadActual + aceleracion * Time.deltaTime);
 
         if (Time.time >= proximaBusqueda)
         {
@@ -77,7 +119,10 @@ public class EnemigoPerseguidor : MonoBehaviour
             if (animator != null)
                 animator.SetTrigger(Ataque);
 
-            salud.Golpear();
+            if (golpeFinal)
+                salud.Matar();
+            else
+                salud.Golpear();
         }
     }
 
@@ -90,7 +135,7 @@ public class EnemigoPerseguidor : MonoBehaviour
         var destino = ruta.Count > 0 ? ruta[0] : objetivo.position;
         destino.z = transform.position.z;
         var antes = transform.position;
-        transform.position = Vector3.MoveTowards(transform.position, destino, velocidad * Time.deltaTime);
+        transform.position = Vector3.MoveTowards(transform.position, destino, velocidadActual * Time.deltaTime);
         Mirar(transform.position - antes);
 
         if (ruta.Count > 0 && (transform.position - destino).sqrMagnitude < 0.0025f)

@@ -12,6 +12,7 @@ public class PantallaJuego : MonoBehaviour
 
     private Image fundido;
     private Image manchas;
+    private Image amenaza;
     private Image penumbra;
     private CajaDialogo caja;
     private GameObject marcador;
@@ -120,6 +121,8 @@ public class PantallaJuego : MonoBehaviour
 
         penumbra = Capa("Penumbra", Vineta(new Color(0.02f, 0.01f, 0.03f), 0.25f));
         SetAlfa(penumbra, 0f);
+        amenaza = Capa("Amenaza", Vineta(new Color(0.5f, 0.02f, 0.04f), 0f));
+        SetAlfa(amenaza, 0f);
         manchas = Capa("Manchas", Manchas());
         SetAlfa(manchas, 0f);
 
@@ -286,6 +289,15 @@ public class PantallaJuego : MonoBehaviour
         return Sprite.Create(textura, new Rect(0, 0, ancho, alto), new Vector2(0.5f, 0.5f));
     }
 
+    // Tinte rojo de los bordes cuando un enemigo se acerca; lo controla AmenazaCercana
+    public void SetAmenaza(float intensidad)
+    {
+        SetAlfa(amenaza, Mathf.Clamp01(intensidad));
+    }
+
+    // Para quien solo quiere limpiar un efecto: no crea la pantalla si ya no existe (al cerrar el juego)
+    public static bool Existe => instancia != null;
+
     public void SetManchas(float intensidad)
     {
         SetAlfa(manchas, Mathf.Clamp01(intensidad));
@@ -445,6 +457,9 @@ public class PantallaJuego : MonoBehaviour
 
     private static void AlCargarEscena(Scene escena, LoadSceneMode modo)
     {
+        if (instancia != null && instancia.amenaza != null)
+            instancia.SetAmenaza(0f);
+
         // Una línea que abrió la escena anterior justo antes de irse se queda sin quien la cierre:
         // se oculta aquí, antes del Start de la escena nueva, para que sus diálogos no esperen turno para siempre
         if (instancia != null && instancia.caja != null && instancia.caja.Visible)
