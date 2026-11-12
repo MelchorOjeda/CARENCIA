@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ANIM_PerroHumanoide_Ataque_N
+  m_Name: 
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -73,39 +73,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-      metaData: 0
-    pptrCurveMapping:
-    - {fileID: 84083732, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: 1248810019, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -1528655612, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: 233760705, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -425531853, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: 293025618, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -138965438, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -1065031711, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -453462059, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -1193026032, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: 8450165493098973258, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -3171243244859593482, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: 1008290143489973474, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -1143832468395580703, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: 5299614111271841107, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -8393833439759879592, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: 6269109727925191739, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -5467200595084038842, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -6449550087495739617, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -7883557808421919901, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
-    - {fileID: -7883557808421919901, guid: 18649c084866ff04ea0a2530a87a1ea0, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

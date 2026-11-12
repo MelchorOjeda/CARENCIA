@@ -64,7 +64,7 @@ public class OjoGigante : MonoBehaviour
         if (jugador != null)
             jugador.Freno = 1f;
         oscuridad = 0f;
-        if (PantallaJuego.Existe)
+        if (PantallaJuego.Instancia != null)
             PantallaJuego.Instancia.SetMirada(0f);
         if (sonidoDano != null)
             sonidoDano.Stop();

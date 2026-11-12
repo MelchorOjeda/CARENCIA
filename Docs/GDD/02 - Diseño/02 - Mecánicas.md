@@ -6,36 +6,6 @@ Una mecánica es una regla o interacción mediante la cual el jugador puede actu
 
 Documenta cada mecánica con suficiente detalle para que otro integrante pueda implementarla.
 
-## Plantilla de mecánica
-
-### Nombre de la mecánica
-
-**Propósito:**  
-¿Qué aporta a la experiencia?
-
-**Activación:**  
-¿Qué debe hacer el jugador?
-
-**Reglas:**  
-¿Qué puede y qué no puede ocurrir?
-
-**Entrada:**  
-¿Qué botón, gesto o acción la activa?
-
-**Estado inicial:**
-
-**Estado final:**
-
-**Recursos utilizados:**
-
-**Recompensa:**
-
-**Penalización:**
-
-**Interacciones con otras mecánicas:**
-
-**Casos límite:**  
-¿Qué ocurre en situaciones poco comunes?
 
 ## Mecánicas principales
 

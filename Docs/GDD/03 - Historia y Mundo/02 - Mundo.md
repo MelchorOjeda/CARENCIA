@@ -6,7 +6,7 @@ Define el contexto donde ocurre el videojuego: lugares, culturas, reglas, histor
 
 ## Concepto del mundo
 
-**Época:** Época contemporánea, con acontecimientos relacionados con el año 2026. El 31 de octubre es una fecha recurrente y fundamental para la historia.
+**Época:** Época contemporánea. El 31 de octubre es la fecha recurrente y fundamental para la historia.
 
 **Lugar:** México. La mayor parte de la experiencia ocurre dentro de la casa del protagonista y sus distintas versiones dimensionales. El desenlace incorpora espacios del mundo exterior mediante cinemáticas y noticias.
 
@@ -22,32 +22,31 @@ Define el contexto donde ocurre el videojuego: lugares, culturas, reglas, histor
 - **Realidad incierta:** no se confirma inmediatamente si los acontecimientos son sobrenaturales o producto de la percepción del protagonista.
 ## Historia del mundo
 
+## Historia del mundo
+
 ### Antes del juego
 
-El protagonista vivía con sus padres y su hermana Margarita en una casa familiar aparentemente normal.
+Elaki vivía con sus padres y su hermana Margarita en una casa familiar aparentemente normal.
 
-El 31 de octubre, Margarita desapareció después de ser secuestrada por un grupo criminal. Posteriormente, su cuerpo fue encontrado en un lote baldío.
+El 31 de octubre, Margarita desapareció después de avisar a sus padres que había salido de la universidad y que iba de regreso a casa. Durante las semanas siguientes, su caso se sumó al de las miles de personas desaparecidas en México.
 
-La pérdida afectó profundamente al protagonista y a su familia. Mientras sus padres evitan reconocer la existencia de Margarita durante los acontecimientos del juego, el joven conserva recuerdos de ella y se niega a aceptar su ausencia.
+La pérdida afectó profundamente a la familia. Mientras los padres evitan reconocer su existencia, Elaki conserva sus recuerdos y se niega a aceptar su ausencia. Dentro de la casa permanecen objetos y detalles que funcionan como indicios de su vida.
 
-Dentro de la casa permanecen objetos y detalles que funcionan como indicios de su vida anterior.
 ### Durante el juego
 
-La historia comienza en la casa familiar, cuando el protagonista pregunta por Margarita y sus padres aseguran que nunca tuvo una hermana.
+La historia comienza cuando Elaki pregunta por Margarita y sus padres aseguran que nunca tuvo una hermana.
 
-Después de encontrar objetos relacionados con ella, descubre un portal en el espejo del baño y comienza a explorar distintas versiones de su hogar.
+Después de revisar el gabinete del baño, se abre un portal en el espejo y Elaki comienza a recorrer distintas versiones de su casa. Cada nivel inicia en el baño real y presenta cambios más pronunciados: primero espacios vacíos e inconsistentes, después una casa abandonada con amenazas y, finalmente, una casa hecha de carne.
 
-Cada dimensión presenta cambios más pronunciados: primero aparecen pequeñas inconsistencias, después espacios deformados y criaturas amenazantes y, finalmente, una casa invadida por elementos orgánicos.
-
-A medida que avanza, el protagonista encuentra pistas relacionadas con Margarita, su familia y la fecha de su desaparición.
+A medida que avanza, la casa real también cambia: desaparece una toalla, aparece el altar del perro y una alacena ocupa el lugar del cuarto de Margarita.
 
 ### Después del juego
 
-Tras la revelación del destino de Margarita, la historia presenta una última secuencia fechada el 25 de diciembre de 2026.
+El desenlace revela que el cuerpo de Margarita fue localizado en un lote baldío y que la Fiscalía confirmó su identidad el 25 de diciembre.
 
-Una noticia informa sobre la muerte de un joven después de caer de un edificio. La escena final muestra el lugar de los hechos y sugiere que el fallecido es el protagonista.
+Esa misma noche, Elaki muere ahogado en la tina de su baño. La escena final muestra el edificio donde vive la familia, con patrullas, una ambulancia y vecinos reunidos.
 
-No se establece qué ocurre posteriormente con la familia ni se confirma de manera definitiva la naturaleza sobrenatural de las dimensiones.
+No se confirma de manera definitiva la naturaleza de los lugares que recorrió Elaki.
 ## Lugares
 
 | Lugar                       | Descripción                                                                                               | Función jugable                                              | Importancia narrativa                                                             |

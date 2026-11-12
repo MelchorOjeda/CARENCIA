@@ -19,7 +19,7 @@ Los sistemas son conjuntos de reglas y componentes que trabajan juntos: combate,
 | Audio                    | Reproducir sonidos ambientales, murmullos y sonido ambiental de fondo.                                                                                   | Eventos, escenarios y enemigos.                  | Definido |
 | Progreso del juego       | Gestionar el reinicio de fases o puntos de control.                                                                                                      | Progresión, estados del personaje y escenas.     | Definido |
 
-## Plantilla de sistema
+## Sistemas
 
 ### Sistema 01
 ### Nombre: Sistema del movimiento del personaje

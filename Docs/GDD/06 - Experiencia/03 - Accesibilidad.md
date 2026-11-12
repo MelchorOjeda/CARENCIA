@@ -6,11 +6,8 @@ La accesibilidad busca que el mayor número posible de jugadores pueda comprende
 
 ## Opciones previstas
 
-- [ ] Tamaño de texto
-- [ ] Reasignación de controles
-- [ ] Sensibilidad
-- [ ] Volumen independiente
-- [ ] Indicadores visuales para sonidos importantes
+- [x] Tamaño de texto
+- [x] Volumen independiente
 
 ## Consideraciones
 

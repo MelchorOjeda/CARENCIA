@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ANIM_Hermana_Ataque_O
+  m_Name: 
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -57,31 +57,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-      metaData: 0
-    pptrCurveMapping:
-    - {fileID: -1259596703, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -1769994009, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: 483148843, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -1253385047, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -1777564049, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: 1876494388, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -1004982747, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: 2041254704, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -763967060, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: 1104216317, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -3485217688395399462, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -4036818347983968074, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
-    - {fileID: -4036818347983968074, guid: c0739884b8450f04f82eb990178a7ba7, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

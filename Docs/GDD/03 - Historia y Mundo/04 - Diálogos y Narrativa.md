@@ -18,9 +18,9 @@ Las cinemáticas presentan acontecimientos importantes que requieren un control 
 
 Entre las principales se encuentran:
 
-- Despertar inicial y primer desayuno: introduce al protagonista y su entorno cotidiano, presentando el conflicto con sus padres por la existencia de Margarita.
-- Evento de la computadora: presenta un video perturbador y desencadena la aparición de la criatura canina.
-- Revelación final: muestra los carteles de desaparición y la noticia sobre el hallazgo del cuerpo de Margarita.
+- Despertar inicial y primer desayuno: presenta a Elaki y el conflicto con sus padres por la existencia de Margarita.
+- Evento de la computadora: un video que no puede detenerse revela la presencia del perro de la familia.
+- Desenlace: muestra los carteles de búsqueda, la transmisión sobre el cuerpo de Margarita, la noticia del joven ahogado y la escena final del edificio.
 
 Las cinemáticas forman parte del avance obligatorio de la historia. El jugador puede pausar el juego durante estas secuencias.
 
@@ -84,19 +84,17 @@ La información se transmite principalmente mediante cinemáticas, además de lo
 
 **Consecuencias:** La inspección del gabinete es obligatoria para continuar. Al cerrarlo, el protagonista observa una alteración en el espejo que conduce a la aparición del portal.
 
-### Escena 03 — Voz femenina en la primera dimensión
+### Escena 03 — La voz en el pasillo
 
-**Participantes:** Protagonista y voz femenina de origen incierto.
+**Participantes:** Elaki y la voz de Margarita.
 
-**Objetivo de la conversación:** Atraer al protagonista hacia el siguiente punto de la historia.
+**Objetivo de la conversación:** Atraer a Elaki hasta el fondo del pasillo.
 
-**Contexto:** Después de atravesar el espejo, el protagonista explora una versión alterada del baño y un pasillo anormalmente largo.
+**Contexto:** Después de recorrer los espacios del otro lado de la casa, Elaki llega al pasillo largo. Desde la puerta del cuarto de Margarita salen murmullos y una voz femenina distorsionada que pide ayuda. Mientras más se acerca, más clara se escucha.
 
-Durante el recorrido escucha una voz femenina que parece llamarlo desde otra zona de la casa.
+**Opciones del jugador:** Caminar hacia la puerta del fondo.
 
-**Opciones del jugador:** Explorar el escenario y avanzar siguiendo las señales.
-
-**Consecuencias:** El protagonista se dirige hacia el siguiente portal y continúa su búsqueda.
+**Consecuencias:** La visión de Elaki se oscurece con cada paso. Al llegar a la puerta se escucha un último «Ayuda» y Elaki se desmaya. Despierta en su cuarto real.
 
 ### Escena 04 — Caminata por la sala
 
@@ -126,23 +124,23 @@ La cortina de la bañera se encuentra abierta y aparece una figura que reconoce 
 
 **Consecuencias:** El protagonista atraviesa la transición final, que conduce a la revelación sobre la desaparición y muerte de Margarita.
 
-### Escena 06 — Noticia del desenlace
+### Escena 06 — Desenlace
 
-**Participantes:** Voz del noticiero.
+**Participantes:** Voz del noticiero y texto en pantalla.
 
-**Objetivo de la conversación:** Revelar el verdadero destino de Margarita y cerrar la historia presentada en el demo.
+**Objetivo de la conversación:** Revelar el destino de Margarita y de Elaki.
 
-**Contexto:** Después del encuentro en la bañera, una secuencia muestra carteles de desaparición y una transmisión televisiva.
+**Contexto:** Después de los carteles de búsqueda, la televisión de la sala real transmite una noticia. Después aparece una pantalla de texto en negro.
 
-La noticia informa que el cuerpo de Margarita fue encontrado en un lote baldío y relaciona su desaparición, ocurrida el 31 de octubre, con el contexto de desapariciones en México.
+**Opciones del jugador:** Ninguna. Solo puede avanzar el texto.
 
-**Opciones del jugador:** Ninguna. Se trata de una secuencia narrativa final en cinemática.
+**Consecuencias:** Se revela que Margarita fue hallada sin vida y que Elaki murió ahogado en la tina. La historia termina con la escena del edificio.
 
-**Consecuencias:** Se revela que Margarita no estaba simplemente atrapada en otra dimensión. El demo concluye con esta información, manteniendo la incertidumbre sobre la naturaleza de las experiencias del protagonista.
+Texto del noticiero:
+"Este 25 de diciembre, la Fiscalía confirmó que el cuerpo localizado el pasado 21 de diciembre en un lote baldío en Cuautitlán Izcalli corresponde a Margarita Flores Hernández,  desaparecida desde el 31 de octubre."
 
-Texto definitivo del noticiero: 
-"Esta noche de 25 de diciembre, se reportó el fallecimiento de un joven tras caer desde un edificio. Elementos de emergencia y autoridades acudieron al lugar de los hechos. Hasta el momento, no se ha dado a conocer la identidad de la víctima ni las circunstancias que provocaron la caída."
-La transmisión termina y comienza la cinemática del edificio.
+Texto en pantalla:
+"Autoridades atendieron esta noche el reporte de un joven de aproximadamente 17 años que perdió la vida tras ahogarse en una tina de baño. Elementos de seguridad y personal de emergencias acudieron al lugar. La Fiscalía investiga las circunstancias. Hasta el momento no se ha informado su identidad."
 ## Tono
 
 Describe el lenguaje, humor, formalidad y estilo de comunicación.
@@ -171,8 +169,6 @@ El videojuego utiliza un tono serio, inquietante y emocional, característico de
 ¿El juego tendrá diferentes idiomas?
 
 Idiomas previstos:
-
-**Idiomas previstos:**
 
 - **Español:** idioma principal del videojuego.
 

@@ -4,38 +4,6 @@
 
 Cada personaje importante debe tener una función clara dentro de la historia y/o la jugabilidad.
 
-## Plantilla de personaje
-
-### Nombre
-
-**Rol:**
-
-**Función jugable:**
-
-**Función narrativa:**
-
-**Descripción física:**
-
-**Personalidad:**
-
-**Motivaciones:**
-
-**Objetivos:**
-
-**Conflicto:**
-
-**Relaciones:**
-
-**Arco del personaje:**
-
-**Habilidades:**
-
-**Debilidades:**
-
-**Frases o tono de diálogo:**
-
-**Referencias visuales:**
-
 ## Personajes
 
 ### Protagonista
@@ -48,7 +16,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Función narrativa:** Representa el conflicto central de la historia: la negación de la pérdida de su hermana y la búsqueda de una explicación alternativa para su desaparición.
 
-**Descripción física:** Joven de 17 años, cabello castaño, ojos café oscuro y piel morena. Vestido de pantalón de mezclilla, y una playera con mangas verdes.
+**Descripción física:** Joven de 17 años, cabello castaño oscuro, ojos café oscuro y piel morena. Viste una playera blanca con mangas negras.
 
 **Personalidad:** Se muestra confundido, insistente y emocionalmente afectado por la ausencia de Margarita. Desconfía de las explicaciones de sus padres y mantiene su determinación por encontrarla.
 
@@ -69,7 +37,7 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 - **Manifestaciones:** presencias que parecen relacionadas con sus recuerdos y emociones.
     
 
-**Arco del personaje:** Comienza convencido de que Margarita está atrapada en otra dimensión. Durante su búsqueda experimenta una creciente pérdida de certeza sobre su entorno, hasta enfrentarse a la revelación de que su hermana había muerto.
+**Arco del personaje:** Comienza convencido de que Margarita está del otro lado del espejo. Durante su búsqueda pierde la certeza sobre su entorno y sobre sus propios recuerdos, hasta que salta a la tina para alcanzarla. El desenlace revela que murió ahogado el mismo día en que se confirmó la muerte de su hermana.
 
 **Habilidades:** Caminar, explorar, inspeccionar objetos, interactuar con elementos del escenario y evadir amenazas. No posee habilidades sobrenaturales ni capacidades de combate confirmadas.
 
@@ -91,9 +59,9 @@ Cada personaje importante debe tener una función clara dentro de la historia y/
 
 **Descripción física:** Su apariencia varía según la dimensión. Inicialmente puede presentarse como una silueta femenina o una figura aparentemente humana. Conforme avanza la historia, adopta características perturbadoras.
 
-En el Nivel 2 aparece una versión que comienza de espaldas, con una apariencia que recuerda a Margarita. Posteriormente revela un rostro deformado, rasgos desproporcionadamente realistas y una espiral en el abdomen de la que emergen gusanos.
+En el Nivel 2 aparece al fondo del pasillo, de espaldas y murmurando. Al girar revela un rostro casi humano, con ojos realistas que no corresponden a la cara; de su piel salen gusanos y llora. Persigue a Elaki y siempre lo alcanza.
 
-En el Nivel 3 aparece una representación de Margarita dentro de la bañera, cuya presencia está vinculada al encuentro final.
+En el Nivel 3, Margarita aparece en el reflejo del agua de la tina, completa y sin deformaciones, con una expresión angustiada que cambia a una leve sonrisa al verlo.
 
 **Personalidad:** Ambigua e inquietante. Sus manifestaciones pueden parecer vulnerables, tristes o necesitadas de ayuda, pero también muestran comportamientos agresivos. No se confirma que posean una personalidad independiente de los recuerdos del protagonista.
 
@@ -128,13 +96,13 @@ En el Nivel 3 aparece una representación de Margarita dentro de la bañera, cuy
 
 **Función narrativa:** Es el motivo principal de la búsqueda del protagonista. Su desaparición origina el conflicto y su destino constituye la revelación final del demo.
 
-**Descripción física:** Su diseño debe distinguirse claramente de las versiones deformadas.
+**Descripción física:** Joven de 16 años. Su diseño se distingue claramente de sus versiones deformadas y solo se muestra completa en el reflejo del agua de la tina.
 
 **Personalidad:** En la historia actual no presenta suficientes escenas de su vida cotidiana para establecerla.
 
 **Motivaciones:** No se muestran motivaciones activas durante el desarrollo jugable.
 
-**Objetivos:** No tiene objetivos jugables propios.
+**Conflicto:** Desapareció el 31 de octubre al regresar de la universidad. Su cuerpo fue localizado en un lote baldío y su identidad se confirmó el 25 de diciembre, aunque Elaki desconoce o rechaza esta realidad.
 
 **Conflicto:** Desapareció el 31 de octubre después de ser secuestrada por un grupo criminal. Su cuerpo fue encontrado posteriormente en un lote baldío, aunque el protagonista desconoce o rechaza esta realidad.
 
@@ -158,7 +126,7 @@ En el Nivel 3 aparece una representación de Margarita dentro de la bañera, cuy
 
 **Función narrativa:** Introduce el conflicto al negar la existencia de Margarita y contribuye a generar dudas sobre los recuerdos del protagonista.
 
-**Descripción física:** Mujer adulta. Durante su segunda aparición presenta una apariencia cansada, con ojeras. 
+**Descripción física:** Mujer adulta. Su apariencia se deteriora en cada desayuno: tranquila en el primero, un poco cansada en el segundo y ojerosa, con la piel grisácea, en el tercero.
 
 **Personalidad:** Reservada y evasiva ante las preguntas relacionadas con Margarita.
 

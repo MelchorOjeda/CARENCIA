@@ -4,7 +4,7 @@
 
 Documenta las entidades controladas por el juego y su comportamiento.
 
-## Plantilla de enemigo
+## Enemigos
 
 ### Nombre: Criatura canina deformada
 
@@ -103,11 +103,7 @@ PERSEGUIR AL JUGADOR
            ↓
      SEGUNDO DESPERTAR
 ```
-## Plantilla de NPC 
-
-El juego no contempla NPC convencionales con diálogos interactivos, misiones secundarias, comercio o sistemas de acompañamiento.
-
-Sin embargo, existen personajes controlados por el juego que participan en las cinemáticas y los eventos narrativos.
+## NPC 
 
 **Rol:** Madre
 
@@ -150,9 +146,6 @@ Sin embargo, existen personajes controlados por el juego que participan en las c
 
 Margarita: «¿Por qué tardaste tanto?»
 Protagonista: «¿Margarita…?»
-Margarita: «Te estaba esperando. Ven, acércate… Ya no tenemos que separarnos».
-Protagonista: «Pensé que te había perdido».
-Margarita: «Nunca me fui. Ven conmigo».
 
 **Condiciones:** Se presenta cuando el protagonista alcanza el baño final.
 

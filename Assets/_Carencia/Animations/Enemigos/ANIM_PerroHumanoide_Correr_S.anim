@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ANIM_PerroHumanoide_Correr_S
+  m_Name: 
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -49,27 +49,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 0
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-      metaData: 0
-    pptrCurveMapping:
-    - {fileID: -956944518, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: -1060060562, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: -1647114924, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: 1017822180, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: 951693723, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: 576330662, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: -439834433, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: -1501143431, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
-    - {fileID: -1501143431, guid: 341c1c419b7129a4784722d35c2adaec, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
