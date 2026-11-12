@@ -35,8 +35,8 @@ public class Secuencia : MonoBehaviour
         VerImagen,
         // Línea del guion: muestra en la caja de diálogo el texto de la clave guardado en SO_Dialogo_Guion
         Dialogo,
-        // Espiral que cierra la vista y termina en negro (valor: duración; valor2 = 1: morada, al cambiar de dimensión)
-        Espiral,
+        // Fundido a negro que cierra la vista (valor: duración; valor2 = 1: al cambiar de dimensión, cambia el sonido)
+        Oscurecer,
         // Pantalla provisional para una imagen o video sin arte; con valor > 0 avanza sola
         Marcador,
         // Ejecuta la secuencia de referencia si ya existen todas las banderas del texto (separadas por coma)
@@ -216,8 +216,8 @@ public class Secuencia : MonoBehaviour
             case Tipo.Dialogo:
                 yield return Dialogo(paso.texto);
                 break;
-            case Tipo.Espiral:
-                yield return pantalla.Espiral(paso.valor, paso.valor2 > 0.5f);
+            case Tipo.Oscurecer:
+                yield return pantalla.Oscurecer(paso.valor);
                 break;
             case Tipo.Marcador:
                 yield return Marcador(paso.texto, paso.valor);

@@ -56,7 +56,7 @@ public class SaludJugador : MonoBehaviour
             yield break;
         }
 
-        yield return PantallaJuego.Instancia.Espiral(2.4f);
+        yield return PantallaJuego.Instancia.Oscurecer(2.4f);
         EstadoJuego.Golpes = 0;
         PantallaJuego.Instancia.SetManchas(0f);
         var partes = destinoAlMorir.Split('|');
