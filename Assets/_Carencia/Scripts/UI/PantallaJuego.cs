@@ -17,7 +17,6 @@ public class PantallaJuego : MonoBehaviour
     private CajaDialogo caja;
     private GameObject marcador;
     private Text textoMarcador;
-    private Image espiral;
     private GameObject vistaImagen;
     private Image imagenVista;
     private Image paredVista;
@@ -196,13 +195,10 @@ public class PantallaJuego : MonoBehaviour
         // Encima de marcadores, vistas y video, para que una línea se lea sobre ellos
         caja = CajaDialogo.Crear(transform);
 
-        espiral = Capa("Espiral", Espiral());
-        SetAlfa(espiral, 0f);
-
         fundido = Capa("Fundido", null);
         fundido.color = new Color(0f, 0f, 0f, 0f);
 
-        // La caja de diálogo sube sobre espiral y fundido: lo que se dice a oscuras (el "Ayuda." del desmayo) se sigue leyendo
+        // La caja de diálogo sube sobre el fundido: lo que se dice a oscuras (el "Ayuda." del desmayo) se sigue leyendo
         caja.transform.SetAsLastSibling();
     }
 
@@ -236,30 +232,6 @@ public class PantallaJuego : MonoBehaviour
         texto.color = color;
         texto.raycastTarget = false;
         return texto;
-    }
-
-    // Espiral oscura que gira hacia el centro; se usa en los portales, el mareo y la muerte frente a "ella"
-    private static Sprite Espiral()
-    {
-        const int lado = 160;
-        var textura = new Texture2D(lado, lado, TextureFormat.RGBA32, false) { wrapMode = TextureWrapMode.Clamp };
-        for (var y = 0; y < lado; y++)
-        {
-            for (var x = 0; x < lado; x++)
-            {
-                var dx = (x + 0.5f) / lado * 2f - 1f;
-                var dy = (y + 0.5f) / lado * 2f - 1f;
-                var radio = Mathf.Sqrt(dx * dx + dy * dy);
-                var angulo = Mathf.Atan2(dy, dx);
-                var brazo = Mathf.Sin(angulo * 3f + radio * 16f) * 0.5f + 0.5f;
-                var alfa = Mathf.Clamp01(radio * 1.4f) * Mathf.SmoothStep(0.25f, 0.75f, brazo);
-                textura.SetPixel(x, y, new Color(1f, 1f, 1f, Mathf.Max(alfa, Mathf.InverseLerp(0.9f, 1.3f, radio))));
-            }
-        }
-
-        textura.filterMode = FilterMode.Point;
-        textura.Apply();
-        return Sprite.Create(textura, new Rect(0, 0, lado, lado), new Vector2(0.5f, 0.5f));
     }
 
     private static void SetAlfa(Image imagen, float alfa)
@@ -392,34 +364,10 @@ public class PantallaJuego : MonoBehaviour
         textoMarcador.text = texto ?? "";
     }
 
-    // La espiral cubre la pantalla girando y termina en negro
-    // Negra en el mareo y la muerte; morada al cruzar de una dimensión a otra
-    private static readonly Color EspiralNegra = new Color(0.03f, 0.01f, 0.04f, 0f);
-    private static readonly Color EspiralMorada = new Color(0.4f, 0.14f, 0.55f, 0f);
-
-    public Coroutine Espiral(float duracion, bool morada = false)
+    // Cierra la vista a negro en las transiciones: portales, mareo y muerte frente a "ella"
+    public Coroutine Oscurecer(float duracion)
     {
-        espiral.color = morada ? EspiralMorada : EspiralNegra;
-        return StartCoroutine(RutinaEspiral(duracion));
-    }
-
-    private IEnumerator RutinaEspiral(float duracion)
-    {
-        var rect = (RectTransform)espiral.transform;
-        rect.anchorMin = rect.anchorMax = new Vector2(0.5f, 0.5f);
-        for (var t = 0f; t < duracion; t += Time.unscaledDeltaTime)
-        {
-            var avance = t / duracion;
-            var lado = Mathf.Lerp(1400f, 520f, avance);
-            rect.sizeDelta = new Vector2(lado, lado);
-            rect.localRotation = Quaternion.Euler(0f, 0f, -avance * 540f);
-            SetAlfa(espiral, Mathf.Clamp01(avance * 2.5f));
-            SetAlfa(fundido, Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(0.55f, 1f, avance)));
-            yield return null;
-        }
-
-        SetAlfa(fundido, 1f);
-        SetAlfa(espiral, 0f);
+        return Fundir(1f, duracion);
     }
 
     public void MostrarVideo(bool visible)
