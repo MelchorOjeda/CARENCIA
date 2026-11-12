@@ -35,7 +35,7 @@ Orientación: `frente_derecha` va contra la pared trasera izquierda (mira hacia 
 | Objeto | Casa real | Nivel 2 / Nivel 3 | Momento del guion | Estado |
 |---|---|---|---|---|
 | `refrigerador` | Refrigerador de la cocina | Sucio / con ojos | Vista interior con E | ✅ |
-| `refrigerador_abierto_frente_recto` | Vista en primera persona (casa real, si se reemplaza la actual) | Comida podrida / "cosas extrañas" | N3.5 (refrigerador) | ✅ niveles 2 y 3 · 🔜 casa real |
+| `refrigerador_abierto_frente_recto` | Vista en primera persona; en la casa real del Prólogo es `PF_VistaRefrigerador`, con la barra de la cocina y 7 objetos con contorno al pasar el mouse | Comida podrida / "cosas extrañas" | N3.5 (refrigerador) | ✅ niveles 2 y 3 · ✅ Prólogo · 🔜 R1 y R2 |
 | `estufa` | Sobre la barra, en el lugar de la estufa dibujada | Sucia / de carne | Ambiente | ✅ |
 | `lavaplatos` | Junto a la estufa, si se separa la barra | Sucio; en el Nivel 3, el "fregadero lleno de uñas" | N3.5 | ✅ Nivel 1 · 🔜 casa y niveles 2 y 3 |
 | `dispensador_agua` | Junto al refrigerador | Ídem | Ambiente | ✅ |
