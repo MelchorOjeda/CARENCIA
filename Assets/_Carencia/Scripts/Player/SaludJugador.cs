@@ -25,6 +25,16 @@ public class SaludJugador : MonoBehaviour
         PantallaJuego.Instancia.SetManchas(Intensidad());
     }
 
+    // Un solo golpe basta: "ella" siempre alcanza a Elaki
+    public void Matar()
+    {
+        if (muerto)
+            return;
+
+        EstadoJuego.Golpes = golpesParaMorir - 1;
+        Golpear();
+    }
+
     public void Golpear()
     {
         if (muerto)
