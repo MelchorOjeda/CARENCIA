@@ -60,7 +60,7 @@ Al agregar un paso `Dialogo` con una clave nueva en una escena, agrega también 
 
 ### Gabinete (P5)
 
-Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, siempre abajo y centrada como en el resto del juego. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosGabineteTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
+Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, siempre abajo y centrada como en el resto del juego. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosDeVistasTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
 
 | Clave | Objeto | Guion P5 |
 |---|---|---|
@@ -72,6 +72,20 @@ Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la m
 | `P5_Blister` | Blíster de naproxeno y paracetamol | Naproxeno y paracetamol |
 | `P5_Pads` | Parches juveniles | Parches juveniles |
 | `P5_Rastrillo` | Rastrillo | Sin texto |
+
+### Refrigerador del Prólogo (REF)
+
+Misma mecánica que el gabinete, en la vista `PF_VistaRefrigerador`: al pasar el mouse el objeto se marca con el contorno amarillo y al hacer clic sale el pensamiento de Elaki. La clave es `REF_` más el nombre del objeto. Tono apático.
+
+| Clave | Objeto | Texto |
+|---|---|---|
+| `REF_Frijoles` | Olla azul | La olla con frijoles de hace dos semanas. Mejor ni la destapo. |
+| `REF_AguaJamaica` | Jarra roja | Agua de jamaica. Ya ni sabe a nada. |
+| `REF_Arroz` | Tupper naranja | Arroz de… no sé de cuándo. |
+| `REF_Huevos` | Huevos | Huevos. Tendría que cocinar. Mmm, no. |
+| `REF_Pay` | Pay del estante | Un pedazo de pay. No tengo ganas. |
+| `REF_Jitomates` | Jitomates del cajón | Esto mmm… no me gusta tanto. |
+| `REF_Refresco` | Botella verde de la puerta | Refresco sin gas. Como todo. |
 
 ## Nivel 1 (`N1_Laberinto`, `N1_Pasillo`)
 

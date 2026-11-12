@@ -30,7 +30,8 @@ public class Secuencia : MonoBehaviour
         Video,
         CuadroEnBlanco,
         CargarEscena,
-        AbrirGabinete,
+        // Abre una vista fija con objetos (gabinete, refrigerador) y espera a que se cierre
+        AbrirVista,
         VerImagen,
         // Línea del guion: muestra en la caja de diálogo el texto de la clave guardado en SO_Dialogo_Guion
         Dialogo,
@@ -200,9 +201,9 @@ public class Secuencia : MonoBehaviour
             case Tipo.VerImagen:
                 yield return VerImagen((Sprite)paso.referencia);
                 break;
-            case Tipo.AbrirGabinete:
+            case Tipo.AbrirVista:
                 // Espera a que se cierre, para que lo que sigue (por ejemplo un pensamiento) vaya después
-                var vista = (VistaGabinete)paso.referencia;
+                var vista = (VistaDeObjetos)paso.referencia;
                 vista.Abrir();
                 yield return null;
                 while (vista.Abierta)
