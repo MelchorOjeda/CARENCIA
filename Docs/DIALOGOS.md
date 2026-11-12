@@ -35,6 +35,9 @@ Las 71 claves ya tienen el texto del guion unificado v1, incluidas las propuesta
 - N2.11 · Lugar vacío: se quitó la acotación "(Suspira.)"; el suspiro queda para el audio.
 - `P4_lavabo_2` está vacío ("Sin texto, solo agua"): el juego se salta la línea.
 - Los textos largos (periódicos, anuncio, noticiero, D4) están divididos en páginas.
+- `R_puerta_cerrada` (puerta cerrada de la casa real en PRO_Casa, R1_Casa y R2_Casa, secuencia `Sec_puerta_cerrada`): no viene en el guion v1. Por ahora es el pensamiento "Está cerrada.", una propuesta para revisar con el equipo.
+
+Al agregar un paso `Dialogo` con una clave nueva en una escena, agrega también su línea en `SO_Dialogo_Guion` y corre `ClavesDelGuionTests`: si falta, el juego muestra `[clave]`.
 - Los objetos que se revisan más de una vez usan dos claves: `_1` para la primera vez y `_2` para las siguientes. Si el guion dice "Se repite", se usa una sola clave sin número.
 - Los objetos marcados como **obligatorio** avanzan la historia cuando se revisan todos.
 
@@ -57,7 +60,7 @@ Las 71 claves ya tienen el texto del guion unificado v1, incluidas las propuesta
 
 ### Gabinete (P5)
 
-Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, arriba o abajo para no tapar el objeto. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosGabineteTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
+Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la misma caja de diálogo, siempre abajo y centrada como en el resto del juego. La clave es `P5_` más el **nombre del objeto** en la vista: si alguien lo renombra, la prueba `TextosDeVistasTests` avisa. Los mismos textos sirven en el baño real del Prólogo, R1 y R2. En `N1_Laberinto` la vista tiene **Mostrar Textos** apagado, porque ahí las etiquetas son símbolos ilegibles.
 
 | Clave | Objeto | Guion P5 |
 |---|---|---|
@@ -69,6 +72,20 @@ Al hacer clic en un objeto de la vista del gabinete, su pensamiento sale en la m
 | `P5_Blister` | Blíster de naproxeno y paracetamol | Naproxeno y paracetamol |
 | `P5_Pads` | Parches juveniles | Parches juveniles |
 | `P5_Rastrillo` | Rastrillo | Sin texto |
+
+### Refrigerador del Prólogo (REF)
+
+Misma mecánica que el gabinete, en la vista `PF_VistaRefrigerador`: al pasar el mouse el objeto se marca con el contorno amarillo y al hacer clic sale el pensamiento de Elaki. La clave es `REF_` más el nombre del objeto. Tono apático.
+
+| Clave | Objeto | Texto |
+|---|---|---|
+| `REF_Frijoles` | Olla azul | La olla con frijoles de hace dos semanas. Mejor ni la destapo. |
+| `REF_AguaJamaica` | Jarra roja | Agua de jamaica. Ya ni sabe a nada. |
+| `REF_Arroz` | Tupper naranja | Arroz de… no sé de cuándo. |
+| `REF_Huevos` | Huevos | Huevos. Tendría que cocinar. Mmm, no. |
+| `REF_Pay` | Pay del estante | Un pedazo de pay. No tengo ganas. |
+| `REF_Jitomates` | Jitomates del cajón | Esto mmm… no me gusta tanto. |
+| `REF_Refresco` | Botella verde de la puerta | Refresco sin gas. Como todo. |
 
 ## Nivel 1 (`N1_Laberinto`, `N1_Pasillo`)
 

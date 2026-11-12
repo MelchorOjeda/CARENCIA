@@ -3,20 +3,23 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 
-// Vista fija de la cajonera del baño. Se abre desde un Interactable y se cierra con E o Esc.
-// Mientras está abierta, Elaki no se mueve y el escenario no responde.
-// Al seleccionar un objeto, su pensamiento sale en la caja de diálogo (clave P5_ + nombre del objeto).
-public class VistaGabinete : MonoBehaviour
+// Vista fija de un mueble con objetos (el gabinete del baño, el refrigerador). Se abre desde una Secuencia
+// y se cierra con E o Esc. Mientras está abierta, Elaki no se mueve y el escenario no responde.
+// Al seleccionar un objeto, su pensamiento sale en la caja de diálogo (clave = prefijo de la vista + nombre del objeto).
+public class VistaDeObjetos : MonoBehaviour
 {
     [SerializeField] private GameObject panel;
 
-    [Tooltip("Cuadro anterior de la vista: queda oculto porque el texto ahora sale en la caja de diálogo")]
+    [Tooltip("Cuadro anterior de la vista: queda oculto porque el texto ahora sale en la caja de diálogo. Vacío en vistas nuevas")]
     [SerializeField] private RectTransform cuadroDialogo;
+
+    [Tooltip("Va antes del nombre de cada objeto para formar su clave en el guion: P5_ en el gabinete, REF_ en el refrigerador")]
+    [SerializeField] private string prefijoClave = GuionDialogos.PrefijoGabinete;
 
     [SerializeField] private PlayerController jugador;
     [SerializeField] private InteractionDetector detector;
 
-    [Tooltip("Apagado en el Nivel 1: las etiquetas tienen símbolos que Elaki no puede leer")]
+    [Tooltip("Apagado en el gabinete del Nivel 1: las etiquetas tienen símbolos que Elaki no puede leer")]
     [SerializeField] private bool mostrarTextos = true;
 
     [Tooltip("Se lanza al cerrar la vista, por ejemplo para habilitar el espejo")]
@@ -24,7 +27,7 @@ public class VistaGabinete : MonoBehaviour
 
     private InputAction accionInteractuar;
     private InputAction accionCancelar;
-    private ObjetoGabinete seleccionado;
+    private ObjetoDeVista seleccionado;
     private Coroutine textoSeleccionado;
     private int fotogramaApertura;
 
@@ -36,10 +39,11 @@ public class VistaGabinete : MonoBehaviour
         accionInteractuar = InputSystem.actions.FindAction("Player/Interact", true);
         accionCancelar = InputSystem.actions.FindAction("UI/Cancel", true);
         panel.SetActive(false);
-        cuadroDialogo.gameObject.SetActive(false);
+        if (cuadroDialogo != null)
+            cuadroDialogo.gameObject.SetActive(false);
     }
 
-    // Cambia el color de toda la vista, para las versiones alteradas de la cajonera
+    // Cambia el color de toda la vista, para las versiones alteradas del mueble
     public void SetTinte(Color tinte)
     {
         foreach (var imagen in panel.GetComponentsInChildren<UnityEngine.UI.Image>(true))
@@ -78,7 +82,7 @@ public class VistaGabinete : MonoBehaviour
         alCerrar.Invoke();
     }
 
-    public void Seleccionar(ObjetoGabinete objeto)
+    public void Seleccionar(ObjetoDeVista objeto)
     {
         if (seleccionado != null)
             seleccionado.Seleccionado = false;
@@ -103,19 +107,17 @@ public class VistaGabinete : MonoBehaviour
         PantallaJuego.Instancia.Dialogo.Ocultar();
     }
 
-    private void MostrarTexto(ObjetoGabinete objeto)
+    private void MostrarTexto(ObjetoDeVista objeto)
     {
         if (!mostrarTextos)
             return;
 
         var caja = PantallaJuego.Instancia.Dialogo;
-        var linea = caja.LineaDe(GuionDialogos.ClaveDeGabinete(objeto.name));
+        var linea = caja.LineaDe(GuionDialogos.ClaveDeObjeto(prefijoClave, objeto.name));
         if (!linea.TieneTexto)
             return;
 
-        // La caja va en la mitad contraria para no tapar el objeto
-        var arriba = objeto.transform.localPosition.y < 0f;
-        textoSeleccionado = StartCoroutine(caja.Mostrar(linea, arriba));
+        textoSeleccionado = StartCoroutine(caja.Mostrar(linea));
     }
 
     // La pulsación que cierra la vista no debe volver a abrirla

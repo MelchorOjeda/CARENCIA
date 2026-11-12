@@ -9,8 +9,9 @@ public class GuionDialogos : ScriptableObject
 {
     public const string RutaEnResources = "SO_Dialogo_Guion";
 
-    // Los objetos del gabinete están copiados en cada escena: su clave sale del nombre para no repetirla en cada copia
-    private const string PrefijoGabinete = "P5_";
+    // Los objetos de una vista (gabinete, refrigerador) están copiados en cada escena:
+    // su clave sale del prefijo de la vista más su nombre, para no repetirla en cada copia
+    public const string PrefijoGabinete = "P5_";
 
     [SerializeField] private TMP_FontAsset fuente;
 
@@ -27,7 +28,7 @@ public class GuionDialogos : ScriptableObject
     public AudioClip SonidoEscritura => sonidoEscritura;
     public float LetrasPorSegundo => Mathf.Max(0f, letrasPorSegundo);
 
-    public static string ClaveDeGabinete(string nombreObjeto) => PrefijoGabinete + nombreObjeto;
+    public static string ClaveDeObjeto(string prefijoVista, string nombreObjeto) => prefijoVista + nombreObjeto;
 
     public LineaDialogo LineaDe(string clave)
     {

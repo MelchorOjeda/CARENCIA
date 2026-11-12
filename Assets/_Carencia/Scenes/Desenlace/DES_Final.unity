@@ -198,6 +198,219 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &41530252
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 41530253}
+  m_Layer: 0
+  m_Name: Eventos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &41530253
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 41530252}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 52531240}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &52531239
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 52531240}
+  - component: {fileID: 52531241}
+  m_Layer: 0
+  m_Name: Sec_desenlace
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &52531240
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52531239}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 41530253}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &52531241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 52531239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fccd343a7abe7340951522cdeaa4320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Secuencia
+  id: desenlace
+  requiere: 
+  prohibe: 
+  unaVez: 1
+  alIniciar: 1
+  pasos:
+  - tipo: 1
+    valor: 1
+    valor2: 0
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 2
+    valor: 1
+    valor2: 0
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 14
+    valor: 0
+    valor2: 0
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 9
+    valor: 1
+    valor2: 0
+    texto: desenlace
+    referencia: {fileID: 0}
+  - tipo: 1
+    valor: 0
+    valor2: 0.3
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 1
+    valor2: 0
+    texto: 'Elaki entra al agua y la tina se deforma a su alrededor.
+
+
+      (arte pendiente)'
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 0.35
+    valor2: 0
+    texto: Elaki entrando a la tina del Nivel 3
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 0.35
+    valor2: 0
+    texto: "Elaki en su ba\xF1o real, con agua normal, completamente solo"
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 0.35
+    valor2: 0
+    texto: Elaki entrando a la tina del Nivel 3
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 0.35
+    valor2: 0
+    texto: "Elaki en su ba\xF1o real, con agua normal, completamente solo"
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 0.35
+    valor2: 0
+    texto: Elaki entrando a la tina del Nivel 3
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 0.35
+    valor2: 0
+    texto: "Elaki en su ba\xF1o real, con agua normal, completamente solo"
+    referencia: {fileID: 0}
+  - tipo: 1
+    valor: 1
+    valor2: 0.1
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 0
+    valor: 1.5
+    valor2: 0
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 1
+    valor: 0
+    valor2: 0.6
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 5
+    valor2: 0
+    texto: "SE BUSCA \xB7 Margarita Flores Hern\xE1ndez \xB7 19 a\xF1os\nVista por \xFAltima vez el 31 de octubre\n\nLa c\xE1mara se aleja: decenas de carteles en la misma barda.\n(arte pendiente)"
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 2.5
+    valor2: 0
+    texto: 'La TV de la sala real, de frente.
+
+      (arte pendiente)'
+    referencia: {fileID: 0}
+  - tipo: 20
+    valor: 1
+    valor2: 0
+    texto: D3_noticiero
+    referencia: {fileID: 0}
+  - tipo: 20
+    valor: 1
+    valor2: 0
+    texto: D4_texto
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 5
+    valor2: 0
+    texto: 'Vista superior de una unidad habitacional, de noche y en Navidad.
+
+      Patrullas y una ambulancia con las torretas encendidas;
+
+      gente reunida abajo mirando una ventana iluminada.
+
+      (arte pendiente)'
+    referencia: {fileID: 0}
+  - tipo: 20
+    valor: 1
+    valor2: 0
+    texto: D5_cierre
+    referencia: {fileID: 0}
+  - tipo: 22
+    valor: 3
+    valor2: 0
+    texto: "Fin\n\n(cr\xE9ditos pendientes)"
+    referencia: {fileID: 0}
+  - tipo: 1
+    valor: 1
+    valor2: 1
+    texto: 
+    referencia: {fileID: 0}
+  - tipo: 17
+    valor: 1
+    valor2: 0
+    texto: MEN_Principal
+    referencia: {fileID: 0}
 --- !u!114 &346829593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1079,187 +1292,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: 1837475986}
   m_ActionId: dad70c86-b58c-4b17-88ad-f5e53adf419e
---- !u!1 &1138179342
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1138179343}
-  - component: {fileID: 1138179344}
-  m_Layer: 0
-  m_Name: Sec_desenlace
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1138179343
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138179342}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1504448071}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1138179344
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1138179342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7fccd343a7abe7340951522cdeaa4320, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Secuencia
-  id: desenlace
-  requiere: 
-  prohibe: 
-  unaVez: 1
-  alIniciar: 1
-  pasos:
-  - tipo: 1
-    valor: 1
-    valor2: 0
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 2
-    valor: 1
-    valor2: 0
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 14
-    valor: 0
-    valor2: 0
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 9
-    valor: 1
-    valor2: 0
-    texto: desenlace
-    referencia: {fileID: 0}
-  - tipo: 1
-    valor: 0
-    valor2: 0.3
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 1
-    valor2: 0
-    texto: 'Elaki entra al agua y la tina se deforma a su alrededor.
-
-
-      (arte pendiente)'
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 0.35
-    valor2: 0
-    texto: Elaki entrando a la tina del Nivel 3
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 0.35
-    valor2: 0
-    texto: "Elaki en su ba\xF1o real, con agua normal, completamente solo"
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 0.35
-    valor2: 0
-    texto: Elaki entrando a la tina del Nivel 3
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 0.35
-    valor2: 0
-    texto: "Elaki en su ba\xF1o real, con agua normal, completamente solo"
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 0.35
-    valor2: 0
-    texto: Elaki entrando a la tina del Nivel 3
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 0.35
-    valor2: 0
-    texto: "Elaki en su ba\xF1o real, con agua normal, completamente solo"
-    referencia: {fileID: 0}
-  - tipo: 1
-    valor: 1
-    valor2: 0.1
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 0
-    valor: 1.5
-    valor2: 0
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 1
-    valor: 0
-    valor2: 0.6
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 5
-    valor2: 0
-    texto: "SE BUSCA \xB7 Margarita Flores Hern\xE1ndez \xB7 19 a\xF1os\nVista por \xFAltima vez el 31 de octubre\n\nLa c\xE1mara se aleja: decenas de carteles en la misma barda.\n(arte pendiente)"
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 2.5
-    valor2: 0
-    texto: 'La TV de la sala real, de frente.
-
-      (arte pendiente)'
-    referencia: {fileID: 0}
-  - tipo: 20
-    valor: 1
-    valor2: 0
-    texto: D3_noticiero
-    referencia: {fileID: 0}
-  - tipo: 20
-    valor: 1
-    valor2: 0
-    texto: D4_texto
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 5
-    valor2: 0
-    texto: 'Vista superior de una unidad habitacional, de noche y en Navidad.
-
-      Patrullas y una ambulancia con las torretas encendidas;
-
-      gente reunida abajo mirando una ventana iluminada.
-
-      (arte pendiente)'
-    referencia: {fileID: 0}
-  - tipo: 20
-    valor: 1
-    valor2: 0
-    texto: D5_cierre
-    referencia: {fileID: 0}
-  - tipo: 22
-    valor: 3
-    valor2: 0
-    texto: "Fin\n\n(cr\xE9ditos pendientes)"
-    referencia: {fileID: 0}
-  - tipo: 1
-    valor: 1
-    valor2: 1
-    texto: 
-    referencia: {fileID: 0}
-  - tipo: 17
-    valor: 1
-    valor2: 0
-    texto: MEN_Principal
-    referencia: {fileID: 0}
 --- !u!114 &1192620274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1316,38 +1348,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.InputActionReference
   m_Asset: {fileID: 1837475986}
   m_ActionId: c95b2375-e6d9-4b88-9c4c-c5e76515df4b
---- !u!1 &1504448070
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1504448071}
-  m_Layer: 0
-  m_Name: Eventos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1504448071
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1504448070}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1138179343}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1789354897
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,4 +2357,4 @@ SceneRoots:
   - {fileID: 561880991}
   - {fileID: 2121564652}
   - {fileID: 22089619}
-  - {fileID: 1504448071}
+  - {fileID: 41530253}
