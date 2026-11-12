@@ -14,6 +14,8 @@ public class PantallaJuego : MonoBehaviour
     private Image manchas;
     private Image amenaza;
     private Image penumbra;
+    private Image mirada;
+    private Sprite penumbraHabitual;
     private CajaDialogo caja;
     private GameObject marcador;
     private Text textoMarcador;
@@ -120,9 +122,13 @@ public class PantallaJuego : MonoBehaviour
         escala.matchWidthOrHeight = 0.5f;
 
         penumbra = Capa("Penumbra", Vineta(new Color(0.02f, 0.01f, 0.03f), 0.25f));
+        penumbraHabitual = penumbra.sprite;
         SetAlfa(penumbra, 0f);
         amenaza = Capa("Amenaza", Vineta(new Color(0.5f, 0.02f, 0.04f), 0f));
         SetAlfa(amenaza, 0f);
+        // Oscuridad casi total cuando algo la mira (el ojo de la ventana del Nivel 3); deja ver solo el centro
+        mirada = Capa("Mirada", Vineta(new Color(0.01f, 0f, 0.01f), 0.05f));
+        SetAlfa(mirada, 0f);
         manchas = Capa("Manchas", Manchas());
         SetAlfa(manchas, 0f);
 
@@ -242,7 +248,7 @@ public class PantallaJuego : MonoBehaviour
     }
 
     // Oscurece hacia los bordes sin dibujar un círculo marcado
-    private static Sprite Vineta(Color color, float centro)
+    private static Sprite Vineta(Color color, float centro, float borde = 1f)
     {
         const int ancho = 128;
         const int alto = 72;
@@ -254,7 +260,7 @@ public class PantallaJuego : MonoBehaviour
                 var dx = (x + 0.5f) / ancho * 2f - 1f;
                 var dy = (y + 0.5f) / alto * 2f - 1f;
                 var distancia = Mathf.Sqrt(dx * dx + dy * dy) / 1.414f;
-                var alfa = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(centro, 1f, distancia));
+                var alfa = Mathf.SmoothStep(0f, 1f, Mathf.InverseLerp(centro, borde, distancia));
                 textura.SetPixel(x, y, new Color(color.r, color.g, color.b, alfa));
             }
         }
@@ -308,6 +314,25 @@ public class PantallaJuego : MonoBehaviour
     public void SetPenumbra(float intensidad)
     {
         SetAlfa(penumbra, Mathf.Clamp01(intensidad));
+    }
+
+    // Cambia el tamaño de la luz que deja la penumbra: un centro pequeño es una luz apenas alrededor de Elaki
+    // borde: distancia (de 0 a 1) donde la oscuridad ya es completa
+    public void ConfigurarPenumbra(float centro, float borde, Color color)
+    {
+        penumbra.sprite = Vineta(color, centro, borde);
+    }
+
+    // Vuelve a la penumbra de siempre sin crear nada nuevo (se usa al salir de un nivel)
+    public void RestaurarPenumbra()
+    {
+        if (penumbra != null)
+            penumbra.sprite = penumbraHabitual;
+    }
+
+    public void SetMirada(float intensidad)
+    {
+        SetAlfa(mirada, Mathf.Clamp01(intensidad));
     }
 
     public void MostrarImagen(Sprite sprite)

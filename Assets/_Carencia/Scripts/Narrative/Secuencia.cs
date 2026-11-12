@@ -55,6 +55,8 @@ public class Secuencia : MonoBehaviour
         Sonido,
         // Música de fondo en bucle (AudioClip); sin referencia la detiene
         Musica,
+        // Forcejeo con flechas (ForcejeoFlechas): espera a que Elaki se libere
+        Forcejeo,
     }
 
     [Serializable]
@@ -180,6 +182,7 @@ public class Secuencia : MonoBehaviour
             case Tipo.Curar:
                 EstadoJuego.Golpes = 0;
                 pantalla.SetManchas(0f);
+                FindAnyObjectByType<SaludJugador>()?.Curar();
                 break;
             case Tipo.Penumbra:
                 pantalla.SetPenumbra(paso.valor);
@@ -256,6 +259,9 @@ public class Secuencia : MonoBehaviour
                 break;
             case Tipo.Musica:
                 pantalla.ReproducirMusica(paso.referencia as AudioClip);
+                break;
+            case Tipo.Forcejeo:
+                yield return ((ForcejeoFlechas)paso.referencia).Jugar();
                 break;
         }
     }

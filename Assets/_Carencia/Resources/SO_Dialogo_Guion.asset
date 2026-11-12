@@ -348,6 +348,42 @@ MonoBehaviour:
     quien: "Televisi\xF3n"
     texto: "Los trabajadores de la televisi\xF3n y la radio llevaremos a cabo nuestra 68.\xAA Asamblea General Ordinaria\n\ndel Consejo Nacional en Quintana Roo, inaugurando los trabajos del gobernador del estado,\n\ncon el respaldo de la Confederaci\xF3n de Trabajadores de M\xE9xico.\n\nAvanzamos para un futuro comprometidos contigo por una superaci\xF3n social."
     pensamiento: 0
+  - clave: N3_3_parpadeo
+    quien: "Elaki"
+    texto: "\xBFLa luz...? Acabo de salir del ba\xF1o. \xBFPor qu\xE9 estoy en la cocina?"
+    pensamiento: 1
+  - clave: N3_3_cocina
+    quien: "Elaki"
+    texto: "Todo respira aqu\xED. No pises las bocas. No te acerques a las paredes."
+    pensamiento: 1
+  - clave: N3_3_sellada
+    quien: "Elaki"
+    texto: "La puerta est\xE1 cubierta de carne. Algo late dentro del refrigerador."
+    pensamiento: 1
+  - clave: N3_4_refri
+    quien: "Elaki"
+    texto: "La carne del refrigerador... se est\xE1 moviendo. \xA1La puerta se abri\xF3! \xA1Corre!"
+    pensamiento: 1
+  - clave: N3_5_cuarto
+    quien: "Elaki"
+    texto: "Mi cuarto. Ya no es mi cuarto."
+    pensamiento: 1
+  - clave: N3_5_cama
+    quien: "Elaki"
+    texto: "\xA1Algo me agarra los tobillos desde debajo de la cama!"
+    pensamiento: 1
+  - clave: N3_5_libre
+    quien: "Elaki"
+    texto: "Me solt\xF3. No mires debajo de la cama. Nunca."
+    pensamiento: 1
+  - clave: N3_6_ventana
+    quien: "Elaki"
+    texto: "Hay un ojo en la ventana del fondo. Cuando se abre, no me puedo mover."
+    pensamiento: 1
+  - clave: N3_7_ojos
+    quien: "Elaki"
+    texto: "Est\xE1n llorando. Todos miran hacia el ba\xF1o."
+    pensamiento: 1
   - clave: N3_8_pensamiento
     quien: "Elaki"
     texto: "Te encontr\xE9."
