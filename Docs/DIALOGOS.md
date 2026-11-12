@@ -159,6 +159,15 @@ El sollozo frente al altar (N2.12) no lleva texto.
 | `N3_5_platos` | N3.5 · Cuatro platos con órganos |
 | `N3_5_sillon` | N3.5 · Al sentarse en el sillón |
 | `N3_5_anuncio` | N3.5 · Voz del anuncio del SITATYR |
+| `N3_3_parpadeo` | N3.3 · Al salir del baño la luz parpadea y aparece en la cocina |
+| `N3_3_cocina` | N3.3 · Bocas en el piso y apéndices en las paredes |
+| `N3_3_sellada` | N3.3 · Puerta de la cocina sellada con carne |
+| `N3_4_refri` | N3.4 · Las carnes del refrigerador salen a perseguirla |
+| `N3_5_cuarto` | N3.5 · Llega a su cuarto deforme |
+| `N3_5_cama` | N3.5 · Algo bajo la cama la agarra (flechas) |
+| `N3_5_libre` | N3.5 · Se libera |
+| `N3_6_ventana` | N3.6 · El ojo de la ventana del pasillo |
+| `N3_7_ojos` | N3.7 · Los ojos lloran y miran al baño |
 | `N3_8_pensamiento` | N3.8 · "Te encontré." |
 
 ## Desenlace (`DES_Final`)
