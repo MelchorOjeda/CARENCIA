@@ -3,10 +3,10 @@ using UnityEngine.Events;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-// Objeto de la cajonera: se resalta al pasar el mouse y se selecciona con clic.
-public class ObjetoGabinete : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
+// Objeto de una vista fija (gabinete, refrigerador): se resalta al pasar el mouse y se selecciona con clic.
+public class ObjetoDeVista : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
-    [SerializeField] private VistaGabinete vista;
+    [SerializeField] private VistaDeObjetos vista;
     [SerializeField] private Image figura;
     [SerializeField] private GameObject contorno;
 
