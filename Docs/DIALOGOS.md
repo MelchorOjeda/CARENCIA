@@ -100,6 +100,7 @@ Misma mecánica que el gabinete, en la vista `PF_VistaRefrigerador`: al pasar el
 | `N1_4_pared` | N1.4 · Pared de frente |
 | `N1_4_sillas_1` / `N1_4_sillas_2` | N1.4 · Cuatro sillas sin mesa |
 | `N1_4_ya_pase` | N1.4 · Tercera vuelta al cuarto de lavado (automático) |
+| `N1_OBJ_<objeto>` | Nivel 1 · Pensamiento al revisar con E cada objeto regado (61 claves, una por tipo de objeto: `N1_OBJ_taza_cafe`, `N1_OBJ_lavadora`…). **Textos provisionales**, pendientes de revisión |
 | `N1_5_pensamiento` | N1.5 · "¿M-M-A-A-R?" al entrar al pasillo |
 | `N1_6_ayuda` | N1.6 · Golpe y "Ayuda." frente a la puerta |
 

@@ -364,3 +364,243 @@ MonoBehaviour:
     quien: ""
     texto: "El mismo d\xEDa en que confirmaron que hab\xEDan encontrado a su hermana, \xE9l dej\xF3 de buscarla."
     pensamiento: 0
+  - clave: N1_OBJ_alacena_comida
+    quien: "Elaki"
+    texto: "Latas con el nombre borrado. No s\xE9 qu\xE9 guardan."
+    pensamiento: 1
+  - clave: N1_OBJ_archivero
+    quien: "Elaki"
+    texto: "Un caj\xF3n abierto. Adentro no hay nada."
+    pensamiento: 1
+  - clave: N1_OBJ_botella_pastillas
+    quien: "Elaki"
+    texto: "Pastillas. No recuerdo de qui\xE9n son."
+    pensamiento: 1
+  - clave: N1_OBJ_calendario_escritorio
+    quien: "Elaki"
+    texto: "Octubre. Todos los d\xEDas tachados menos uno."
+    pensamiento: 1
+  - clave: N1_OBJ_cazuela_barro
+    quien: "Elaki"
+    texto: "La cazuela de mam\xE1. Est\xE1 fr\xEDa."
+    pensamiento: 1
+  - clave: N1_OBJ_cesto_ropa
+    quien: "Elaki"
+    texto: "Ropa de alguien m\xE1s. No es m\xEDa."
+    pensamiento: 1
+  - clave: N1_OBJ_cesto_ropa_chico
+    quien: "Elaki"
+    texto: "Huele a jab\xF3n. Y a algo m\xE1s."
+    pensamiento: 1
+  - clave: N1_OBJ_cesto_ropa_sucia
+    quien: "Elaki"
+    texto: "Nadie ha lavado esto en mucho tiempo."
+    pensamiento: 1
+  - clave: N1_OBJ_control_remoto
+    quien: "Elaki"
+    texto: "El control. Aqu\xED no hay televisi\xF3n que encender."
+    pensamiento: 1
+  - clave: N1_OBJ_cuaderno_pendientes
+    quien: "Elaki"
+    texto: "Una lista de pendientes. Todos tachados."
+    pensamiento: 1
+  - clave: N1_OBJ_cubeta
+    quien: "Elaki"
+    texto: "Una cubeta vac\xEDa. Pero se oye gotear."
+    pensamiento: 1
+  - clave: N1_OBJ_cuchara
+    quien: "Elaki"
+    texto: "Una cuchara en el piso. Nadie la va a levantar."
+    pensamiento: 1
+  - clave: N1_OBJ_cuchillo
+    quien: "Elaki"
+    texto: "Mejor no lo toco."
+    pensamiento: 1
+  - clave: N1_OBJ_despertador_radio
+    quien: "Elaki"
+    texto: "Las 3:33. No avanza."
+    pensamiento: 1
+  - clave: N1_OBJ_dispensador_agua
+    quien: "Elaki"
+    texto: "El agua no se mueve. Ni una burbuja."
+    pensamiento: 1
+  - clave: N1_OBJ_escoba
+    quien: "Elaki"
+    texto: "Alguien dej\xF3 de barrer a la mitad."
+    pensamiento: 1
+  - clave: N1_OBJ_escritorio
+    quien: "Elaki"
+    texto: "Mi escritorio. \xBFQu\xE9 hace aqu\xED?"
+    pensamiento: 1
+  - clave: N1_OBJ_estufa
+    quien: "Elaki"
+    texto: "Apagada. Todav\xEDa huele a comida."
+    pensamiento: 1
+  - clave: N1_OBJ_lampara
+    quien: "Elaki"
+    texto: "Est\xE1 prendida. No est\xE1 conectada a nada."
+    pensamiento: 1
+  - clave: N1_OBJ_lampara_buro
+    quien: "Elaki"
+    texto: "La l\xE1mpara de mi bur\xF3. Sin bur\xF3."
+    pensamiento: 1
+  - clave: N1_OBJ_lampara_lectura
+    quien: "Elaki"
+    texto: "Alguien le\xEDa aqu\xED."
+    pensamiento: 1
+  - clave: N1_OBJ_lapicero
+    quien: "Elaki"
+    texto: "Mis plumas. Las mismas de siempre."
+    pensamiento: 1
+  - clave: N1_OBJ_lavadero
+    quien: "Elaki"
+    texto: "El agua lleva d\xEDas estancada."
+    pensamiento: 1
+  - clave: N1_OBJ_lavadora
+    quien: "Elaki"
+    texto: "No est\xE1 girando. Se oye como si girara."
+    pensamiento: 1
+  - clave: N1_OBJ_lavadoras_centro
+    quien: "Elaki"
+    texto: "\xBFPara qu\xE9 querr\xEDa alguien tantas lavadoras?"
+    pensamiento: 1
+  - clave: N1_OBJ_lavamanos
+    quien: "Elaki"
+    texto: "El lavamanos est\xE1 seco."
+    pensamiento: 1
+  - clave: N1_OBJ_lavaplatos
+    quien: "Elaki"
+    texto: "No hay platos. Nadie comi\xF3 aqu\xED."
+    pensamiento: 1
+  - clave: N1_OBJ_libro_azul
+    quien: "Elaki"
+    texto: "No puedo leer el t\xEDtulo."
+    pensamiento: 1
+  - clave: N1_OBJ_libro_rojo
+    quien: "Elaki"
+    texto: "Este libro era de ella. Creo."
+    pensamiento: 1
+  - clave: N1_OBJ_libro_verde
+    quien: "Elaki"
+    texto: "Las p\xE1ginas est\xE1n en blanco."
+    pensamiento: 1
+  - clave: N1_OBJ_libros
+    quien: "Elaki"
+    texto: "Libros apilados. Ninguno tiene nombre."
+    pensamiento: 1
+  - clave: N1_OBJ_mesa_comedor_enterrada
+    quien: "Elaki"
+    texto: "La mesa se est\xE1 hundiendo. O el piso est\xE1 subiendo."
+    pensamiento: 1
+  - clave: N1_OBJ_mesita_redonda
+    quien: "Elaki"
+    texto: "Una mesita sola, en medio de nada."
+    pensamiento: 1
+  - clave: N1_OBJ_olla_aluminio
+    quien: "Elaki"
+    texto: "Una olla vac\xEDa."
+    pensamiento: 1
+  - clave: N1_OBJ_olla_barro
+    quien: "Elaki"
+    texto: "Aqu\xED se hac\xEDan los frijoles."
+    pensamiento: 1
+  - clave: N1_OBJ_olla_express
+    quien: "Elaki"
+    texto: "Me daba miedo cuando silbaba."
+    pensamiento: 1
+  - clave: N1_OBJ_olla_peltre_azul
+    quien: "Elaki"
+    texto: "El peltre azul de la abuela."
+    pensamiento: 1
+  - clave: N1_OBJ_olla_tamalera
+    quien: "Elaki"
+    texto: "La tamalera solo sale en diciembre."
+    pensamiento: 1
+  - clave: N1_OBJ_pc_torre
+    quien: "Elaki"
+    texto: "Zumba, pero no tiene pantalla."
+    pensamiento: 1
+  - clave: N1_OBJ_plato
+    quien: "Elaki"
+    texto: "Un plato limpio. Sobra uno."
+    pensamiento: 1
+  - clave: N1_OBJ_plato_espagueti
+    quien: "Elaki"
+    texto: "Est\xE1 fr\xEDo. Las moscas llegaron primero."
+    pensamiento: 1
+  - clave: N1_OBJ_plato_huevo_a_la_mexicana
+    quien: "Elaki"
+    texto: "El desayuno de alguien. No el m\xEDo."
+    pensamiento: 1
+  - clave: N1_OBJ_plato_pollo_frito
+    quien: "Elaki"
+    texto: "Nadie se lo termin\xF3."
+    pensamiento: 1
+  - clave: N1_OBJ_plato_sopa_fideo
+    quien: "Elaki"
+    texto: "Sopa de fideo. Ya tiene nata."
+    pensamiento: 1
+  - clave: N1_OBJ_plato_tacos_pastor
+    quien: "Elaki"
+    texto: "Sus favoritos."
+    pensamiento: 1
+  - clave: N1_OBJ_platos_grupo
+    quien: "Elaki"
+    texto: "Cuatro platos. Siempre fueron cuatro."
+    pensamiento: 1
+  - clave: N1_OBJ_poster_tirado
+    quien: "Elaki"
+    texto: "Se cay\xF3 de la pared. O alguien lo arranc\xF3."
+    pensamiento: 1
+  - clave: N1_OBJ_raton
+    quien: "Elaki"
+    texto: "El rat\xF3n de mi computadora. Sin computadora."
+    pensamiento: 1
+  - clave: N1_OBJ_refrigerador
+    quien: "Elaki"
+    texto: "No quiero abrirlo."
+    pensamiento: 1
+  - clave: N1_OBJ_retrete
+    quien: "Elaki"
+    texto: "Demasiado limpio."
+    pensamiento: 1
+  - clave: N1_OBJ_ropero
+    quien: "Elaki"
+    texto: "El ropero. No recuerdo qu\xE9 guard\xE1bamos arriba."
+    pensamiento: 1
+  - clave: N1_OBJ_sarten
+    quien: "Elaki"
+    texto: "Todav\xEDa tiene aceite."
+    pensamiento: 1
+  - clave: N1_OBJ_secadora
+    quien: "Elaki"
+    texto: "Est\xE1 tibia. Alguien la us\xF3 hace poco."
+    pensamiento: 1
+  - clave: N1_OBJ_silla_oficina
+    quien: "Elaki"
+    texto: "La silla gira sola. Un poco."
+    pensamiento: 1
+  - clave: N1_OBJ_sillaescritorio
+    quien: "Elaki"
+    texto: "Mi silla. Lejos de mi escritorio."
+    pensamiento: 1
+  - clave: N1_OBJ_taza_cafe
+    quien: "Elaki"
+    texto: "El caf\xE9 de pap\xE1. Sigue caliente."
+    pensamiento: 1
+  - clave: N1_OBJ_teclado
+    quien: "Elaki"
+    texto: "Faltan teclas. Justo las de su nombre."
+    pensamiento: 1
+  - clave: N1_OBJ_television_antigua
+    quien: "Elaki"
+    texto: "Apagada. Me veo reflejado. Solo yo."
+    pensamiento: 1
+  - clave: N1_OBJ_vaso
+    quien: "Elaki"
+    texto: "Un vaso de agua a medias."
+    pensamiento: 1
+  - clave: N1_OBJ_vitrina_antigua
+    quien: "Elaki"
+    texto: "Los vidrios est\xE1n oscuros. No se ve qu\xE9 hay adentro."
+    pensamiento: 1
