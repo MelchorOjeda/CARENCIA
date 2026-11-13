@@ -684,7 +684,6 @@ GameObject:
   - component: {fileID: 4697837868673074566}
   - component: {fileID: 7292555328976590689}
   - component: {fileID: 8178139951680397928}
-  - component: {fileID: 1209159093157426607}
   m_Layer: 0
   m_Name: Tecla
   m_TagString: Untagged
@@ -811,20 +810,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1209159093157426607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1160093342693662342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 0
 --- !u!1 &1566074511654053415
 GameObject:
   m_ObjectHideFlags: 0
@@ -963,7 +948,6 @@ GameObject:
   - component: {fileID: 5129307309262143333}
   - component: {fileID: 597926338421081857}
   - component: {fileID: 810830283423775362}
-  - component: {fileID: 2498032922038884526}
   m_Layer: 0
   m_Name: Accion
   m_TagString: Untagged
@@ -1090,20 +1074,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2498032922038884526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1583492451666076629}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 1
 --- !u!1 &1772703395103946499
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,7 +1440,6 @@ GameObject:
   - component: {fileID: 7336968646959232521}
   - component: {fileID: 3805575969011483249}
   - component: {fileID: 2497083804133644446}
-  - component: {fileID: 7771265892333613287}
   m_Layer: 0
   m_Name: Pregunta
   m_TagString: Untagged
@@ -1597,20 +1566,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &7771265892333613287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2991208580058947597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 0
 --- !u!1 &3216609263862947610
 GameObject:
   m_ObjectHideFlags: 0
@@ -1701,7 +1656,6 @@ GameObject:
   - component: {fileID: 8094336844637448924}
   - component: {fileID: 273064674503311926}
   - component: {fileID: 4223247063112748817}
-  - component: {fileID: 5792708127953933969}
   m_Layer: 0
   m_Name: Detalle
   m_TagString: Untagged
@@ -1828,20 +1782,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5792708127953933969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3385060857787943683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 0
 --- !u!1 &3476288020448615509
 GameObject:
   m_ObjectHideFlags: 0
@@ -2382,7 +2322,6 @@ GameObject:
   - component: {fileID: 2160891097612545593}
   - component: {fileID: 7594657556367648437}
   - component: {fileID: 6608866958334577170}
-  - component: {fileID: 9177986855117775162}
   m_Layer: 0
   m_Name: Accion
   m_TagString: Untagged
@@ -2509,20 +2448,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &9177986855117775162
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6360706914270497404}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 1
 --- !u!1 &7039788023597112621
 GameObject:
   m_ObjectHideFlags: 0
@@ -2632,7 +2557,6 @@ GameObject:
   - component: {fileID: 2798755431700588129}
   - component: {fileID: 4365975388673259228}
   - component: {fileID: 8383125610761563862}
-  - component: {fileID: 5513545480775340669}
   m_Layer: 0
   m_Name: Tecla
   m_TagString: Untagged
@@ -2759,20 +2683,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5513545480775340669
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7176769809617447228}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 0
 --- !u!1 &7795129926025798757
 GameObject:
   m_ObjectHideFlags: 0
@@ -3110,7 +3020,6 @@ GameObject:
   - component: {fileID: 7191059488460184770}
   - component: {fileID: 610862677549054062}
   - component: {fileID: 6348040943754115927}
-  - component: {fileID: 4177114776567255323}
   m_Layer: 0
   m_Name: Tecla
   m_TagString: Untagged
@@ -3237,20 +3146,6 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4177114776567255323
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8315739853986235555}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 0
 --- !u!1 &8491559633569332430
 GameObject:
   m_ObjectHideFlags: 0
@@ -3262,7 +3157,6 @@ GameObject:
   - component: {fileID: 3874544813897123680}
   - component: {fileID: 6297453564775849672}
   - component: {fileID: 4723531059912983982}
-  - component: {fileID: 62037471975073037}
   m_Layer: 0
   m_Name: Accion
   m_TagString: Untagged
@@ -3389,17 +3283,3 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &62037471975073037
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8491559633569332430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9536090ad7d99964d90dfb47de02f78d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TextoAccesible
-  colorContrasteAlto: {r: 0.9254902, g: 0.9019608, b: 0.84705883, a: 1}
-  cambiaConContraste: 1
