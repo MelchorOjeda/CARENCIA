@@ -652,6 +652,10 @@ MonoBehaviour:
     quien: "Elaki"
     texto: "Las flores siempre est\xE1n frescas. Mam\xE1 no deja que se marchiten."
     pensamiento: 1
+  - clave: R2_altar_perro
+    quien: "Elaki"
+    texto: "Tú te fuiste hace tiempo..."
+    pensamiento: 1
   - clave: R_armario
     quien: "Elaki"
     texto: "Aqu\xED guardamos las cobijas del invierno. Huele a naftalina."
