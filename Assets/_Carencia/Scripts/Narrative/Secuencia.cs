@@ -57,6 +57,8 @@ public class Secuencia : MonoBehaviour
         Musica,
         // Forcejeo con flechas (ForcejeoFlechas): espera a que Elaki se libere
         Forcejeo,
+        // Sacude la cámara: valor es la fuerza, valor2 los segundos
+        Sacudir,
     }
 
     [Serializable]
@@ -253,6 +255,17 @@ public class Secuencia : MonoBehaviour
                     jugador.MovimientoBloqueado = paso.valor > 0.5f;
                 if (detector != null)
                     detector.InteraccionBloqueada = false;
+                // Si hay una silla para sentarse junto a ella, Elaki se ve sentada en ella (o se levanta)
+                if (jugador != null && paso.valor > 0.5f)
+                {
+                    var silla = SillaSentable.MasCercana(jugador.transform.position, 1.2f);
+                    if (silla != null)
+                        silla.Sentar(true);
+                }
+                else if (SillaSentable.LaOcupada() is SillaSentable ocupada)
+                {
+                    ocupada.Levantar();
+                }
                 break;
             case Tipo.Sonido:
                 pantalla.ReproducirEfecto(paso.referencia as AudioClip, paso.valor);
@@ -262,6 +275,9 @@ public class Secuencia : MonoBehaviour
                 break;
             case Tipo.Forcejeo:
                 yield return ((ForcejeoFlechas)paso.referencia).Jugar();
+                break;
+            case Tipo.Sacudir:
+                SacudidaCamara.Sacudir(paso.valor, paso.valor2);
                 break;
         }
     }
