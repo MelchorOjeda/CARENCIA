@@ -348,6 +348,42 @@ MonoBehaviour:
     quien: "Televisi\xF3n"
     texto: "Los trabajadores de la televisi\xF3n y la radio llevaremos a cabo nuestra 68.\xAA Asamblea General Ordinaria\n\ndel Consejo Nacional en Quintana Roo, inaugurando los trabajos del gobernador del estado,\n\ncon el respaldo de la Confederaci\xF3n de Trabajadores de M\xE9xico.\n\nAvanzamos para un futuro comprometidos contigo por una superaci\xF3n social."
     pensamiento: 0
+  - clave: N3_3_parpadeo
+    quien: "Elaki"
+    texto: "\xBFLa luz...? Acabo de salir del ba\xF1o. \xBFPor qu\xE9 estoy en la cocina?"
+    pensamiento: 1
+  - clave: N3_3_cocina
+    quien: "Elaki"
+    texto: "Todo respira aqu\xED. No te acerques a las paredes."
+    pensamiento: 1
+  - clave: N3_3_sellada
+    quien: "Elaki"
+    texto: "La puerta est\xE1 cubierta de carne. Algo late dentro del refrigerador."
+    pensamiento: 1
+  - clave: N3_4_refri
+    quien: "Elaki"
+    texto: "Solo hay carne que late ah\xED dentro... Algo se rompi\xF3. La puerta se abri\xF3."
+    pensamiento: 1
+  - clave: N3_5_cuarto
+    quien: "Elaki"
+    texto: "Mi cuarto. Ya no es mi cuarto."
+    pensamiento: 1
+  - clave: N3_5_cama
+    quien: "Elaki"
+    texto: "\xA1Algo me agarra los tobillos desde debajo de la cama!"
+    pensamiento: 1
+  - clave: N3_5_libre
+    quien: "Elaki"
+    texto: "Me solt\xF3. No mires debajo de la cama. Nunca."
+    pensamiento: 1
+  - clave: N3_6_ventana
+    quien: "Elaki"
+    texto: "Las paredes se mueven. Tengo que esperar a que se escondan para pasar."
+    pensamiento: 1
+  - clave: N3_7_ojos
+    quien: "Elaki"
+    texto: "Est\xE1n llorando. Todos miran hacia el ba\xF1o."
+    pensamiento: 1
   - clave: N3_8_pensamiento
     quien: "Elaki"
     texto: "Te encontr\xE9."
@@ -603,4 +639,12 @@ MonoBehaviour:
   - clave: N1_OBJ_vitrina_antigua
     quien: "Elaki"
     texto: "Los vidrios est\xE1n oscuros. No se ve qu\xE9 hay adentro."
+    pensamiento: 1
+  - clave: R_escritorio
+    quien: "Elaki"
+    texto: "Aqu\xED hac\xEDamos la tarea juntos. Ahora solo est\xE1 mi laptop."
+    pensamiento: 1
+  - clave: R_television
+    quien: "Elaki"
+    texto: "Siempre pon\xEDan las noticias a esta hora."
     pensamiento: 1

@@ -18,6 +18,9 @@ public class PlayerController : MonoBehaviour
     private InputAction accionCorrer;
     private Vector2 direccion;
 
+    // Lo que frena el terreno (el piso blando del pasillo del Nivel 3); 1 es la velocidad normal
+    public float Freno { get; set; } = 1f;
+
     public Vector2 Direccion => direccion;
     public bool EstaCaminando => direccion != Vector2.zero;
     public bool EstaCorriendo => EstaCaminando && accionCorrer.IsPressed();
@@ -49,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rb.linearVelocity = direccion * (EstaCorriendo ? velocidadCarrera : velocidad);
+        rb.linearVelocity = direccion * (EstaCorriendo ? velocidadCarrera : velocidad) * Freno;
     }
 
     // Lleva a Elaki a un punto sin recorrer el camino: entradas de escena y secuencias

@@ -15,6 +15,7 @@ public class EsperaQuieto : MonoBehaviour
     private PlayerController jugador;
     private Vector3 ultimaPosicion;
     private float quieto;
+    private UnityEngine.InputSystem.InputAction mover;
 
     public void Configurar(Secuencia nuevaSecuencia, float nuevosSegundos)
     {
@@ -39,16 +40,20 @@ public class EsperaQuieto : MonoBehaviour
             return;
         }
 
+        // Quieto es no estar caminando: si el perro la empuja un poco, sigue contando
+        if (mover == null)
+            mover = UnityEngine.InputSystem.InputSystem.actions.FindAction("Player/Move");
+        var caminando = mover != null && mover.ReadValue<Vector2>().sqrMagnitude > 0.01f;
         var posicion = jugador.transform.position;
-        if (quieto > 0f && Vector2.Distance(posicion, ultimaPosicion) < Tolerancia)
+        if (!caminando && (quieto == 0f || Vector2.Distance(posicion, ultimaPosicion) < 0.6f))
         {
+            if (quieto == 0f)
+                ultimaPosicion = posicion;
             quieto += Time.deltaTime;
         }
         else
         {
-            // Empieza a contar desde aquí
-            ultimaPosicion = posicion;
-            quieto = Time.deltaTime;
+            quieto = 0f;
         }
 
         if (quieto >= segundos)

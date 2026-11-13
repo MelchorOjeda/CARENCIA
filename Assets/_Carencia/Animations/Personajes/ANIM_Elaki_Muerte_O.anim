@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ANIM_Elaki_Muerte_O
+  m_Name: 
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -73,39 +73,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 798388821
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-      metaData: 0
-    pptrCurveMapping:
-    - {fileID: 1131649434, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 1150997169, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 850155963, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -1020085575, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -1662571052, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 1412365927, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -153791742, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 1201915914, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -882945599, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 1633092223, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -6583222172251684544, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -3290848613227228016, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 8476722889399842104, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -4916677547360548995, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -956441278962483540, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 3661439852646935594, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -5317399897016887986, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: -5837485757702439615, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 8547674281261940481, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 8386196586826195195, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
-    - {fileID: 8386196586826195195, guid: 3daf301e0fd36304b9f88629b195c6af, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

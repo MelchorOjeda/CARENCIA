@@ -4,68 +4,66 @@
 
 Cada nivel debe documentar su propósito jugable, estructura, dificultad, contenido y condiciones de entrada/salida.
 
-## Plantilla de nivel
+## Niveles
 
-### Prólogo — La realidad
+### Prólogo — La negación
 
-**Objetivo principal:** Explorar el baño de la casa familiar, inspeccionar el gabinete y descubrir el portal que aparece en el espejo.
+**Objetivo principal:** Revisar el baño real, abrir y cerrar el gabinete del espejo y cruzar el primer portal.
 
 **Objetivos secundarios:**
 
 - Reconocer los elementos del baño para identificar sus alteraciones en niveles posteriores.
-- Inspeccionar objetos cotidianos y conocer los pensamientos del protagonista.
-- Familiarizarse con el movimiento y el sistema de interacción.
+- Inspeccionar el lavabo, las toallas y la cortina, y conocer los pensamientos de Elaki.
+- Familiarizarse con el movimiento y la interacción.
 
-**Duración estimada:** 2–3 minutos de exploración jugable, sin contar las cinemáticas iniciales.
+**Duración estimada:** Aproximadamente 4 minutos.
 
 **Dificultad:** Baja. Introducción a los controles y a la exploración.
 
 **Mecánicas introducidas:**
-- Movimiento del personaje mediante WASD o flechas.
-- Interacción con objetos mediante la tecla E.
-- Inspección de objetos mediante una vista fija en primera persona y selección con el mouse.
-- Presentación de pensamientos y textos.
-- Activación de eventos narrativos.
-- Interacción con portales.
+- Movimiento con WASD o flechas.
+- Interacción con objetos mediante E o clic.
+- Vista fija en primera persona del gabinete, con selección de objetos con el ratón.
+- Pensamientos y diálogos.
+- Cruce del portal del espejo.
 
 **Mecánicas utilizadas:** Exploración, observación, inspección de objetos e interacción con el entorno.
 
-**Enemigos / obstáculos:** No existen enemigos. El principal obstáculo es descubrir qué interacción permite avanzar.
+**Enemigos / obstáculos:** No existen enemigos. El principal obstáculo es descubrir que el gabinete abre el camino.
 
-**Recompensas:** Información sobre el protagonista, primeras pistas narrativas y acceso a la primera dimensión.
+**Recompensas:** Primeras pistas sobre Margarita y acceso al otro lado.
 
-**Puntos de guardado:** Inicio de la exploración del baño. Se recomienda registrar un punto de control al completar el prólogo.
+**Puntos de guardado:** Inicio de la partida y cruce del primer portal.
 
-**Condición de entrada:** Iniciar una nueva partida y completar las cinemáticas del despertar y el primer desayuno.
+**Condición de entrada:** Iniciar una nueva partida.
 
-**Condición de salida:** Inspeccionar el gabinete y atravesar el portal del espejo.
+**Condición de salida:** Abrir y cerrar el gabinete y cruzar el espejo.
 
 **Eventos narrativos:**
 
-1. El protagonista despierta en su habitación.
-2. Durante el desayuno pregunta por Margarita, pero sus padres niegan su existencia.
-3. Experimenta un mareo y se traslada al baño.
-4. El jugador explora el baño real e inspecciona los objetos.
-5. Al revisar el gabinete, descubre medicamentos y productos personales.
-6. Después de cerrar el gabinete, observa una silueta femenina o alteración en el espejo.
-7. Se manifiesta el primer portal y el protagonista lo atraviesa.
+1. Elaki despierta en su cuarto y se dirige al comedor.
+2. Durante el primer desayuno pregunta por Margarita, cuyo nombre se corrompe, y sus padres niegan su existencia.
+3. Sufre un mareo y aparece en el baño real.
+4. El espejo no refleja a Elaki hasta que abre y cierra el gabinete.
+5. Al cerrarlo, el espejo se deforma, se abre el portal y una silueta femenina lo cruza.
+6. Elaki cruza el espejo.
 
 **Mapa / diagrama:**
 
 ```text
-CINEMÁTICA: HABITACIÓN
+CUARTO DE ELAKI
           ↓
-CINEMÁTICA: COMEDOR
+COMEDOR: PRIMER DESAYUNO
+          ↓
+MAREO
           ↓
 BAÑO REAL
-    ├── Inodoro
-    ├── Toallas
-    ├── Productos de cuidado personal
+    ├── Lavabo
+    ├── Cuatro toallas
+    ├── Cortina cerrada
     └── Gabinete (obligatorio)
           ↓
-ALTERACIÓN DEL ESPEJO
-          ↓
-PRIMER PORTAL
+PORTAL EN EL ESPEJO
           ↓
 NIVEL 1
 ```

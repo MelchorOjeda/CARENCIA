@@ -144,9 +144,6 @@ public class CajaDialogo : MonoBehaviour
         // Sin etiquetas, cada letra del texto es una letra en pantalla y la escritura no se salta nada
         tmp.richText = false;
         tmp.raycastTarget = false;
-
-        // Va después de fijar el tamaño: TextoAccesible lo toma como base para Opciones → Tamaño de texto
-        objeto.AddComponent<TextoAccesible>();
         return tmp;
     }
 

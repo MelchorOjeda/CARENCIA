@@ -1,12 +1,10 @@
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using UnityEngine;
 
 // Une los valores de Opciones con el juego: los lee del disco al arrancar, los guarda y los aplica.
-// Mientras el jugador edita, audio, brillo y accesibilidad se ven al momento; el video solo cambia al guardar,
-// porque cambiar de resolución en cada flecha haría parpadear la pantalla.
+// Mientras el jugador edita, el audio y el brillo se ven al momento.
+// Resolución, modo de pantalla y calidad no se eligen en el menú: los fija la configuración del proyecto.
 public static class AjustesJuego
 {
     private static Ajustes guardados;
@@ -33,7 +31,6 @@ public static class AjustesJuego
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.BeforeSceneLoad)]
     private static void AplicarAlArrancar()
     {
-        AplicarVideo(Guardados);
         Previsualizar(Guardados);
     }
 
@@ -49,7 +46,6 @@ public static class AjustesJuego
     {
         guardados = ajustes.Copia();
         File.WriteAllText(Ruta, guardados.AJson());
-        AplicarVideo(guardados);
         Previsualizar(guardados);
     }
 
@@ -59,36 +55,9 @@ public static class AjustesJuego
         Previsualizar(Guardados);
     }
 
-    // Convierte "la del monitor" y "la del proyecto" en valores concretos para poder mostrarlos y recorrerlos
-    public static void CompletarVideo(Ajustes ajustes)
-    {
-        if (ajustes.anchoPantalla <= 0 || ajustes.altoPantalla <= 0)
-        {
-            var monitor = Screen.currentResolution;
-            ajustes.anchoPantalla = monitor.width;
-            ajustes.altoPantalla = monitor.height;
-        }
-
-        if (ajustes.calidad < 0 || ajustes.calidad >= QualitySettings.count)
-            ajustes.calidad = QualitySettings.GetQualityLevel();
-    }
-
-    // El monitor repite cada tamaño con varias frecuencias; para el jugador cuenta solo el tamaño
-    public static IReadOnlyList<Resolucion> ResolucionesDisponibles()
-    {
-        return Screen.resolutions
-            .Select(modo => new Resolucion(modo.width, modo.height))
-            .Distinct()
-            .OrderBy(resolucion => resolucion.ancho)
-            .ThenBy(resolucion => resolucion.alto)
-            .ToList();
-    }
-
     private static Ajustes Leer()
     {
-        var ajustes = File.Exists(Ruta) ? Ajustes.DesdeJson(LeerTexto()) : new Ajustes();
-        CompletarVideo(ajustes);
-        return ajustes;
+        return File.Exists(Ruta) ? Ajustes.DesdeJson(LeerTexto()) : new Ajustes();
     }
 
     private static string LeerTexto()
@@ -101,17 +70,5 @@ public static class AjustesJuego
         {
             return null;
         }
-    }
-
-    private static void AplicarVideo(Ajustes ajustes)
-    {
-        QualitySettings.SetQualityLevel(ajustes.calidad, true);
-
-        // En el Editor la ventana Game no cambia de resolución; solo aplica en el juego compilado
-        if (Application.isEditor)
-            return;
-
-        var modo = ajustes.pantallaCompleta ? FullScreenMode.FullScreenWindow : FullScreenMode.Windowed;
-        Screen.SetResolution(ajustes.anchoPantalla, ajustes.altoPantalla, modo);
     }
 }

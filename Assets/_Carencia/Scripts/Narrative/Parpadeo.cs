@@ -24,13 +24,6 @@ public class Parpadeo : MonoBehaviour
 
     private void Update()
     {
-        // Opciones → Accesibilidad → Reducir destellos deja el color fijo en vez de alternarlo
-        if (AjustesJuego.EnPantalla.reducirDestellos)
-        {
-            figura.color = colorA;
-            return;
-        }
-
         var valor = Mathf.PerlinNoise(Time.time * rapidez, transform.position.x);
         figura.color = valor > 0.5f ? colorA : colorB;
     }

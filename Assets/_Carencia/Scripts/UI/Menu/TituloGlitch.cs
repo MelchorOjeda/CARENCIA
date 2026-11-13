@@ -1,7 +1,6 @@
 using UnityEngine;
 
 // Título con tres copias desfasadas (roja, azul y hueso) que tiemblan de vez en cuando.
-// Con Reducir destellos o Reducir movimiento se queda quieto en su posición del diseño.
 public class TituloGlitch : MonoBehaviour
 {
     [SerializeField] private RectTransform capaRoja;
@@ -12,8 +11,6 @@ public class TituloGlitch : MonoBehaviour
 
     private float siguienteTemblor;
 
-    private bool EstaQuieto => AjustesJuego.EnPantalla.reducirDestellos || AjustesJuego.EnPantalla.reducirMovimiento;
-
     private void OnEnable()
     {
         Colocar(Vector2.zero, Vector2.zero);
@@ -21,12 +18,6 @@ public class TituloGlitch : MonoBehaviour
 
     private void Update()
     {
-        if (EstaQuieto)
-        {
-            Colocar(Vector2.zero, Vector2.zero);
-            return;
-        }
-
         // Tiempo sin escala: el título también tiembla con el juego en pausa
         if (Time.unscaledTime < siguienteTemblor)
             return;

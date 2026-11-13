@@ -8,62 +8,39 @@ Explica cómo cambia la experiencia desde el inicio hasta el final. La progresi�
 
 Describe las etapas principales del juego.
 
-1. Inicio 
-El juego comienza en la realidad cotidiana del protagonista. Este despierta en su habitación y continúa con su rutina matutina, que incluye desayunar y posteriormente dirigirse al baño.
+1. Inicio
+El juego comienza en la realidad cotidiana de Elaki. Despierta en su habitación y se dirige al comedor, donde sus padres niegan la existencia de su hermana Margarita durante el desayuno.
 
-Durante esta etapa se presenta el entorno familiar, permitiendo que el jugador reconozca la distribución de la casa y algunos de sus elementos habituales.
-
-Al llegar al baño, el jugador puede inspeccionar objetos como las toallas, la cortina y el gabinete. La apertura del gabinete constituye una interacción necesaria para avanzar hacia el espejo.
-
-Finalmente, el protagonista interactúa con el espejo, desencadenando el acontecimiento sobrenatural que lo transporta a una versión alterada de su hogar y da inicio al Nivel 1: Primera ruptura.
+Después de un mareo, Elaki aparece en el baño real. El jugador puede inspeccionar el lavabo, las toallas y la cortina, y debe abrir y cerrar el gabinete del espejo. Al hacerlo, el espejo se deforma y se abre el primer portal, que da inicio al Nivel 1.
 
 2. Introducción de sistemas
-Después de atravesar el espejo, el protagonista aparece en una versión alterada de su hogar, caracterizada por espacios más amplios, vacíos y una atmósfera inquietante.
+Al cruzar el espejo, Elaki aparece en una versión alterada de su casa: espaciosa, vacía e inconsistente.
 
-Durante esta etapa, el jugador continúa utilizando los controles aprendidos en el prólogo: desplazamiento mediante WASD o flechas direccionales e interacción con objetos cercanos mediante la tecla E.
-
-La exploración permite familiarizarse con la nueva distribución de la casa, reconocer elementos relevantes y descubrir las primeras señales de que algo no corresponde con la realidad original.
-
-El jugador debe recorrer el escenario para continuar hacia la siguiente fase.
+El jugador utiliza los controles aprendidos en el prólogo para recorrer los espacios del otro lado, comparar el baño con su versión real y seguir la voz de Margarita hasta el fondo del pasillo, donde Elaki se desmaya y despierta nuevamente en su cuarto real.
 
 3. Desarrollo
-La casa presenta alteraciones más evidentes en su estructura, iluminación y objetos. El ambiente se vuelve más oscuro y perturbador, mientras el jugador encuentra detalles que contradicen lo observado en la realidad inicial.
+Después del segundo desayuno, Elaki regresa al baño real y cruza a una versión abandonada de la casa. Allí encuentra la fotografía familiar, la ventana con vista a la barda y la sala en penumbra.
 
-La exploración conduce a la interacción con un monitor. Al activarlo, el protagonista se sienta automáticamente y comienza la reproducción de un video, mientras el movimiento queda bloqueado temporalmente.
-
-La cámara realiza los cambios de encuadre correspondientes y revela gradualmente la presencia de una criatura detrás del protagonista.
-
-Al finalizar la secuencia, el jugador recupera el control y comienza una persecución en la que debe escapar de la criatura hasta alcanzar el pasillo.
+Al sentarse frente a la computadora, comienza un video que no puede detenerse. Mientras avanza, la penumbra disminuye y revela al perro de la familia, erguido y observándolo. Al terminar el video, el jugador recupera el control y debe huir hasta alcanzar el pasillo.
 
 4. Dominio
-Después de escapar de la primera criatura, el jugador avanza por el pasillo, donde se desencadena un nuevo acontecimiento narrativo relacionado con la hermana.
+Al fondo del pasillo aparece la Manifestación de Margarita. La figura gira, revela su rostro deformado y persigue a Elaki.
 
-La figura aparece inicialmente de espaldas y posteriormente experimenta una transformación inquietante. Durante este encuentro, el protagonista permanece temporalmente inmovilizado.
-
-Al finalizar la secuencia, comienza una nueva persecución. El jugador debe utilizar su conocimiento del movimiento y del escenario para intentar esquivar los ataques.
-
-Los golpes recibidos incrementan progresivamente las manchas rojizas alrededor de la pantalla, comunicando el deterioro del protagonista.
-
-Esta etapa representa una mayor exigencia de reacción y movimiento, utilizando mecánicas que el jugador ya conoce.
+En este encuentro no existe escapatoria: cada golpe incrementa las manchas rojas en la pantalla y, al tercero, la vista se cierra en espiral y todo pasa a negro. Elaki despierta por tercera vez en su cuarto real, donde la casa muestra el altar del perro y la alacena que ocupa el lugar del cuarto de Margarita.
 
 5. Clímax
-El protagonista se enfrenta a una versión de la realidad cada vez más distorsionada, en la que los espacios familiares y los acontecimientos sobrenaturales adquieren mayor importancia.
+Elaki cruza por última vez desde el baño real a una versión de la casa hecha de carne. El jugador observa los elementos grotescos del entorno y, al sentarse en el sillón, presencia un anuncio en la televisión.
 
-Durante la exploración aparecen elementos relacionados con la hermana y las desapariciones, así como nuevas alteraciones en habitaciones y objetos conocidos.
-
-El jugador debe utilizar las habilidades adquiridas para recorrer los escenarios, inspeccionar elementos relevantes e interpretar las señales que permiten comprender los acontecimientos.
-
-La tensión narrativa aumenta conforme el protagonista se aproxima a las revelaciones principales de la historia.
-
+Los ojos de las paredes giran hacia el baño y guían a Elaki hasta él. Allí, con la cortina completamente abierta y la tina llena, Margarita aparece en el reflejo del agua.
 
 6. Final
-La experiencia concluye cuando el protagonista supera los tres niveles y regresa al baño, donde encuentra a su hermana Margarita dentro de la bañera. Convencido de que finalmente podrá reunirse con ella, acepta su invitación y atraviesa el último portal, provocando una interrupción abrupta de la ambientación sonora.
+Convencido de que la encontró, Elaki salta a la tina para alcanzarla. La imagen alterna entre Elaki entrando a la tina del otro lado y Elaki solo en su baño real, hasta llegar a negro.
 
-A continuación, una secuencia de noticias revela que Margarita desapareció el 31 de octubre y que posteriormente fue encontrada sin vida en un lote baldío. Esta información permite reinterpretar las pistas y los acontecimientos de los niveles anteriores, relacionándolos con la negación, los recuerdos y la percepción alterada del protagonista.
+A continuación aparecen los carteles de búsqueda de Margarita y de otras personas desaparecidas. Una transmisión televisiva del 25 de diciembre confirma que el cuerpo localizado en un lote baldío corresponde a Margarita, desaparecida desde el 31 de octubre.
 
-Finalmente, una noticia fechada el 25 de diciembre informa sobre la muerte de un joven tras caer de un edificio, sin revelar su identidad. La última cinemática muestra el lugar del incidente desde una perspectiva superior, con personas reunidas, sirenas y decoraciones navideñas, sugiriendo que se trata del protagonista.
+Después, una pantalla de texto informa que un joven de aproximadamente 17 años perdió la vida tras ahogarse en una tina de baño. La escena final muestra, de noche y en Navidad, el edificio donde vive la familia, rodeado de patrullas, una ambulancia y vecinos reunidos.
 
-El desenlace cierra la búsqueda de Margarita y mantiene la ambigüedad sobre la naturaleza de las dimensiones recorridas, permitiendo que el jugador interprete la relación entre los acontecimientos sobrenaturales y el estado psicológico del protagonista.
+El desenlace permite reinterpretar las pistas de los niveles anteriores y mantiene la ambigüedad sobre la naturaleza de los lugares que recorrió Elaki.
 
 ## Progresión del jugador
 

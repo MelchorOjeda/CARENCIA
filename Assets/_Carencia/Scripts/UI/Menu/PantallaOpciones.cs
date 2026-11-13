@@ -1,14 +1,13 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-// Hoja de Ajustes con cuatro pestañas. Los cambios se prueban al momento y se guardan con G;
+// Hoja de Ajustes con tres pestañas. Los cambios se prueban al momento y se guardan con G;
 // Esc con cambios sin guardar pregunta antes de descartarlos, y R restablece solo la pestaña actual.
 public class PantallaOpciones : MonoBehaviour
 {
-    private static readonly string[] NombresPestana = { "Audio", "Video", "Controles", "Accesibilidad" };
+    private static readonly string[] NombresPestana = { "Audio", "Video", "Controles" };
 
     [SerializeField] private PestanaOpciones[] pestanas;
     [SerializeField] private FilaOpcion[] filas;
@@ -23,7 +22,6 @@ public class PantallaOpciones : MonoBehaviour
     [SerializeField] private TMP_Text ruta;
 
     private Ajustes enEdicion;
-    private IReadOnlyList<Resolucion> resoluciones;
     private Renglon[] renglones;
     private Categoria categoria;
     private int filaEnfocada;
@@ -50,8 +48,6 @@ public class PantallaOpciones : MonoBehaviour
         ruta.text = textoRuta ?? "";
         ruta.gameObject.SetActive(!string.IsNullOrEmpty(textoRuta));
         enEdicion = AjustesJuego.Guardados.Copia();
-        AjustesJuego.CompletarVideo(enEdicion);
-        resoluciones = AjustesJuego.ResolucionesDisponibles();
 
         gameObject.SetActive(true);
         avisoGuardado.SetActive(false);
@@ -134,7 +130,6 @@ public class PantallaOpciones : MonoBehaviour
     private void Restablecer()
     {
         enEdicion.Restablecer(categoria);
-        AjustesJuego.CompletarVideo(enEdicion);
         AjustesJuego.Previsualizar(enEdicion);
         Refrescar();
     }
@@ -213,12 +208,6 @@ public class PantallaOpciones : MonoBehaviour
             case Categoria.Video:
                 return new[]
                 {
-                    Selector("Resolución", "Tamaño de la imagen. Usa la de tu monitor para que el pixel art se vea nítido. Se aplica al guardar.",
-                        () => enEdicion.Resolucion.ToString(), direccion => enEdicion.CambiarResolucion(direccion, resoluciones)),
-                    Selector("Modo de pantalla", "Pantalla completa o ventana. Se aplica al guardar.",
-                        () => enEdicion.pantallaCompleta ? "Pantalla completa" : "Ventana", direccion => enEdicion.Cambiar(Ajuste.PantallaCompleta, direccion)),
-                    Selector("Calidad gráfica", "Calidad de las luces y los efectos. Bájala si el juego va lento. Se aplica al guardar.",
-                        () => NombreCalidad(enEdicion.calidad), direccion => enEdicion.CambiarCalidad(direccion, QualitySettings.count)),
                     Deslizador("Brillo", "Aclara u oscurece la imagen. Ajústalo hasta distinguir las sombras sin que se vean grises.", () => enEdicion.brillo, Ajuste.Brillo),
                 };
             case Categoria.Controles:
@@ -231,56 +220,15 @@ public class PantallaOpciones : MonoBehaviour
                     SoloLectura("Pausa", "Esc", "Detiene el juego. Desde ahí puedes cambiar los ajustes o volver al menú."),
                 };
             default:
-                return new[]
-                {
-                    Selector("Tamaño de texto", "Agranda o achica los textos de los menús, las notas y las descripciones.",
-                        () => NombreTamano(enEdicion.tamanoTexto), direccion => enEdicion.Cambiar(Ajuste.TamanoTexto, direccion)),
-                    SiNo("Subtítulos", "Muestra en texto lo que dicen las voces, cuando el juego las tenga.", () => enEdicion.subtitulos, Ajuste.Subtitulos),
-                    SiNo("Contraste alto", "Aclara los textos grises para que se lean mejor sobre el fondo oscuro.", () => enEdicion.contrasteAlto, Ajuste.ContrasteAlto),
-                    SiNo("Reducir destellos", "Reduce los destellos y parpadeos de la pantalla.", () => enEdicion.reducirDestellos, Ajuste.ReducirDestellos),
-                    SiNo("Reducir movimiento", "Detiene el temblor de los títulos y otros movimientos de la pantalla.", () => enEdicion.reducirMovimiento, Ajuste.ReducirMovimiento),
-                    SiNo("Indicadores de sonido", "Muestra en pantalla de dónde vienen los sonidos importantes, cuando el juego los tenga.", () => enEdicion.indicadoresSonido, Ajuste.IndicadoresSonido),
-                };
+                throw new ArgumentOutOfRangeException(nameof(pestana), pestana, null);
         }
     }
 
     private Renglon Deslizador(string nombre, string descripcion, Func<int> leer, Ajuste ajuste) =>
         new Renglon(nombre, descripcion, () => $"{leer()}%", direccion => enEdicion.Cambiar(ajuste, direccion), leer);
 
-    private Renglon SiNo(string nombre, string descripcion, Func<bool> leer, Ajuste ajuste) =>
-        Selector(nombre, descripcion, () => leer() ? "Sí" : "No", direccion => enEdicion.Cambiar(ajuste, direccion));
-
-    private static Renglon Selector(string nombre, string descripcion, Func<string> leer, Action<int> cambiar) =>
-        new Renglon(nombre, descripcion, () => $"‹ {leer()} ›", cambiar, null);
-
     private static Renglon SoloLectura(string nombre, string teclas, string descripcion) =>
         new Renglon(nombre, descripcion, () => teclas, null, null);
-
-    private static string NombreTamano(TamanoTexto tamano)
-    {
-        switch (tamano)
-        {
-            case TamanoTexto.Pequeno: return "Pequeño";
-            case TamanoTexto.Grande: return "Grande";
-            default: return "Mediano";
-        }
-    }
-
-    // Los niveles de calidad del proyecto se llaman en inglés; el jugador los ve en español
-    private static string NombreCalidad(int nivel)
-    {
-        var nombre = nivel >= 0 && nivel < QualitySettings.names.Length ? QualitySettings.names[nivel] : "";
-        switch (nombre)
-        {
-            case "Very Low": return "Muy baja";
-            case "Low": return "Baja";
-            case "Medium": return "Media";
-            case "High": return "Alta";
-            case "Very High": return "Muy alta";
-            case "Ultra": return "Ultra";
-            default: return nombre;
-        }
-    }
 
     private class Renglon
     {

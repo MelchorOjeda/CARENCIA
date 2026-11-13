@@ -19,49 +19,51 @@ Juego
 
 ```text
 Juego
-PRÓLOGO — LA REALIDAD
+PRÓLOGO — LA NEGACIÓN
 │   ├── Despertar en la habitación
 │   ├── Primer desayuno con los padres
-│   ├── Transición al baño
-│   ├── Exploración del baño real
+│   ├── Mareo y llegada al baño real
 │   ├── Inspección obligatoria del gabinete
-│   └── Aparición del portal en el espejo
+│   └── Portal en el espejo
 │
 ├── NIVEL 1 — LA PRIMERA RUPTURA
-│   ├── Baño ligeramente distorsionado
-│   ├── Exploración del pasillo prolongado
-│   ├── Observación de alteraciones del entorno
-│   ├── Voz femenina misteriosa
-│   └── Transición a la siguiente dimensión
+│   ├── Baño del otro lado
+│   ├── Pasaje detrás de la cortina y calendario
+│   ├── Versión liminal del cuarto de Elaki
+│   ├── Espacios del otro lado de la casa
+│   ├── Pasillo con la voz de Margarita
+│   ├── Desmayo
+│   ├── Segundo despertar
+│   └── Segundo desayuno
 │
 ├── NIVEL 2 — LA DEFORMACIÓN
-│   ├── Pasillo con fotografías alteradas
-│   ├── Ventana con paisaje liminal
-│   ├── Sala y comedor distorsionados
-│   ├── Interacción con la computadora
-│   ├── Persecución de la criatura canina
-│   ├── Encuentro con la manifestación de Margarita
-│   ├── Segunda persecución
-│   ├── Despertar en la habitación real
-│   ├── Segundo desayuno y periódico
-│   ├── Exploración del altar del perro
-│   └── Regreso al baño y nuevo portal
+│   ├── Baño real (segunda visita) y portal
+│   ├── Baño abandonado y calendario
+│   ├── Pasillo con la fotografía familiar
+│   ├── Ventana con la barda
+│   ├── Sala y cocina en penumbra
+│   ├── Video de la computadora
+│   ├── Persecución del perro de la familia
+│   ├── Encuentro con la Manifestación de Margarita
+│   ├── Tercer despertar
+│   ├── Tercer desayuno
+│   └── Altar del perro y alacena
 │
 ├── NIVEL 3 — LA REALIDAD SE ROMPE
-│   ├── Exploración de la casa orgánica
-│   ├── Sala y televisión distorsionadas
-│   ├── Pasillo con alteraciones corporales
-│   ├── Encuentro visual opcional en la ventana
-│   ├── Calendario del 31 de octubre
-│   ├── Puerta del baño con corazón deformado
-│   ├── Bañera con la cortina abierta
-│   └── Encuentro final con Margarita
+│   ├── Baño real (tercera visita) y portal
+│   ├── Baño de carne
+│   ├── Pasillo de carne
+│   ├── Sala y cocina de carne; anuncio en la televisión
+│   ├── Los ojos guían al baño
+│   ├── Ventana con el hombre armado (opcional)
+│   └── Margarita en la tina
 │
-└── DESENLACE DEL DEMO
-    ├── Transición a través de la bañera
-    ├── Carteles de personas desaparecidas
-    ├── Noticia del hallazgo de Margarita
-    └── Fin del demo
+└── DESENLACE
+    ├── Imágenes alternadas de la tina
+    ├── Carteles de búsqueda
+    ├── Transmisión sobre el cuerpo de Margarita
+    ├── Pantalla de texto sobre el joven ahogado
+    └── Escena del edificio
 ```
 ## Cantidad estimada
 

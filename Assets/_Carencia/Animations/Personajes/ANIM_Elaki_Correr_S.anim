@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: ANIM_Elaki_Correr_S
+  m_Name: 
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -49,27 +49,8 @@ AnimationClip:
     m_Center: {x: 0, y: 0, z: 0}
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
-    genericBindings:
-    - serializedVersion: 2
-      path: 798388821
-      attribute: 0
-      script: {fileID: 0}
-      typeID: 212
-      customType: 23
-      isPPtrCurve: 1
-      isIntCurve: 0
-      isSerializeReferenceCurve: 0
-      metaData: 0
-    pptrCurveMapping:
-    - {fileID: 234452992, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: -213253145, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: 296043739, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: -575087606, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: -20215880, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: 107982240, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: 1837262668, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: -399314118, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
-    - {fileID: -399314118, guid: 3e599906fb414cb4fb91a1509549e913, type: 3}
+    genericBindings: []
+    pptrCurveMapping: []
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

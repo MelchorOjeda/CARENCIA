@@ -101,6 +101,7 @@ Misma mecánica que el gabinete, en la vista `PF_VistaRefrigerador`: al pasar el
 | `N1_4_sillas_1` / `N1_4_sillas_2` | N1.4 · Cuatro sillas sin mesa |
 | `N1_4_ya_pase` | N1.4 · Tercera vuelta al cuarto de lavado (automático) |
 | `N1_OBJ_<objeto>` | Nivel 1 · Pensamiento al revisar con E cada objeto regado (61 claves, una por tipo de objeto: `N1_OBJ_taza_cafe`, `N1_OBJ_lavadora`…). **Textos provisionales**, pendientes de revisión |
+| `R_escritorio` / `R_television` | Casa real · Pensamiento al cerrar la vista del escritorio y de la tele. **Textos provisionales** |
 | `N1_5_pensamiento` | N1.5 · "¿M-M-A-A-R?" al entrar al pasillo |
 | `N1_6_ayuda` | N1.6 · Golpe y "Ayuda." frente a la puerta |
 
@@ -158,7 +159,16 @@ El sollozo frente al altar (N2.12) no lleva texto.
 | `N3_2_gabinete` | N3.2 · Frascos llenos de dientes (con E) |
 | `N3_5_platos` | N3.5 · Cuatro platos con órganos |
 | `N3_5_sillon` | N3.5 · Al sentarse en el sillón |
-| `N3_5_anuncio` | N3.5 · Voz del anuncio del SITATYR |
+| `N3_5_anuncio` | N3.5 · (sin uso: el anuncio del SITATYR ahora solo se oye, `SFX_N3_AnuncioTele`, y al terminar la tele se apaga) |
+| `N3_3_parpadeo` | N3.3 · Al salir del baño la luz parpadea y aparece en la cocina |
+| `N3_3_cocina` | N3.3 · Apéndices en las paredes de la cocina |
+| `N3_3_sellada` | N3.3 · Puerta de la cocina sellada con carne |
+| `N3_4_refri` | N3.4 · El refrigerador: carne que late; se abre la membrana de la puerta |
+| `N3_5_cuarto` | N3.5 · Llega a su cuarto deforme |
+| `N3_5_cama` | N3.5 · (sin uso: se quitaron las manos bajo la cama) |
+| `N3_5_libre` | N3.5 · (sin uso) |
+| `N3_6_ventana` | N3.6 · El pasillo: apéndices que lo cruzan; hay que esperar a que se escondan |
+| `N3_7_ojos` | N3.7 · (sin uso: se quitaron los ojos del pasillo) |
 | `N3_8_pensamiento` | N3.8 · "Te encontré." |
 
 ## Desenlace (`DES_Final`)
@@ -169,4 +179,4 @@ El sollozo frente al altar (N2.12) no lleva texto.
 | `D4_texto` | D4 · Pantalla de texto sobre el joven ahogado |
 | `D5_cierre` | D5 · Cierre: el mismo día en que la encontraron |
 
-Las imágenes del desenlace, la vista de la barda, el hombre armado y el anuncio de la TV son marcadores con su descripción hasta que llegue su arte o su video.
+Las imágenes del desenlace, la vista de la barda y el hombre armado son marcadores con su descripción hasta que llegue su arte o su video.
