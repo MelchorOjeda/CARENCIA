@@ -11,6 +11,11 @@ public class SaludJugador : MonoBehaviour
     [Tooltip("Segundos de la animación de muerte antes de reiniciar")]
     [SerializeField] private float duracionMuerte = 2.4f;
 
+    [Header("Agarre")]
+    [Tooltip("Sonidos que suenan juntos cada vez que algo la agarra (carne, chillido...)")]
+    [SerializeField] private AudioClip[] sonidosAgarre;
+    [SerializeField] private float volumenAgarre = 1f;
+
     [Header("Regeneración")]
     [SerializeField] private bool regenerar;
     [Tooltip("Segundos sin daño antes de empezar a sanar")]
@@ -36,6 +41,12 @@ public class SaludJugador : MonoBehaviour
     public void LlevarAlMorir(string destino)
     {
         destinoAlMorir = destino;
+    }
+
+    public void ConfigurarAgarre(AudioClip[] sonidos, float volumen)
+    {
+        sonidosAgarre = sonidos;
+        volumenAgarre = volumen;
     }
 
     public void Configurar(bool conRegeneracion, float espera, float ritmo)
@@ -101,7 +112,48 @@ public class SaludJugador : MonoBehaviour
         destello = 0.35f;
         EstadoJuego.Golpes++;
         Pintar();
+        Agarrada();
         Revisar();
+    }
+
+    // El momento del agarre: destello rojo oscuro, sacudida, sonido visceral y Elaki enrojecida un instante
+    private void Agarrada()
+    {
+        if (PantallaJuego.Instancia != null)
+            PantallaJuego.Instancia.Agarre();
+
+        if (sonidosAgarre != null)
+            foreach (var sonido in sonidosAgarre)
+                if (sonido != null)
+                    PantallaJuego.Instancia.ReproducirEfecto(sonido, volumenAgarre);
+
+        if (rutinaRojo != null)
+            StopCoroutine(rutinaRojo);
+        rutinaRojo = StartCoroutine(Enrojecer());
+    }
+
+    private Coroutine rutinaRojo;
+
+    private IEnumerator Enrojecer()
+    {
+        var dibujos = GetComponentsInChildren<SpriteRenderer>();
+        var originales = new Color[dibujos.Length];
+        for (var i = 0; i < dibujos.Length; i++)
+            originales[i] = dibujos[i].color;
+
+        for (var t = 0f; t < 0.5f; t += Time.deltaTime)
+        {
+            var rojo = Color.Lerp(new Color(1f, 0.15f, 0.15f), Color.white, t / 0.5f);
+            for (var i = 0; i < dibujos.Length; i++)
+                if (dibujos[i] != null)
+                    dibujos[i].color = originales[i] * rojo;
+            yield return null;
+        }
+
+        for (var i = 0; i < dibujos.Length; i++)
+            if (dibujos[i] != null)
+                dibujos[i].color = originales[i];
+        rutinaRojo = null;
     }
 
     // Daño continuo, en fracciones de golpe (por ejemplo, mientras el ojo la ve moverse)
