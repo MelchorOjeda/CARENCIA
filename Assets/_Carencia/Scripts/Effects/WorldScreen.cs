@@ -258,6 +258,7 @@ namespace PortalesGame
             // El sonido del video pasa por una fuente propia que sigue al canal Voces (y al volumen general).
             videoAudio = vgo.AddComponent<AudioSource>();
             videoAudio.playOnAwake = false;
+            vgo.AddComponent<VolumenPorCategoria>().Categoria = CategoriaSonido.Voces;
             vp.audioOutputMode = VideoAudioOutputMode.AudioSource;
             vp.controlledAudioTrackCount = 1;
             vp.EnableAudioTrack(0, true);
