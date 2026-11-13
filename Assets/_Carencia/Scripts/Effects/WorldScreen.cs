@@ -169,18 +169,15 @@ namespace PortalesGame
         {
             if (!IsPlaying && content != null && content.enabled && idle == ScreenIdle.Static && Time.time >= nextStaticFrame)
             {
-                // "Reducir destellos": la estática cambia más despacio y más tenue.
-                bool calm = AjustesJuego.EnPantalla.reducirDestellos;
-                nextStaticFrame = Time.time + (calm ? 0.25f : 0.07f);
-                DrawStatic(calm ? 0.55f : 1f);
+                nextStaticFrame = Time.time + 0.07f;
+                DrawStatic(1f);
             }
 
-            // La pantalla encendida ilumina un poco lo que tiene cerca, con el parpadeo propio de un tubo (fijo si se
-            // reducen los destellos).
+            // La pantalla encendida ilumina un poco lo que tiene cerca, con el parpadeo propio de un tubo.
             if (glow != null)
             {
                 bool on = IsPlaying || idle == ScreenIdle.Static || idle == ScreenIdle.Glow;
-                float flicker = AjustesJuego.EnPantalla.reducirDestellos ? 0.92f : 0.8f + 0.25f * Mathf.PerlinNoise(Time.time * 9f, 0.3f);
+                float flicker = 0.8f + 0.25f * Mathf.PerlinNoise(Time.time * 9f, 0.3f);
                 float target = on ? glowIntensity * flicker : 0f;
                 glowLevel = Mathf.MoveTowards(glowLevel, target, Time.deltaTime * 4f);
                 glow.intensity = glowLevel;

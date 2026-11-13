@@ -96,7 +96,7 @@ namespace PortalesGame
 
         private void Update()
         {
-            if (meshes == null || breath <= 0f || AjustesJuego.EnPantalla.reducirMovimiento) return;
+            if (meshes == null || breath <= 0f) return;
             float k = 1f - breath * (0.5f + 0.5f * Mathf.Sin(Time.time * 0.9f));
             Color32 c = new Color(tint.r * k, tint.g * k, tint.b * k, 1f);
             for (int w = 0; w < meshes.Length; w++)

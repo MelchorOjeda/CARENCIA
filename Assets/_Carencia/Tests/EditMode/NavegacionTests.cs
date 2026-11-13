@@ -43,9 +43,9 @@ public class NavegacionTests
     [Test]
     public void LasPestanasDanLaVueltaConQyE()
     {
-        const int pestanas = 4;
+        var pestanas = System.Enum.GetValues(typeof(Categoria)).Length;
 
-        Assert.AreEqual(3, Ciclo.Siguiente(0, pestanas, -1), "Q en Audio va a Accesibilidad");
-        Assert.AreEqual(0, Ciclo.Siguiente(3, pestanas, +1), "E en Accesibilidad va a Audio");
+        Assert.AreEqual((int)Categoria.Controles, Ciclo.Siguiente((int)Categoria.Audio, pestanas, -1), "Q en Audio va a Controles");
+        Assert.AreEqual((int)Categoria.Audio, Ciclo.Siguiente((int)Categoria.Controles, pestanas, +1), "E en Controles va a Audio");
     }
 }

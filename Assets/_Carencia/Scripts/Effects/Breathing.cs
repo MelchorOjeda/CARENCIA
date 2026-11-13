@@ -39,10 +39,8 @@ namespace PortalesGame
                 k = f < 0.12f ? Mathf.Sin(f / 0.12f * Mathf.PI) : (f > 0.22f && f < 0.32f ? 0.6f * Mathf.Sin((f - 0.22f) / 0.1f * Mathf.PI) : 0f);
             }
             else k = Mathf.Sin(t);
-            // "Reducir movimiento": el pulso se sigue notando, pero apenas.
-            float m = AjustesJuego.EnPantalla.reducirMovimiento ? 0.25f : 1f;
-            float sx = 1f + (k * amplitude + Mathf.Sin(t * 0.7f) * skew) * m;
-            float sy = 1f + (k * amplitude - Mathf.Sin(t * 0.7f) * skew) * m;
+            float sx = 1f + k * amplitude + Mathf.Sin(t * 0.7f) * skew;
+            float sy = 1f + k * amplitude - Mathf.Sin(t * 0.7f) * skew;
             transform.localScale = new Vector3(baseScale.x * sx, baseScale.y * sy, baseScale.z);
         }
 
