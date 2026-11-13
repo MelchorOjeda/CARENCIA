@@ -24,6 +24,14 @@ public class VozQueSeAcerca : MonoBehaviour
         distanciaCerca = cerca;
     }
 
+    public void ConfigurarVolumen(float nuevoLejos, float nuevoCerca, float nuevaEsperaMinima, float nuevaEsperaMaxima)
+    {
+        volumenLejos = nuevoLejos;
+        volumenCerca = nuevoCerca;
+        esperaMinima = nuevaEsperaMinima;
+        esperaMaxima = nuevaEsperaMaxima;
+    }
+
     private void Awake()
     {
         fuente = GetComponent<AudioSource>();
