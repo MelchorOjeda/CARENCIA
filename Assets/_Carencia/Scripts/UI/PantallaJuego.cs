@@ -2,6 +2,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using TMPro;
 
 // Capa de pantalla común a todas las escenas: fundidos, manchas de daño, penumbra, caja de diálogo y barra de video.
 // También carga escenas y coloca a Elaki en su punto de entrada. Se crea sola la primera vez que se pide.
@@ -13,6 +14,8 @@ public class PantallaJuego : MonoBehaviour
     private Image fundido;
     private Image manchas;
     private Image agarre;
+    private GameObject objetivo;
+    private TextMeshProUGUI textoObjetivo;
     private Coroutine rutinaAgarre;
     private Image amenaza;
     private Image penumbra;
@@ -136,6 +139,7 @@ public class PantallaJuego : MonoBehaviour
         // Destello de cuando algo agarra a Elaki: rojo casi negro que cubre todo y deja un hueco al centro
         agarre = Capa("Agarre", Vineta(new Color(0.28f, 0f, 0.02f), 0.02f, 0.75f));
         SetAlfa(agarre, 0f);
+        CrearObjetivo();
 
         // Marcador de una imagen o video que aún no tiene arte: fondo oscuro con una descripción
         marcador = new GameObject("Marcador", typeof(RectTransform));
@@ -314,6 +318,53 @@ public class PantallaJuego : MonoBehaviour
         SetAlfa(manchas, Mathf.Clamp01(intensidad));
     }
 
+    // Pista de lo que hay que hacer: un recuadro oscuro con el texto, arriba a la izquierda.
+    // Va antes que las vistas y la caja de diálogo, que se dibujan encima de ella
+    private void CrearObjetivo()
+    {
+        objetivo = new GameObject("Objetivo", typeof(RectTransform));
+        objetivo.transform.SetParent(transform, false);
+        var rect = (RectTransform)objetivo.transform;
+        rect.anchorMin = rect.anchorMax = new Vector2(0f, 1f);
+        rect.pivot = new Vector2(0f, 1f);
+        rect.anchoredPosition = new Vector2(8f, -8f);
+        var fondo = objetivo.AddComponent<Image>();
+        fondo.color = new Color(0.04f, 0.03f, 0.03f, 0.55f);
+        fondo.raycastTarget = false;
+        var acomodo = objetivo.AddComponent<HorizontalLayoutGroup>();
+        acomodo.padding = new RectOffset(6, 6, 3, 3);
+        acomodo.childControlWidth = acomodo.childControlHeight = true;
+        acomodo.childForceExpandWidth = acomodo.childForceExpandHeight = false;
+        var ajuste = objetivo.AddComponent<ContentSizeFitter>();
+        ajuste.horizontalFit = ajuste.verticalFit = ContentSizeFitter.FitMode.PreferredSize;
+
+        var texto = new GameObject("Texto", typeof(RectTransform));
+        texto.transform.SetParent(objetivo.transform, false);
+        textoObjetivo = texto.AddComponent<TextMeshProUGUI>();
+        var guion = Resources.Load<GuionDialogos>(GuionDialogos.RutaEnResources);
+        if (guion != null && guion.Fuente != null)
+            textoObjetivo.font = guion.Fuente;
+        textoObjetivo.fontSize = 11f;
+        textoObjetivo.color = new Color(0.95f, 0.92f, 0.84f);
+        textoObjetivo.alignment = TextAlignmentOptions.TopLeft;
+        textoObjetivo.textWrappingMode = TextWrappingModes.NoWrap;
+        textoObjetivo.richText = false;
+        textoObjetivo.raycastTarget = false;
+        objetivo.SetActive(false);
+    }
+
+    // Cambia la pista; vacía, la quita
+    public void SetObjetivo(string texto)
+    {
+        if (objetivo == null)
+            return;
+
+        var hay = !string.IsNullOrEmpty(texto);
+        if (hay)
+            textoObjetivo.text = texto;
+        objetivo.SetActive(hay);
+    }
+
     // Algo agarró a Elaki: la pantalla se cierra en rojo oscuro de golpe, parpadea y la cámara se sacude
     public void Agarre(float fuerza = 1f)
     {
@@ -489,6 +540,7 @@ public class PantallaJuego : MonoBehaviour
     private IEnumerator RutinaCarga(string escena, string entrada, bool restaurar)
     {
         cargando = true;
+        SetObjetivo("");
         yield return Fundir(1f, 0.6f);
 
         if (restaurar)

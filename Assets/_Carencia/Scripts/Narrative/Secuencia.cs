@@ -57,6 +57,12 @@ public class Secuencia : MonoBehaviour
         Musica,
         // Forcejeo con flechas (ForcejeoFlechas): espera a que Elaki se libere
         Forcejeo,
+        // Sacude la cámara: valor es la fuerza, valor2 los segundos
+        Sacudir,
+        // Pista de lo que hay que hacer, en la esquina superior izquierda; texto vacío la quita
+        Objetivo,
+        // Detiene a un enemigo donde está, sin desaparecerlo (deja de perseguir y de lastimar)
+        DetenerEnemigo,
     }
 
     [Serializable]
@@ -215,8 +221,8 @@ public class Secuencia : MonoBehaviour
                 yield return null;
                 while (vista.Abierta)
                     yield return null;
-                // La vista libera la interacción un cuadro después de cerrarse; si el paso siguiente (un diálogo)
-                // empezara antes, guardaría "bloqueada" como el estado a restaurar y Elaki ya no podría usar nada
+                // La vista libera la interacción un cuadro después de cerrarse: si una línea empieza antes,
+                // la guarda bloqueada y al terminar la deja así para siempre
                 yield return null;
                 yield return null;
                 break;
@@ -257,6 +263,17 @@ public class Secuencia : MonoBehaviour
                     jugador.MovimientoBloqueado = paso.valor > 0.5f;
                 if (detector != null)
                     detector.InteraccionBloqueada = false;
+                // Si hay una silla para sentarse junto a ella, Elaki se ve sentada en ella (o se levanta)
+                if (jugador != null && paso.valor > 0.5f)
+                {
+                    var silla = SillaSentable.MasCercana(jugador.transform.position, 1.2f);
+                    if (silla != null)
+                        silla.Sentar(true);
+                }
+                else if (SillaSentable.LaOcupada() is SillaSentable ocupada)
+                {
+                    ocupada.Levantar();
+                }
                 break;
             case Tipo.Sonido:
                 pantalla.ReproducirEfecto(paso.referencia as AudioClip, paso.valor);
@@ -266,6 +283,16 @@ public class Secuencia : MonoBehaviour
                 break;
             case Tipo.Forcejeo:
                 yield return ((ForcejeoFlechas)paso.referencia).Jugar();
+                break;
+            case Tipo.Sacudir:
+                SacudidaCamara.Sacudir(paso.valor, paso.valor2);
+                break;
+            case Tipo.Objetivo:
+                pantalla.SetObjetivo(paso.texto);
+                break;
+            case Tipo.DetenerEnemigo:
+                if (paso.referencia is EnemigoPerseguidor detenido)
+                    detenido.Detener();
                 break;
         }
     }

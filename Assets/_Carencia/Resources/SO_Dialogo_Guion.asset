@@ -34,7 +34,7 @@ MonoBehaviour:
     pensamiento: 0
   - clave: P2_madre_1
     quien: "Mam\xE1"
-    texto: "Hijo\u2026 t\xFA nunca tuviste hermana."
+    texto: "Hijo, ya hablamos de esto. T\xFA nunca\u2026 t\xFA nunca\u2026 tuviste hermana."
     pensamiento: 0
   - clave: P2_padre_1
     quien: "Pap\xE1"
@@ -651,4 +651,12 @@ MonoBehaviour:
   - clave: R_television
     quien: "Elaki"
     texto: "Siempre pon\xEDan las noticias a esta hora."
+    pensamiento: 1
+  - clave: R_altar
+    quien: "Elaki"
+    texto: "Las flores siempre est\xE1n frescas. Mam\xE1 no deja que se marchiten."
+    pensamiento: 1
+  - clave: R_armario
+    quien: "Elaki"
+    texto: "Aqu\xED guardamos las cobijas del invierno. Huele a naftalina."
     pensamiento: 1
