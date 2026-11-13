@@ -5098,18 +5098,18 @@ MonoBehaviour:
     valor2: 1.6
     texto: 
     referencia: {fileID: 373715694}
-  - tipo: 15
-    valor: 26
+  - tipo: 7
+    valor: 1
     valor2: 0
-    texto: sinEspera
-    referencia: {fileID: 1940099285}
+    texto: 
+    referencia: {fileID: 2119535882}
   - tipo: 27
     valor: 0.08
-    valor2: 26
+    valor2: 52.8
     texto: 
     referencia: {fileID: 0}
   - tipo: 0
-    valor: 17.7
+    valor: 44.5
     valor2: 0
     texto: 
     referencia: {fileID: 0}
@@ -23084,6 +23084,7 @@ Transform:
   - {fileID: 730178245}
   - {fileID: 1982870570}
   - {fileID: 1228700084}
+  - {fileID: 2119535884}
   m_Father: {fileID: 1585979244}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1667889112
@@ -32338,7 +32339,7 @@ MonoBehaviour:
   - {x: 1, y: 0.427}
   - {x: 0, y: 0}
   pixelWidth: 256
-  pixelHeight: 256
+  pixelHeight: 144
   pointFilter: 0
   idle: 3
   scanlines: 0.05
@@ -33158,6 +33159,53 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!1 &2119535882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2119535884}
+  - component: {fileID: 2119535883}
+  m_Layer: 0
+  m_Name: VideoMonitor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &2119535883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119535882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d664e8b79060de4ba17151c21febef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PortalesGame.VideoEnPantalla
+  pantalla: {fileID: 1982870572}
+  clip: {fileID: 32900000, guid: b6e008e8fab610c46a044d964d0cf71b, type: 3}
+  duracion: 0
+--- !u!4 &2119535884
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2119535882}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1656069669}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2121564649
 GameObject:
   m_ObjectHideFlags: 0
