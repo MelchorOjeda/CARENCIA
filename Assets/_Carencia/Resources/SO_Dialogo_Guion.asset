@@ -354,7 +354,7 @@ MonoBehaviour:
     pensamiento: 1
   - clave: N3_3_cocina
     quien: "Elaki"
-    texto: "Todo respira aqu\xED. No pises las bocas. No te acerques a las paredes."
+    texto: "Todo respira aqu\xED. No te acerques a las paredes."
     pensamiento: 1
   - clave: N3_3_sellada
     quien: "Elaki"
@@ -362,7 +362,7 @@ MonoBehaviour:
     pensamiento: 1
   - clave: N3_4_refri
     quien: "Elaki"
-    texto: "La carne del refrigerador... se est\xE1 moviendo. \xA1La puerta se abri\xF3! \xA1Corre!"
+    texto: "Solo hay carne que late ah\xED dentro... Algo se rompi\xF3. La puerta se abri\xF3."
     pensamiento: 1
   - clave: N3_5_cuarto
     quien: "Elaki"
@@ -378,7 +378,7 @@ MonoBehaviour:
     pensamiento: 1
   - clave: N3_6_ventana
     quien: "Elaki"
-    texto: "Hay un ojo en la ventana del fondo. Cuando se abre, no me puedo mover."
+    texto: "Las paredes se mueven. Tengo que esperar a que se escondan para pasar."
     pensamiento: 1
   - clave: N3_7_ojos
     quien: "Elaki"
@@ -639,4 +639,12 @@ MonoBehaviour:
   - clave: N1_OBJ_vitrina_antigua
     quien: "Elaki"
     texto: "Los vidrios est\xE1n oscuros. No se ve qu\xE9 hay adentro."
+    pensamiento: 1
+  - clave: R_escritorio
+    quien: "Elaki"
+    texto: "Aqu\xED hac\xEDamos la tarea juntos. Ahora solo est\xE1 mi laptop."
+    pensamiento: 1
+  - clave: R_television
+    quien: "Elaki"
+    texto: "Siempre pon\xEDan las noticias a esta hora."
     pensamiento: 1
