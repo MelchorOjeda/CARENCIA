@@ -358,11 +358,11 @@ MonoBehaviour:
     pensamiento: 1
   - clave: N3_3_sellada
     quien: "Elaki"
-    texto: "La puerta est\xE1 cubierta de carne. Algo late dentro del refrigerador."
+    texto: "La puerta está cubierta de carne. No se abre."
     pensamiento: 1
   - clave: N3_4_refri
     quien: "Elaki"
-    texto: "Solo hay carne que late ah\xED dentro... Algo se rompi\xF3. La puerta se abri\xF3."
+    texto: "Solo hay carne que late ahí dentro..."
     pensamiento: 1
   - clave: N3_5_cuarto
     quien: "Elaki"
@@ -378,7 +378,11 @@ MonoBehaviour:
     pensamiento: 1
   - clave: N3_6_ventana
     quien: "Elaki"
-    texto: "Las paredes se mueven. Tengo que esperar a que se escondan para pasar."
+    texto: "Afuera, frente a la barda, hay un hombre armado. No se mueve."
+    pensamiento: 1
+  - clave: N3_6_bano_cerrado
+    quien: "Elaki"
+    texto: "La puerta del baño late. Todavía no."
     pensamiento: 1
   - clave: N3_7_ojos
     quien: "Elaki"
@@ -390,7 +394,7 @@ MonoBehaviour:
     pensamiento: 1
   - clave: D3_noticiero
     quien: "Noticiero"
-    texto: "Este 25 de diciembre, la Fiscal\xEDa confirm\xF3 que el cuerpo localizado el pasado 21 de diciembre en un lote bald\xEDo\n\nen Cuautitl\xE1n Izcalli corresponde a Margarita Flores Hern\xE1ndez, de 19 a\xF1os,\n\nestudiante universitaria, desaparecida desde el 31 de octubre.\n\nSu \xFAltimo mensaje a sus padres, enviado a las 10:30 de la noche, dec\xEDa: \xABYa sal\xED de la universidad, voy para la casa\xBB.\n\nSu caso se suma al Registro Nacional de Personas Desaparecidas y No Localizadas, que ya supera las 135 mil personas;\n\nm\xE1s del 90 % de los casos son posteriores al a\xF1o 2000.\n\nEstas son solo cifras oficiales: no incluyen los casos que nunca se denunciaron."
+    texto: "Este 25 de diciembre, la Fiscal\xEDa confirm\xF3 que el cuerpo localizado el pasado 21 de diciembre en un lote bald\xEDo\n\nen Cuautitl\xE1n Izcalli corresponde a Margarita Flores Hern\xE1ndez, de 16 a\xF1os,\n\ndesaparecida desde el 31 de octubre.\n\nSu caso se suma al Registro Nacional de Personas Desaparecidas y No Localizadas, que ya supera las 135 mil personas;\n\nm\xE1s del 90 % de los casos son posteriores al a\xF1o 2000.\n\nEstas son solo cifras oficiales: no incluyen los casos que nunca se denunciaron."
     pensamiento: 0
   - clave: D4_texto
     quien: ""
