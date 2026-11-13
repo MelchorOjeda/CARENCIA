@@ -26,7 +26,8 @@ public class SillaSentable : MonoBehaviour
     private float inicio;
     private Vector2 dondeEstaba;
     private Rigidbody2D cuerpo;
-    private bool cuerpoSimulado;
+    private RigidbodyType2D tipoCuerpo;
+    private bool contactosCompletos;
 
     public bool Ocupada => ocupada;
 
@@ -101,12 +102,16 @@ public class SillaSentable : MonoBehaviour
         porSecuencia = desdeSecuencia;
         inicio = Time.time;
         dondeEstaba = jugador.transform.position;
-        // La silla está junto a la mesa (con colisión): sin física la colisión no la saca de la silla
+        // La silla está junto a la mesa (con colisión): cinemática, la colisión no la saca de la silla,
+        // pero sigue detectando lo que tiene cerca para revisarlo sentada
         cuerpo = jugador.GetComponent<Rigidbody2D>();
         if (cuerpo != null)
         {
-            cuerpoSimulado = cuerpo.simulated;
-            cuerpo.simulated = false;
+            tipoCuerpo = cuerpo.bodyType;
+            contactosCompletos = cuerpo.useFullKinematicContacts;
+            cuerpo.linearVelocity = Vector2.zero;
+            cuerpo.bodyType = RigidbodyType2D.Kinematic;
+            cuerpo.useFullKinematicContacts = true;
         }
         jugador.Colocar(Asiento);
         if (!desdeSecuencia)
@@ -136,7 +141,10 @@ public class SillaSentable : MonoBehaviour
 
         ocupada = false;
         if (cuerpo != null)
-            cuerpo.simulated = cuerpoSimulado;
+        {
+            cuerpo.bodyType = tipoCuerpo;
+            cuerpo.useFullKinematicContacts = contactosCompletos;
+        }
         if (dibujosJugador != null)
             for (var i = 0; i < dibujosJugador.Length; i++)
                 if (dibujosJugador[i] != null)

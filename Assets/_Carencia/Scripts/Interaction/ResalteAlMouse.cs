@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
-// Muestra el contorno de un objeto del escenario mientras el mouse está sobre su parte visible.
-// Si dos objetos se encuentran bajo el mouse, solo se resalta el que está más al frente.
+// Antes mostraba un contorno amarillo sobre el objeto bajo el mouse. Ya no se muestra: ahora lo indica
+// el cursor espiral (morado sobre algo interactuable). Se conserva para no romper las escenas que lo usan.
 public class ResalteAlMouse : MonoBehaviour
 {
     private static readonly List<ResalteAlMouse> Activos = new List<ResalteAlMouse>();
@@ -33,7 +33,8 @@ public class ResalteAlMouse : MonoBehaviour
 
     private void Update()
     {
-        contorno.enabled = EstaBajoElMouse();
+        if (contorno != null && contorno.enabled)
+            contorno.enabled = false;
     }
 
     private bool EstaBajoElMouse()

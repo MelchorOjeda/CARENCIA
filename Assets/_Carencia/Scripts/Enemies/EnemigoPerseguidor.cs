@@ -89,10 +89,46 @@ public class EnemigoPerseguidor : MonoBehaviour
         proximoGolpe = Time.time + esperaTrasGolpe;
     }
 
+    [Tooltip("Manchas de sangre que deja en el piso al terminar (al explotar). Vacío: no deja nada")]
+    [SerializeField] private Sprite[] manchasAlTerminar = new Sprite[0];
+    [Tooltip("Capa y orden donde se dibujan las manchas: deben quedar encima del piso de la escena")]
+    [SerializeField] private string capaManchas = "Suelo";
+    [SerializeField] private int ordenManchas = 5;
+
+    // Se queda quieto donde está: ni persigue ni lastima (por ejemplo, mientras la cámara muestra a la hermana)
+    public void Detener()
+    {
+        persiguiendo = false;
+    }
+
     public void Terminar()
     {
         persiguiendo = false;
+        DejarManchas();
         gameObject.SetActive(false);
+    }
+
+    // Charcos y salpicaduras alrededor de donde estaba, en el piso; se quedan en la escena
+    private void DejarManchas()
+    {
+        if (manchasAlTerminar == null || manchasAlTerminar.Length == 0)
+            return;
+
+        var raiz = new GameObject("Manchas_" + name).transform;
+        raiz.position = transform.position;
+        var desfases = new[] { Vector2.zero, new Vector2(0.35f, 0.12f), new Vector2(-0.3f, -0.08f), new Vector2(0.12f, -0.2f), new Vector2(-0.18f, 0.18f) };
+        for (var i = 0; i < desfases.Length; i++)
+        {
+            var mancha = new GameObject("Mancha").AddComponent<SpriteRenderer>();
+            mancha.transform.SetParent(raiz, false);
+            mancha.transform.localPosition = desfases[i];
+            var escala = i == 0 ? 0.9f : Random.Range(0.35f, 0.6f);
+            mancha.transform.localScale = new Vector3(escala * (Random.value < 0.5f ? -1f : 1f), escala, 1f);
+            mancha.sprite = manchasAlTerminar[i % manchasAlTerminar.Length];
+            mancha.color = new Color(0.55f, 0.04f, 0.05f, 0.92f);
+            mancha.sortingLayerName = capaManchas;
+            mancha.sortingOrder = ordenManchas;
+        }
     }
 
     private void Update()

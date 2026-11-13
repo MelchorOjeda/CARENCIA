@@ -28,6 +28,7 @@ public class Interactable : MonoBehaviour
     public UnityEvent AlInteractuar => alInteractuar;
     public bool SoloConClic => soloConClic;
     public string Accion => accion;
+    public GameObject Indicador => indicador;
     public bool Completado { get; private set; }
 
     public bool Bloqueado

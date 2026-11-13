@@ -59,6 +59,10 @@ public class Secuencia : MonoBehaviour
         Forcejeo,
         // Sacude la cámara: valor es la fuerza, valor2 los segundos
         Sacudir,
+        // Pista de lo que hay que hacer, en la esquina superior izquierda; texto vacío la quita
+        Objetivo,
+        // Detiene a un enemigo donde está, sin desaparecerlo (deja de perseguir y de lastimar)
+        DetenerEnemigo,
     }
 
     [Serializable]
@@ -217,6 +221,10 @@ public class Secuencia : MonoBehaviour
                 yield return null;
                 while (vista.Abierta)
                     yield return null;
+                // La vista libera la interacción un cuadro después de cerrarse: si una línea empieza antes,
+                // la guarda bloqueada y al terminar la deja así para siempre
+                yield return null;
+                yield return null;
                 break;
             case Tipo.Dialogo:
                 yield return Dialogo(paso.texto);
@@ -278,6 +286,13 @@ public class Secuencia : MonoBehaviour
                 break;
             case Tipo.Sacudir:
                 SacudidaCamara.Sacudir(paso.valor, paso.valor2);
+                break;
+            case Tipo.Objetivo:
+                pantalla.SetObjetivo(paso.texto);
+                break;
+            case Tipo.DetenerEnemigo:
+                if (paso.referencia is EnemigoPerseguidor detenido)
+                    detenido.Detener();
                 break;
         }
     }

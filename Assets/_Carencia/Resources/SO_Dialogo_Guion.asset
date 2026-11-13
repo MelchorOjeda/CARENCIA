@@ -648,3 +648,11 @@ MonoBehaviour:
     quien: "Elaki"
     texto: "Siempre pon\xEDan las noticias a esta hora."
     pensamiento: 1
+  - clave: R_altar
+    quien: "Elaki"
+    texto: "Las flores siempre est\xE1n frescas. Mam\xE1 no deja que se marchiten."
+    pensamiento: 1
+  - clave: R_armario
+    quien: "Elaki"
+    texto: "Aqu\xED guardamos las cobijas del invierno. Huele a naftalina."
+    pensamiento: 1
