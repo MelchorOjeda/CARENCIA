@@ -24,7 +24,7 @@ public class PenumbraNivel : MonoBehaviour
     // La pantalla sobrevive al cambio de escena: al salir del nivel vuelve la penumbra de siempre
     private void OnDestroy()
     {
-        if (PantallaJuego.Instancia != null)
+        if (PantallaJuego.Existe)
         {
             PantallaJuego.Instancia.RestaurarPenumbra();
             PantallaJuego.Instancia.SetMirada(0f);

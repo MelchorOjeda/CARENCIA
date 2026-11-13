@@ -215,6 +215,10 @@ public class Secuencia : MonoBehaviour
                 yield return null;
                 while (vista.Abierta)
                     yield return null;
+                // La vista libera la interacción un cuadro después de cerrarse; si el paso siguiente (un diálogo)
+                // empezara antes, guardaría "bloqueada" como el estado a restaurar y Elaki ya no podría usar nada
+                yield return null;
+                yield return null;
                 break;
             case Tipo.Dialogo:
                 yield return Dialogo(paso.texto);
