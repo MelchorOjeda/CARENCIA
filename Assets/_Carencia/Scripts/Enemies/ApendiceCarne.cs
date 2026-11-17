@@ -29,6 +29,8 @@ public class ApendiceCarne : MonoBehaviour
     [SerializeField] private float desfase;
 
     [Header("Golpe")]
+    [Tooltip("Desactivado: solo empuja a Elaki (cierra el paso) sin lastimarla. En el Nivel 3 no hay muerte (GDD, SC-03)")]
+    [SerializeField] private bool lastima = true;
     [SerializeField] private float empuje = 0.45f;
     [SerializeField] private AudioSource latigazo;
 
@@ -193,7 +195,8 @@ public class ApendiceCarne : MonoBehaviour
             return;
 
         proximoGolpe = Time.time + 1.2f;
-        salud.Golpear();
+        if (lastima)
+            salud.Golpear();
 
         // La empuja de lado, alejándola del apéndice (hacia donde estaba), para que tenga que esperar a que se esconda
         var normal = new Vector2(-segmento.y, segmento.x).normalized;

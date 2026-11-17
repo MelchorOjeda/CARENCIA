@@ -25,7 +25,11 @@ public class MenuPrincipal : MonoBehaviour
     [SerializeField] private Sprite vinetaMenu;
     [SerializeField] private Sprite vinetaOpciones;
 
+    // Bandera que deja el desenlace: al llegar con ella se muestra primero el fin del demo
+    private const string BanderaFin = "desenlace";
+
     private readonly AccionUnica salida = new AccionUnica();
+    private GameObject pantallaFin;
     private (string escena, DateTime fecha)? partida;
 
     private void Awake()
@@ -42,11 +46,26 @@ public class MenuPrincipal : MonoBehaviour
         LeerPartida();
         pantallaOpciones.gameObject.SetActive(false);
         nota.gameObject.SetActive(false);
-        MostrarInicio();
+        if (EstadoJuego.Tiene(BanderaFin))
+        {
+            EstadoJuego.Quitar(BanderaFin);
+            MostrarFin();
+        }
+        else
+        {
+            MostrarInicio();
+        }
     }
 
     private void Update()
     {
+        if (pantallaFin != null)
+        {
+            if (ControlesMenu.Pulso(ControlesMenu.Confirmar))
+                VolverDelFin();
+            return;
+        }
+
         if (pantallaInicio.activeSelf && ControlesMenu.Pulso(ControlesMenu.CualquierTecla))
             MostrarMenu(Jugar);
         else if (pantallaMenu.activeSelf && lista.Activa && !nota.Abierta && ControlesMenu.Pulso(ControlesMenu.Volver))
@@ -57,6 +76,61 @@ public class MenuPrincipal : MonoBehaviour
     {
         pantallaInicio.SetActive(true);
         pantallaMenu.SetActive(false);
+    }
+
+    // Fin del demo con el mismo diseño del menú: título, "Fin del demo", el cartel y una sola opción para volver
+    private void MostrarFin()
+    {
+        pantallaInicio.SetActive(false);
+        pantallaMenu.SetActive(false);
+        vineta.sprite = vinetaMenu;
+
+        // La copia se hace con el menú apagado: así ninguno de sus scripts arranca antes de ajustarla
+        pantallaFin = Instantiate(pantallaMenu, pantallaMenu.transform.parent);
+        pantallaFin.name = "PantallaFin";
+        pantallaFin.transform.SetSiblingIndex(pantallaMenu.transform.GetSiblingIndex() + 1);
+        var raiz = pantallaFin.transform;
+
+        var frase = raiz.Find("Frase").GetComponent<TMP_Text>();
+        var gracias = Instantiate(frase.gameObject, raiz).GetComponent<TMP_Text>();
+        gracias.name = "Gracias";
+        gracias.text = "Gracias por jugar.";
+        gracias.fontSize = 24f;
+        ((RectTransform)gracias.transform).anchoredPosition = ((RectTransform)frase.transform).anchoredPosition + new Vector2(0f, -66f);
+        frase.text = "Fin del demo";
+        frase.fontSize = 48f;
+        frase.color = new Color32(0xEC, 0xE6, 0xD8, 0xFF);
+        ((RectTransform)frase.transform).sizeDelta = new Vector2(900f, 64f);
+
+        var opciones = raiz.Find("Opciones");
+        DestroyImmediate(opciones.GetComponent<ListaOpciones>());
+        ((RectTransform)opciones).anchoredPosition += new Vector2(0f, -90f);
+        foreach (var nombre in new[] { "Continuar", "Ajustes", "Salir" })
+            DestroyImmediate(opciones.Find(nombre).gameObject);
+        var volver = opciones.Find("Jugar").GetComponent<OpcionMenu>();
+        volver.CambiarTexto("Volver al menú principal");
+        ((RectTransform)volver.transform).sizeDelta = new Vector2(1100f, 100f);
+        foreach (var texto in volver.GetComponentsInChildren<TMP_Text>(true))
+            ((RectTransform)texto.transform).sizeDelta = new Vector2(1050f, 96f);
+        volver.Pulsada += _ => VolverDelFin();
+
+        var ayuda = raiz.Find("Ayuda");
+        foreach (Transform tecla in ayuda)
+            if (!tecla.name.Contains("Enter"))
+                tecla.gameObject.SetActive(false);
+
+        raiz.Find("Cartel/Detalle").GetComponent<TMP_Text>().text = "Nadie sabe quién es.";
+
+        pantallaFin.SetActive(true);
+        volver.MostrarEnfoque(true);
+        ControlesMenu.Bloquear();
+    }
+
+    private void VolverDelFin()
+    {
+        Destroy(pantallaFin);
+        pantallaFin = null;
+        MostrarMenu(Jugar);
     }
 
     private void MostrarMenu(int enfocada)
