@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 11500000, guid: cb7b062fb8f995cddb7ce9dd78236583, type: 3}
   m_Name: TILE_R_ParedDer
-  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
+  m_EditorClassIdentifier: Assembly-CSharp::TileVariado
   m_Sprite: {fileID: 21300000, guid: 2862528a0644ee24bb8ccc2cf3bc9b45, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
@@ -34,3 +34,10 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 1
   m_ColliderType: 0
+  variantes:
+  - {fileID: 21300000, guid: cd34ee6a7c96c55c8adec9c6a5ff6f1f, type: 3}
+  - {fileID: 21300000, guid: 8bf67e70902a34fa6ace6f5d789960c0, type: 3}
+  pesoLimpio: 3
+  pesosVariantes:
+  - 1
+  - 1

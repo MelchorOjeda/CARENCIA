@@ -656,6 +656,18 @@ MonoBehaviour:
     quien: "Elaki"
     texto: "Aqu\xED hac\xEDamos la tarea juntos. Ahora solo est\xE1 mi laptop."
     pensamiento: 1
+  - clave: R_fregadero
+    quien: "Elaki"
+    texto: "Los trastes de anoche siguen aquí."
+    pensamiento: 1
+  - clave: R_estufa
+    quien: "Elaki"
+    texto: "Mamá siempre deja algo en la lumbre."
+    pensamiento: 1
+  - clave: R_cuarto_padres
+    quien: "Elaki"
+    texto: "El cuarto de mis padres, me tienen prohibido entrar."
+    pensamiento: 1
   - clave: R_television
     quien: "Elaki"
     texto: "Siempre pon\xEDan las noticias a esta hora."

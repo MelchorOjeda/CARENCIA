@@ -1,4 +1,4 @@
-"""
+ """
 Script de generacion de sprites de la Cama de Elaki para 'Carencia'.
 Version perfeccionada con drapeados organicos y pixel-art artesanal.
 Medidas oficiales segun Docs/MEDIDAS.md y assets cuarto.png:
