@@ -63,6 +63,10 @@ public class Secuencia : MonoBehaviour
         Objetivo,
         // Detiene a un enemigo donde está, sin desaparecerlo (deja de perseguir y de lastimar)
         DetenerEnemigo,
+        // Pantalla en negro por encima de todo con un texto (clave del guion o texto) o una imagen (referencia).
+        // valor: segundos en pantalla (0 = hasta que el jugador avance). valor2 = 1: al terminar se queda en negro
+        // (para que la siguiente cinemática empiece sin ver el escenario). Sin texto ni imagen, quita el negro.
+        PantallaNegra,
     }
 
     [Serializable]
@@ -95,6 +99,7 @@ public class Secuencia : MonoBehaviour
     private InputAction accionInteractuar;
     private InputAction accionCancelar;
     private InputAction accionClic;
+    private InputAction accionAvanzar;
 
     private string Bandera => "sec_" + id;
 
@@ -130,6 +135,7 @@ public class Secuencia : MonoBehaviour
         accionInteractuar = InputSystem.actions.FindAction("Player/Interact", true);
         accionCancelar = InputSystem.actions.FindAction("UI/Cancel", true);
         accionClic = InputSystem.actions.FindAction("UI/Click", true);
+        accionAvanzar = InputSystem.actions.FindAction("UI/Submit", true);
 
         foreach (var paso in pasos)
             yield return EjecutarPaso(paso);
@@ -234,6 +240,9 @@ public class Secuencia : MonoBehaviour
                 break;
             case Tipo.Marcador:
                 yield return Marcador(paso.texto, paso.valor);
+                break;
+            case Tipo.PantallaNegra:
+                yield return PantallaNegra(paso.texto, paso.referencia as Sprite, paso.valor, paso.valor2 > 0.5f);
                 break;
             case Tipo.EjecutarSiBanderas:
                 if (paso.texto.Split(',').All(b => EstadoJuego.Tiene(b.Trim())))
@@ -436,6 +445,48 @@ public class Secuencia : MonoBehaviour
         pantalla.MostrarImagen(null);
         yield return null;
         Bloquear(false);
+    }
+
+    private IEnumerator PantallaNegra(string clave, Sprite imagen, float segundos, bool quedarseEnNegro)
+    {
+        var pantalla = PantallaJuego.Instancia;
+        var texto = TextoDeGuion(clave);
+        if (string.IsNullOrEmpty(texto) && imagen == null)
+        {
+            yield return pantalla.FundirPantallaNegra(0f, 0.6f, null, null);
+            yield break;
+        }
+
+        yield return pantalla.FundirPantallaNegra(1f, 0.6f, texto, imagen);
+
+        if (segundos > 0f)
+        {
+            yield return new WaitForSeconds(segundos);
+        }
+        else
+        {
+            // Tiempo mínimo para que una pulsación anterior no lo salte; después avanza con Enter, E o clic
+            yield return new WaitForSeconds(1.2f);
+            while (!(accionAvanzar.WasPressedThisFrame() || accionInteractuar.WasPressedThisFrame() || accionClic.WasPressedThisFrame())
+                   || Time.timeScale == 0f)
+                yield return null;
+        }
+
+        if (quedarseEnNegro)
+            yield return pantalla.QuitarContenidoPantallaNegra(0.5f);
+        else
+            yield return pantalla.FundirPantallaNegra(0f, 0.6f, null, null);
+    }
+
+    // Una clave del guion se cambia por su texto; sus páginas se leen de corrido en un solo párrafo
+    private static string TextoDeGuion(string clave)
+    {
+        if (string.IsNullOrEmpty(clave))
+            return clave;
+
+        var guion = Resources.Load<GuionDialogos>(GuionDialogos.RutaEnResources);
+        var linea = guion != null ? guion.lineas.Find(l => l.clave == clave) : null;
+        return linea != null ? linea.texto.Replace("\n\n", " ") : clave;
     }
 
     // La caja vacía queda abierta hasta que el jugador la cierra
