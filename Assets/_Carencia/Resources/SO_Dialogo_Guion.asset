@@ -392,13 +392,13 @@ MonoBehaviour:
     quien: "Elaki"
     texto: "Te encontr\xE9."
     pensamiento: 1
-  - clave: N3_9_margarita
-    quien: "Margarita"
-    texto: "\xBFPor qu\xE9 tardaste tanto?"
-    pensamiento: 0
-  - clave: N3_9_elaki
+  - clave: N3_9_elaki_1
     quien: "Elaki"
-    texto: "\xBFMargarita\u2026?"
+    texto: "\xA1\xBFMar?! Eres t\xFA!!!"
+    pensamiento: 0
+  - clave: N3_9_elaki_2
+    quien: "Elaki"
+    texto: "ESPERA! TE NECESITO!!!"
     pensamiento: 0
   - clave: D3_noticiero
     quien: "Noticiero"

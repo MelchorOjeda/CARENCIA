@@ -23879,11 +23879,11 @@ MonoBehaviour:
   video: {fileID: 1357250575}
   subtitulo: {fileID: 1680732177}
   claves:
-  - N3_9_margarita
-  - N3_9_elaki
+  - N3_9_elaki_1
+  - N3_9_elaki_2
   tiempos:
   - {x: 4.5, y: 7.8}
-  - {x: 8.3, y: 11}
+  - {x: 8.3, y: 11.5}
 --- !u!114 &1357250581
 MonoBehaviour:
   m_ObjectHideFlags: 0
