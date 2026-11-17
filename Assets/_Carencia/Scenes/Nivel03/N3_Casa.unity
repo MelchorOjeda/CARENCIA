@@ -23609,7 +23609,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1357250573}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 1c9f397e361960747b4060baa983212e, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: c1af208135e341040ac09f14174a8bff, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -24341,7 +24341,7 @@ MonoBehaviour:
   sonidoAgua: {fileID: 8300000, guid: 2a64da24997546d6a3275b9161c1b07b, type: 3}
   esperaFinal: 4
   cinematica: {fileID: 1357250573}
-  duracionCinematica: 6.3333335
+  duracionCinematica: 0
   alTerminar: {fileID: 1417286696}
 --- !u!1 &1405120450
 GameObject:
