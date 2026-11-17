@@ -13638,40 +13638,50 @@ MonoBehaviour:
     valor2: 0
     texto: 
     referencia: {fileID: 1916579161}
+  - tipo: 35
+    valor: 0
+    valor2: 0
+    texto: 
+    referencia: {fileID: 0}
   - tipo: 0
     valor: 35.866665
     valor2: 0
     texto: 
     referencia: {fileID: 0}
-  - tipo: 7
-    valor: 1
-    valor2: 0
-    texto: 
-    referencia: {fileID: 1473597462}
+  - tipo: 35
+    valor: 0
+    valor2: 1
+    texto: D4_texto
+    referencia: {fileID: 0}
   - tipo: 8
     valor: 1
     valor2: 0
     texto: 
     referencia: {fileID: 1916579161}
-  - tipo: 0
-    valor: 18
-    valor2: 0
-    texto: 
-    referencia: {fileID: 0}
   - tipo: 7
     valor: 1
     valor2: 0
     texto: 
     referencia: {fileID: 2027917192}
-  - tipo: 8
-    valor: 1
+  - tipo: 0
+    valor: 0.3
     valor2: 0
     texto: 
-    referencia: {fileID: 1473597462}
+    referencia: {fileID: 0}
+  - tipo: 35
+    valor: 0
+    valor2: 0
+    texto: 
+    referencia: {fileID: 0}
   - tipo: 0
     valor: 6
     valor2: 0
     texto: 
+    referencia: {fileID: 0}
+  - tipo: 35
+    valor: 0
+    valor2: 1
+    texto: D5_cierre
     referencia: {fileID: 0}
   - tipo: 8
     valor: 1
@@ -13679,7 +13689,7 @@ MonoBehaviour:
     texto: 
     referencia: {fileID: 2027917192}
   - tipo: 0
-    valor: 2
+    valor: 1
     valor2: 0
     texto: 
     referencia: {fileID: 0}
@@ -24293,6 +24303,7 @@ GameObject:
   - component: {fileID: 1916579165}
   - component: {fileID: 1916579164}
   - component: {fileID: 1916579163}
+  - component: {fileID: 1916579168}
   m_Layer: 0
   m_Name: NoticiaHermanaImagen
   m_TagString: Untagged
@@ -24373,8 +24384,9 @@ MonoBehaviour:
   subtitulo: {fileID: 1976038929}
   lineas:
   - "Este 25 de diciembre, la Fiscal\xEDa confirm\xF3 que el cuerpo localizado el pasado 21 de diciembre en un lote bald\xEDo"
-  - "en Cuautitl\xE1n Izcalli corresponde a Margarita Flores Hern\xE1ndez, de 16 a\xF1os,"
+  - "en Cuautitl\xE1n Izcalli corresponde a Margarita Flores Hern\xE1ndez, de 19 a\xF1os, estudiante universitaria,"
   - desaparecida desde el 31 de octubre.
+  - "Su \xFAltimo mensaje a sus padres, enviado a las 10:30 de la noche, dec\xEDa: \xABYa sal\xED de la universidad, voy para la casa\xBB."
   - Su caso se suma al Registro Nacional de Personas Desaparecidas y No Localizadas, que ya supera las 135 mil personas;
   - "m\xE1s del 90 % de los casos son posteriores al a\xF1o 2000."
   - 'Estas son solo cifras oficiales: no incluyen los casos que nunca se denunciaron.'
@@ -24382,7 +24394,8 @@ MonoBehaviour:
   - {x: 0.5, y: 7.9}
   - {x: 8.35, y: 13.35}
   - {x: 13.8, y: 16.4}
-  - {x: 16.85, y: 24.583}
+  - {x: 16.85, y: 20.7}
+  - {x: 20.75, y: 24.583}
   - {x: 25.033, y: 28.633}
   - {x: 29.083, y: 34.417}
 --- !u!114 &1916579165
@@ -24411,7 +24424,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: ef3b320df4af1254ca2092e4f9aa55cc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -24519,6 +24532,31 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 120
   m_TargetDisplay: 0
+--- !u!169 &1916579168
+AudioLowPassFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916579161}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_LowpassResonanceQ: 1
+  lowpassLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.14506593
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1971590332
 GameObject:
   m_ObjectHideFlags: 0
