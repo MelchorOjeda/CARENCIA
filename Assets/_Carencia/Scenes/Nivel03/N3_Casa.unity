@@ -6341,16 +6341,16 @@ MonoBehaviour:
     valor2: 0.5
     texto: 
     referencia: {fileID: 0}
-  - tipo: 3
-    valor: 1
+  - tipo: 0
+    valor: 1.5
     valor2: 0
     texto: 
     referencia: {fileID: 0}
-  - tipo: 23
+  - tipo: 7
     valor: 1
     valor2: 0
-    texto: llego_bano
-    referencia: {fileID: 1191800991}
+    texto: 
+    referencia: {fileID: 1397045254}
 --- !u!1 &459484069
 GameObject:
   m_ObjectHideFlags: 0
