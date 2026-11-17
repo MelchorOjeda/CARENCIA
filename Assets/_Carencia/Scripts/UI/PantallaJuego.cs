@@ -261,6 +261,127 @@ public class PantallaJuego : MonoBehaviour
 
         // La caja de diálogo sube sobre el fundido: lo que se dice a oscuras (el "Ayuda." del desmayo) se sigue leyendo
         caja.transform.SetAsLastSibling();
+
+        CrearPantallaNegra();
+    }
+
+    // ---------- Pantalla negra con texto o imagen (desenlace: carteles, texto del joven ahogado, cierre) ----------
+    // Va por encima de todo, también de los lienzos de video de la escena, para que entre una cinemática y otra
+    // nunca se vea el escenario de fondo.
+
+    private CanvasGroup pantallaNegra;
+    private CanvasGroup contenidoNegra;
+    private TextMeshProUGUI textoNegra;
+    private Image imagenNegra;
+
+    public bool PantallaNegraVisible => pantallaNegra != null && pantallaNegra.gameObject.activeSelf;
+
+    private void CrearPantallaNegra()
+    {
+        var fondo = Capa("PantallaNegra", null);
+        fondo.color = Color.black;
+        // Lienzo propio: los lienzos de las cinemáticas del desenlace van en el orden 120, sobre esta pantalla (100);
+        // el negro debe quedar encima de ellos y debajo del menú de pausa (150)
+        var lienzo = fondo.gameObject.AddComponent<Canvas>();
+        lienzo.overrideSorting = true;
+        lienzo.sortingOrder = 140;
+        pantallaNegra = fondo.gameObject.AddComponent<CanvasGroup>();
+        pantallaNegra.blocksRaycasts = false;
+        pantallaNegra.interactable = false;
+
+        var contenido = new GameObject("Contenido", typeof(RectTransform));
+        contenido.transform.SetParent(fondo.transform, false);
+        var rectContenido = (RectTransform)contenido.transform;
+        rectContenido.anchorMin = Vector2.zero;
+        rectContenido.anchorMax = Vector2.one;
+        rectContenido.offsetMin = rectContenido.offsetMax = Vector2.zero;
+        contenidoNegra = contenido.AddComponent<CanvasGroup>();
+
+        var objetoImagen = new GameObject("Imagen", typeof(RectTransform));
+        objetoImagen.transform.SetParent(contenido.transform, false);
+        var rectImagen = (RectTransform)objetoImagen.transform;
+        rectImagen.anchorMin = new Vector2(0.5f, 0.06f);
+        rectImagen.anchorMax = new Vector2(0.5f, 0.94f);
+        rectImagen.sizeDelta = new Vector2(560f, 0f);
+        imagenNegra = objetoImagen.AddComponent<Image>();
+        imagenNegra.preserveAspect = true;
+        imagenNegra.raycastTarget = false;
+
+        var objetoTexto = new GameObject("Texto", typeof(RectTransform));
+        objetoTexto.transform.SetParent(contenido.transform, false);
+        var rectTexto = (RectTransform)objetoTexto.transform;
+        rectTexto.anchorMin = rectTexto.anchorMax = new Vector2(0.5f, 0.5f);
+        rectTexto.sizeDelta = new Vector2(500f, 300f);
+        textoNegra = objetoTexto.AddComponent<TextMeshProUGUI>();
+        var guion = Resources.Load<GuionDialogos>(GuionDialogos.RutaEnResources);
+        if (guion != null && guion.Fuente != null)
+            textoNegra.font = guion.Fuente;
+        textoNegra.fontSize = 16f;
+        textoNegra.lineSpacing = 12f;
+        textoNegra.alignment = TextAlignmentOptions.Center;
+        textoNegra.color = new Color32(0xFA, 0xF6, 0xEE, 0xFF);
+        textoNegra.raycastTarget = false;
+
+        fondo.gameObject.SetActive(false);
+    }
+
+    // Con alfa 1: el negro cubre todo al instante (nunca deja ver el escenario a medias) y el texto o la imagen
+    // aparecen poco a poco. Con alfa 0: el negro se desvanece y deja ver lo que haya debajo (una cinemática).
+    public IEnumerator FundirPantallaNegra(float alfa, float duracion, string texto, Sprite imagen)
+    {
+        CanvasGroup grupo;
+        if (alfa > 0f)
+        {
+            textoNegra.text = texto ?? "";
+            textoNegra.gameObject.SetActive(!string.IsNullOrEmpty(texto));
+            imagenNegra.sprite = imagen;
+            imagenNegra.gameObject.SetActive(imagen != null);
+            contenidoNegra.alpha = 0f;
+            pantallaNegra.alpha = 1f;
+            pantallaNegra.gameObject.SetActive(true);
+            pantallaNegra.transform.SetAsLastSibling();
+            grupo = contenidoNegra;
+        }
+        else
+        {
+            if (!PantallaNegraVisible)
+                yield break;
+            grupo = pantallaNegra;
+        }
+
+        var inicio = grupo.alpha;
+        for (var t = 0f; t < duracion; t += Time.unscaledDeltaTime)
+        {
+            grupo.alpha = Mathf.Lerp(inicio, alfa, t / duracion);
+            yield return null;
+        }
+
+        grupo.alpha = alfa;
+        pantallaNegra.alpha = alfa > 0f ? 1f : 0f;
+        if (alfa <= 0f)
+            pantallaNegra.gameObject.SetActive(false);
+    }
+
+    // Quita el texto o la imagen pero deja el negro (para que la siguiente cinemática empiece sin ver el escenario)
+    public IEnumerator QuitarContenidoPantallaNegra(float duracion)
+    {
+        if (!PantallaNegraVisible)
+            yield break;
+
+        var inicio = contenidoNegra.alpha;
+        for (var t = 0f; t < duracion; t += Time.unscaledDeltaTime)
+        {
+            contenidoNegra.alpha = Mathf.Lerp(inicio, 0f, t / duracion);
+            yield return null;
+        }
+
+        contenidoNegra.alpha = 0f;
+    }
+
+    public void OcultarPantallaNegra()
+    {
+        if (pantallaNegra != null)
+            pantallaNegra.gameObject.SetActive(false);
     }
 
     private Image Capa(string nombre, Sprite sprite)
@@ -692,6 +813,9 @@ public class PantallaJuego : MonoBehaviour
         // se oculta aquí, antes del Start de la escena nueva, para que sus diálogos no esperen turno para siempre
         if (instancia != null && instancia.caja != null && instancia.caja.Visible)
             instancia.caja.Ocultar();
+        // La pantalla negra del desenlace no pasa al menú (la carga ya está en negro con el fundido)
+        if (instancia != null)
+            instancia.OcultarPantallaNegra();
         // La música de una persecución no sigue en la escena siguiente
         if (instancia != null && instancia.fuenteMusica != null)
             instancia.ReproducirMusica(null);

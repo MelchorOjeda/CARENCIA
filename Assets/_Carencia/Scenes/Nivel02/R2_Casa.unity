@@ -2555,6 +2555,7 @@ Transform:
   - {fileID: 1102002661}
   - {fileID: 542006094}
   - {fileID: 551581227}
+  - {fileID: 939624380}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &163034215
@@ -6628,6 +6629,11 @@ MonoBehaviour:
   - tipo: 23
     valor: 1
     valor2: 0
+    texto: ob_periodico
+    referencia: {fileID: 939624381}
+  - tipo: 23
+    valor: 1
+    valor2: 0
     texto: ob_lugar,ob_madre,ob_comida,ob_periodico
     referencia: {fileID: 738545075}
 --- !u!1 &531087913
@@ -7646,12 +7652,12 @@ Transform:
   m_GameObject: {fileID: 586537069}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5760417, y: 9.49, z: 0}
+  m_LocalPosition: {x: 0.20000005, y: -0.010000229, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1101218745}
-  m_Father: {fileID: 616625938}
+  m_Father: {fileID: 1909578094}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &602597324
 GameObject:
@@ -8150,7 +8156,6 @@ Transform:
   - {fileID: 62845695}
   - {fileID: 260338777}
   - {fileID: 484736185}
-  - {fileID: 586537071}
   - {fileID: 1277789163}
   - {fileID: 1859740507}
   - {fileID: 2094749371}
@@ -14007,7 +14012,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 847568101}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: cc5f2c877f351fc41a634c74e12a128f, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 7a34904a68fdebb4c92354c4ad121e29, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -14021,14 +14026,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 0
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01o
-  m_DirectAudioMutes: 00o
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -14882,6 +14885,61 @@ PolygonCollider2D:
       - {x: -0.5833334, y: 0.03125}
       - {x: -0.21875, y: 0.4375}
   m_UseDelaunayMesh: 1
+--- !u!1 &939624379
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 939624380}
+  - component: {fileID: 939624381}
+  m_Layer: 0
+  m_Name: Sec_r2_pista_mesa
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939624380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939624379}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 160603447}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &939624381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 939624379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fccd343a7abe7340951522cdeaa4320, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Secuencia
+  id: r2_pista_mesa
+  requiere: 
+  prohibe: ob_lugar
+  unaVez: 0
+  alIniciar: 0
+  pasos:
+  - tipo: 33
+    valor: 1
+    valor2: 0
+    texto: Revisa la mesa
+    referencia: {fileID: 0}
 --- !u!1 &950410956
 GameObject:
   m_ObjectHideFlags: 0
@@ -29632,6 +29690,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 378243036}
+  - {fileID: 586537071}
   m_Father: {fileID: 616625938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1909578095
@@ -34155,7 +34214,7 @@ MonoBehaviour:
   - tipo: 33
     valor: 1
     valor2: 0
-    texto: Revisa la mesa
+    texto: "Revisa el peri\xF3dico"
     referencia: {fileID: 0}
   - tipo: 10
     valor: 1

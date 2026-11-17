@@ -51,6 +51,12 @@ public static class EstadoJuego
             Banderas.Add(bandera);
     }
 
+    public static void Quitar(string bandera)
+    {
+        if (!string.IsNullOrEmpty(bandera))
+            Banderas.Remove(bandera);
+    }
+
     public static void GuardarPunto(string escena, string entrada)
     {
         EscenaControl = escena;
