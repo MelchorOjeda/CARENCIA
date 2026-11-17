@@ -18136,7 +18136,7 @@ Transform:
   m_GameObject: {fileID: 1189753355}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.5, y: 16.35, z: 0}
+  m_LocalPosition: {x: 15, y: 16.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18191,7 +18191,7 @@ SpriteRenderer:
   m_SortingLayer: 3
   m_SortingOrder: 0
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 21300000, guid: 508e4621779234a47a9a3de64f0d08b5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b3da14b37a9d44d0a4c74939ad4ba86f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -18215,10 +18215,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
   puntos:
-  - {x: -0.87041664, y: -0.023540497}
-  - {x: -0.56791687, y: -0.17479134}
-  - {x: -0.19208336, y: 0.013124466}
-  - {x: -0.49458313, y: 0.1643734}
+  - {x: -0.37441635, y: 0.21729088}
+  - {x: 0.0013408661, y: 0.029411316}
+  - {x: 0.4319086, y: 0.24469376}
+  - {x: 0.056150436, y: 0.43257523}
   colision: 1
   ordenDinamico: 1
   seguidores: []
