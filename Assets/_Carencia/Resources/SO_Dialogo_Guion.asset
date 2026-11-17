@@ -392,6 +392,14 @@ MonoBehaviour:
     quien: "Elaki"
     texto: "Te encontr\xE9."
     pensamiento: 1
+  - clave: N3_9_margarita
+    quien: "Margarita"
+    texto: "\xBFPor qu\xE9 tardaste tanto?"
+    pensamiento: 0
+  - clave: N3_9_elaki
+    quien: "Elaki"
+    texto: "\xBFMargarita\u2026?"
+    pensamiento: 0
   - clave: D3_noticiero
     quien: "Noticiero"
     texto: "Este 25 de diciembre, la Fiscal\xEDa confirm\xF3 que el cuerpo localizado el pasado 21 de diciembre en un lote bald\xEDo\n\nen Cuautitl\xE1n Izcalli corresponde a Margarita Flores Hern\xE1ndez, de 19 a\xF1os, estudiante universitaria,\n\ndesaparecida desde el 31 de octubre.\n\nSu \xFAltimo mensaje a sus padres, enviado a las 10:30 de la noche, dec\xEDa: \xABYa sal\xED de la universidad, voy para la casa\xBB.\n\nSu caso se suma al Registro Nacional de Personas Desaparecidas y No Localizadas, que ya supera las 135 mil personas;\n\nm\xE1s del 90 % de los casos son posteriores al a\xF1o 2000.\n\nEstas son solo cifras oficiales: no incluyen los casos que nunca se denunciaron."
