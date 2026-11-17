@@ -6230,14 +6230,12 @@ VideoPlayer:
   m_TimeUpdateMode: 2
   m_PlaybackSpeed: 1
   m_AudioOutputMode: 0
-  m_TargetAudioSources:
-  - {fileID: 0}
-  m_DirectAudioVolumes:
-  - 1
+  m_TargetAudioSources: []
+  m_DirectAudioVolumes: []
   m_Url: 
-  m_EnabledAudioTracks: 01o
-  m_DirectAudioMutes: 00o
-  m_ControlledAudioTrackCount: 1
+  m_EnabledAudioTracks: 
+  m_DirectAudioMutes: 
+  m_ControlledAudioTrackCount: 0
   m_PlayOnAwake: 1
   m_SkipOnDrop: 1
   m_Looping: 1
@@ -7632,7 +7630,6 @@ Transform:
   - {fileID: 82686452}
   - {fileID: 921948476}
   - {fileID: 540723480}
-  - {fileID: 700965721}
   - {fileID: 1423244797}
   - {fileID: 25584142}
   - {fileID: 777657417}
@@ -8821,12 +8818,12 @@ Transform:
   m_GameObject: {fileID: 700965720}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.5760417, y: 10.637709, z: 0}
+  m_LocalPosition: {x: 0.20000005, y: 1.1377087, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 467889188}
-  m_Father: {fileID: 616625938}
+  m_Father: {fileID: 1539918418}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &700965722
 SortingGroup:
@@ -22037,6 +22034,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 661961629}
+  - {fileID: 700965721}
   m_Father: {fileID: 616625938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!210 &1539918419
