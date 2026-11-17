@@ -689,6 +689,7 @@ GameObject:
   m_Component:
   - component: {fileID: 53824977}
   - component: {fileID: 53824978}
+  - component: {fileID: 53824979}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -771,6 +772,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &53824979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 53824976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.5076657, y: -0.3056326}
+  - {x: -0.4079323, y: -0.35549936}
+  - {x: 0.5043335, y: 0.10063361}
+  - {x: 0.40460205, y: 0.15049936}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &73138499
 GameObject:
   m_ObjectHideFlags: 0
@@ -2102,6 +2123,7 @@ GameObject:
   - component: {fileID: 95449239}
   - component: {fileID: 95449238}
   - component: {fileID: 95449240}
+  - component: {fileID: 95449241}
   m_Layer: 0
   m_Name: SPR_OBJ_Television_R
   m_TagString: Untagged
@@ -2231,6 +2253,26 @@ SortingGroup:
   m_SortingOrder: -1
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
+--- !u!114 &95449241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95449235}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.7064581, y: -0.3509369}
+  - {x: -0.70187473, y: -0.35322762}
+  - {x: 0.69604206, y: 0.34572792}
+  - {x: 0.6914587, y: 0.34801865}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &95472806
 GameObject:
   m_ObjectHideFlags: 0
@@ -2945,6 +2987,7 @@ GameObject:
   - component: {fileID: 163034219}
   - component: {fileID: 163034218}
   - component: {fileID: 163034217}
+  - component: {fileID: 163034220}
   m_Layer: 0
   m_Name: SPR_OBJ_LavaboBano_R
   m_TagString: Untagged
@@ -3109,6 +3152,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &163034220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163034215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.86416674, y: 0.047777176}
+  - {x: -0.46694446, y: -0.15083313}
+  - {x: -0.094166696, y: 0.03555584}
+  - {x: -0.49138904, y: 0.23416519}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &168846790
 GameObject:
   m_ObjectHideFlags: 0
@@ -4191,6 +4254,7 @@ GameObject:
   m_Component:
   - component: {fileID: 274755063}
   - component: {fileID: 274755064}
+  - component: {fileID: 274755065}
   m_Layer: 0
   m_Name: SPR_OBJ_BaneraCortina_R
   m_TagString: Untagged
@@ -4273,6 +4337,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &274755065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274755062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -3.7691665, y: -0.9452076}
+  - {x: -2.88, y: -1.3897915}
+  - {x: -0.23083329, y: -0.065208435}
+  - {x: -1.1199999, y: 0.37937546}
+  colision: 1
+  ordenDinamico: 1
+  seguidores:
+  - {fileID: 877770439}
+  - {fileID: 881538414}
 --- !u!1 &287105204
 GameObject:
   m_ObjectHideFlags: 0
@@ -4660,6 +4746,7 @@ GameObject:
   m_Component:
   - component: {fileID: 307197097}
   - component: {fileID: 307197098}
+  - component: {fileID: 307197099}
   m_Layer: 0
   m_Name: SPR_OBJ_SillaComedorFrente_R
   m_TagString: Untagged
@@ -4742,6 +4829,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &307197099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 307197096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.842083, y: -0.009895325}
+  - {x: -0.4364586, y: -0.21270847}
+  - {x: -0.053749084, y: -0.021354675}
+  - {x: -0.45937347, y: 0.18145847}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &316840766
 GameObject:
   m_ObjectHideFlags: 0
@@ -5237,7 +5344,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1767808078
-  m_SortingLayer: 5
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7c314627c56b80a40a8a329dc3edd87b, type: 3}
@@ -6420,6 +6527,7 @@ GameObject:
   m_Component:
   - component: {fileID: 505402463}
   - component: {fileID: 505402464}
+  - component: {fileID: 505402465}
   m_Layer: 0
   m_Name: SPR_OBJ_SillaComedorAtras_R
   m_TagString: Untagged
@@ -6502,6 +6610,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &505402465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 505402462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.8420849, y: -0.020208359}
+  - {x: -0.45708466, y: -0.21270847}
+  - {x: -0.05375099, y: -0.011041641}
+  - {x: -0.43875122, y: 0.18145847}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &507510501
 GameObject:
   m_ObjectHideFlags: 0
@@ -7059,7 +7187,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1767808078
-  m_SortingLayer: 5
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7c314627c56b80a40a8a329dc3edd87b, type: 3}
@@ -7285,6 +7413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 570522127}
   - component: {fileID: 570522128}
+  - component: {fileID: 570522129}
   m_Layer: 0
   m_Name: SPR_OBJ_MesaCentro_R
   m_TagString: Untagged
@@ -7367,6 +7496,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &570522129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 570522126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -1.4956245, y: 0.22614574}
+  - {x: -0.57895756, y: -0.23218727}
+  - {x: -0.05645752, y: 0.029062271}
+  - {x: -0.9731245, y: 0.48739624}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &596067336
 GameObject:
   m_ObjectHideFlags: 0
@@ -8480,6 +8629,7 @@ GameObject:
   m_Component:
   - component: {fileID: 644992703}
   - component: {fileID: 644992704}
+  - component: {fileID: 644992705}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -8562,6 +8712,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &644992705
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 644992702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.40353352, y: -0.18133269}
+  - {x: 0.0056658536, y: -0.38593242}
+  - {x: 0.4001999, y: -0.18866648}
+  - {x: -0.008999506, y: 0.01593325}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &661111499
 GameObject:
   m_ObjectHideFlags: 0
@@ -9285,7 +9455,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1767808078
-  m_SortingLayer: 5
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7c314627c56b80a40a8a329dc3edd87b, type: 3}
@@ -9917,6 +10087,7 @@ GameObject:
   m_Component:
   - component: {fileID: 756646986}
   - component: {fileID: 756646987}
+  - component: {fileID: 756646988}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -9999,6 +10170,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &756646988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 756646985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.45779973, y: -0.32770056}
+  - {x: -0.32873365, y: -0.39223358}
+  - {x: 0.45446607, y: -0.000633657}
+  - {x: 0.3253979, y: 0.063898295}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &758754846
 GameObject:
   m_ObjectHideFlags: 0
@@ -14655,7 +14846,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1767808078
-  m_SortingLayer: 5
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7c314627c56b80a40a8a329dc3edd87b, type: 3}
@@ -15053,6 +15244,7 @@ GameObject:
   - component: {fileID: 915711597}
   - component: {fileID: 915711596}
   - component: {fileID: 915711595}
+  - component: {fileID: 915711598}
   m_Layer: 0
   m_Name: SPR_OBJ_Sofa_R
   m_TagString: Untagged
@@ -15254,6 +15446,26 @@ PolygonCollider2D:
       - {x: -0.4479167, y: -0.2604167}
       - {x: -0.1875, y: -0.13541667}
   m_UseDelaunayMesh: 1
+--- !u!114 &915711598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 915711592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -2.908125, y: 0.6644268}
+  - {x: -0.9315624, y: -0.32385445}
+  - {x: -0.18562508, y: 0.049114227}
+  - {x: -2.1621876, y: 1.0373955}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!114 &921353002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15278,6 +15490,7 @@ GameObject:
   m_Component:
   - component: {fileID: 923388690}
   - component: {fileID: 923388691}
+  - component: {fileID: 923388692}
   m_Layer: 0
   m_Name: SPR_OBJ_MesaPasillo_R
   m_TagString: Untagged
@@ -15360,6 +15573,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &923388692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923388689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -1.7795849, y: -0.33687592}
+  - {x: -1.2570839, y: -0.59812546}
+  - {x: -0.07458305, y: -0.0068740845}
+  - {x: -0.59708405, y: 0.25437546}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &932642306
 GameObject:
   m_ObjectHideFlags: 0
@@ -16308,6 +16541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1014811269}
   - component: {fileID: 1014811270}
+  - component: {fileID: 1014811271}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -16390,6 +16624,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1014811271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1014811268}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.30086672, y: -0.21900123}
+  - {x: -0.16300014, y: -0.28793246}
+  - {x: 0.29753327, y: -0.057665676}
+  - {x: 0.15966654, y: 0.011266824}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1024217099
 GameObject:
   m_ObjectHideFlags: 0
@@ -17206,6 +17460,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1086813849}
   - component: {fileID: 1086813850}
+  - component: {fileID: 1086813851}
   m_Layer: 0
   m_Name: CamaDeCarne
   m_TagString: Untagged
@@ -17288,6 +17543,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1086813851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1086813848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -2.6345832, y: 0.29541683}
+  - {x: -1.0029167, y: -0.52041674}
+  - {x: -0.17791677, y: -0.107916355}
+  - {x: -1.8095832, y: 0.70791626}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1093898929
 GameObject:
   m_ObjectHideFlags: 0
@@ -17874,6 +18149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1121774384}
   - component: {fileID: 1121774385}
+  - component: {fileID: 1121774386}
   m_Layer: 0
   m_Name: SPR_OBJ_Sillon_R
   m_TagString: Untagged
@@ -17956,6 +18232,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1121774386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1121774383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -1.7331247, y: -0.00072956085}
+  - {x: -0.94937515, y: -0.39260483}
+  - {x: -0.11062431, y: 0.026770592}
+  - {x: -0.89437485, y: 0.41864586}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1123311092
 GameObject:
   m_ObjectHideFlags: 0
@@ -19978,6 +20274,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1189753356}
   - component: {fileID: 1189753357}
+  - component: {fileID: 1189753358}
   m_Layer: 0
   m_Name: SPR_OBJ_SillaOficina_R
   m_TagString: Untagged
@@ -20060,6 +20357,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1189753358
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189753355}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.9399996, y: 0.038333893}
+  - {x: -0.52750015, y: -0.16791534}
+  - {x: -0.06000042, y: 0.065834045}
+  - {x: -0.47249985, y: 0.27208328}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1191800990
 GameObject:
   m_ObjectHideFlags: 0
@@ -20189,6 +20506,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1195897784}
   - component: {fileID: 1195897785}
+  - component: {fileID: 1195897786}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -20271,6 +20589,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1195897786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1195897783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.3639332, y: -0.23296605}
+  - {x: 0.017400041, y: -0.42363268}
+  - {x: 0.3605993, y: -0.2520341}
+  - {x: -0.020732883, y: -0.061367944}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1207638051
 GameObject:
   m_ObjectHideFlags: 0
@@ -20803,7 +21141,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1767808078
-  m_SortingLayer: 5
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7c314627c56b80a40a8a329dc3edd87b, type: 3}
@@ -21107,6 +21445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1325889395}
   - component: {fileID: 1325889396}
+  - component: {fileID: 1325889397}
   m_Layer: 0
   m_Name: SPR_OBJ_SillaComedorAtras_R
   m_TagString: Untagged
@@ -21189,6 +21528,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1325889397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1325889394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.8420849, y: -0.020208359}
+  - {x: -0.45708466, y: -0.21270847}
+  - {x: -0.05375099, y: -0.011041641}
+  - {x: -0.43875122, y: 0.18145847}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1331546084
 GameObject:
   m_ObjectHideFlags: 0
@@ -21291,6 +21650,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1336879677}
   - component: {fileID: 1336879678}
+  - component: {fileID: 1336879679}
   m_Layer: 0
   m_Name: Silla
   m_TagString: Untagged
@@ -21327,6 +21687,26 @@ SortingGroup:
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
+--- !u!114 &1336879679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1336879676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.37708342, y: 0.012916565}
+  - {x: -0.0012500286, y: -0.17499971}
+  - {x: 0.35625005, y: 0.0037503242}
+  - {x: -0.019583464, y: 0.19166613}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1353240288
 GameObject:
   m_ObjectHideFlags: 0
@@ -22284,6 +22664,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1360005952}
   - component: {fileID: 1360005953}
+  - component: {fileID: 1360005954}
   m_Layer: 0
   m_Name: SPR_OBJ_Refrigerador_R
   m_TagString: Untagged
@@ -22366,6 +22747,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1360005954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360005951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -1.4099998, y: -0.045000076}
+  - {x: -0.77750015, y: -0.36124992}
+  - {x: -0.09000015, y: -0.017499924}
+  - {x: -0.72249985, y: 0.29874992}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1382008251
 GameObject:
   m_ObjectHideFlags: 0
@@ -23056,6 +23457,7 @@ GameObject:
   - component: {fileID: 1432251225}
   - component: {fileID: 1432251226}
   - component: {fileID: 1432251227}
+  - component: {fileID: 1432251228}
   m_Layer: 0
   m_Name: SPR_OBJ_EscritorioComputadora_R
   m_TagString: Untagged
@@ -23156,6 +23558,26 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 30072ddd1dd64db19346662b46048bd7, type: 3}
   cuadrosPorSegundo: 9
   bucle: 1
+--- !u!114 &1432251228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1432251224}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -2.5054169, y: -0.5385418}
+  - {x: -1.8270826, y: -0.87770844}
+  - {x: -0.1404171, y: -0.034374237}
+  - {x: -0.81875134, y: 0.3047943}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1451577390
 GameObject:
   m_ObjectHideFlags: 0
@@ -23311,6 +23733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1461898599}
   - component: {fileID: 1461898600}
+  - component: {fileID: 1461898601}
   m_Layer: 0
   m_Name: SPR_OBJ_SillaComedorFrente_R
   m_TagString: Untagged
@@ -23393,6 +23816,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1461898601
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1461898598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.842083, y: -0.009895325}
+  - {x: -0.4364586, y: -0.21270847}
+  - {x: -0.053749084, y: -0.021354675}
+  - {x: -0.45937347, y: 0.18145847}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1468623793
 GameObject:
   m_ObjectHideFlags: 0
@@ -23763,6 +24206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1511047968}
   - component: {fileID: 1511047969}
+  - component: {fileID: 1511047970}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -23845,6 +24289,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1511047970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1511047967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.43726656, y: -0.07607858}
+  - {x: -0.07548889, y: -0.25696743}
+  - {x: 0.43393323, y: -0.0022552982}
+  - {x: 0.07215526, y: 0.17863367}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1516230733
 GameObject:
   m_ObjectHideFlags: 0
@@ -24390,6 +24854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1603760903}
   - component: {fileID: 1603760904}
+  - component: {fileID: 1603760905}
   m_Layer: 0
   m_Name: SPR_OBJ_MesaComedor_R
   m_TagString: Untagged
@@ -24472,6 +24937,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1603760905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1603760902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -2.3866653, y: -0.19333267}
+  - {x: -1.4699993, y: -0.65166664}
+  - {x: -0.113334656, y: 0.026666641}
+  - {x: -1.0300007, y: 0.4850006}
+  colision: 1
+  ordenDinamico: 1
+  seguidores:
+  - {fileID: 1570118873}
 --- !u!1 &1607038430
 GameObject:
   m_ObjectHideFlags: 0
@@ -25446,7 +25932,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1767808078
-  m_SortingLayer: 5
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7c314627c56b80a40a8a329dc3edd87b, type: 3}
@@ -30067,7 +30553,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 1767808078
-  m_SortingLayer: 5
+  m_SortingLayer: 13
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 7c314627c56b80a40a8a329dc3edd87b, type: 3}
@@ -31907,6 +32393,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1932798657}
   - component: {fileID: 1932798656}
+  - component: {fileID: 1932798658}
   m_Layer: 0
   m_Name: BaneraCortina
   m_TagString: Untagged
@@ -31943,6 +32430,28 @@ Transform:
   - {fileID: 1939524901}
   m_Father: {fileID: 616625938}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1932798658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932798655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -1.2772121, y: 0.534482}
+  - {x: -0.3102708, y: 0.05101204}
+  - {x: 2.0252209, y: 1.2187586}
+  - {x: 1.0582795, y: 1.7022285}
+  colision: 1
+  ordenDinamico: 1
+  seguidores:
+  - {fileID: 877770439}
+  - {fileID: 881538414}
 --- !u!1 &1934929464
 GameObject:
   m_ObjectHideFlags: 0
@@ -31953,6 +32462,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1934929465}
   - component: {fileID: 1934929466}
+  - component: {fileID: 1934929467}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -32035,6 +32545,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1934929467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1934929464}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.26273346, y: -0.23953374}
+  - {x: -0.09406539, y: -0.32386783}
+  - {x: 0.25940195, y: -0.1471367}
+  - {x: 0.09073384, y: -0.062802635}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1939524900
 GameObject:
   m_ObjectHideFlags: 0
@@ -32991,6 +33521,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1981191059}
   - component: {fileID: 1981191060}
+  - component: {fileID: 1981191061}
   m_Layer: 0
   m_Name: Escritorio
   m_TagString: Untagged
@@ -33032,6 +33563,26 @@ SortingGroup:
   m_SortingOrder: 0
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
+--- !u!114 &1981191061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981191058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.65208316, y: 0.14791632}
+  - {x: 0.26458335, y: -0.3104167}
+  - {x: 0.6312499, y: -0.1270833}
+  - {x: -0.28541636, y: 0.3312497}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1983833297
 GameObject:
   m_ObjectHideFlags: 0
@@ -33044,6 +33595,7 @@ GameObject:
   - component: {fileID: 1983833301}
   - component: {fileID: 1983833300}
   - component: {fileID: 1983833299}
+  - component: {fileID: 1983833302}
   m_Layer: 0
   m_Name: SPR_OBJ_TazaBano_R
   m_TagString: Untagged
@@ -33208,6 +33760,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &1983833302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1983833297}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.8720833, y: 0.03125}
+  - {x: -0.69791675, y: -0.055832863}
+  - {x: -0.065416574, y: 0.26041698}
+  - {x: -0.23958325, y: 0.3475008}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &1988644759
 GameObject:
   m_ObjectHideFlags: 0
@@ -36542,6 +37114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2036480307}
   - component: {fileID: 2036480308}
+  - component: {fileID: 2036480309}
   m_Layer: 0
   m_Name: Dibujo
   m_TagString: Untagged
@@ -36624,6 +37197,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2036480309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2036480306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -0.40940002, y: -0.33055505}
+  - {x: -0.24611117, y: -0.41220045}
+  - {x: 0.4060666, y: -0.086110726}
+  - {x: 0.2427778, y: -0.0044652447}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &2037965213
 GameObject:
   m_ObjectHideFlags: 0
@@ -36665,6 +37258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2043596924}
   - component: {fileID: 2043596925}
+  - component: {fileID: 2043596926}
   m_Layer: 0
   m_Name: SPR_OBJ_ArmarioBulto_R
   m_TagString: Untagged
@@ -36747,6 +37341,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 1
   m_BlendShapeWeights: []
+--- !u!114 &2043596926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043596923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -1.5960407, y: -0.34135437}
+  - {x: -1.1514587, y: -0.5636463}
+  - {x: -0.101875305, y: -0.03885269}
+  - {x: -0.5464554, y: 0.18343925}
+  colision: 1
+  ordenDinamico: 1
+  seguidores: []
 --- !u!1 &2055867477
 GameObject:
   m_ObjectHideFlags: 0
@@ -37211,6 +37825,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2059376404}
   - component: {fileID: 2059376405}
+  - component: {fileID: 2059376406}
   m_Layer: 0
   m_Name: BaneraAbierta
   m_TagString: Untagged
@@ -37247,6 +37862,28 @@ SortingGroup:
   m_SortingOrder: -1
   m_SortAtRoot: 0
   m_Sort3DAs2D: 0
+--- !u!114 &2059376406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2059376403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02b38f0fa81a74ca668593641e934a52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HuellaIso
+  puntos:
+  - {x: -1.2772121, y: 0.534482}
+  - {x: -0.3102708, y: 0.05101204}
+  - {x: 2.0252209, y: 1.2187586}
+  - {x: 1.0582795, y: 1.7022285}
+  colision: 1
+  ordenDinamico: 1
+  seguidores:
+  - {fileID: 877770439}
+  - {fileID: 881538414}
 --- !u!1 &2061511699
 GameObject:
   m_ObjectHideFlags: 0

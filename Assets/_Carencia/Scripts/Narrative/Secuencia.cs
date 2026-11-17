@@ -63,6 +63,8 @@ public class Secuencia : MonoBehaviour
         Objetivo,
         // Detiene a un enemigo donde está, sin desaparecerlo (deja de perseguir y de lastimar)
         DetenerEnemigo,
+        // Vista de una tele (referencia: TeleDatos): E la enciende y muestra el canal; Esc o clic sale
+        VerTele,
     }
 
     [Serializable]
@@ -294,6 +296,9 @@ public class Secuencia : MonoBehaviour
                 if (paso.referencia is EnemigoPerseguidor detenido)
                     detenido.Detener();
                 break;
+            case Tipo.VerTele:
+                yield return VerTele((TeleDatos)paso.referencia);
+                break;
         }
     }
 
@@ -433,6 +438,42 @@ public class Secuencia : MonoBehaviour
         while (!Salir())
             yield return null;
 
+        pantalla.MostrarImagen(null);
+        yield return null;
+        Bloquear(false);
+    }
+
+    // Vista de la tele apagada: E la enciende (estática y luego el canal con su audio); Esc o clic sale
+    private IEnumerator VerTele(TeleDatos tele)
+    {
+        var pantalla = PantallaJuego.Instancia;
+        Bloquear(true);
+        pantalla.MostrarImagen(tele.vista);
+        yield return null;
+
+        var encendida = false;
+        while (!accionCancelar.WasPressedThisFrame() && !accionClic.WasPressedThisFrame())
+        {
+            if (!encendida && accionInteractuar.WasPressedThisFrame())
+            {
+                encendida = true;
+                for (var t = 0f; t < tele.estatica; t += Time.deltaTime)
+                {
+                    pantalla.MostrarEstatica(tele.pantalla);
+                    yield return null;
+                }
+
+                pantalla.MostrarCanal(tele.canal, tele.pantalla);
+                pantalla.ReproducirTele(tele.voz, tele.volumen);
+                pantalla.MostrarLeyendaSalir(true);
+            }
+
+            yield return null;
+        }
+
+        pantalla.ReproducirTele(null);
+        pantalla.MostrarLeyendaSalir(false);
+        pantalla.MostrarCanal(null, default);
         pantalla.MostrarImagen(null);
         yield return null;
         Bloquear(false);

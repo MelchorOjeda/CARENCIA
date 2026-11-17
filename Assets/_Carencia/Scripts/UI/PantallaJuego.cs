@@ -28,6 +28,14 @@ public class PantallaJuego : MonoBehaviour
     private Image imagenVista;
     private Image paredVista;
     private Image pisoVista;
+    // Pantalla de una tele encendida dentro de la vista: fondo negro (barras) y el canal encima
+    private Image pantallaTele;
+    private Image canalTele;
+    private Texture2D texturaEstatica;
+    private Sprite spriteEstatica;
+    private AudioSource fuenteTele;
+    private GameObject leyendaSalir;
+    private Image teclaLeyenda;
     private GameObject video;
     private Image barraVideo;
     private Image imagenVideo;
@@ -118,6 +126,7 @@ public class PantallaJuego : MonoBehaviour
     {
         fuenteEfectos = FuenteDeAudio("Efectos", CategoriaSonido.Efectos, false);
         fuenteMusica = FuenteDeAudio("Musica", CategoriaSonido.Musica, true);
+        fuenteTele = FuenteDeAudio("Tele", CategoriaSonido.Voces, true);
         var canvas = gameObject.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
         canvas.sortingOrder = 100;
@@ -173,6 +182,43 @@ public class PantallaJuego : MonoBehaviour
         objetoImagen.transform.SetParent(vistaImagen.transform, false);
         imagenVista = objetoImagen.AddComponent<Image>();
         imagenVista.raycastTarget = false;
+        var objetoPantalla = new GameObject("PantallaTele", typeof(RectTransform));
+        objetoPantalla.transform.SetParent(objetoImagen.transform, false);
+        pantallaTele = objetoPantalla.AddComponent<Image>();
+        pantallaTele.color = Color.black;
+        pantallaTele.raycastTarget = false;
+        var objetoCanal = new GameObject("Canal", typeof(RectTransform));
+        objetoCanal.transform.SetParent(objetoPantalla.transform, false);
+        var rectCanal = (RectTransform)objetoCanal.transform;
+        rectCanal.anchorMin = Vector2.zero;
+        rectCanal.anchorMax = Vector2.one;
+        rectCanal.offsetMin = rectCanal.offsetMax = Vector2.zero;
+        canalTele = objetoCanal.AddComponent<Image>();
+        canalTele.preserveAspect = true;
+        canalTele.raycastTarget = false;
+        objetoPantalla.SetActive(false);
+
+        // Leyenda "[Esc] Salir" abajo al centro, con la tecla del nivel
+        leyendaSalir = new GameObject("LeyendaSalir", typeof(RectTransform));
+        leyendaSalir.transform.SetParent(vistaImagen.transform, false);
+        var rectLeyenda = (RectTransform)leyendaSalir.transform;
+        rectLeyenda.anchorMin = rectLeyenda.anchorMax = rectLeyenda.pivot = new Vector2(0.5f, 0f);
+        rectLeyenda.sizeDelta = new Vector2(120f, 32f);
+        rectLeyenda.anchoredPosition = new Vector2(0f, 10f);
+        var objetoTecla = new GameObject("Tecla", typeof(RectTransform));
+        objetoTecla.transform.SetParent(leyendaSalir.transform, false);
+        var rectTecla = (RectTransform)objetoTecla.transform;
+        rectTecla.anchorMin = rectTecla.anchorMax = rectTecla.pivot = new Vector2(0f, 0.5f);
+        rectTecla.sizeDelta = new Vector2(52f, 32f); // tecla de 26x16 al doble
+        teclaLeyenda = objetoTecla.AddComponent<Image>();
+        teclaLeyenda.raycastTarget = false;
+        var textoLeyenda = Texto(leyendaSalir.transform, 16, TextAnchor.MiddleLeft, new Color32(240, 236, 228, 230));
+        var rectTexto = (RectTransform)textoLeyenda.transform;
+        rectTexto.offsetMin = new Vector2(60f, 0f);
+        rectTexto.offsetMax = Vector2.zero;
+        textoLeyenda.text = "Salir";
+        textoLeyenda.gameObject.AddComponent<Shadow>().effectColor = new Color(0f, 0f, 0f, 0.6f);
+        leyendaSalir.SetActive(false);
         vistaImagen.SetActive(false);
 
         video = new GameObject("Video", typeof(RectTransform));
@@ -432,6 +478,76 @@ public class PantallaJuego : MonoBehaviour
         ContinuarFondo(sprite);
     }
 
+    // Canal de una tele dentro de la vista abierta; pantalla en píxeles de la vista desde arriba a la izquierda.
+    // Sin canal la pantalla se apaga y vuelve a verse la imagen de la tele.
+    public void MostrarCanal(Sprite canal, RectInt pantalla)
+    {
+        if (canal == null)
+        {
+            pantallaTele.gameObject.SetActive(false);
+            return;
+        }
+
+        ColocarPantalla(pantalla);
+        canalTele.sprite = canal;
+        canalTele.color = Color.white;
+    }
+
+    // Un cuadro de estática en la pantalla de la tele; llamarlo cada cuadro mientras dure
+    public void MostrarEstatica(RectInt pantalla)
+    {
+        if (texturaEstatica == null)
+        {
+            texturaEstatica = new Texture2D(120, 54, TextureFormat.RGBA32, false) { filterMode = FilterMode.Point };
+            spriteEstatica = Sprite.Create(texturaEstatica, new Rect(0, 0, 120, 54), new Vector2(0.5f, 0.5f), 100f);
+        }
+
+        var pixeles = new Color32[120 * 54];
+        for (var i = 0; i < pixeles.Length; i++)
+        {
+            var v = (byte)Random.Range(20, 210);
+            pixeles[i] = new Color32(v, v, v, 255);
+        }
+
+        texturaEstatica.SetPixels32(pixeles);
+        texturaEstatica.Apply();
+        ColocarPantalla(pantalla);
+        canalTele.sprite = spriteEstatica;
+    }
+
+    private void ColocarPantalla(RectInt pantalla)
+    {
+        // imagenVista mide lo mismo que su sprite: un píxel de la vista es una unidad del lienzo
+        var rect = (RectTransform)pantallaTele.transform;
+        rect.anchorMin = rect.anchorMax = rect.pivot = new Vector2(0f, 1f);
+        rect.anchoredPosition = new Vector2(pantalla.x, -pantalla.y);
+        rect.sizeDelta = new Vector2(pantalla.width, pantalla.height);
+        pantallaTele.gameObject.SetActive(true);
+    }
+
+    // "[Esc] Salir" abajo de la vista abierta, con la tecla del nivel actual
+    public void MostrarLeyendaSalir(bool visible)
+    {
+        var tecla = visible ? IndicadoresPorNivel.EscActual : null;
+        leyendaSalir.SetActive(visible && tecla != null);
+        if (tecla != null)
+            teclaLeyenda.sprite = tecla;
+    }
+
+    // Audio de la tele en bucle; sin clip lo detiene
+    public void ReproducirTele(AudioClip clip, float volumen = 1f)
+    {
+        if (clip == null)
+        {
+            fuenteTele.Stop();
+            return;
+        }
+
+        fuenteTele.clip = clip;
+        fuenteTele.volume = volumen;
+        fuenteTele.Play();
+    }
+
     // Toma el color de la pared (arriba) y del piso (abajo) en el borde izquierdo de la imagen
     private void ContinuarFondo(Sprite sprite)
     {
@@ -556,6 +672,9 @@ public class PantallaJuego : MonoBehaviour
         entradaPendiente = entrada;
         caja.Ocultar();
         MostrarVideo(false);
+        MostrarCanal(null, default);
+        ReproducirTele(null);
+        MostrarLeyendaSalir(false);
         MostrarImagen(null);
         MostrarMarcador(null);
         SceneManager.LoadScene(escena);
