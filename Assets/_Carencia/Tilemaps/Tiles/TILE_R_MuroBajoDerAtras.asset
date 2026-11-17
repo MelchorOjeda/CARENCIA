@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 11500000, guid: cb7b062fb8f995cddb7ce9dd78236583, type: 3}
   m_Name: TILE_R_MuroBajoDerAtras
-  m_EditorClassIdentifier: UnityEngine.dll::UnityEngine.Tilemaps.Tile
+  m_EditorClassIdentifier: Assembly-CSharp::TileVariado
   m_Sprite: {fileID: 21300000, guid: 5ab23b9bdc233154b9c9939b8cac16bc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
@@ -34,3 +34,10 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 0
+  variantes:
+  - {fileID: 21300000, guid: e6fc6d9e144b94aefb54440ac8966618, type: 3}
+  - {fileID: 21300000, guid: 5b955511b2a0f180fb0f6c07ab86ed47, type: 3}
+  pesoLimpio: 3
+  pesosVariantes:
+  - 1
+  - 1
