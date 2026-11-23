@@ -25,6 +25,21 @@ public class PlayerController : MonoBehaviour
     public bool EstaCaminando => direccion != Vector2.zero;
     public bool EstaCorriendo => EstaCaminando && accionCorrer.IsPressed();
 
+    // Muerta se queda en el piso: ninguna secuencia ni menú le devuelve el movimiento (al cargar la escena hay otra Elaki)
+    public bool Muerta { get; private set; }
+
+    public void Morir()
+    {
+        Muerta = true;
+        direccion = Vector2.zero;
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            // Tampoco la empuja quien la atrapó
+            rb.bodyType = RigidbodyType2D.Kinematic;
+        }
+    }
+
     public bool MovimientoBloqueado
     {
         get => movimientoBloqueado;
@@ -40,7 +55,7 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
-        if (movimientoBloqueado)
+        if (movimientoBloqueado || Muerta)
         {
             direccion = Vector2.zero;
             return;
