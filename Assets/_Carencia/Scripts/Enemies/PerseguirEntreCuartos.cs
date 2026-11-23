@@ -6,6 +6,8 @@ using UnityEngine.Tilemaps;
 
 // Para un enemigo de un nivel hecho por cuartos (Nivel 2): si Elaki cruza a otro cuarto mientras la persigue,
 // el enemigo desaparece de la vista, tarda lo que tardaría en llegar a la abertura y entra por ella al cuarto nuevo.
+// Si los dos cuartos se ven a la vez (vecinos sin corte, como el pasillo y la sala), no desaparece: camina a la
+// abertura a la vista y cruza.
 [RequireComponent(typeof(EnemigoPerseguidor))]
 public class PerseguirEntreCuartos : MonoBehaviour
 {
@@ -67,6 +69,7 @@ public class PerseguirEntreCuartos : MonoBehaviour
         if (destino == donde)
         {
             Mostrar(true);
+            enemigo.CambiarRejilla(donde.grid, donde.bloqueos);
             enemigo.Reanudar();
             cruce = null;
             return;
@@ -77,6 +80,12 @@ public class PerseguirEntreCuartos : MonoBehaviour
 
     private IEnumerator Cruzar(Cuarto destino)
     {
+        if (SeVenJuntos(donde, destino) && donde.llegada != null && destino.llegada != null)
+        {
+            yield return CruzarALaVista(destino);
+            yield break;
+        }
+
         var espera = retraso;
         if (donde != null && donde.llegada != null)
             espera += Vector2.Distance(transform.position, donde.llegada.position) / Mathf.Max(0.5f, enemigo.VelocidadActual);
@@ -91,6 +100,31 @@ public class PerseguirEntreCuartos : MonoBehaviour
         enemigo.CambiarRejilla(destino.grid, destino.bloqueos);
         donde = destino;
         Mostrar(true);
+        enemigo.Reanudar();
+        cruce = null;
+    }
+
+    private static bool SeVenJuntos(Cuarto a, Cuarto b)
+    {
+        if (a == null || b == null || a.habitacion == null || b.habitacion == null)
+            return false;
+        return a.habitacion.seamlessNeighbors.Contains(b.habitacion) || b.habitacion.seamlessNeighbors.Contains(a.habitacion);
+    }
+
+    // Camina por su cuarto hasta la abertura, pasa a la abertura del otro y desde ahí sigue a Elaki
+    private IEnumerator CruzarALaVista(Cuarto destino)
+    {
+        Mostrar(true);
+        enemigo.IrHacia(donde.llegada);
+        for (var t = 0f; !enemigo.Llego && t < 6f; t += Time.deltaTime)
+            yield return null;
+
+        enemigo.CambiarRejilla(destino.grid, destino.bloqueos);
+        enemigo.IrHacia(destino.llegada);
+        for (var t = 0f; !enemigo.Llego && t < 2f; t += Time.deltaTime)
+            yield return null;
+
+        donde = destino;
         enemigo.Reanudar();
         cruce = null;
     }

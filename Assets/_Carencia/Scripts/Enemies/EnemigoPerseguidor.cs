@@ -37,6 +37,21 @@ public class EnemigoPerseguidor : MonoBehaviour
     private readonly List<Vector3> ruta = new List<Vector3>();
     private Animator animator;
     private Transform objetivo;
+    // Punto al que camina un momento en lugar de ir tras Elaki (la puerta al cruzar de cuarto); no ataca mientras tanto
+    private Transform puntoDeCamino;
+
+    private Vector3 Meta => puntoDeCamino != null ? puntoDeCamino.position : objetivo.position;
+
+    // Camina hacia el punto con la misma búsqueda de camino; al llegar, Llego es verdadero y se queda ahí
+    public void IrHacia(Transform punto)
+    {
+        puntoDeCamino = punto;
+        persiguiendo = punto != null;
+        ruta.Clear();
+        proximaBusqueda = 0f;
+    }
+
+    public bool Llego => puntoDeCamino != null && Vector2.Distance(transform.position, puntoDeCamino.position) < 0.12f;
     private SaludJugador salud;
     private bool persiguiendo;
     private float proximaBusqueda;
@@ -57,6 +72,7 @@ public class EnemigoPerseguidor : MonoBehaviour
         if (objetivo == null)
             return;
 
+        puntoDeCamino = null;
         persiguiendo = true;
         ruta.Clear();
         proximoGolpe = Mathf.Max(proximoGolpe, Time.time + esperaTrasGolpe * 0.5f);
@@ -147,6 +163,9 @@ public class EnemigoPerseguidor : MonoBehaviour
 
         Avanzar();
 
+        if (puntoDeCamino != null)
+            return;
+
         var distancia = Vector2.Distance(transform.position, objetivo.position);
         if (distancia <= alcance && Time.time >= proximoGolpe)
         {
@@ -168,7 +187,7 @@ public class EnemigoPerseguidor : MonoBehaviour
         if (Time.time < proximoGolpe - esperaTrasGolpe * 0.5f)
             return;
 
-        var destino = ruta.Count > 0 ? ruta[0] : objetivo.position;
+        var destino = ruta.Count > 0 ? ruta[0] : Meta;
         destino.z = transform.position.z;
         var antes = transform.position;
         transform.position = Vector3.MoveTowards(transform.position, destino, velocidadActual * Time.deltaTime);
@@ -194,7 +213,7 @@ public class EnemigoPerseguidor : MonoBehaviour
     {
         ruta.Clear();
         var inicio = grid.WorldToCell(transform.position);
-        var meta = grid.WorldToCell(objetivo.position);
+        var meta = grid.WorldToCell(Meta);
         if (inicio == meta)
             return;
 
