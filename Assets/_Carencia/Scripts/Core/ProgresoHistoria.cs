@@ -37,12 +37,15 @@ public static class ProgresoHistoria
     // Ya vio el desenlace alguna vez (lo usa el aviso de Continuar)
     public static bool Terminada => Leer().terminada;
 
+    // Al terminar la historia se abren todos los niveles: desde entonces se puede empezar desde cualquiera
     public static void MarcarTerminada()
     {
         var d = Leer();
-        if (d.terminada)
+        var todos = Capitulos.Todos.Length - 1;
+        if (d.terminada && d.alcanzado >= todos)
             return;
         d.terminada = true;
+        d.alcanzado = Mathf.Max(d.alcanzado, todos);
         Guardar(d);
     }
 

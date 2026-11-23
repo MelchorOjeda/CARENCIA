@@ -2,8 +2,9 @@ using System;
 using TMPro;
 using UnityEngine;
 
-// Capítulos del Modo historia con el mismo diseño del menú: es una copia de la pantalla del menú con un renglón por capítulo.
-// Los alcanzados se pueden repetir; los bloqueados se ven tachados y sin título. Esc vuelve al menú.
+// Niveles del Modo historia con el mismo diseño del menú: es una copia de la pantalla del menú con un renglón por nivel.
+// Solo aparecen los niveles alcanzados (los demás no se muestran, ni cuántos son); al terminar la historia aparecen
+// todos. Cualquiera de los que se ven se puede repetir. Esc vuelve al menú.
 public class PantallaCapitulos : MonoBehaviour
 {
     private const float TamanoTexto = 46f;
@@ -46,21 +47,22 @@ public class PantallaCapitulos : MonoBehaviour
         for (var i = 0; i < renglones.Length; i++)
         {
             var renglon = renglones[i];
-            // En web el renglón de Salir llega apagado: aquí cada renglón es un capítulo
-            renglon.gameObject.SetActive(i < Capitulos.Todos.Length);
-            if (i >= Capitulos.Todos.Length)
+            // Solo se ven los niveles alcanzados: los demás no aparecen, para no revelar cuántos hay.
+            // (En web el renglón de Salir llega apagado: aquí se enciende si le toca un nivel)
+            var abierto = i < Capitulos.Todos.Length && ProgresoHistoria.Desbloqueado(i);
+            renglon.gameObject.SetActive(abierto);
+            renglon.SetHabilitada(abierto);
+            if (!abierto)
                 continue;
 
             var capitulo = Capitulos.Todos[i];
-            var abierto = ProgresoHistoria.Desbloqueado(i);
-            renglon.CambiarTexto(abierto ? capitulo.Nombre : capitulo.NombreBloqueado);
+            renglon.CambiarTexto(capitulo.Nombre);
             ((RectTransform)renglon.transform).sizeDelta = new Vector2(AnchoRenglon + 60f, ((RectTransform)renglon.transform).sizeDelta.y);
             foreach (var texto in renglon.GetComponentsInChildren<TMP_Text>(true))
             {
                 texto.fontSize = TamanoTexto;
                 ((RectTransform)texto.transform).sizeDelta = new Vector2(AnchoRenglon, ((RectTransform)texto.transform).sizeDelta.y);
             }
-            renglon.SetHabilitada(abierto);
         }
 
         lista.Elegida += Elegir;
@@ -80,10 +82,7 @@ public class PantallaCapitulos : MonoBehaviour
 
     private void MostrarDetalle(int indice)
     {
-        if (!ProgresoHistoria.Desbloqueado(indice))
-            detalle.text = "Todavía no llegas aquí.";
-        else
-            detalle.text = hayPartida ? "Repetirlo no borra tu partida guardada." : "Empieza desde aquí.";
+        detalle.text = hayPartida ? "Repetirlo no borra tu partida guardada." : "Empieza desde aquí.";
     }
 
     private void Update()
