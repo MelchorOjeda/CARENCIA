@@ -181,7 +181,9 @@ public class SaludJugador : MonoBehaviour
             return;
 
         muerto = true;
-        GetComponent<PlayerController>().MovimientoBloqueado = true;
+        var control = GetComponent<PlayerController>();
+        control.MovimientoBloqueado = true;
+        control.Morir();
         StartCoroutine(Morir());
     }
 
