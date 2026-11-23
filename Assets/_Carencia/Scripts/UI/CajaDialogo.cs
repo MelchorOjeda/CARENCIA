@@ -60,9 +60,22 @@ public class CajaDialogo : MonoBehaviour
         // La pulsación que abrió la línea (E sobre un objeto) no debe completarla
         yield return null;
 
+        var vistaHace = 2;
         while (linea != null && !linea.Terminada)
         {
-            if (SePulsoAvanzar())
+            // Con una imagen abierta encima (el periódico) la línea se queda quieta: primero se cierra la imagen.
+            // La tecla que la cierra tampoco cuenta para la línea
+            var tapada = PantallaJuego.Existe && PantallaJuego.Instancia.VistaAbierta;
+            if (grupo == null && !TryGetComponent(out grupo))
+                grupo = gameObject.AddComponent<CanvasGroup>();
+            // Mientras la imagen está abierta la caja no la tapa; vuelve igual al cerrarla
+            grupo.alpha = tapada ? 0f : 1f;
+            // Con la pausa abierta tampoco avanza; la tecla que la cierra no cuenta para la línea
+            if (tapada || MenuPausa.EstaAbierta)
+                vistaHace = 0;
+            else if (vistaHace < 2)
+                vistaHace++;
+            else if (SePulsoAvanzar())
                 linea.Pulsar();
             else
                 linea.Avanzar(Mathf.Min(Time.unscaledDeltaTime, MaximoSegundosPorFotograma));
@@ -71,8 +84,12 @@ public class CajaDialogo : MonoBehaviour
             yield return null;
         }
 
+        if (grupo != null)
+            grupo.alpha = 1f;
         Ocultar();
     }
+
+    private CanvasGroup grupo;
 
     // También la llama PantallaJuego al cambiar de escena, aunque la línea no haya terminado
     public void Ocultar()
@@ -90,7 +107,6 @@ public class CajaDialogo : MonoBehaviour
             InputSystem.actions.FindAction("UI/Submit", true),
             InputSystem.actions.FindAction("UI/Click", true),
             InputSystem.actions.FindAction("Player/Interact", true),
-            InputSystem.actions.FindAction("UI/Cancel", true),
         };
 
         ConstruirFondo();

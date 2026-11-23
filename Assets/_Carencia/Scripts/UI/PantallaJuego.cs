@@ -588,6 +588,9 @@ public class PantallaJuego : MonoBehaviour
         SetAlfa(mirada, Mathf.Clamp01(intensidad));
     }
 
+    // Hay una imagen a pantalla completa (periódico, tele, refrigerador): lo de abajo espera a que se cierre
+    public bool VistaAbierta => vistaImagen != null && vistaImagen.activeSelf;
+
     public void MostrarImagen(Sprite sprite)
     {
         vistaImagen.SetActive(sprite != null);

@@ -32,6 +32,9 @@ public class MenuPausa : MonoBehaviour
 
     public bool Abierta => contenido.activeSelf;
 
+    // Con la pausa abierta, el diálogo de abajo no lee teclas ni avanza
+    public static bool EstaAbierta => instancia != null && instancia.contenido != null && instancia.Abierta;
+
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void Reiniciar()
     {
@@ -74,7 +77,7 @@ public class MenuPausa : MonoBehaviour
             return;
         }
 
-        // El Esc que cierra un diálogo no debe abrir también la pausa: se exige poder pausar desde el fotograma anterior
+        // El Esc que cierra una vista no debe abrir también la pausa: se exige poder pausar desde el fotograma anterior
         var puedePausar = FlujoMenu.PuedePausar(LeerSituacion());
         if (puedePausar && podiaPausarAntes && ControlesMenu.Pulso(ControlesMenu.Volver))
             Abrir();
@@ -94,6 +97,7 @@ public class MenuPausa : MonoBehaviour
             jugadorBloqueado = jugador != null && jugador.MovimientoBloqueado,
             hayDialogo = pantalla.CuadroVisible,
             cargandoEscena = pantalla.Cargando,
+            hayVista = pantalla.VistaAbierta,
         };
     }
 

@@ -12,9 +12,11 @@ public static class FlujoMenu
 
     public static Decision AlSalirDeOpciones(bool haySinGuardar) => haySinGuardar ? Decision.Preguntar : Decision.Hacerlo;
 
-    // Esc solo pausa cuando no tiene otro dueño: los diálogos, las vistas y las transiciones ya usan Esc o bloquean al jugador
+    // Esc pausa cuando no tiene otro dueño: las vistas (periódico, tele) se cierran con Esc y las transiciones bloquean.
+    // Durante un diálogo sí pausa (el diálogo avanza con Enter o clic), aunque la secuencia tenga quieta a Elaki
     public static bool PuedePausar(SituacionJuego situacion) =>
-        situacion.hayJugador && !situacion.jugadorBloqueado && !situacion.hayDialogo && !situacion.cargandoEscena;
+        situacion.hayJugador && !situacion.cargandoEscena && !situacion.hayVista
+        && (situacion.hayDialogo || !situacion.jugadorBloqueado);
 }
 
 // Lo que hay en pantalla en el momento de pulsar Esc
@@ -24,6 +26,7 @@ public struct SituacionJuego
     public bool jugadorBloqueado;
     public bool hayDialogo;
     public bool cargandoEscena;
+    public bool hayVista;
 }
 
 // Deja pasar una sola vez: tras elegir Jugar, Continuar o Salir, los Enter y clics repetidos no vuelven a cargar nada.
