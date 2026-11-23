@@ -9,9 +9,11 @@ public static class TextosPartida
         { "PRO_Casa", "Prólogo — La casa" },
         { "N1_Laberinto", "Nivel 1 — El laberinto" },
         { "N1_Pasillo", "Nivel 1 — El pasillo" },
+        { "R1_Casa", "Nivel 1 — El despertar" },
         { "N2_Casa", "Nivel 2 — La casa" },
         { "R2_Casa", "Nivel 2 — El despertar" },
         { "N3_Casa", "Nivel 3 — La casa" },
+        { "DES_Final", "Desenlace" },
     };
 
     // Una escena nueva que aún no está en la tabla se muestra con su nombre de archivo
