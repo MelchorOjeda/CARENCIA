@@ -185,9 +185,12 @@ public class MenuPausa : MonoBehaviour
     {
         lugar.text = TextosPartida.NombreDe(SceneManager.GetActiveScene().name).ToUpperInvariant();
         var partida = EstadoJuego.LeerPartidaGuardada();
-        ultimoGuardado.text = partida.HasValue
-            ? $"Último punto de control: {TextosPartida.HaceCuanto(partida.Value.fecha)}"
-            : "Todavía sin punto de control";
+        if (EstadoJuego.Repeticion)
+            ultimoGuardado.text = "Repitiendo nivel: tu partida no cambia";
+        else
+            ultimoGuardado.text = partida.HasValue
+                ? $"Último punto de control: {TextosPartida.HaceCuanto(partida.Value.fecha)}"
+                : "Todavía sin punto de control";
     }
 
     // Si la escena cambia con la pausa abierta, el tiempo vuelve a correr y se olvida al jugador de la escena anterior

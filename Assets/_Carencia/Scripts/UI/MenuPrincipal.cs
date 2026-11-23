@@ -3,21 +3,24 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-// Menú inicial: "pulsa cualquier tecla", luego Jugar, Continuar, Ajustes y Salir.
-// Continuar aparece tachado si no hay partida guardada (o si el archivo está dañado).
+// Menú inicial: "pulsa cualquier tecla", luego Continuar, Nueva historia, Niveles, Ajustes y Salir.
+// Sin partida guardada (nunca empezó, o ya terminó la historia) Continuar avisa y ofrece una nueva historia;
+// Niveles aparece tachado si no se ha alcanzado ninguno.
 // Lo que borra la partida o cierra el juego pregunta antes; una vez elegido, el menú deja de responder.
 public class MenuPrincipal : MonoBehaviour
 {
-    private const int Jugar = 0;
-    private const int Continuar = 1;
-    private const int Opciones = 2;
-    private const int Salir = 3;
+    private const int Continuar = 0;
+    private const int NuevaHistoria = 1;
+    private const int Capitulos = 2;
+    private const int Opciones = 3;
+    private const int Salir = 4;
 
     [SerializeField] private string primeraEscena = "PRO_Casa";
     [SerializeField] private GameObject pantallaInicio;
     [SerializeField] private GameObject pantallaMenu;
     [SerializeField] private ListaOpciones lista;
     [SerializeField] private OpcionMenu opcionContinuar;
+    [SerializeField] private OpcionMenu opcionCapitulos;
     [SerializeField] private TMP_Text detalleCartel;
     [SerializeField] private PantallaOpciones pantallaOpciones;
     [SerializeField] private NotaConfirmacion nota;
@@ -66,6 +69,13 @@ public class MenuPrincipal : MonoBehaviour
         if (EstadoJuego.Tiene(BanderaFin))
         {
             EstadoJuego.Quitar(BanderaFin);
+            // Terminó la historia: ya no hay nada que continuar (repetir el desenlace no borra la partida)
+            if (!EstadoJuego.Repeticion)
+            {
+                EstadoJuego.TerminarPartida();
+                ProgresoHistoria.MarcarTerminada();
+                LeerPartida();
+            }
             MostrarFin();
         }
         else
@@ -84,7 +94,7 @@ public class MenuPrincipal : MonoBehaviour
         }
 
         if (pantallaInicio.activeSelf && ControlesMenu.Pulso(ControlesMenu.CualquierTecla))
-            MostrarMenu(Jugar);
+            MostrarMenu(Continuar);
         else if (PuedeSalir && pantallaMenu.activeSelf && lista.Activa && !nota.Abierta && ControlesMenu.Pulso(ControlesMenu.Volver))
             PreguntarSalir();
     }
@@ -122,9 +132,10 @@ public class MenuPrincipal : MonoBehaviour
         var opciones = raiz.Find("Opciones");
         DestroyImmediate(opciones.GetComponent<ListaOpciones>());
         ((RectTransform)opciones).anchoredPosition += new Vector2(0f, -90f);
-        foreach (var nombre in new[] { "Continuar", "Ajustes", "Salir" })
+        foreach (var nombre in new[] { "Continuar", "Capitulos", "Ajustes", "Salir" })
             DestroyImmediate(opciones.Find(nombre).gameObject);
-        var volver = opciones.Find("Jugar").GetComponent<OpcionMenu>();
+        var volver = opciones.Find("NuevaHistoria").GetComponent<OpcionMenu>();
+        ((RectTransform)volver.transform).anchoredPosition = Vector2.zero;
         volver.CambiarTexto("Volver al menú principal");
         ((RectTransform)volver.transform).sizeDelta = new Vector2(1100f, 100f);
         foreach (var texto in volver.GetComponentsInChildren<TMP_Text>(true))
@@ -147,7 +158,7 @@ public class MenuPrincipal : MonoBehaviour
     {
         Destroy(pantallaFin);
         pantallaFin = null;
-        MostrarMenu(Jugar);
+        MostrarMenu(Continuar);
     }
 
     private void MostrarMenu(int enfocada)
@@ -163,14 +174,15 @@ public class MenuPrincipal : MonoBehaviour
     {
         switch (opcion)
         {
-            case Jugar: PedirJugar(); break;
             case Continuar: ContinuarPartida(); break;
+            case NuevaHistoria: PedirNuevaHistoria(); break;
+            case Capitulos: AbrirCapitulos(); break;
             case Opciones: AbrirOpciones(); break;
             case Salir: PreguntarSalir(); break;
         }
     }
 
-    private void PedirJugar()
+    private void PedirNuevaHistoria()
     {
         if (FlujoMenu.AlElegirJugar(partida.HasValue) == Decision.Hacerlo)
         {
@@ -179,8 +191,8 @@ public class MenuPrincipal : MonoBehaviour
         }
 
         nota.Preguntar(
-            "¿Empezar desde el principio?",
-            $"Se borrará tu partida guardada ({TextosPartida.NombreDe(partida.Value.escena)}).",
+            "¿Empezar una nueva historia?",
+            $"Se reemplazará tu partida guardada ({TextosPartida.NombreDe(partida.Value.escena)}). Los niveles alcanzados se conservan.",
             "Sí, empezar de nuevo",
             EmpezarPartida);
     }
@@ -191,17 +203,39 @@ public class MenuPrincipal : MonoBehaviour
             return;
 
         lista.Activa = false;
-        EstadoJuego.NuevaPartida();
+        ProgresoHistoria.EmpezarHistoria();
         PantallaJuego.Instancia.CargarEscena(primeraEscena, null);
+    }
+
+    private void AbrirCapitulos()
+    {
+        PantallaCapitulos.Abrir(pantallaMenu, partida.HasValue, EmpezarCapitulo, () => MostrarMenu(Capitulos));
+    }
+
+    // Un capítulo repetido arranca con el estado con que se llegó a él; la partida guardada no se toca
+    private void EmpezarCapitulo(int indice)
+    {
+        if (!salida.Tomar())
+            return;
+
+        lista.Activa = false;
+        var capitulo = ProgresoHistoria.EmpezarCapitulo(indice);
+        PantallaJuego.Instancia.CargarEscena(capitulo.PrimeraEscena, capitulo.Entrada);
     }
 
     private void ContinuarPartida()
     {
-        // El archivo pudo borrarse o dañarse después de abrir el menú: Continuar se tacha y no pasa nada más
+        // Sin partida (o con el archivo dañado): se le avisa y se le ofrece empezar
         if (!EstadoJuego.CargarPartida())
         {
             LeerPartida();
-            lista.EnfocarPrimera();
+            nota.Preguntar(
+                "Aún no tienes una partida iniciada",
+                ProgresoHistoria.Terminada
+                    ? "Ya terminaste la historia. Empieza una nueva o repite un nivel desde Niveles."
+                    : "Empieza una nueva historia para comenzar a jugar.",
+                "Nueva historia",
+                EmpezarPartida);
             return;
         }
 
@@ -244,7 +278,9 @@ public class MenuPrincipal : MonoBehaviour
     private void LeerPartida()
     {
         partida = EstadoJuego.LeerPartidaGuardada();
-        opcionContinuar.SetHabilitada(partida.HasValue);
+        // Siempre se puede elegir: sin partida, avisa en lugar de quedarse tachado
+        opcionContinuar.SetHabilitada(true);
+        opcionCapitulos.SetHabilitada(ProgresoHistoria.Alcanzado >= 0);
         detalleCartel.text = partida.HasValue
             ? $"Último rastro: {TextosPartida.NombreDe(partida.Value.escena)}\n{TextosPartida.HaceCuanto(partida.Value.fecha)}"
             : "Nadie ha empezado a buscar.";

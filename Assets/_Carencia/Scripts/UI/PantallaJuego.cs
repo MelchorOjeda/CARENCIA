@@ -274,6 +274,9 @@ public class PantallaJuego : MonoBehaviour
     private TextMeshProUGUI textoNegra;
     private Image imagenNegra;
 
+    // Cuánto cubre el fundido a negro (0: escena a la vista)
+    public float Negro => fundido.color.a;
+
     public bool PantallaNegraVisible => pantallaNegra != null && pantallaNegra.gameObject.activeSelf;
 
     private void CrearPantallaNegra()

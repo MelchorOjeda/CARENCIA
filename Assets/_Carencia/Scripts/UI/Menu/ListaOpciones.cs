@@ -12,6 +12,7 @@ public class ListaOpciones : MonoBehaviour
     private int enfocada;
 
     public event Action<int> Elegida;
+    public event Action<int> Enfocada;
 
     public bool Activa { get; set; } = true;
 
@@ -48,6 +49,7 @@ public class ListaOpciones : MonoBehaviour
         enfocada = opciones[indice].Habilitada ? indice : Navegacion.Primera(Habilitadas());
         for (var i = 0; i < opciones.Length; i++)
             opciones[i].MostrarEnfoque(i == enfocada);
+        Enfocada?.Invoke(enfocada);
     }
 
     private void Elegir()
