@@ -22,12 +22,17 @@ namespace PortalesGame
         public Vector3[] corners = new Vector3[0];
         [Tooltip("Pulso lento de brillo: la carne parece respirar.")]
         public float breath = 0.08f;
+        [Tooltip("Segundos quieta entre una respiración y otra (0: respira sin parar).")]
+        public float pausa;
+        [Tooltip("Segundos de desfase: paredes con desfases distintos no respiran al mismo tiempo.")]
+        public float desfase;
 
         private VideoPlayer player;
         private RenderTexture rt;
         private Material mat;
         private Mesh[] meshes;
         private Color32[][] colors;
+        private float ultimoBrillo = -1f;
 
         private void Awake()
         {
@@ -97,7 +102,10 @@ namespace PortalesGame
         private void Update()
         {
             if (meshes == null || breath <= 0f) return;
-            float k = 1f - breath * (0.5f + 0.5f * Mathf.Sin(Time.time * 0.9f));
+            float k = 1f - breath * Respiracion(Time.time + desfase);
+            // Quieta entre respiraciones: no hace falta tocar las mallas
+            if (Mathf.Abs(k - ultimoBrillo) < 0.002f) return;
+            ultimoBrillo = k;
             Color32 c = new Color(tint.r * k, tint.g * k, tint.b * k, 1f);
             for (int w = 0; w < meshes.Length; w++)
             {
@@ -105,6 +113,17 @@ namespace PortalesGame
                 cs[0] = cs[1] = cs[2] = cs[3] = c;
                 meshes[w].colors32 = cs;
             }
+        }
+
+        // 0..1. Sin pausa, la onda de siempre. Con pausa: una respiración completa (sube y baja) y luego quieta
+        private float Respiracion(float t)
+        {
+            const float velocidad = 0.9f;
+            if (pausa <= 0f) return 0.5f + 0.5f * Mathf.Sin(t * velocidad);
+
+            float duracion = 2f * Mathf.PI / velocidad;
+            float f = Mathf.Repeat(t, duracion + pausa);
+            return f < duracion ? 0.5f - 0.5f * Mathf.Cos(f * velocidad) : 0f;
         }
 
         private void OnDestroy()
