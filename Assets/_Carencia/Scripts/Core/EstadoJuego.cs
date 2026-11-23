@@ -22,6 +22,9 @@ public static class EstadoJuego
     public static string EntradaControl { get; private set; }
     public static int Golpes { get; set; }
 
+    // Repitiendo un capítulo con una partida guardada: los puntos de control se quedan en memoria y no la reemplazan
+    public static bool Repeticion { get; private set; }
+
     private static string Ruta => Path.Combine(Application.persistentDataPath, "partida.json");
 
     public static bool HayPartida => File.Exists(Ruta);
@@ -34,6 +37,7 @@ public static class EstadoJuego
         EscenaControl = null;
         EntradaControl = null;
         Golpes = 0;
+        Repeticion = false;
     }
 
     public static void NuevaPartida()
@@ -42,6 +46,30 @@ public static class EstadoJuego
         if (File.Exists(Ruta))
             File.Delete(Ruta);
     }
+
+    // La historia terminó: la partida guardada ya no tiene a dónde continuar
+    public static void TerminarPartida()
+    {
+        if (File.Exists(Ruta))
+            File.Delete(Ruta);
+        EscenaControl = null;
+        EntradaControl = null;
+    }
+
+    // Empieza un capítulo elegido en el menú con las banderas que tenía el jugador al llegar a él
+    public static void IniciarCapitulo(IEnumerable<string> banderas, bool repeticion)
+    {
+        Reiniciar();
+        foreach (var bandera in banderas)
+            Poner(bandera);
+        banderasDelControl = new List<string>(Banderas);
+        Repeticion = repeticion;
+    }
+
+    // Al llegar más lejos que la partida guardada, lo que sigue ya cuenta como la partida
+    public static void TerminarRepeticion() => Repeticion = false;
+
+    public static List<string> CopiaBanderas() => new List<string>(Banderas);
 
     public static bool Tiene(string bandera) => string.IsNullOrEmpty(bandera) || Banderas.Contains(bandera);
 
@@ -62,6 +90,8 @@ public static class EstadoJuego
         EscenaControl = escena;
         EntradaControl = entrada;
         banderasDelControl = new List<string>(Banderas);
+        if (Repeticion)
+            return;
 
         var datos = new Datos { escena = escena, entrada = entrada, banderas = banderasDelControl };
         File.WriteAllText(Ruta, JsonUtility.ToJson(datos));
@@ -82,6 +112,7 @@ public static class EstadoJuego
         if (datos == null)
             return false;
 
+        Repeticion = false;
         EscenaControl = datos.escena;
         EntradaControl = datos.entrada;
         banderasDelControl = datos.banderas ?? new List<string>();
