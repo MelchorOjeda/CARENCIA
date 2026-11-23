@@ -102,21 +102,22 @@ namespace PortalesGame
             if (idle == ScreenIdle.Dark) DrawDark(); else if (idle == ScreenIdle.Glow) DrawGlow(); else DrawStatic(1f);
         }
 
-        public IEnumerator Play(float duration, Sprite[] frames, VideoClip clip, Action<float> onProgress)
+        public IEnumerator Play(float duration, Sprite[] frames, VideoClip clip, Action<float> onProgress, VideoWebInfo web = null)
         {
             if (screen == null) yield break;
             IsPlaying = true;
             EnsureContent();
             content.enabled = true;
 
-            bool useVideo = clip != null;
+            bool useVideo = clip != null || web != null;
             if (useVideo)
             {
                 EnsureVideo();
                 vp.clip = clip;
-                vp.isLooping = true;   // si el clip es más corto que la secuencia, se repite: el jugador se queda mirando
+                VideoWeb.Ajustar(vp, web);
+                vp.isLooping = true;  // si el clip es más corto que la secuencia, se repite: el jugador se queda mirando
                 vp.Play();
-                if (duration <= 0f) duration = (float)clip.length;
+                if (duration <= 0f) duration = clip != null ? (float)clip.length : web.duracion;
             }
 
             float t = 0f;

@@ -177,6 +177,8 @@ public class Secuencia : MonoBehaviour
                 break;
             case Tipo.Activar:
                 ((GameObject)paso.referencia).SetActive(true);
+                // En web un video tarda en descargarse: lo que sigue cuenta desde que de verdad empieza
+                yield return VideoWeb.EsperarInicio((GameObject)paso.referencia);
                 break;
             case Tipo.Desactivar:
                 ((GameObject)paso.referencia).SetActive(false);

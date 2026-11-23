@@ -39,11 +39,13 @@ namespace PortalesGame
                 rt = new RenderTexture(512, 288, 0, RenderTextureFormat.ARGB32) { wrapMode = TextureWrapMode.Repeat, filterMode = FilterMode.Bilinear };
                 rt.Create();
             }
-            if (clip != null && texture == null)
+            var web = VideoWeb.Info(gameObject);   // en web el clip llega vacío; sus datos vienen aquí
+            if ((clip != null || web != null) && texture == null)
             {
                 player = gameObject.AddComponent<VideoPlayer>();
                 player.playOnAwake = false;
                 player.clip = clip;
+                VideoWeb.Ajustar(player);
                 player.isLooping = true;
                 player.renderMode = VideoRenderMode.RenderTexture;
                 player.targetTexture = rt;
@@ -54,7 +56,8 @@ namespace PortalesGame
             mat.mainTexture = texture != null ? texture : (Texture)rt;
 
             float aspect = texture != null ? texture.width / (float)Mathf.Max(1, texture.height)
-                : clip != null && clip.height > 0 ? clip.width / (float)clip.height : 1.6f;
+                : clip != null && clip.height > 0 ? clip.width / (float)clip.height
+                : web != null && web.alto > 0 ? web.ancho / (float)web.alto : 1.6f;
             meshes = new Mesh[walls];
             colors = new Color32[walls][];
             for (int w = 0; w < walls; w++)

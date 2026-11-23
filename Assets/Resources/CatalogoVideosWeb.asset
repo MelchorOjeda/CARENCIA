@@ -1,0 +1,123 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c45c53c698336ae4c94aefac5799941e, type: 3}
+  m_Name: CatalogoVideosWeb
+  m_EditorClassIdentifier: Assembly-CSharp::CatalogoVideosWeb
+  entradas:
+  - escena: Assets/_Carencia/Scenes/Prologo/PRO_Casa.unity
+    ruta: Grid#0/Muros_Bano#0/Objetos#0/SPR_OBJ_EspejoBano_R#0/PortalEspejo#0
+    nombre: VID_PRO_PortalEspejo
+    duracion: 20
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Prologo/PRO_Casa.unity
+    ruta: Eventos#0/VideoDespertar#0
+    nombre: VID_PRO_Despertar
+    duracion: 4.2083335
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Nivel01/R1_Casa.unity
+    ruta: Grid#0/Muros_Bano#0/Objetos#0/SPR_OBJ_EspejoBano_R#0/PortalEspejo#0
+    nombre: VID_PRO_PortalEspejo
+    duracion: 20
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Nivel01/R1_Casa.unity
+    ruta: Eventos#0/VideoDespertar#0
+    nombre: VID_PRO_Despertar
+    duracion: 4.2083335
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Nivel02/N2_Casa.unity
+    ruta: Rooms#0/Room_sala_d2#0/Props#0/MonitorDesk#0/VisualRoot#0/VideoMonitor#0
+    nombre: VID_N2_Monitor
+    duracion: 52.833332
+    ancho: 1280
+    alto: 720
+  - escena: Assets/_Carencia/Scenes/Nivel02/R2_Casa.unity
+    ruta: Grid#0/Muros_Bano#0/Objetos#0/SPR_OBJ_EspejoBano_R#0/PortalEspejo#0
+    nombre: VID_PRO_PortalEspejo
+    duracion: 20
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Nivel02/R2_Casa.unity
+    ruta: Eventos#0/VideoDespertar#0
+    nombre: VID_PRO_Despertar
+    duracion: 4.2083335
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
+    ruta: Grid#0/Muros_Pasillo#0/ParedCarneVideo#0
+    nombre: VID_N3_ParedOjos
+    duracion: 3
+    ancho: 640
+    alto: 368
+  - escena: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
+    ruta: Grid#0/Muros_Habitacion#0/ParedCarneVideo#0
+    nombre: VID_N3_ParedOjos
+    duracion: 3
+    ancho: 640
+    alto: 368
+  - escena: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
+    ruta: Grid#0/Muros_Bano#0/ParedCarneVideo#0
+    nombre: VID_N3_ParedOjos
+    duracion: 3
+    ancho: 640
+    alto: 368
+  - escena: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
+    ruta: Grid#0/Muros_Comedor#0/ParedCarneVideo#0
+    nombre: VID_N3_ParedOjos
+    duracion: 3
+    ancho: 640
+    alto: 368
+  - escena: Assets/_Carencia/Scenes/Nivel03/N3_Casa.unity
+    ruta: Eventos#0/CinematicaTina#0
+    nombre: VID_N3_BanoFinal
+    duracion: 22.633333
+    ancho: 1280
+    alto: 720
+  - escena: Assets/_Carencia/Scenes/Desenlace/DES_Final.unity
+    ruta: Eventos#0/VideoNoticiaHermano#0
+    nombre: VID_DES_NoticiaHermano
+    duracion: 9.5
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Desenlace/DES_Final.unity
+    ruta: Eventos#0/VideoTransmision#0
+    nombre: VID_DES_TransmisionTV
+    duracion: 54.466667
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Desenlace/DES_Final.unity
+    ruta: Eventos#0/VideoCarteles#0
+    nombre: VID_DES_Carteles
+    duracion: 24.933332
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Desenlace/DES_Final.unity
+    ruta: Eventos#0/VideoEdificio#0
+    nombre: VID_DES_Edificio
+    duracion: 5.2
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Desenlace/DES_Final.unity
+    ruta: Eventos#0/VideoCinematicaFinal#0
+    nombre: VID_DES_CinematicaFinal
+    duracion: 36.6
+    ancho: 1920
+    alto: 1080
+  - escena: Assets/_Carencia/Scenes/Desenlace/DES_Final.unity
+    ruta: Grid#0/Muros_Bano#0/Objetos#0/SPR_OBJ_EspejoBano_R#0/PortalEspejo#0
+    nombre: VID_PRO_PortalEspejo
+    duracion: 20
+    ancho: 1920
+    alto: 1080
