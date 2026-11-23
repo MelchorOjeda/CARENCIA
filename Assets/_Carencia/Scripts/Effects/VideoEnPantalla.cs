@@ -17,12 +17,13 @@ namespace PortalesGame
 
         private void OnEnable()
         {
-            if (pantalla == null || clip == null || !pantalla.isActiveAndEnabled)
+            var web = VideoWeb.Info(gameObject);   // en web el clip llega vacío; sus datos vienen aquí
+            if (pantalla == null || (clip == null && web == null) || !pantalla.isActiveAndEnabled)
                 return;
 
             // La rutina corre en la pantalla: el video sigue aunque este objeto se desactive.
             pantalla.Stop();
-            pantalla.StartCoroutine(pantalla.Play(duracion, null, clip, null));
+            pantalla.StartCoroutine(pantalla.Play(duracion, null, clip, null, web));
         }
     }
 }

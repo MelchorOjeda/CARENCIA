@@ -35,7 +35,24 @@ public class MenuPrincipal : MonoBehaviour
     private void Awake()
     {
         lista.Elegida += Elegir;
+#if UNITY_WEBGL && !UNITY_EDITOR
+        // En el navegador no se puede cerrar el juego: se quitan Salir y la ayuda de Esc
+        var salir = pantallaMenu.transform.Find("Opciones/Salir");
+        if (salir != null)
+        {
+            salir.GetComponent<OpcionMenu>()?.SetHabilitada(false);
+            salir.gameObject.SetActive(false);
+        }
+        pantallaMenu.transform.Find("Ayuda/Tecla Esc")?.gameObject.SetActive(false);
+#endif
     }
+
+    private static bool PuedeSalir =>
+#if UNITY_WEBGL && !UNITY_EDITOR
+        false;
+#else
+        true;
+#endif
 
     private void Start()
     {
@@ -68,7 +85,7 @@ public class MenuPrincipal : MonoBehaviour
 
         if (pantallaInicio.activeSelf && ControlesMenu.Pulso(ControlesMenu.CualquierTecla))
             MostrarMenu(Jugar);
-        else if (pantallaMenu.activeSelf && lista.Activa && !nota.Abierta && ControlesMenu.Pulso(ControlesMenu.Volver))
+        else if (PuedeSalir && pantallaMenu.activeSelf && lista.Activa && !nota.Abierta && ControlesMenu.Pulso(ControlesMenu.Volver))
             PreguntarSalir();
     }
 

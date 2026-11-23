@@ -163,7 +163,7 @@ public class AbrazoTina : MonoBehaviour
         // Espera a que el video arranque (prepararlo tarda un momento) y luego lo que dura
         for (var t = 0f; video != null && !video.isPlaying && t < 3f; t += Time.deltaTime)
             yield return null;
-        var duracion = duracionCinematica > 0f ? duracionCinematica : video != null && video.clip != null ? (float)video.clip.length : 3f;
+        var duracion = duracionCinematica > 0f ? duracionCinematica : VideoWeb.Duracion(video) > 0f ? VideoWeb.Duracion(video) : 3f;
         for (var t = 0f; t < duracion && (video == null || video.isPlaying || t < 0.5f); t += Time.deltaTime)
             yield return null;
         yield return new WaitForSeconds(0.3f);
