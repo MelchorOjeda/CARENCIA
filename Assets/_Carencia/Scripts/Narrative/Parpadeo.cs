@@ -1,12 +1,14 @@
 using UnityEngine;
 
 // Alterna el color de un sprite de forma irregular: televisión con interferencias o luces inestables.
+// En modo suave pasa de un color a otro poco a poco: el brillo apenas variable de una pantalla encendida.
 [RequireComponent(typeof(SpriteRenderer))]
 public class Parpadeo : MonoBehaviour
 {
     [SerializeField] private Color colorA = Color.white;
     [SerializeField] private Color colorB = Color.gray;
     [SerializeField] private float rapidez = 8f;
+    [SerializeField] private bool suave;
 
     private SpriteRenderer figura;
 
@@ -25,6 +27,6 @@ public class Parpadeo : MonoBehaviour
     private void Update()
     {
         var valor = Mathf.PerlinNoise(Time.time * rapidez, transform.position.x);
-        figura.color = valor > 0.5f ? colorA : colorB;
+        figura.color = suave ? Color.Lerp(colorB, colorA, valor) : valor > 0.5f ? colorA : colorB;
     }
 }

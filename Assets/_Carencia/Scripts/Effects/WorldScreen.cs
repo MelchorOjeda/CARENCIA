@@ -33,6 +33,8 @@ namespace PortalesGame
         [Header("Emisión")]
         public Light2D glow;
         public float glowIntensity = 0.9f;
+        [Tooltip("Variación muy leve del brillo de la imagen mientras está encendida (0: fija).")]
+        [Range(0f, 0.2f)] public float variacionBrillo = 0.05f;
         [Tooltip("Material sin iluminar (lo asigna el constructor): la pantalla emite su propia luz y no se apaga con la penumbra.")]
         public Material unlitMaterial;
 
@@ -172,6 +174,13 @@ namespace PortalesGame
             {
                 nextStaticFrame = Time.time + 0.07f;
                 DrawStatic(1f);
+            }
+
+            // El brillo de la imagen respira apenas, como un tubo viejo; cada pantalla a su ritmo
+            if (content != null && content.enabled && variacionBrillo > 0f)
+            {
+                float k = 1f - variacionBrillo * Mathf.PerlinNoise(Time.time * 1.3f, transform.position.x * 0.37f);
+                content.color = new Color(k, k, k, content.color.a);
             }
 
             // La pantalla encendida ilumina un poco lo que tiene cerca, con el parpadeo propio de un tubo.
